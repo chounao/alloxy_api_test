@@ -513,5 +513,46 @@ class HttpRequest:
             logger.error(f"获取{test_case_name}请求返回结果发生未知异常：{e}", exc_info=True)
             return None, None, None, None, None
 
+    def execute_case(self, sheet_name: str = None,
+                      test_case_name: str = None,
+                       variables: dict = None,#替换入参
+                      ping_data:str = None,
+                     replace_data:str = None,
+                     dict_data:dict =None,
+                     data: dict = None,
+                     nested_keys: Optional[list] = None,
+                     jsonpath_expr: Optional[str] = None,
+                     error_msg: str = "请求失败"):
+        """
+        封装的测试用例执行方法，简化业务层调用
+        :param sheet_name: 工作表名称
+        :param test_case_name: 测试用例名称
+        :param variables: 变量参数（替换入参）
+        :param dict_data: 请求数据字典
+        :param nested_keys: 嵌套键列表（用于提取数据）
+        :param error_msg: 错误提示信息
+        :return: response, extracted_parameters, assert_code, case_id
+        """
+        result = self._send_request(
+            sheet_name=sheet_name,
+            test_case_name=test_case_name,
+            variables=variables,
+            ping_data=ping_data,
+            replace_data=replace_data,
+            dict_data=dict_data,
+            data=data,
+            nested_keys=nested_keys,
+            jsonpath_expr=jsonpath_expr
+        )
 
+        if result is None or len(result) != 4:
+            self.logger.error(f"{error_msg}: 返回结果格式不正确")
+            return None, None, None, None
+
+        response, extracted_parameters, assert_code, case_id = result
+
+        if response is None:
+            self.logger.error(f"{error_msg}: 无响应返回")
+
+        return response, extracted_parameters, assert_code, case_id
 

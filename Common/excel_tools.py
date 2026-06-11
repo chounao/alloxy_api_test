@@ -402,12 +402,11 @@ class ExcelTools:
                 data = json.dumps(request_body, ensure_ascii=False)
             else:
                 data = '{}'  # 空对象
-            logger.info(f"更新测试用例结果: {sheet_name} - {test_case_name} - {data}")
+            logger.info(f"准备请求数据: {sheet_name} - {test_case_name} - {data}")
             return method, url, data, assert_code, case_id
 
         except Exception as e:
             logger.error(f"更新测试用例结果失败: {e}")
-            raise
 
     def close(self):
         """关闭工作簿"""

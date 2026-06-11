@@ -64,10 +64,6 @@ class AssertTools:
 
         return response, extracted_parameters, assert_code, case_id
 
-    # 钱包余额断言 ：输入一个人参数从而进行时amount+fee 或者amount -fee 从而进行断言
-    import math
-    from decimal import Decimal
-
     def _common_response_validation_amount(self, currency, before_amount, after_amount, amount, fee, test_case_name,
                                            with_fee=True):
         """
