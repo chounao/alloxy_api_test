@@ -1,0 +1,1276 @@
+[2025-12-08 10:04:04,508][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2025-12-08 11:24:03,318][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2025-12-08 11:24:03,548][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2025-12-08 11:24:03,548][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2025-12-08 11:24:03,563][conftest.py 82][INFO]: ---前置处理器开始---
+[2025-12-08 11:24:03,563][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2025-12-08 11:24:03,576][excel_tools.py 406][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2025-12-08 11:24:03,576][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2025-12-08 11:24:03,576][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2025-12-08 11:24:04,781][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NjUxNjQyNDQ3ODUsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2NTE2NDI0NCwiZXhwIjoxNzY1MTg1ODQ0fQ.Rum6pnODtEcHz4LG9ghJKUARYjeIeffyvGSeZrOIbx4
+[2025-12-08 11:24:04,781][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NjUxNjQyNDQ3ODUsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2NTE2NDI0NCwiZXhwIjoxNzY1MTg1ODQ0fQ.Rum6pnODtEcHz4LG9ghJKUARYjeIeffyvGSeZrOIbx4'}
+[2025-12-08 11:24:04,782][conftest.py 156][INFO]: 在执行前获取钱包的数据
+[2025-12-08 11:24:04,782][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取钱包列表 - {}
+[2025-12-08 11:24:04,782][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/wallets
+[2025-12-08 11:24:05,368][wallet_list_page.py 54][INFO]: 获取币种数据成功，币种数据为：{'id': 'e56f09e4-e2cc-4453-a513-3b90d565fa18', 'currency': 'USDT', 'amount': 89992165.82, 'price': '1.000084', 'total_balance': 89999725.16192888, 'currency_icon': 'https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/7593ba8c-7afc-4cb8-9db7-4faaab6d3a8a/2025-11-24/usdt.png', 'percent': 55.57}
+[2025-12-08 11:24:05,369][transfer_out.py 170][INFO]: Processing chain: arbitrum, from_currency: USDT
+[2025-12-08 11:24:05,369][transfer_out.py 24][INFO]: Processing chain: arbitrum, from_currency: USDT
+[2025-12-08 11:24:05,369][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取支持的链列表 - {}
+[2025-12-08 11:24:05,369][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/chain
+[2025-12-08 11:24:06,218][read_and_save_tool.py 107][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_api_testcase_framework/Common/config.ini
+[2025-12-08 11:24:06,218][wallet_list_page.py 136][INFO]: 获取链数据成功，链数据为：{'chain_id': '42161', 'chain_name': 'arbitrum', 'symbol': 'arbitrum'}
+[2025-12-08 11:24:06,219][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取加密收款地址列表 - {}
+[2025-12-08 11:24:06,219][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/payee/crypto?page=1&take=100&currency=USDT&chain_id=42161
+[2025-12-08 11:24:06,554][transfer_out.py 84][INFO]: 获取的收款方ID列表为：['9a4d0d45-36dd-4c19-9962-87738e3c9374']
+[2025-12-08 11:24:06,555][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取支持的链列表 - {}
+[2025-12-08 11:24:06,555][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/chain
+[2025-12-08 11:24:07,549][read_and_save_tool.py 107][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_api_testcase_framework/Common/config.ini
+[2025-12-08 11:24:07,550][wallet_list_page.py 136][INFO]: 获取链数据成功，链数据为：{'chain_id': '42161', 'chain_name': 'arbitrum', 'symbol': 'arbitrum'}
+[2025-12-08 11:24:07,550][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取钱包列表 - {}
+[2025-12-08 11:24:07,550][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/wallets
+[2025-12-08 11:24:07,876][wallet_list_page.py 54][INFO]: 获取币种数据成功，币种数据为：{'id': 'e56f09e4-e2cc-4453-a513-3b90d565fa18', 'currency': 'USDT', 'amount': 89992165.82, 'price': '1.000084', 'total_balance': 89999725.16192888, 'currency_icon': 'https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/7593ba8c-7afc-4cb8-9db7-4faaab6d3a8a/2025-11-24/usdt.png', 'percent': 55.57}
+[2025-12-08 11:24:07,876][transfer_out.py 180][INFO]: 获取的钱包ID为：e56f09e4-e2cc-4453-a513-3b90d565fa18
+[2025-12-08 11:24:07,876][transfer_out.py 181][INFO]: 获取的链ID为：42161
+[2025-12-08 11:24:07,877][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-加密资产转出_pass - {"wallet_id": "e56f09e4-e2cc-4453-a513-3b90d565fa18", "chain_id": "42161", "payee_id": "9a4d0d45-36dd-4c19-9962-87738e3c9374", "amount": 1.0, "attachments": [], "check_method": "email", "access_code": "123456"}
+[2025-12-08 11:24:07,877][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/crypto/transfer-out
+[2025-12-08 11:24:07,877][simple_request.py 386][INFO]: Request data: {
+  "wallet_id": "e56f09e4-e2cc-4453-a513-3b90d565fa18",
+  "chain_id": "42161",
+  "payee_id": "9a4d0d45-36dd-4c19-9962-87738e3c9374",
+  "amount": 1.0,
+  "attachments": [],
+  "check_method": "email",
+  "access_code": "123456"
+}
+[2025-12-08 11:24:08,341][assert_tools.py 22][INFO]: 状态码断言成功：预期 201，实际 201
+[2025-12-08 11:24:08,342][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取钱包列表 - {}
+[2025-12-08 11:24:08,343][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/wallets
+[2025-12-08 11:24:08,677][wallet_list_page.py 54][INFO]: 获取币种数据成功，币种数据为：{'id': 'e56f09e4-e2cc-4453-a513-3b90d565fa18', 'currency': 'USDT', 'amount': 89992164.82, 'price': '1.000084', 'total_balance': 89999724.16184488, 'currency_icon': 'https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/7593ba8c-7afc-4cb8-9db7-4faaab6d3a8a/2025-11-24/usdt.png', 'percent': 55.57}
+[2025-12-08 11:24:08,678][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-转出费率 - {}
+[2025-12-08 11:24:08,678][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/account/fees?feeType=crypto_withdraw_fee&condition=USDT
+[2025-12-08 11:24:09,083][transfer_out.py 150][ERROR]: 获取币种 USDT 的小数位数失败
+[2025-12-08 11:24:09,117][conftest.py 147][ERROR]: 用例 test_transfer_out.py::test_transfer_out_pass[钱包-加密资产转出_pass-USDT-arbitrum-1.0] 执行失败！
+[2025-12-08 11:24:09,121][conftest.py 156][INFO]: 在执行前获取钱包的数据
+[2025-12-08 11:24:09,121][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取钱包列表 - {}
+[2025-12-08 11:24:09,121][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/wallets
+[2025-12-08 11:24:09,460][wallet_list_page.py 54][INFO]: 获取币种数据成功，币种数据为：{'id': 'e56f09e4-e2cc-4453-a513-3b90d565fa18', 'currency': 'USDT', 'amount': 89992164.82, 'price': '1.000084', 'total_balance': 89999724.16184488, 'currency_icon': 'https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/7593ba8c-7afc-4cb8-9db7-4faaab6d3a8a/2025-11-24/usdt.png', 'percent': 55.57}
+[2025-12-08 11:24:09,461][transfer_out.py 170][INFO]: Processing chain: polygon, from_currency: USDT
+[2025-12-08 11:24:09,461][transfer_out.py 24][INFO]: Processing chain: polygon, from_currency: USDT
+[2025-12-08 11:24:09,461][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取支持的链列表 - {}
+[2025-12-08 11:24:09,462][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/chain
+[2025-12-08 11:24:10,037][read_and_save_tool.py 107][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_api_testcase_framework/Common/config.ini
+[2025-12-08 11:24:10,038][wallet_list_page.py 136][INFO]: 获取链数据成功，链数据为：{'chain_id': '137', 'chain_name': 'polygon', 'symbol': 'polygon'}
+[2025-12-08 11:24:10,039][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取加密收款地址列表 - {}
+[2025-12-08 11:24:10,039][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/payee/crypto?page=1&take=100&currency=USDT&chain_id=137
+[2025-12-08 11:24:10,366][transfer_out.py 84][INFO]: 获取的收款方ID列表为：['26fef1d7-3509-4551-bd32-8ba8bd9bd926']
+[2025-12-08 11:24:10,367][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取支持的链列表 - {}
+[2025-12-08 11:24:10,367][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/chain
+[2025-12-08 11:24:11,238][read_and_save_tool.py 107][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_api_testcase_framework/Common/config.ini
+[2025-12-08 11:24:11,238][wallet_list_page.py 136][INFO]: 获取链数据成功，链数据为：{'chain_id': '137', 'chain_name': 'polygon', 'symbol': 'polygon'}
+[2025-12-08 11:24:11,238][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取钱包列表 - {}
+[2025-12-08 11:24:11,238][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/wallets
+[2025-12-08 11:24:11,645][wallet_list_page.py 54][INFO]: 获取币种数据成功，币种数据为：{'id': 'e56f09e4-e2cc-4453-a513-3b90d565fa18', 'currency': 'USDT', 'amount': 89992164.82, 'price': '1.000084', 'total_balance': 89999724.16184488, 'currency_icon': 'https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/7593ba8c-7afc-4cb8-9db7-4faaab6d3a8a/2025-11-24/usdt.png', 'percent': 55.57}
+[2025-12-08 11:24:11,645][transfer_out.py 180][INFO]: 获取的钱包ID为：e56f09e4-e2cc-4453-a513-3b90d565fa18
+[2025-12-08 11:24:11,645][transfer_out.py 181][INFO]: 获取的链ID为：137
+[2025-12-08 11:24:11,646][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-加密资产转出_pass - {"wallet_id": "e56f09e4-e2cc-4453-a513-3b90d565fa18", "chain_id": "137", "payee_id": "26fef1d7-3509-4551-bd32-8ba8bd9bd926", "amount": 1.0, "attachments": [], "check_method": "email", "access_code": "123456"}
+[2025-12-08 11:24:11,646][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/crypto/transfer-out
+[2025-12-08 11:24:11,646][simple_request.py 386][INFO]: Request data: {
+  "wallet_id": "e56f09e4-e2cc-4453-a513-3b90d565fa18",
+  "chain_id": "137",
+  "payee_id": "26fef1d7-3509-4551-bd32-8ba8bd9bd926",
+  "amount": 1.0,
+  "attachments": [],
+  "check_method": "email",
+  "access_code": "123456"
+}
+[2025-12-08 11:24:12,268][assert_tools.py 22][INFO]: 状态码断言成功：预期 201，实际 201
+[2025-12-08 11:24:12,269][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取钱包列表 - {}
+[2025-12-08 11:24:12,269][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/wallets
+[2025-12-08 11:24:12,581][wallet_list_page.py 54][INFO]: 获取币种数据成功，币种数据为：{'id': 'e56f09e4-e2cc-4453-a513-3b90d565fa18', 'currency': 'USDT', 'amount': 89992163.82, 'price': '1.000084', 'total_balance': 89999723.16176088, 'currency_icon': 'https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/7593ba8c-7afc-4cb8-9db7-4faaab6d3a8a/2025-11-24/usdt.png', 'percent': 55.57}
+[2025-12-08 11:24:12,582][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-转出费率 - {}
+[2025-12-08 11:24:12,582][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/account/fees?feeType=crypto_withdraw_fee&condition=USDT
+[2025-12-08 11:24:12,975][transfer_out.py 150][ERROR]: 获取币种 USDT 的小数位数失败
+[2025-12-08 11:24:12,983][conftest.py 147][ERROR]: 用例 test_transfer_out.py::test_transfer_out_pass[钱包-加密资产转出_pass-USDT-polygon-1.0] 执行失败！
+[2025-12-08 11:24:12,988][conftest.py 156][INFO]: 在执行前获取钱包的数据
+[2025-12-08 11:24:12,988][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取钱包列表 - {}
+[2025-12-08 11:24:12,988][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/wallets
+[2025-12-08 11:24:13,308][wallet_list_page.py 54][INFO]: 获取币种数据成功，币种数据为：{'id': 'e56f09e4-e2cc-4453-a513-3b90d565fa18', 'currency': 'USDT', 'amount': 89992163.82, 'price': '1.000084', 'total_balance': 89999723.16176088, 'currency_icon': 'https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/7593ba8c-7afc-4cb8-9db7-4faaab6d3a8a/2025-11-24/usdt.png', 'percent': 55.57}
+[2025-12-08 11:24:13,310][transfer_out.py 170][INFO]: Processing chain: avalanche, from_currency: USDT
+[2025-12-08 11:24:13,310][transfer_out.py 24][INFO]: Processing chain: avalanche, from_currency: USDT
+[2025-12-08 11:24:13,311][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取支持的链列表 - {}
+[2025-12-08 11:24:13,311][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/chain
+[2025-12-08 11:24:14,317][read_and_save_tool.py 107][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_api_testcase_framework/Common/config.ini
+[2025-12-08 11:24:14,318][wallet_list_page.py 136][INFO]: 获取链数据成功，链数据为：{'chain_id': '43114', 'chain_name': 'avalanche', 'symbol': 'avalanche'}
+[2025-12-08 11:24:14,318][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取加密收款地址列表 - {}
+[2025-12-08 11:24:14,318][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/payee/crypto?page=1&take=100&currency=USDT&chain_id=43114
+[2025-12-08 11:24:14,620][transfer_out.py 84][INFO]: 获取的收款方ID列表为：['d0f683f9-63d3-474f-a4c6-f51271e1aecb']
+[2025-12-08 11:24:14,621][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取支持的链列表 - {}
+[2025-12-08 11:24:14,621][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/chain
+[2025-12-08 11:24:15,330][read_and_save_tool.py 107][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_api_testcase_framework/Common/config.ini
+[2025-12-08 11:24:15,331][wallet_list_page.py 136][INFO]: 获取链数据成功，链数据为：{'chain_id': '43114', 'chain_name': 'avalanche', 'symbol': 'avalanche'}
+[2025-12-08 11:24:15,331][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取钱包列表 - {}
+[2025-12-08 11:24:15,331][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/wallets
+[2025-12-08 11:24:15,865][wallet_list_page.py 54][INFO]: 获取币种数据成功，币种数据为：{'id': 'e56f09e4-e2cc-4453-a513-3b90d565fa18', 'currency': 'USDT', 'amount': 89992163.82, 'price': '1.000084', 'total_balance': 89999723.16176088, 'currency_icon': 'https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/7593ba8c-7afc-4cb8-9db7-4faaab6d3a8a/2025-11-24/usdt.png', 'percent': 55.57}
+[2025-12-08 11:24:15,866][transfer_out.py 180][INFO]: 获取的钱包ID为：e56f09e4-e2cc-4453-a513-3b90d565fa18
+[2025-12-08 11:24:15,866][transfer_out.py 181][INFO]: 获取的链ID为：43114
+[2025-12-08 11:24:15,866][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-加密资产转出_pass - {"wallet_id": "e56f09e4-e2cc-4453-a513-3b90d565fa18", "chain_id": "43114", "payee_id": "d0f683f9-63d3-474f-a4c6-f51271e1aecb", "amount": 1.0, "attachments": [], "check_method": "email", "access_code": "123456"}
+[2025-12-08 11:24:15,867][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/crypto/transfer-out
+[2025-12-08 11:24:15,867][simple_request.py 386][INFO]: Request data: {
+  "wallet_id": "e56f09e4-e2cc-4453-a513-3b90d565fa18",
+  "chain_id": "43114",
+  "payee_id": "d0f683f9-63d3-474f-a4c6-f51271e1aecb",
+  "amount": 1.0,
+  "attachments": [],
+  "check_method": "email",
+  "access_code": "123456"
+}
+[2025-12-08 11:24:16,506][assert_tools.py 22][INFO]: 状态码断言成功：预期 201，实际 201
+[2025-12-08 11:24:16,506][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取钱包列表 - {}
+[2025-12-08 11:24:16,506][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/wallets
+[2025-12-08 11:24:16,969][wallet_list_page.py 54][INFO]: 获取币种数据成功，币种数据为：{'id': 'e56f09e4-e2cc-4453-a513-3b90d565fa18', 'currency': 'USDT', 'amount': 89992162.82, 'price': '1.000084', 'total_balance': 89999722.16167688, 'currency_icon': 'https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/7593ba8c-7afc-4cb8-9db7-4faaab6d3a8a/2025-11-24/usdt.png', 'percent': 55.57}
+[2025-12-08 11:24:16,970][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-转出费率 - {}
+[2025-12-08 11:24:16,970][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/account/fees?feeType=crypto_withdraw_fee&condition=USDT
+[2025-12-08 11:24:17,267][transfer_out.py 150][ERROR]: 获取币种 USDT 的小数位数失败
+[2025-12-08 11:24:17,276][conftest.py 147][ERROR]: 用例 test_transfer_out.py::test_transfer_out_pass[钱包-加密资产转出_pass-USDT-avalanche-1.0] 执行失败！
+[2025-12-08 11:24:17,279][conftest.py 156][INFO]: 在执行前获取钱包的数据
+[2025-12-08 11:24:17,280][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取钱包列表 - {}
+[2025-12-08 11:24:17,280][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/wallets
+[2025-12-08 11:24:17,589][wallet_list_page.py 54][INFO]: 获取币种数据成功，币种数据为：{'id': 'e56f09e4-e2cc-4453-a513-3b90d565fa18', 'currency': 'USDT', 'amount': 89992162.82, 'price': '1.000084', 'total_balance': 89999722.16167688, 'currency_icon': 'https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/7593ba8c-7afc-4cb8-9db7-4faaab6d3a8a/2025-11-24/usdt.png', 'percent': 55.57}
+[2025-12-08 11:24:17,590][transfer_out.py 170][INFO]: Processing chain: ethereum, from_currency: USDT
+[2025-12-08 11:24:17,590][transfer_out.py 24][INFO]: Processing chain: ethereum, from_currency: USDT
+[2025-12-08 11:24:17,590][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取支持的链列表 - {}
+[2025-12-08 11:24:17,590][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/chain
+[2025-12-08 11:24:18,119][read_and_save_tool.py 107][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_api_testcase_framework/Common/config.ini
+[2025-12-08 11:24:18,119][wallet_list_page.py 136][INFO]: 获取链数据成功，链数据为：{'chain_id': '1', 'chain_name': 'ethereum', 'symbol': 'ethereum'}
+[2025-12-08 11:24:18,120][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取加密收款地址列表 - {}
+[2025-12-08 11:24:18,120][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/payee/crypto?page=1&take=100&currency=USDT&chain_id=1
+[2025-12-08 11:24:18,416][transfer_out.py 84][INFO]: 获取的收款方ID列表为：['c7897116-cd5a-413c-935d-852da8355828']
+[2025-12-08 11:24:18,417][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取支持的链列表 - {}
+[2025-12-08 11:24:18,417][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/chain
+[2025-12-08 11:24:19,204][read_and_save_tool.py 107][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_api_testcase_framework/Common/config.ini
+[2025-12-08 11:24:19,204][wallet_list_page.py 136][INFO]: 获取链数据成功，链数据为：{'chain_id': '1', 'chain_name': 'ethereum', 'symbol': 'ethereum'}
+[2025-12-08 11:24:19,204][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取钱包列表 - {}
+[2025-12-08 11:24:19,204][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/wallets
+[2025-12-08 11:24:19,533][wallet_list_page.py 54][INFO]: 获取币种数据成功，币种数据为：{'id': 'e56f09e4-e2cc-4453-a513-3b90d565fa18', 'currency': 'USDT', 'amount': 89992162.82, 'price': '1.000084', 'total_balance': 89999722.16167688, 'currency_icon': 'https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/7593ba8c-7afc-4cb8-9db7-4faaab6d3a8a/2025-11-24/usdt.png', 'percent': 55.57}
+[2025-12-08 11:24:19,533][transfer_out.py 180][INFO]: 获取的钱包ID为：e56f09e4-e2cc-4453-a513-3b90d565fa18
+[2025-12-08 11:24:19,533][transfer_out.py 181][INFO]: 获取的链ID为：1
+[2025-12-08 11:24:19,534][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-加密资产转出_pass - {"wallet_id": "e56f09e4-e2cc-4453-a513-3b90d565fa18", "chain_id": "1", "payee_id": "c7897116-cd5a-413c-935d-852da8355828", "amount": 1.0, "attachments": [], "check_method": "email", "access_code": "123456"}
+[2025-12-08 11:24:19,534][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/crypto/transfer-out
+[2025-12-08 11:24:19,534][simple_request.py 386][INFO]: Request data: {
+  "wallet_id": "e56f09e4-e2cc-4453-a513-3b90d565fa18",
+  "chain_id": "1",
+  "payee_id": "c7897116-cd5a-413c-935d-852da8355828",
+  "amount": 1.0,
+  "attachments": [],
+  "check_method": "email",
+  "access_code": "123456"
+}
+[2025-12-08 11:24:19,918][assert_tools.py 22][INFO]: 状态码断言成功：预期 201，实际 201
+[2025-12-08 11:24:19,919][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取钱包列表 - {}
+[2025-12-08 11:24:19,919][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/wallets
+[2025-12-08 11:24:20,291][wallet_list_page.py 54][INFO]: 获取币种数据成功，币种数据为：{'id': 'e56f09e4-e2cc-4453-a513-3b90d565fa18', 'currency': 'USDT', 'amount': 89992161.82, 'price': '1.000084', 'total_balance': 89999721.16159289, 'currency_icon': 'https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/7593ba8c-7afc-4cb8-9db7-4faaab6d3a8a/2025-11-24/usdt.png', 'percent': 55.57}
+[2025-12-08 11:24:20,291][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-转出费率 - {}
+[2025-12-08 11:24:20,291][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/account/fees?feeType=crypto_withdraw_fee&condition=USDT
+[2025-12-08 11:24:20,657][transfer_out.py 150][ERROR]: 获取币种 USDT 的小数位数失败
+[2025-12-08 11:24:20,665][conftest.py 147][ERROR]: 用例 test_transfer_out.py::test_transfer_out_pass[钱包-加密资产转出_pass-USDT-ethereum-1.0] 执行失败！
+[2025-12-08 11:24:20,668][conftest.py 156][INFO]: 在执行前获取钱包的数据
+[2025-12-08 11:24:20,669][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取钱包列表 - {}
+[2025-12-08 11:24:20,669][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/wallets
+[2025-12-08 11:24:21,123][wallet_list_page.py 54][INFO]: 获取币种数据成功，币种数据为：{'id': 'e56f09e4-e2cc-4453-a513-3b90d565fa18', 'currency': 'USDT', 'amount': 89992161.82, 'price': '1.000084', 'total_balance': 89999721.16159289, 'currency_icon': 'https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/7593ba8c-7afc-4cb8-9db7-4faaab6d3a8a/2025-11-24/usdt.png', 'percent': 55.57}
+[2025-12-08 11:24:21,123][transfer_out.py 170][INFO]: Processing chain: bsc, from_currency: USDT
+[2025-12-08 11:24:21,124][transfer_out.py 24][INFO]: Processing chain: bsc, from_currency: USDT
+[2025-12-08 11:24:21,124][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取支持的链列表 - {}
+[2025-12-08 11:24:21,124][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/chain
+[2025-12-08 11:24:21,908][read_and_save_tool.py 107][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_api_testcase_framework/Common/config.ini
+[2025-12-08 11:24:21,908][wallet_list_page.py 136][INFO]: 获取链数据成功，链数据为：{'chain_id': '56', 'chain_name': 'bsc', 'symbol': 'bsc'}
+[2025-12-08 11:24:21,909][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取加密收款地址列表 - {}
+[2025-12-08 11:24:21,909][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/payee/crypto?page=1&take=100&currency=USDT&chain_id=56
+[2025-12-08 11:24:22,218][transfer_out.py 84][INFO]: 获取的收款方ID列表为：['026f8979-e681-4818-8d37-39ff0ca8eea9']
+[2025-12-08 11:24:22,219][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取支持的链列表 - {}
+[2025-12-08 11:24:22,219][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/chain
+[2025-12-08 11:24:22,841][read_and_save_tool.py 107][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_api_testcase_framework/Common/config.ini
+[2025-12-08 11:24:22,842][wallet_list_page.py 136][INFO]: 获取链数据成功，链数据为：{'chain_id': '56', 'chain_name': 'bsc', 'symbol': 'bsc'}
+[2025-12-08 11:24:22,842][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取钱包列表 - {}
+[2025-12-08 11:24:22,842][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/wallets
+[2025-12-08 11:24:23,173][wallet_list_page.py 54][INFO]: 获取币种数据成功，币种数据为：{'id': 'e56f09e4-e2cc-4453-a513-3b90d565fa18', 'currency': 'USDT', 'amount': 89992161.82, 'price': '1.000084', 'total_balance': 89999721.16159289, 'currency_icon': 'https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/7593ba8c-7afc-4cb8-9db7-4faaab6d3a8a/2025-11-24/usdt.png', 'percent': 55.57}
+[2025-12-08 11:24:23,173][transfer_out.py 180][INFO]: 获取的钱包ID为：e56f09e4-e2cc-4453-a513-3b90d565fa18
+[2025-12-08 11:24:23,173][transfer_out.py 181][INFO]: 获取的链ID为：56
+[2025-12-08 11:24:23,173][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-加密资产转出_pass - {"wallet_id": "e56f09e4-e2cc-4453-a513-3b90d565fa18", "chain_id": "56", "payee_id": "026f8979-e681-4818-8d37-39ff0ca8eea9", "amount": 1.0, "attachments": [], "check_method": "email", "access_code": "123456"}
+[2025-12-08 11:24:23,174][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/crypto/transfer-out
+[2025-12-08 11:24:23,174][simple_request.py 386][INFO]: Request data: {
+  "wallet_id": "e56f09e4-e2cc-4453-a513-3b90d565fa18",
+  "chain_id": "56",
+  "payee_id": "026f8979-e681-4818-8d37-39ff0ca8eea9",
+  "amount": 1.0,
+  "attachments": [],
+  "check_method": "email",
+  "access_code": "123456"
+}
+[2025-12-08 11:24:23,564][assert_tools.py 22][INFO]: 状态码断言成功：预期 201，实际 201
+[2025-12-08 11:24:23,565][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取钱包列表 - {}
+[2025-12-08 11:24:23,565][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/wallets
+[2025-12-08 11:24:23,900][wallet_list_page.py 54][INFO]: 获取币种数据成功，币种数据为：{'id': 'e56f09e4-e2cc-4453-a513-3b90d565fa18', 'currency': 'USDT', 'amount': 89992160.82, 'price': '1.000084', 'total_balance': 89999720.16150887, 'currency_icon': 'https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/7593ba8c-7afc-4cb8-9db7-4faaab6d3a8a/2025-11-24/usdt.png', 'percent': 55.57}
+[2025-12-08 11:24:23,901][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-转出费率 - {}
+[2025-12-08 11:24:23,901][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/account/fees?feeType=crypto_withdraw_fee&condition=USDT
+[2025-12-08 11:24:24,224][transfer_out.py 150][ERROR]: 获取币种 USDT 的小数位数失败
+[2025-12-08 11:24:24,232][conftest.py 147][ERROR]: 用例 test_transfer_out.py::test_transfer_out_pass[钱包-加密资产转出_pass-USDT-bsc-1.0] 执行失败！
+[2025-12-08 11:24:24,236][conftest.py 156][INFO]: 在执行前获取钱包的数据
+[2025-12-08 11:24:24,236][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取钱包列表 - {}
+[2025-12-08 11:24:24,236][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/wallets
+[2025-12-08 11:24:24,552][wallet_list_page.py 54][INFO]: 获取币种数据成功，币种数据为：{'id': 'e56f09e4-e2cc-4453-a513-3b90d565fa18', 'currency': 'USDT', 'amount': 89992160.82, 'price': '1.000084', 'total_balance': 89999720.16150887, 'currency_icon': 'https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/7593ba8c-7afc-4cb8-9db7-4faaab6d3a8a/2025-11-24/usdt.png', 'percent': 55.57}
+[2025-12-08 11:24:24,552][transfer_out.py 170][INFO]: Processing chain: tron, from_currency: USDT
+[2025-12-08 11:24:24,552][transfer_out.py 24][INFO]: Processing chain: tron, from_currency: USDT
+[2025-12-08 11:24:24,553][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取支持的链列表 - {}
+[2025-12-08 11:24:24,553][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/chain
+[2025-12-08 11:24:25,270][read_and_save_tool.py 107][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_api_testcase_framework/Common/config.ini
+[2025-12-08 11:24:25,271][wallet_list_page.py 136][INFO]: 获取链数据成功，链数据为：{'chain_id': '728126428', 'chain_name': 'tron', 'symbol': 'tron'}
+[2025-12-08 11:24:25,271][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取加密收款地址列表 - {}
+[2025-12-08 11:24:25,272][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/payee/crypto?page=1&take=100&currency=USDT&chain_id=728126428
+[2025-12-08 11:24:25,567][transfer_out.py 87][ERROR]: 未找到币种 'USDT' 在链 'tron' 对应的收款方ID
+[2025-12-08 11:24:25,567][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-加密资产转出_pass - {"wallet_id": "e56f09e4", "chain_id": "4", "payee_id": "abe2a694", "amount": 0.2, "attachments": [], "check_method": "email", "access_code": "123456"}
+[2025-12-08 11:24:25,568][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/crypto/transfer-out
+[2025-12-08 11:24:25,568][simple_request.py 386][INFO]: Request data: {
+  "wallet_id": "e56f09e4",
+  "chain_id": "4",
+  "payee_id": "abe2a694",
+  "amount": 0.2,
+  "attachments": [],
+  "check_method": "email",
+  "access_code": "123456"
+}
+[2025-12-08 11:24:25,884][simple_request.py 435][ERROR]: Request failed with status code: 400
+[2025-12-08 11:24:25,893][conftest.py 147][ERROR]: 用例 test_transfer_out.py::test_transfer_out_pass[钱包-加密资产转出_pass-USDT-tron-1.0] 执行失败！
+[2025-12-08 11:24:25,896][conftest.py 156][INFO]: 在执行前获取钱包的数据
+[2025-12-08 11:24:25,897][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取钱包列表 - {}
+[2025-12-08 11:24:25,897][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/wallets
+[2025-12-08 11:24:26,512][wallet_list_page.py 54][INFO]: 获取币种数据成功，币种数据为：{'id': 'e8a6d671-50ec-498d-ad71-fad426ef7ca7', 'currency': 'USDC', 'amount': 71968374.05112936, 'price': '0.999839', 'total_balance': 71956787.14290713, 'currency_icon': 'https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/7593ba8c-7afc-4cb8-9db7-4faaab6d3a8a/2025-11-24/usdc.png', 'percent': 44.43}
+[2025-12-08 11:24:26,514][transfer_out.py 170][INFO]: Processing chain: arbitrum, from_currency: USDC
+[2025-12-08 11:24:26,514][transfer_out.py 24][INFO]: Processing chain: arbitrum, from_currency: USDC
+[2025-12-08 11:24:26,515][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取支持的链列表 - {}
+[2025-12-08 11:24:26,515][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/chain
+[2025-12-08 11:24:27,218][read_and_save_tool.py 107][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_api_testcase_framework/Common/config.ini
+[2025-12-08 11:24:27,219][wallet_list_page.py 136][INFO]: 获取链数据成功，链数据为：{'chain_id': '42161', 'chain_name': 'arbitrum', 'symbol': 'arbitrum'}
+[2025-12-08 11:24:27,219][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取加密收款地址列表 - {}
+[2025-12-08 11:24:27,219][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/payee/crypto?page=1&take=100&currency=USDC&chain_id=42161
+[2025-12-08 11:24:27,664][transfer_out.py 84][INFO]: 获取的收款方ID列表为：['8e38cb8b-93a6-4147-823e-a63f9b66aa17']
+[2025-12-08 11:24:27,665][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取支持的链列表 - {}
+[2025-12-08 11:24:27,665][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/chain
+[2025-12-08 11:24:28,613][read_and_save_tool.py 107][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_api_testcase_framework/Common/config.ini
+[2025-12-08 11:24:28,614][wallet_list_page.py 136][INFO]: 获取链数据成功，链数据为：{'chain_id': '42161', 'chain_name': 'arbitrum', 'symbol': 'arbitrum'}
+[2025-12-08 11:24:28,615][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取钱包列表 - {}
+[2025-12-08 11:24:28,615][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/wallets
+[2025-12-08 11:24:28,944][wallet_list_page.py 54][INFO]: 获取币种数据成功，币种数据为：{'id': 'e8a6d671-50ec-498d-ad71-fad426ef7ca7', 'currency': 'USDC', 'amount': 71968374.05112936, 'price': '0.999839', 'total_balance': 71956787.14290713, 'currency_icon': 'https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/7593ba8c-7afc-4cb8-9db7-4faaab6d3a8a/2025-11-24/usdc.png', 'percent': 44.43}
+[2025-12-08 11:24:28,945][transfer_out.py 180][INFO]: 获取的钱包ID为：e8a6d671-50ec-498d-ad71-fad426ef7ca7
+[2025-12-08 11:24:28,945][transfer_out.py 181][INFO]: 获取的链ID为：42161
+[2025-12-08 11:24:28,946][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-加密资产转出_pass - {"wallet_id": "e8a6d671-50ec-498d-ad71-fad426ef7ca7", "chain_id": "42161", "payee_id": "8e38cb8b-93a6-4147-823e-a63f9b66aa17", "amount": 1.0, "attachments": [], "check_method": "email", "access_code": "123456"}
+[2025-12-08 11:24:28,946][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/crypto/transfer-out
+[2025-12-08 11:24:28,946][simple_request.py 386][INFO]: Request data: {
+  "wallet_id": "e8a6d671-50ec-498d-ad71-fad426ef7ca7",
+  "chain_id": "42161",
+  "payee_id": "8e38cb8b-93a6-4147-823e-a63f9b66aa17",
+  "amount": 1.0,
+  "attachments": [],
+  "check_method": "email",
+  "access_code": "123456"
+}
+[2025-12-08 11:24:29,310][assert_tools.py 22][INFO]: 状态码断言成功：预期 201，实际 201
+[2025-12-08 11:24:29,311][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取钱包列表 - {}
+[2025-12-08 11:24:29,311][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/wallets
+[2025-12-08 11:24:29,660][wallet_list_page.py 54][INFO]: 获取币种数据成功，币种数据为：{'id': 'e8a6d671-50ec-498d-ad71-fad426ef7ca7', 'currency': 'USDC', 'amount': 71968373.05112936, 'price': '0.999839', 'total_balance': 71956786.14306813, 'currency_icon': 'https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/7593ba8c-7afc-4cb8-9db7-4faaab6d3a8a/2025-11-24/usdc.png', 'percent': 44.43}
+[2025-12-08 11:24:29,661][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-转出费率 - {}
+[2025-12-08 11:24:29,661][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/account/fees?feeType=crypto_withdraw_fee&condition=USDC
+[2025-12-08 11:24:30,040][transfer_out.py 150][ERROR]: 获取币种 USDC 的小数位数失败
+[2025-12-08 11:24:30,049][conftest.py 147][ERROR]: 用例 test_transfer_out.py::test_transfer_out_pass[钱包-加密资产转出_pass-USDC-arbitrum-1.0] 执行失败！
+[2025-12-08 11:24:30,054][conftest.py 156][INFO]: 在执行前获取钱包的数据
+[2025-12-08 11:24:30,055][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取钱包列表 - {}
+[2025-12-08 11:24:30,055][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/wallets
+[2025-12-08 11:24:30,369][wallet_list_page.py 54][INFO]: 获取币种数据成功，币种数据为：{'id': 'e8a6d671-50ec-498d-ad71-fad426ef7ca7', 'currency': 'USDC', 'amount': 71968373.05112936, 'price': '0.999839', 'total_balance': 71956786.14306813, 'currency_icon': 'https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/7593ba8c-7afc-4cb8-9db7-4faaab6d3a8a/2025-11-24/usdc.png', 'percent': 44.43}
+[2025-12-08 11:24:30,371][transfer_out.py 170][INFO]: Processing chain: polygon, from_currency: USDC
+[2025-12-08 11:24:30,371][transfer_out.py 24][INFO]: Processing chain: polygon, from_currency: USDC
+[2025-12-08 11:24:30,372][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取支持的链列表 - {}
+[2025-12-08 11:24:30,372][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/chain
+[2025-12-08 11:24:31,043][read_and_save_tool.py 107][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_api_testcase_framework/Common/config.ini
+[2025-12-08 11:24:31,043][wallet_list_page.py 136][INFO]: 获取链数据成功，链数据为：{'chain_id': '137', 'chain_name': 'polygon', 'symbol': 'polygon'}
+[2025-12-08 11:24:31,044][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取加密收款地址列表 - {}
+[2025-12-08 11:24:31,044][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/payee/crypto?page=1&take=100&currency=USDC&chain_id=137
+[2025-12-08 11:24:31,347][transfer_out.py 84][INFO]: 获取的收款方ID列表为：['b5cf0cb4-f404-42b7-803f-d651aea81897']
+[2025-12-08 11:24:31,348][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取支持的链列表 - {}
+[2025-12-08 11:24:31,349][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/chain
+[2025-12-08 11:24:31,927][read_and_save_tool.py 107][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_api_testcase_framework/Common/config.ini
+[2025-12-08 11:24:31,927][wallet_list_page.py 136][INFO]: 获取链数据成功，链数据为：{'chain_id': '137', 'chain_name': 'polygon', 'symbol': 'polygon'}
+[2025-12-08 11:24:31,928][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取钱包列表 - {}
+[2025-12-08 11:24:31,928][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/wallets
+[2025-12-08 11:24:32,288][wallet_list_page.py 54][INFO]: 获取币种数据成功，币种数据为：{'id': 'e8a6d671-50ec-498d-ad71-fad426ef7ca7', 'currency': 'USDC', 'amount': 71968373.05112936, 'price': '0.999839', 'total_balance': 71956786.14306813, 'currency_icon': 'https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/7593ba8c-7afc-4cb8-9db7-4faaab6d3a8a/2025-11-24/usdc.png', 'percent': 44.43}
+[2025-12-08 11:24:32,289][transfer_out.py 180][INFO]: 获取的钱包ID为：e8a6d671-50ec-498d-ad71-fad426ef7ca7
+[2025-12-08 11:24:32,289][transfer_out.py 181][INFO]: 获取的链ID为：137
+[2025-12-08 11:24:32,289][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-加密资产转出_pass - {"wallet_id": "e8a6d671-50ec-498d-ad71-fad426ef7ca7", "chain_id": "137", "payee_id": "b5cf0cb4-f404-42b7-803f-d651aea81897", "amount": 1.0, "attachments": [], "check_method": "email", "access_code": "123456"}
+[2025-12-08 11:24:32,290][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/crypto/transfer-out
+[2025-12-08 11:24:32,290][simple_request.py 386][INFO]: Request data: {
+  "wallet_id": "e8a6d671-50ec-498d-ad71-fad426ef7ca7",
+  "chain_id": "137",
+  "payee_id": "b5cf0cb4-f404-42b7-803f-d651aea81897",
+  "amount": 1.0,
+  "attachments": [],
+  "check_method": "email",
+  "access_code": "123456"
+}
+[2025-12-08 11:24:32,672][assert_tools.py 22][INFO]: 状态码断言成功：预期 201，实际 201
+[2025-12-08 11:24:32,673][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取钱包列表 - {}
+[2025-12-08 11:24:32,674][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/wallets
+[2025-12-08 11:24:33,141][wallet_list_page.py 54][INFO]: 获取币种数据成功，币种数据为：{'id': 'e8a6d671-50ec-498d-ad71-fad426ef7ca7', 'currency': 'USDC', 'amount': 71968372.05112936, 'price': '0.999839', 'total_balance': 71956785.14322913, 'currency_icon': 'https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/7593ba8c-7afc-4cb8-9db7-4faaab6d3a8a/2025-11-24/usdc.png', 'percent': 44.43}
+[2025-12-08 11:24:33,142][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-转出费率 - {}
+[2025-12-08 11:24:33,142][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/account/fees?feeType=crypto_withdraw_fee&condition=USDC
+[2025-12-08 11:24:33,443][transfer_out.py 150][ERROR]: 获取币种 USDC 的小数位数失败
+[2025-12-08 11:24:33,451][conftest.py 147][ERROR]: 用例 test_transfer_out.py::test_transfer_out_pass[钱包-加密资产转出_pass-USDC-polygon-1.0] 执行失败！
+[2025-12-08 11:24:33,455][conftest.py 156][INFO]: 在执行前获取钱包的数据
+[2025-12-08 11:24:33,455][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取钱包列表 - {}
+[2025-12-08 11:24:33,455][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/wallets
+[2025-12-08 11:24:33,857][wallet_list_page.py 54][INFO]: 获取币种数据成功，币种数据为：{'id': 'e8a6d671-50ec-498d-ad71-fad426ef7ca7', 'currency': 'USDC', 'amount': 71968372.05112936, 'price': '0.999839', 'total_balance': 71956785.14322913, 'currency_icon': 'https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/7593ba8c-7afc-4cb8-9db7-4faaab6d3a8a/2025-11-24/usdc.png', 'percent': 44.43}
+[2025-12-08 11:24:33,859][transfer_out.py 170][INFO]: Processing chain: avalanche, from_currency: USDC
+[2025-12-08 11:24:33,859][transfer_out.py 24][INFO]: Processing chain: avalanche, from_currency: USDC
+[2025-12-08 11:24:33,860][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取支持的链列表 - {}
+[2025-12-08 11:24:33,860][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/chain
+[2025-12-08 11:24:34,412][read_and_save_tool.py 107][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_api_testcase_framework/Common/config.ini
+[2025-12-08 11:24:34,412][wallet_list_page.py 136][INFO]: 获取链数据成功，链数据为：{'chain_id': '43114', 'chain_name': 'avalanche', 'symbol': 'avalanche'}
+[2025-12-08 11:24:34,413][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取加密收款地址列表 - {}
+[2025-12-08 11:24:34,413][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/payee/crypto?page=1&take=100&currency=USDC&chain_id=43114
+[2025-12-08 11:24:34,714][transfer_out.py 84][INFO]: 获取的收款方ID列表为：['32c063f0-61eb-4b6f-8068-18ed1ca1a64d']
+[2025-12-08 11:24:34,715][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取支持的链列表 - {}
+[2025-12-08 11:24:34,715][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/chain
+[2025-12-08 11:24:35,759][read_and_save_tool.py 107][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_api_testcase_framework/Common/config.ini
+[2025-12-08 11:24:35,760][wallet_list_page.py 136][INFO]: 获取链数据成功，链数据为：{'chain_id': '43114', 'chain_name': 'avalanche', 'symbol': 'avalanche'}
+[2025-12-08 11:24:35,760][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取钱包列表 - {}
+[2025-12-08 11:24:35,760][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/wallets
+[2025-12-08 11:24:36,120][wallet_list_page.py 54][INFO]: 获取币种数据成功，币种数据为：{'id': 'e8a6d671-50ec-498d-ad71-fad426ef7ca7', 'currency': 'USDC', 'amount': 71968372.05112936, 'price': '0.999839', 'total_balance': 71956785.14322913, 'currency_icon': 'https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/7593ba8c-7afc-4cb8-9db7-4faaab6d3a8a/2025-11-24/usdc.png', 'percent': 44.43}
+[2025-12-08 11:24:36,121][transfer_out.py 180][INFO]: 获取的钱包ID为：e8a6d671-50ec-498d-ad71-fad426ef7ca7
+[2025-12-08 11:24:36,121][transfer_out.py 181][INFO]: 获取的链ID为：43114
+[2025-12-08 11:24:36,122][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-加密资产转出_pass - {"wallet_id": "e8a6d671-50ec-498d-ad71-fad426ef7ca7", "chain_id": "43114", "payee_id": "32c063f0-61eb-4b6f-8068-18ed1ca1a64d", "amount": 1.0, "attachments": [], "check_method": "email", "access_code": "123456"}
+[2025-12-08 11:24:36,122][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/crypto/transfer-out
+[2025-12-08 11:24:36,122][simple_request.py 386][INFO]: Request data: {
+  "wallet_id": "e8a6d671-50ec-498d-ad71-fad426ef7ca7",
+  "chain_id": "43114",
+  "payee_id": "32c063f0-61eb-4b6f-8068-18ed1ca1a64d",
+  "amount": 1.0,
+  "attachments": [],
+  "check_method": "email",
+  "access_code": "123456"
+}
+[2025-12-08 11:24:36,507][assert_tools.py 22][INFO]: 状态码断言成功：预期 201，实际 201
+[2025-12-08 11:24:36,508][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取钱包列表 - {}
+[2025-12-08 11:24:36,508][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/wallets
+[2025-12-08 11:24:36,818][wallet_list_page.py 54][INFO]: 获取币种数据成功，币种数据为：{'id': 'e8a6d671-50ec-498d-ad71-fad426ef7ca7', 'currency': 'USDC', 'amount': 71968371.05112936, 'price': '0.999839', 'total_balance': 71956784.14339013, 'currency_icon': 'https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/7593ba8c-7afc-4cb8-9db7-4faaab6d3a8a/2025-11-24/usdc.png', 'percent': 44.43}
+[2025-12-08 11:24:36,819][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-转出费率 - {}
+[2025-12-08 11:24:36,819][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/account/fees?feeType=crypto_withdraw_fee&condition=USDC
+[2025-12-08 11:24:37,119][transfer_out.py 150][ERROR]: 获取币种 USDC 的小数位数失败
+[2025-12-08 11:24:37,126][conftest.py 147][ERROR]: 用例 test_transfer_out.py::test_transfer_out_pass[钱包-加密资产转出_pass-USDC-avalanche-1.0] 执行失败！
+[2025-12-08 11:24:37,129][conftest.py 156][INFO]: 在执行前获取钱包的数据
+[2025-12-08 11:24:37,130][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取钱包列表 - {}
+[2025-12-08 11:24:37,130][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/wallets
+[2025-12-08 11:24:37,655][wallet_list_page.py 54][INFO]: 获取币种数据成功，币种数据为：{'id': 'e8a6d671-50ec-498d-ad71-fad426ef7ca7', 'currency': 'USDC', 'amount': 71968371.05112936, 'price': '0.999839', 'total_balance': 71956784.14339013, 'currency_icon': 'https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/7593ba8c-7afc-4cb8-9db7-4faaab6d3a8a/2025-11-24/usdc.png', 'percent': 44.43}
+[2025-12-08 11:24:37,657][transfer_out.py 170][INFO]: Processing chain: ethereum, from_currency: USDC
+[2025-12-08 11:24:37,657][transfer_out.py 24][INFO]: Processing chain: ethereum, from_currency: USDC
+[2025-12-08 11:24:37,657][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取支持的链列表 - {}
+[2025-12-08 11:24:37,658][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/chain
+[2025-12-08 11:24:38,523][read_and_save_tool.py 107][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_api_testcase_framework/Common/config.ini
+[2025-12-08 11:24:38,524][wallet_list_page.py 136][INFO]: 获取链数据成功，链数据为：{'chain_id': '1', 'chain_name': 'ethereum', 'symbol': 'ethereum'}
+[2025-12-08 11:24:38,524][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取加密收款地址列表 - {}
+[2025-12-08 11:24:38,524][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/payee/crypto?page=1&take=100&currency=USDC&chain_id=1
+[2025-12-08 11:24:39,126][transfer_out.py 84][INFO]: 获取的收款方ID列表为：['ace0191f-5775-4ca8-b544-9cdaf113a1a7']
+[2025-12-08 11:24:39,127][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取支持的链列表 - {}
+[2025-12-08 11:24:39,127][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/chain
+[2025-12-08 11:24:39,721][read_and_save_tool.py 107][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_api_testcase_framework/Common/config.ini
+[2025-12-08 11:24:39,722][wallet_list_page.py 136][INFO]: 获取链数据成功，链数据为：{'chain_id': '1', 'chain_name': 'ethereum', 'symbol': 'ethereum'}
+[2025-12-08 11:24:39,722][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取钱包列表 - {}
+[2025-12-08 11:24:39,722][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/wallets
+[2025-12-08 11:24:40,047][wallet_list_page.py 54][INFO]: 获取币种数据成功，币种数据为：{'id': 'e8a6d671-50ec-498d-ad71-fad426ef7ca7', 'currency': 'USDC', 'amount': 71968371.05112936, 'price': '0.999839', 'total_balance': 71956784.14339013, 'currency_icon': 'https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/7593ba8c-7afc-4cb8-9db7-4faaab6d3a8a/2025-11-24/usdc.png', 'percent': 44.43}
+[2025-12-08 11:24:40,047][transfer_out.py 180][INFO]: 获取的钱包ID为：e8a6d671-50ec-498d-ad71-fad426ef7ca7
+[2025-12-08 11:24:40,047][transfer_out.py 181][INFO]: 获取的链ID为：1
+[2025-12-08 11:24:40,048][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-加密资产转出_pass - {"wallet_id": "e8a6d671-50ec-498d-ad71-fad426ef7ca7", "chain_id": "1", "payee_id": "ace0191f-5775-4ca8-b544-9cdaf113a1a7", "amount": 1.0, "attachments": [], "check_method": "email", "access_code": "123456"}
+[2025-12-08 11:24:40,048][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/crypto/transfer-out
+[2025-12-08 11:24:40,048][simple_request.py 386][INFO]: Request data: {
+  "wallet_id": "e8a6d671-50ec-498d-ad71-fad426ef7ca7",
+  "chain_id": "1",
+  "payee_id": "ace0191f-5775-4ca8-b544-9cdaf113a1a7",
+  "amount": 1.0,
+  "attachments": [],
+  "check_method": "email",
+  "access_code": "123456"
+}
+[2025-12-08 11:24:40,484][assert_tools.py 22][INFO]: 状态码断言成功：预期 201，实际 201
+[2025-12-08 11:24:40,485][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取钱包列表 - {}
+[2025-12-08 11:24:40,485][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/wallets
+[2025-12-08 11:24:40,794][wallet_list_page.py 54][INFO]: 获取币种数据成功，币种数据为：{'id': 'e8a6d671-50ec-498d-ad71-fad426ef7ca7', 'currency': 'USDC', 'amount': 71968370.05112936, 'price': '0.999839', 'total_balance': 71956783.14355113, 'currency_icon': 'https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/7593ba8c-7afc-4cb8-9db7-4faaab6d3a8a/2025-11-24/usdc.png', 'percent': 44.43}
+[2025-12-08 11:24:40,794][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-转出费率 - {}
+[2025-12-08 11:24:40,794][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/account/fees?feeType=crypto_withdraw_fee&condition=USDC
+[2025-12-08 11:24:41,195][transfer_out.py 150][ERROR]: 获取币种 USDC 的小数位数失败
+[2025-12-08 11:24:41,204][conftest.py 147][ERROR]: 用例 test_transfer_out.py::test_transfer_out_pass[钱包-加密资产转出_pass-USDC-ethereum-1.0] 执行失败！
+[2025-12-08 11:24:41,207][conftest.py 156][INFO]: 在执行前获取钱包的数据
+[2025-12-08 11:24:41,207][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取钱包列表 - {}
+[2025-12-08 11:24:41,208][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/wallets
+[2025-12-08 11:24:41,598][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2025-12-08 11:28:07,291][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2025-12-08 11:28:07,448][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2025-12-08 11:28:07,448][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2025-12-08 11:28:07,461][conftest.py 82][INFO]: ---前置处理器开始---
+[2025-12-08 11:28:07,461][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2025-12-08 11:28:07,474][excel_tools.py 406][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2025-12-08 11:28:07,474][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2025-12-08 11:28:07,474][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2025-12-08 11:28:08,966][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NjUxNjQ0ODg5OTcsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2NTE2NDQ4OCwiZXhwIjoxNzY1MTg2MDg4fQ.Pxa_so6iX97BKY8U9AfmTcj1RS2QZL5nvOSZ_bSGjME
+[2025-12-08 11:28:08,966][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NjUxNjQ0ODg5OTcsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2NTE2NDQ4OCwiZXhwIjoxNzY1MTg2MDg4fQ.Pxa_so6iX97BKY8U9AfmTcj1RS2QZL5nvOSZ_bSGjME'}
+[2025-12-08 11:28:08,967][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-转出费率 - {}
+[2025-12-08 11:28:08,967][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/account/fees?feeType=crypto_withdraw_fee&condition=USDT
+[2025-12-08 11:28:10,036][transfer_out.py 150][ERROR]: 获取币种 USDT 的小数位数失败
+[2025-12-08 11:28:10,038][conftest.py 149][INFO]: 用例 test_transfer_out.py::test_transfer_out_fee_data[USDT] 执行通过
+[2025-12-08 11:28:10,041][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-转出费率 - {}
+[2025-12-08 11:28:10,041][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/account/fees?feeType=crypto_withdraw_fee&condition=USDC
+[2025-12-08 11:28:10,350][transfer_out.py 150][ERROR]: 获取币种 USDC 的小数位数失败
+[2025-12-08 11:28:10,351][conftest.py 149][INFO]: 用例 test_transfer_out.py::test_transfer_out_fee_data[USDC] 执行通过
+[2025-12-08 11:28:10,352][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2025-12-08 13:32:40,095][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2025-12-08 13:32:40,096][get_set_decimals.py 128][INFO]: USDT的截取小数位数为：26196598
+[2025-12-08 13:36:19,553][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2025-12-08 13:36:19,553][get_set_decimals.py 134][INFO]: USDT的截取小数位数为：2.26196598
+[2025-12-08 13:39:43,949][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2025-12-08 13:39:44,126][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2025-12-08 13:39:44,126][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2025-12-08 13:39:44,141][conftest.py 82][INFO]: ---前置处理器开始---
+[2025-12-08 13:39:44,141][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2025-12-08 13:39:44,154][excel_tools.py 406][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2025-12-08 13:39:44,154][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2025-12-08 13:39:44,154][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2025-12-08 13:39:46,176][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NjUxNzIzODYyOTIsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2NTE3MjM4NiwiZXhwIjoxNzY1MTkzOTg2fQ.eCbL8zKXXonWFL0u-DxyLqGf6TGiHKWg68Kxnr5BRUU
+[2025-12-08 13:39:46,177][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NjUxNzIzODYyOTIsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2NTE3MjM4NiwiZXhwIjoxNzY1MTkzOTg2fQ.eCbL8zKXXonWFL0u-DxyLqGf6TGiHKWg68Kxnr5BRUU'}
+[2025-12-08 13:39:46,178][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-转出费率 - {}
+[2025-12-08 13:39:46,178][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/account/fees?feeType=crypto_withdraw_fee&condition=USDT
+[2025-12-08 13:39:47,221][conftest.py 147][ERROR]: 用例 test_transfer_out.py::test_transfer_out_fee_data[USDT] 执行失败！
+[2025-12-08 13:39:47,224][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-转出费率 - {}
+[2025-12-08 13:39:47,224][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/account/fees?feeType=crypto_withdraw_fee&condition=USDC
+[2025-12-08 13:39:47,535][conftest.py 147][ERROR]: 用例 test_transfer_out.py::test_transfer_out_fee_data[USDC] 执行失败！
+[2025-12-08 13:39:47,536][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2025-12-08 13:41:09,174][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2025-12-08 13:41:09,175][get_set_decimals.py 134][INFO]: USDT的截取小数位数为：2.11969845
+[2025-12-08 13:48:04,252][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2025-12-08 13:48:04,415][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2025-12-08 13:48:04,415][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2025-12-08 13:48:04,430][conftest.py 82][INFO]: ---前置处理器开始---
+[2025-12-08 13:48:04,430][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2025-12-08 13:48:04,443][excel_tools.py 406][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2025-12-08 13:48:04,443][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2025-12-08 13:48:04,443][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2025-12-08 13:48:05,714][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NjUxNzI4ODU2ODksImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2NTE3Mjg4NSwiZXhwIjoxNzY1MTk0NDg1fQ.W0LFMThP4ApRe-LWpW7RT9gEXIgmvE28cyEP4G1zPfQ
+[2025-12-08 13:48:05,715][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NjUxNzI4ODU2ODksImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2NTE3Mjg4NSwiZXhwIjoxNzY1MTk0NDg1fQ.W0LFMThP4ApRe-LWpW7RT9gEXIgmvE28cyEP4G1zPfQ'}
+[2025-12-08 13:48:05,716][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-转出费率 - {}
+[2025-12-08 13:48:05,716][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/account/fees?feeType=crypto_withdraw_fee&condition=USDT
+[2025-12-08 13:48:06,855][conftest.py 147][ERROR]: 用例 test_transfer_out.py::test_transfer_out_fee_data[USDT] 执行失败！
+[2025-12-08 13:48:06,859][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-转出费率 - {}
+[2025-12-08 13:48:06,859][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/account/fees?feeType=crypto_withdraw_fee&condition=USDC
+[2025-12-08 13:48:07,171][conftest.py 147][ERROR]: 用例 test_transfer_out.py::test_transfer_out_fee_data[USDC] 执行失败！
+[2025-12-08 13:48:07,172][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2025-12-08 13:49:28,454][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2025-12-08 13:49:28,686][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2025-12-08 13:49:28,686][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2025-12-08 13:49:28,711][conftest.py 82][INFO]: ---前置处理器开始---
+[2025-12-08 13:49:28,711][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2025-12-08 13:49:28,726][excel_tools.py 406][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2025-12-08 13:49:28,726][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2025-12-08 13:49:28,726][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2025-12-08 13:49:30,066][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NjUxNzI5NzAxODMsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2NTE3Mjk3MCwiZXhwIjoxNzY1MTk0NTcwfQ.ci995aPCmsdhJQeiRYs2Wi-orUvHYdStHyc_35EykyU
+[2025-12-08 13:49:30,068][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NjUxNzI5NzAxODMsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2NTE3Mjk3MCwiZXhwIjoxNzY1MTk0NTcwfQ.ci995aPCmsdhJQeiRYs2Wi-orUvHYdStHyc_35EykyU'}
+[2025-12-08 13:49:30,072][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-转出费率 - {}
+[2025-12-08 13:49:30,072][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/account/fees?feeType=crypto_withdraw_fee&condition=USDT
+[2025-12-08 13:49:31,069][get_set_decimals.py 146][INFO]: USDT的截取小数位数为：0.000000
+[2025-12-08 13:49:31,069][conftest.py 149][INFO]: 用例 test_transfer_out.py::test_transfer_out_fee_data[USDT] 执行通过
+[2025-12-08 13:49:31,071][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-转出费率 - {}
+[2025-12-08 13:49:31,071][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/account/fees?feeType=crypto_withdraw_fee&condition=USDC
+[2025-12-08 13:49:31,371][get_set_decimals.py 146][INFO]: USDC的截取小数位数为：0.000000
+[2025-12-08 13:49:31,372][conftest.py 149][INFO]: 用例 test_transfer_out.py::test_transfer_out_fee_data[USDC] 执行通过
+[2025-12-08 13:49:31,373][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2025-12-08 13:50:29,346][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2025-12-08 13:50:29,495][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2025-12-08 13:50:29,495][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2025-12-08 13:50:29,508][conftest.py 82][INFO]: ---前置处理器开始---
+[2025-12-08 13:50:29,509][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2025-12-08 13:50:29,521][excel_tools.py 406][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2025-12-08 13:50:29,521][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2025-12-08 13:50:29,521][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2025-12-08 13:50:31,376][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NjUxNzMwMzE0ODIsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2NTE3MzAzMSwiZXhwIjoxNzY1MTk0NjMxfQ.cSARLEYYBvZER1NO--4OYdFD7zBURDqwcEITY_GmR7I
+[2025-12-08 13:50:31,377][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NjUxNzMwMzE0ODIsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2NTE3MzAzMSwiZXhwIjoxNzY1MTk0NjMxfQ.cSARLEYYBvZER1NO--4OYdFD7zBURDqwcEITY_GmR7I'}
+[2025-12-08 13:50:31,380][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-转出费率 - {}
+[2025-12-08 13:50:31,380][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/account/fees?feeType=crypto_withdraw_fee&condition=USDT
+[2025-12-08 13:50:31,952][get_set_decimals.py 146][INFO]: USDT的截取小数位数为：0.00000000
+[2025-12-08 13:50:31,953][conftest.py 149][INFO]: 用例 test_transfer_out.py::test_transfer_out_fee_data[USDT] 执行通过
+[2025-12-08 13:50:31,956][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-转出费率 - {}
+[2025-12-08 13:50:31,957][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/account/fees?feeType=crypto_withdraw_fee&condition=USDC
+[2025-12-08 13:50:32,269][get_set_decimals.py 146][INFO]: USDC的截取小数位数为：0.00000000
+[2025-12-08 13:50:32,270][conftest.py 149][INFO]: 用例 test_transfer_out.py::test_transfer_out_fee_data[USDC] 执行通过
+[2025-12-08 13:50:32,271][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2025-12-08 14:08:07,261][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2025-12-08 14:08:07,428][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2025-12-08 14:08:07,428][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2025-12-08 14:08:07,442][conftest.py 82][INFO]: ---前置处理器开始---
+[2025-12-08 14:08:07,443][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2025-12-08 14:08:07,456][excel_tools.py 406][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2025-12-08 14:08:07,456][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2025-12-08 14:08:07,456][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2025-12-08 14:08:09,065][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NjUxNzQwODkxODksImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2NTE3NDA4OSwiZXhwIjoxNzY1MTk1Njg5fQ.A_LkuSlpWkq41zAs34os8L3k0NWJ6twN5_-xKgYnllA
+[2025-12-08 14:08:09,066][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NjUxNzQwODkxODksImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2NTE3NDA4OSwiZXhwIjoxNzY1MTk1Njg5fQ.A_LkuSlpWkq41zAs34os8L3k0NWJ6twN5_-xKgYnllA'}
+[2025-12-08 14:08:09,067][conftest.py 156][INFO]: 在执行前获取钱包的数据
+[2025-12-08 14:08:09,068][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取钱包列表 - {}
+[2025-12-08 14:08:09,068][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/wallets
+[2025-12-08 14:08:10,115][wallet_list_page.py 54][INFO]: 获取币种数据成功，币种数据为：{'id': 'e56f09e4-e2cc-4453-a513-3b90d565fa18', 'currency': 'USDT', 'amount': 89992160.82, 'price': '1.000348', 'total_balance': 90023478.09196536, 'currency_icon': 'https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/7593ba8c-7afc-4cb8-9db7-4faaab6d3a8a/2025-11-24/usdt.png', 'percent': 55.57}
+[2025-12-08 14:08:10,117][transfer_out.py 172][INFO]: Processing chain: arbitrum, from_currency: USDT
+[2025-12-08 14:08:10,118][transfer_out.py 24][INFO]: Processing chain: arbitrum, from_currency: USDT
+[2025-12-08 14:08:10,118][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取支持的链列表 - {}
+[2025-12-08 14:08:10,118][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/chain
+[2025-12-08 14:08:11,518][read_and_save_tool.py 107][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_api_testcase_framework/Common/config.ini
+[2025-12-08 14:08:11,518][wallet_list_page.py 136][INFO]: 获取链数据成功，链数据为：{'chain_id': '42161', 'chain_name': 'arbitrum', 'symbol': 'arbitrum'}
+[2025-12-08 14:08:11,518][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取加密收款地址列表 - {}
+[2025-12-08 14:08:11,518][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/payee/crypto?page=1&take=100&currency=USDT&chain_id=42161
+[2025-12-08 14:08:11,823][transfer_out.py 84][INFO]: 获取的收款方ID列表为：['9a4d0d45-36dd-4c19-9962-87738e3c9374']
+[2025-12-08 14:08:11,823][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取支持的链列表 - {}
+[2025-12-08 14:08:11,823][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/chain
+[2025-12-08 14:08:12,439][read_and_save_tool.py 107][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_api_testcase_framework/Common/config.ini
+[2025-12-08 14:08:12,439][wallet_list_page.py 136][INFO]: 获取链数据成功，链数据为：{'chain_id': '42161', 'chain_name': 'arbitrum', 'symbol': 'arbitrum'}
+[2025-12-08 14:08:12,440][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取钱包列表 - {}
+[2025-12-08 14:08:12,440][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/wallets
+[2025-12-08 14:08:12,848][wallet_list_page.py 54][INFO]: 获取币种数据成功，币种数据为：{'id': 'e56f09e4-e2cc-4453-a513-3b90d565fa18', 'currency': 'USDT', 'amount': 89992160.82, 'price': '1.000348', 'total_balance': 90023478.09196536, 'currency_icon': 'https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/7593ba8c-7afc-4cb8-9db7-4faaab6d3a8a/2025-11-24/usdt.png', 'percent': 55.57}
+[2025-12-08 14:08:12,848][transfer_out.py 182][INFO]: 获取的钱包ID为：e56f09e4-e2cc-4453-a513-3b90d565fa18
+[2025-12-08 14:08:12,848][transfer_out.py 183][INFO]: 获取的链ID为：42161
+[2025-12-08 14:08:12,848][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-加密资产转出_pass - {"wallet_id": "e56f09e4-e2cc-4453-a513-3b90d565fa18", "chain_id": "42161", "payee_id": "9a4d0d45-36dd-4c19-9962-87738e3c9374", "amount": 1.0, "attachments": [], "check_method": "email", "access_code": "123456"}
+[2025-12-08 14:08:12,848][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/crypto/transfer-out
+[2025-12-08 14:08:12,848][simple_request.py 386][INFO]: Request data: {
+  "wallet_id": "e56f09e4-e2cc-4453-a513-3b90d565fa18",
+  "chain_id": "42161",
+  "payee_id": "9a4d0d45-36dd-4c19-9962-87738e3c9374",
+  "amount": 1.0,
+  "attachments": [],
+  "check_method": "email",
+  "access_code": "123456"
+}
+[2025-12-08 14:08:13,356][assert_tools.py 23][INFO]: 状态码断言成功：预期 201，实际 201
+[2025-12-08 14:08:13,357][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取钱包列表 - {}
+[2025-12-08 14:08:13,357][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/wallets
+[2025-12-08 14:08:13,685][wallet_list_page.py 54][INFO]: 获取币种数据成功，币种数据为：{'id': 'e56f09e4-e2cc-4453-a513-3b90d565fa18', 'currency': 'USDT', 'amount': 89992159.82, 'price': '1.000348', 'total_balance': 90023477.09161736, 'currency_icon': 'https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/7593ba8c-7afc-4cb8-9db7-4faaab6d3a8a/2025-11-24/usdt.png', 'percent': 55.57}
+[2025-12-08 14:08:13,685][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-转出费率 - {}
+[2025-12-08 14:08:13,686][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/account/fees?feeType=crypto_withdraw_fee&condition=USDT
+[2025-12-08 14:08:14,181][get_set_decimals.py 146][INFO]: USDT的截取小数位数为：0.00000000
+[2025-12-08 14:08:14,217][conftest.py 147][ERROR]: 用例 test_transfer_out.py::test_transfer_out_pass[钱包-加密资产转出_pass-USDT-arbitrum-1.0] 执行失败！
+[2025-12-08 14:08:14,220][conftest.py 156][INFO]: 在执行前获取钱包的数据
+[2025-12-08 14:08:14,220][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取钱包列表 - {}
+[2025-12-08 14:08:14,220][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/wallets
+[2025-12-08 14:08:14,535][wallet_list_page.py 54][INFO]: 获取币种数据成功，币种数据为：{'id': 'e56f09e4-e2cc-4453-a513-3b90d565fa18', 'currency': 'USDT', 'amount': 89992159.82, 'price': '1.000348', 'total_balance': 90023477.09161736, 'currency_icon': 'https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/7593ba8c-7afc-4cb8-9db7-4faaab6d3a8a/2025-11-24/usdt.png', 'percent': 55.57}
+[2025-12-08 14:08:14,537][transfer_out.py 172][INFO]: Processing chain: polygon, from_currency: USDT
+[2025-12-08 14:08:14,537][transfer_out.py 24][INFO]: Processing chain: polygon, from_currency: USDT
+[2025-12-08 14:08:14,537][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取支持的链列表 - {}
+[2025-12-08 14:08:14,537][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/chain
+[2025-12-08 14:08:15,020][read_and_save_tool.py 107][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_api_testcase_framework/Common/config.ini
+[2025-12-08 14:08:15,021][wallet_list_page.py 136][INFO]: 获取链数据成功，链数据为：{'chain_id': '137', 'chain_name': 'polygon', 'symbol': 'polygon'}
+[2025-12-08 14:08:15,021][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取加密收款地址列表 - {}
+[2025-12-08 14:08:15,021][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/payee/crypto?page=1&take=100&currency=USDT&chain_id=137
+[2025-12-08 14:08:15,473][transfer_out.py 84][INFO]: 获取的收款方ID列表为：['26fef1d7-3509-4551-bd32-8ba8bd9bd926']
+[2025-12-08 14:08:15,473][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取支持的链列表 - {}
+[2025-12-08 14:08:15,473][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/chain
+[2025-12-08 14:08:15,608][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2025-12-08 14:08:52,408][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2025-12-08 14:08:52,576][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2025-12-08 14:08:52,576][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2025-12-08 14:08:52,590][conftest.py 82][INFO]: ---前置处理器开始---
+[2025-12-08 14:08:52,590][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2025-12-08 14:08:52,603][excel_tools.py 406][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2025-12-08 14:08:52,603][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2025-12-08 14:08:52,603][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2025-12-08 14:08:53,965][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NjUxNzQxMzQwODEsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2NTE3NDEzNCwiZXhwIjoxNzY1MTk1NzM0fQ.Hei4oh9qoJjm9FEuDQTlBQo7FcIQNd0ldldRqP6qptM
+[2025-12-08 14:08:53,965][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NjUxNzQxMzQwODEsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2NTE3NDEzNCwiZXhwIjoxNzY1MTk1NzM0fQ.Hei4oh9qoJjm9FEuDQTlBQo7FcIQNd0ldldRqP6qptM'}
+[2025-12-08 14:08:53,966][conftest.py 156][INFO]: 在执行前获取钱包的数据
+[2025-12-08 14:08:53,966][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取钱包列表 - {}
+[2025-12-08 14:08:53,966][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/wallets
+[2025-12-08 14:08:55,037][wallet_list_page.py 54][INFO]: 获取币种数据成功，币种数据为：{'id': 'e56f09e4-e2cc-4453-a513-3b90d565fa18', 'currency': 'USDT', 'amount': 89992159.82, 'price': '1.000348', 'total_balance': 90023477.09161736, 'currency_icon': 'https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/7593ba8c-7afc-4cb8-9db7-4faaab6d3a8a/2025-11-24/usdt.png', 'percent': 55.57}
+[2025-12-08 14:08:55,039][transfer_out.py 172][INFO]: Processing chain: arbitrum, from_currency: USDT
+[2025-12-08 14:08:55,039][transfer_out.py 24][INFO]: Processing chain: arbitrum, from_currency: USDT
+[2025-12-08 14:08:55,039][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取支持的链列表 - {}
+[2025-12-08 14:08:55,040][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/chain
+[2025-12-08 14:08:56,168][read_and_save_tool.py 107][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_api_testcase_framework/Common/config.ini
+[2025-12-08 14:08:56,169][wallet_list_page.py 136][INFO]: 获取链数据成功，链数据为：{'chain_id': '42161', 'chain_name': 'arbitrum', 'symbol': 'arbitrum'}
+[2025-12-08 14:08:56,169][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取加密收款地址列表 - {}
+[2025-12-08 14:08:56,169][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/payee/crypto?page=1&take=100&currency=USDT&chain_id=42161
+[2025-12-08 14:08:56,573][transfer_out.py 84][INFO]: 获取的收款方ID列表为：['9a4d0d45-36dd-4c19-9962-87738e3c9374']
+[2025-12-08 14:08:56,574][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取支持的链列表 - {}
+[2025-12-08 14:08:56,574][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/chain
+[2025-12-08 14:08:57,193][read_and_save_tool.py 107][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_api_testcase_framework/Common/config.ini
+[2025-12-08 14:08:57,194][wallet_list_page.py 136][INFO]: 获取链数据成功，链数据为：{'chain_id': '42161', 'chain_name': 'arbitrum', 'symbol': 'arbitrum'}
+[2025-12-08 14:08:57,194][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取钱包列表 - {}
+[2025-12-08 14:08:57,194][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/wallets
+[2025-12-08 14:08:57,596][wallet_list_page.py 54][INFO]: 获取币种数据成功，币种数据为：{'id': 'e56f09e4-e2cc-4453-a513-3b90d565fa18', 'currency': 'USDT', 'amount': 89992159.82, 'price': '1.000348', 'total_balance': 90023477.09161736, 'currency_icon': 'https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/7593ba8c-7afc-4cb8-9db7-4faaab6d3a8a/2025-11-24/usdt.png', 'percent': 55.57}
+[2025-12-08 14:08:57,596][transfer_out.py 182][INFO]: 获取的钱包ID为：e56f09e4-e2cc-4453-a513-3b90d565fa18
+[2025-12-08 14:08:57,596][transfer_out.py 183][INFO]: 获取的链ID为：42161
+[2025-12-08 14:08:57,597][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-加密资产转出_pass - {"wallet_id": "e56f09e4-e2cc-4453-a513-3b90d565fa18", "chain_id": "42161", "payee_id": "9a4d0d45-36dd-4c19-9962-87738e3c9374", "amount": 1.0, "attachments": [], "check_method": "email", "access_code": "123456"}
+[2025-12-08 14:08:57,597][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/crypto/transfer-out
+[2025-12-08 14:08:57,597][simple_request.py 386][INFO]: Request data: {
+  "wallet_id": "e56f09e4-e2cc-4453-a513-3b90d565fa18",
+  "chain_id": "42161",
+  "payee_id": "9a4d0d45-36dd-4c19-9962-87738e3c9374",
+  "amount": 1.0,
+  "attachments": [],
+  "check_method": "email",
+  "access_code": "123456"
+}
+[2025-12-08 14:08:58,064][assert_tools.py 23][INFO]: 状态码断言成功：预期 201，实际 201
+[2025-12-08 14:08:58,065][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取钱包列表 - {}
+[2025-12-08 14:08:58,065][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/wallets
+[2025-12-08 14:08:58,825][wallet_list_page.py 54][INFO]: 获取币种数据成功，币种数据为：{'id': 'e56f09e4-e2cc-4453-a513-3b90d565fa18', 'currency': 'USDT', 'amount': 89992158.82, 'price': '1.000348', 'total_balance': 90023476.09126936, 'currency_icon': 'https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/7593ba8c-7afc-4cb8-9db7-4faaab6d3a8a/2025-11-24/usdt.png', 'percent': 55.57}
+[2025-12-08 14:08:58,825][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-转出费率 - {}
+[2025-12-08 14:08:58,825][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/account/fees?feeType=crypto_withdraw_fee&condition=USDT
+[2025-12-08 14:08:59,127][get_set_decimals.py 146][INFO]: USDT的截取小数位数为：0.00000000
+[2025-12-08 14:08:59,127][get_set_decimals.py 146][INFO]: USDT的截取小数位数为：89992158.82
+[2025-12-08 14:08:59,163][conftest.py 147][ERROR]: 用例 test_transfer_out.py::test_transfer_out_pass[钱包-加密资产转出_pass-USDT-arbitrum-1.0] 执行失败！
+[2025-12-08 14:08:59,167][conftest.py 156][INFO]: 在执行前获取钱包的数据
+[2025-12-08 14:08:59,167][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取钱包列表 - {}
+[2025-12-08 14:08:59,167][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/wallets
+[2025-12-08 14:08:59,541][wallet_list_page.py 54][INFO]: 获取币种数据成功，币种数据为：{'id': 'e56f09e4-e2cc-4453-a513-3b90d565fa18', 'currency': 'USDT', 'amount': 89992158.82, 'price': '1.000348', 'total_balance': 90023476.09126936, 'currency_icon': 'https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/7593ba8c-7afc-4cb8-9db7-4faaab6d3a8a/2025-11-24/usdt.png', 'percent': 55.57}
+[2025-12-08 14:08:59,542][transfer_out.py 172][INFO]: Processing chain: polygon, from_currency: USDT
+[2025-12-08 14:08:59,542][transfer_out.py 24][INFO]: Processing chain: polygon, from_currency: USDT
+[2025-12-08 14:08:59,543][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取支持的链列表 - {}
+[2025-12-08 14:08:59,543][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/chain
+[2025-12-08 14:09:00,414][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2025-12-08 14:13:57,797][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2025-12-08 14:13:57,953][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2025-12-08 14:13:57,954][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2025-12-08 14:13:57,967][conftest.py 82][INFO]: ---前置处理器开始---
+[2025-12-08 14:13:57,967][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2025-12-08 14:13:57,981][excel_tools.py 406][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2025-12-08 14:13:57,981][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2025-12-08 14:13:57,981][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2025-12-08 14:13:59,776][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NjUxNzQ0Mzk4OTQsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2NTE3NDQzOSwiZXhwIjoxNzY1MTk2MDM5fQ.cvrUuEgS_dpcxKw-F8XdujGr4F0b0S53F8N3GLDPCGk
+[2025-12-08 14:13:59,777][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NjUxNzQ0Mzk4OTQsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2NTE3NDQzOSwiZXhwIjoxNzY1MTk2MDM5fQ.cvrUuEgS_dpcxKw-F8XdujGr4F0b0S53F8N3GLDPCGk'}
+[2025-12-08 14:13:59,778][conftest.py 156][INFO]: 在执行前获取钱包的数据
+[2025-12-08 14:13:59,779][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取钱包列表 - {}
+[2025-12-08 14:13:59,779][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/wallets
+[2025-12-08 14:14:00,840][wallet_list_page.py 54][INFO]: 获取币种数据成功，币种数据为：{'id': 'e56f09e4-e2cc-4453-a513-3b90d565fa18', 'currency': 'USDT', 'amount': 89992158.82, 'price': '1.000348', 'total_balance': 90023476.09126936, 'currency_icon': 'https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/7593ba8c-7afc-4cb8-9db7-4faaab6d3a8a/2025-11-24/usdt.png', 'percent': 55.57}
+[2025-12-08 14:14:00,842][transfer_out.py 172][INFO]: Processing chain: arbitrum, from_currency: USDT
+[2025-12-08 14:14:00,842][transfer_out.py 24][INFO]: Processing chain: arbitrum, from_currency: USDT
+[2025-12-08 14:14:00,843][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取支持的链列表 - {}
+[2025-12-08 14:14:00,843][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/chain
+[2025-12-08 14:14:02,024][read_and_save_tool.py 107][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_api_testcase_framework/Common/config.ini
+[2025-12-08 14:14:02,025][wallet_list_page.py 136][INFO]: 获取链数据成功，链数据为：{'chain_id': '42161', 'chain_name': 'arbitrum', 'symbol': 'arbitrum'}
+[2025-12-08 14:14:02,026][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取加密收款地址列表 - {}
+[2025-12-08 14:14:02,026][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/payee/crypto?page=1&take=100&currency=USDT&chain_id=42161
+[2025-12-08 14:14:02,338][transfer_out.py 84][INFO]: 获取的收款方ID列表为：['9a4d0d45-36dd-4c19-9962-87738e3c9374']
+[2025-12-08 14:14:02,339][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取支持的链列表 - {}
+[2025-12-08 14:14:02,339][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/chain
+[2025-12-08 14:14:04,419][read_and_save_tool.py 107][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_api_testcase_framework/Common/config.ini
+[2025-12-08 14:14:04,420][wallet_list_page.py 136][INFO]: 获取链数据成功，链数据为：{'chain_id': '42161', 'chain_name': 'arbitrum', 'symbol': 'arbitrum'}
+[2025-12-08 14:14:04,421][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取钱包列表 - {}
+[2025-12-08 14:14:04,421][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/wallets
+[2025-12-08 14:14:04,742][wallet_list_page.py 54][INFO]: 获取币种数据成功，币种数据为：{'id': 'e56f09e4-e2cc-4453-a513-3b90d565fa18', 'currency': 'USDT', 'amount': 89992158.82, 'price': '1.000348', 'total_balance': 90023476.09126936, 'currency_icon': 'https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/7593ba8c-7afc-4cb8-9db7-4faaab6d3a8a/2025-11-24/usdt.png', 'percent': 55.57}
+[2025-12-08 14:14:04,742][transfer_out.py 182][INFO]: 获取的钱包ID为：e56f09e4-e2cc-4453-a513-3b90d565fa18
+[2025-12-08 14:14:04,742][transfer_out.py 183][INFO]: 获取的链ID为：42161
+[2025-12-08 14:14:04,743][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-加密资产转出_pass - {"wallet_id": "e56f09e4-e2cc-4453-a513-3b90d565fa18", "chain_id": "42161", "payee_id": "9a4d0d45-36dd-4c19-9962-87738e3c9374", "amount": 1.0, "attachments": [], "check_method": "email", "access_code": "123456"}
+[2025-12-08 14:14:04,743][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/crypto/transfer-out
+[2025-12-08 14:14:04,743][simple_request.py 386][INFO]: Request data: {
+  "wallet_id": "e56f09e4-e2cc-4453-a513-3b90d565fa18",
+  "chain_id": "42161",
+  "payee_id": "9a4d0d45-36dd-4c19-9962-87738e3c9374",
+  "amount": 1.0,
+  "attachments": [],
+  "check_method": "email",
+  "access_code": "123456"
+}
+[2025-12-08 14:14:05,156][assert_tools.py 23][INFO]: 状态码断言成功：预期 201，实际 201
+[2025-12-08 14:14:05,157][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取钱包列表 - {}
+[2025-12-08 14:14:05,157][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/wallets
+[2025-12-08 14:14:05,489][wallet_list_page.py 54][INFO]: 获取币种数据成功，币种数据为：{'id': 'e56f09e4-e2cc-4453-a513-3b90d565fa18', 'currency': 'USDT', 'amount': 89992157.82, 'price': '1.000348', 'total_balance': 90023475.09092136, 'currency_icon': 'https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/7593ba8c-7afc-4cb8-9db7-4faaab6d3a8a/2025-11-24/usdt.png', 'percent': 55.57}
+[2025-12-08 14:14:05,490][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-转出费率 - {}
+[2025-12-08 14:14:05,490][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/account/fees?feeType=crypto_withdraw_fee&condition=USDT
+[2025-12-08 14:14:05,829][get_set_decimals.py 146][INFO]: USDT的截取小数位数为：0.00000000
+[2025-12-08 14:14:05,863][conftest.py 147][ERROR]: 用例 test_transfer_out.py::test_transfer_out_pass[钱包-加密资产转出_pass-USDT-arbitrum-1.0] 执行失败！
+[2025-12-08 14:14:05,866][conftest.py 156][INFO]: 在执行前获取钱包的数据
+[2025-12-08 14:14:05,867][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取钱包列表 - {}
+[2025-12-08 14:14:05,867][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/wallets
+[2025-12-08 14:14:06,286][wallet_list_page.py 54][INFO]: 获取币种数据成功，币种数据为：{'id': 'e56f09e4-e2cc-4453-a513-3b90d565fa18', 'currency': 'USDT', 'amount': 89992157.82, 'price': '1.000348', 'total_balance': 90023475.09092136, 'currency_icon': 'https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/7593ba8c-7afc-4cb8-9db7-4faaab6d3a8a/2025-11-24/usdt.png', 'percent': 55.57}
+[2025-12-08 14:14:06,288][transfer_out.py 172][INFO]: Processing chain: polygon, from_currency: USDT
+[2025-12-08 14:14:06,288][transfer_out.py 24][INFO]: Processing chain: polygon, from_currency: USDT
+[2025-12-08 14:14:06,289][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取支持的链列表 - {}
+[2025-12-08 14:14:06,289][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/chain
+[2025-12-08 14:14:06,986][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2025-12-08 14:14:56,465][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2025-12-08 14:14:56,620][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2025-12-08 14:14:56,620][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2025-12-08 14:14:56,634][conftest.py 82][INFO]: ---前置处理器开始---
+[2025-12-08 14:14:56,634][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2025-12-08 14:14:56,647][excel_tools.py 406][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2025-12-08 14:14:56,647][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2025-12-08 14:14:56,647][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2025-12-08 14:14:58,566][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NjUxNzQ0OTg2ODEsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2NTE3NDQ5OCwiZXhwIjoxNzY1MTk2MDk4fQ.OK9OsOQq19gVrm1L_66XKMDCz3vXtAl2O6phf2Fr3Ls
+[2025-12-08 14:14:58,566][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NjUxNzQ0OTg2ODEsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2NTE3NDQ5OCwiZXhwIjoxNzY1MTk2MDk4fQ.OK9OsOQq19gVrm1L_66XKMDCz3vXtAl2O6phf2Fr3Ls'}
+[2025-12-08 14:14:58,567][conftest.py 156][INFO]: 在执行前获取钱包的数据
+[2025-12-08 14:14:58,568][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取钱包列表 - {}
+[2025-12-08 14:14:58,568][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/wallets
+[2025-12-08 14:14:59,786][wallet_list_page.py 54][INFO]: 获取币种数据成功，币种数据为：{'id': 'e56f09e4-e2cc-4453-a513-3b90d565fa18', 'currency': 'USDT', 'amount': 89992157.82, 'price': '1.000348', 'total_balance': 90023475.09092136, 'currency_icon': 'https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/7593ba8c-7afc-4cb8-9db7-4faaab6d3a8a/2025-11-24/usdt.png', 'percent': 55.57}
+[2025-12-08 14:14:59,788][transfer_out.py 172][INFO]: Processing chain: arbitrum, from_currency: USDT
+[2025-12-08 14:14:59,788][transfer_out.py 24][INFO]: Processing chain: arbitrum, from_currency: USDT
+[2025-12-08 14:14:59,788][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取支持的链列表 - {}
+[2025-12-08 14:14:59,788][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/chain
+[2025-12-08 14:15:00,913][read_and_save_tool.py 107][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_api_testcase_framework/Common/config.ini
+[2025-12-08 14:15:00,913][wallet_list_page.py 136][INFO]: 获取链数据成功，链数据为：{'chain_id': '42161', 'chain_name': 'arbitrum', 'symbol': 'arbitrum'}
+[2025-12-08 14:15:00,914][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取加密收款地址列表 - {}
+[2025-12-08 14:15:00,914][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/payee/crypto?page=1&take=100&currency=USDT&chain_id=42161
+[2025-12-08 14:15:01,322][transfer_out.py 84][INFO]: 获取的收款方ID列表为：['9a4d0d45-36dd-4c19-9962-87738e3c9374']
+[2025-12-08 14:15:01,322][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取支持的链列表 - {}
+[2025-12-08 14:15:01,322][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/chain
+[2025-12-08 14:15:02,206][read_and_save_tool.py 107][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_api_testcase_framework/Common/config.ini
+[2025-12-08 14:15:02,207][wallet_list_page.py 136][INFO]: 获取链数据成功，链数据为：{'chain_id': '42161', 'chain_name': 'arbitrum', 'symbol': 'arbitrum'}
+[2025-12-08 14:15:02,208][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取钱包列表 - {}
+[2025-12-08 14:15:02,208][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/wallets
+[2025-12-08 14:15:02,535][wallet_list_page.py 54][INFO]: 获取币种数据成功，币种数据为：{'id': 'e56f09e4-e2cc-4453-a513-3b90d565fa18', 'currency': 'USDT', 'amount': 89992157.82, 'price': '1.000348', 'total_balance': 90023475.09092136, 'currency_icon': 'https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/7593ba8c-7afc-4cb8-9db7-4faaab6d3a8a/2025-11-24/usdt.png', 'percent': 55.57}
+[2025-12-08 14:15:02,535][transfer_out.py 182][INFO]: 获取的钱包ID为：e56f09e4-e2cc-4453-a513-3b90d565fa18
+[2025-12-08 14:15:02,535][transfer_out.py 183][INFO]: 获取的链ID为：42161
+[2025-12-08 14:15:02,536][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-加密资产转出_pass - {"wallet_id": "e56f09e4-e2cc-4453-a513-3b90d565fa18", "chain_id": "42161", "payee_id": "9a4d0d45-36dd-4c19-9962-87738e3c9374", "amount": 1.0, "attachments": [], "check_method": "email", "access_code": "123456"}
+[2025-12-08 14:15:02,536][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/crypto/transfer-out
+[2025-12-08 14:15:02,536][simple_request.py 386][INFO]: Request data: {
+  "wallet_id": "e56f09e4-e2cc-4453-a513-3b90d565fa18",
+  "chain_id": "42161",
+  "payee_id": "9a4d0d45-36dd-4c19-9962-87738e3c9374",
+  "amount": 1.0,
+  "attachments": [],
+  "check_method": "email",
+  "access_code": "123456"
+}
+[2025-12-08 14:15:02,953][assert_tools.py 23][INFO]: 状态码断言成功：预期 201，实际 201
+[2025-12-08 14:15:02,953][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取钱包列表 - {}
+[2025-12-08 14:15:02,954][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/wallets
+[2025-12-08 14:15:03,279][wallet_list_page.py 54][INFO]: 获取币种数据成功，币种数据为：{'id': 'e56f09e4-e2cc-4453-a513-3b90d565fa18', 'currency': 'USDT', 'amount': 89992156.82, 'price': '1.000348', 'total_balance': 90023474.09057336, 'currency_icon': 'https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/7593ba8c-7afc-4cb8-9db7-4faaab6d3a8a/2025-11-24/usdt.png', 'percent': 55.57}
+[2025-12-08 14:15:03,280][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-转出费率 - {}
+[2025-12-08 14:15:03,280][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/account/fees?feeType=crypto_withdraw_fee&condition=USDT
+[2025-12-08 14:15:03,583][get_set_decimals.py 146][INFO]: USDT的截取小数位数为：0.00000000
+[2025-12-08 14:15:03,583][get_set_decimals.py 146][INFO]: USDT的截取小数位数为：89992156.82
+[2025-12-08 14:15:03,620][conftest.py 147][ERROR]: 用例 test_transfer_out.py::test_transfer_out_pass[钱包-加密资产转出_pass-USDT-arbitrum-1.0] 执行失败！
+[2025-12-08 14:15:03,623][conftest.py 156][INFO]: 在执行前获取钱包的数据
+[2025-12-08 14:15:03,623][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取钱包列表 - {}
+[2025-12-08 14:15:03,624][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/wallets
+[2025-12-08 14:15:03,958][wallet_list_page.py 54][INFO]: 获取币种数据成功，币种数据为：{'id': 'e56f09e4-e2cc-4453-a513-3b90d565fa18', 'currency': 'USDT', 'amount': 89992156.82, 'price': '1.000348', 'total_balance': 90023474.09057336, 'currency_icon': 'https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/7593ba8c-7afc-4cb8-9db7-4faaab6d3a8a/2025-11-24/usdt.png', 'percent': 55.57}
+[2025-12-08 14:15:03,959][transfer_out.py 172][INFO]: Processing chain: polygon, from_currency: USDT
+[2025-12-08 14:15:03,959][transfer_out.py 24][INFO]: Processing chain: polygon, from_currency: USDT
+[2025-12-08 14:15:03,959][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取支持的链列表 - {}
+[2025-12-08 14:15:03,959][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/chain
+[2025-12-08 14:15:05,908][read_and_save_tool.py 107][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_api_testcase_framework/Common/config.ini
+[2025-12-08 14:15:05,908][wallet_list_page.py 136][INFO]: 获取链数据成功，链数据为：{'chain_id': '137', 'chain_name': 'polygon', 'symbol': 'polygon'}
+[2025-12-08 14:15:05,909][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取加密收款地址列表 - {}
+[2025-12-08 14:15:05,909][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/payee/crypto?page=1&take=100&currency=USDT&chain_id=137
+[2025-12-08 14:15:06,569][transfer_out.py 84][INFO]: 获取的收款方ID列表为：['26fef1d7-3509-4551-bd32-8ba8bd9bd926']
+[2025-12-08 14:15:06,570][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取支持的链列表 - {}
+[2025-12-08 14:15:06,570][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/chain
+[2025-12-08 14:15:07,338][read_and_save_tool.py 107][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_api_testcase_framework/Common/config.ini
+[2025-12-08 14:15:07,339][wallet_list_page.py 136][INFO]: 获取链数据成功，链数据为：{'chain_id': '137', 'chain_name': 'polygon', 'symbol': 'polygon'}
+[2025-12-08 14:15:07,340][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取钱包列表 - {}
+[2025-12-08 14:15:07,340][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/wallets
+[2025-12-08 14:15:07,666][wallet_list_page.py 54][INFO]: 获取币种数据成功，币种数据为：{'id': 'e56f09e4-e2cc-4453-a513-3b90d565fa18', 'currency': 'USDT', 'amount': 89992156.82, 'price': '1.000348', 'total_balance': 90023474.09057336, 'currency_icon': 'https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/7593ba8c-7afc-4cb8-9db7-4faaab6d3a8a/2025-11-24/usdt.png', 'percent': 55.57}
+[2025-12-08 14:15:07,666][transfer_out.py 182][INFO]: 获取的钱包ID为：e56f09e4-e2cc-4453-a513-3b90d565fa18
+[2025-12-08 14:15:07,666][transfer_out.py 183][INFO]: 获取的链ID为：137
+[2025-12-08 14:15:07,667][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-加密资产转出_pass - {"wallet_id": "e56f09e4-e2cc-4453-a513-3b90d565fa18", "chain_id": "137", "payee_id": "26fef1d7-3509-4551-bd32-8ba8bd9bd926", "amount": 1.0, "attachments": [], "check_method": "email", "access_code": "123456"}
+[2025-12-08 14:15:07,667][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/crypto/transfer-out
+[2025-12-08 14:15:07,667][simple_request.py 386][INFO]: Request data: {
+  "wallet_id": "e56f09e4-e2cc-4453-a513-3b90d565fa18",
+  "chain_id": "137",
+  "payee_id": "26fef1d7-3509-4551-bd32-8ba8bd9bd926",
+  "amount": 1.0,
+  "attachments": [],
+  "check_method": "email",
+  "access_code": "123456"
+}
+[2025-12-08 14:15:08,138][assert_tools.py 23][INFO]: 状态码断言成功：预期 201，实际 201
+[2025-12-08 14:15:08,139][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取钱包列表 - {}
+[2025-12-08 14:15:08,140][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/wallets
+[2025-12-08 14:15:08,448][wallet_list_page.py 54][INFO]: 获取币种数据成功，币种数据为：{'id': 'e56f09e4-e2cc-4453-a513-3b90d565fa18', 'currency': 'USDT', 'amount': 89992155.82, 'price': '1.000348', 'total_balance': 90023473.09022535, 'currency_icon': 'https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/7593ba8c-7afc-4cb8-9db7-4faaab6d3a8a/2025-11-24/usdt.png', 'percent': 55.57}
+[2025-12-08 14:15:08,449][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-转出费率 - {}
+[2025-12-08 14:15:08,449][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/account/fees?feeType=crypto_withdraw_fee&condition=USDT
+[2025-12-08 14:15:08,753][get_set_decimals.py 146][INFO]: USDT的截取小数位数为：0.00000000
+[2025-12-08 14:15:08,753][get_set_decimals.py 146][INFO]: USDT的截取小数位数为：89992155.82
+[2025-12-08 14:15:08,765][conftest.py 147][ERROR]: 用例 test_transfer_out.py::test_transfer_out_pass[钱包-加密资产转出_pass-USDT-polygon-1.0] 执行失败！
+[2025-12-08 14:15:08,769][conftest.py 156][INFO]: 在执行前获取钱包的数据
+[2025-12-08 14:15:08,770][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取钱包列表 - {}
+[2025-12-08 14:15:08,770][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/wallets
+[2025-12-08 14:15:09,653][wallet_list_page.py 54][INFO]: 获取币种数据成功，币种数据为：{'id': 'e56f09e4-e2cc-4453-a513-3b90d565fa18', 'currency': 'USDT', 'amount': 89992155.82, 'price': '1.000348', 'total_balance': 90023473.09022535, 'currency_icon': 'https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/7593ba8c-7afc-4cb8-9db7-4faaab6d3a8a/2025-11-24/usdt.png', 'percent': 55.57}
+[2025-12-08 14:15:09,655][transfer_out.py 172][INFO]: Processing chain: avalanche, from_currency: USDT
+[2025-12-08 14:15:09,655][transfer_out.py 24][INFO]: Processing chain: avalanche, from_currency: USDT
+[2025-12-08 14:15:09,655][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取支持的链列表 - {}
+[2025-12-08 14:15:09,655][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/chain
+[2025-12-08 14:15:10,704][read_and_save_tool.py 107][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_api_testcase_framework/Common/config.ini
+[2025-12-08 14:15:10,705][wallet_list_page.py 136][INFO]: 获取链数据成功，链数据为：{'chain_id': '43114', 'chain_name': 'avalanche', 'symbol': 'avalanche'}
+[2025-12-08 14:15:10,705][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取加密收款地址列表 - {}
+[2025-12-08 14:15:10,705][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/payee/crypto?page=1&take=100&currency=USDT&chain_id=43114
+[2025-12-08 14:15:11,010][transfer_out.py 84][INFO]: 获取的收款方ID列表为：['d0f683f9-63d3-474f-a4c6-f51271e1aecb']
+[2025-12-08 14:15:11,011][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取支持的链列表 - {}
+[2025-12-08 14:15:11,011][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/chain
+[2025-12-08 14:15:11,662][read_and_save_tool.py 107][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_api_testcase_framework/Common/config.ini
+[2025-12-08 14:15:11,662][wallet_list_page.py 136][INFO]: 获取链数据成功，链数据为：{'chain_id': '43114', 'chain_name': 'avalanche', 'symbol': 'avalanche'}
+[2025-12-08 14:15:11,662][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取钱包列表 - {}
+[2025-12-08 14:15:11,663][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/wallets
+[2025-12-08 14:15:11,972][wallet_list_page.py 54][INFO]: 获取币种数据成功，币种数据为：{'id': 'e56f09e4-e2cc-4453-a513-3b90d565fa18', 'currency': 'USDT', 'amount': 89992155.82, 'price': '1.000348', 'total_balance': 90023473.09022535, 'currency_icon': 'https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/7593ba8c-7afc-4cb8-9db7-4faaab6d3a8a/2025-11-24/usdt.png', 'percent': 55.57}
+[2025-12-08 14:15:11,972][transfer_out.py 182][INFO]: 获取的钱包ID为：e56f09e4-e2cc-4453-a513-3b90d565fa18
+[2025-12-08 14:15:11,972][transfer_out.py 183][INFO]: 获取的链ID为：43114
+[2025-12-08 14:15:11,973][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-加密资产转出_pass - {"wallet_id": "e56f09e4-e2cc-4453-a513-3b90d565fa18", "chain_id": "43114", "payee_id": "d0f683f9-63d3-474f-a4c6-f51271e1aecb", "amount": 1.0, "attachments": [], "check_method": "email", "access_code": "123456"}
+[2025-12-08 14:15:11,973][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/crypto/transfer-out
+[2025-12-08 14:15:11,973][simple_request.py 386][INFO]: Request data: {
+  "wallet_id": "e56f09e4-e2cc-4453-a513-3b90d565fa18",
+  "chain_id": "43114",
+  "payee_id": "d0f683f9-63d3-474f-a4c6-f51271e1aecb",
+  "amount": 1.0,
+  "attachments": [],
+  "check_method": "email",
+  "access_code": "123456"
+}
+[2025-12-08 14:15:12,378][assert_tools.py 23][INFO]: 状态码断言成功：预期 201，实际 201
+[2025-12-08 14:15:12,378][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取钱包列表 - {}
+[2025-12-08 14:15:12,379][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/wallets
+[2025-12-08 14:15:12,750][wallet_list_page.py 54][INFO]: 获取币种数据成功，币种数据为：{'id': 'e56f09e4-e2cc-4453-a513-3b90d565fa18', 'currency': 'USDT', 'amount': 89992154.82, 'price': '1.000348', 'total_balance': 90023472.08987737, 'currency_icon': 'https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/7593ba8c-7afc-4cb8-9db7-4faaab6d3a8a/2025-11-24/usdt.png', 'percent': 55.57}
+[2025-12-08 14:15:12,751][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-转出费率 - {}
+[2025-12-08 14:15:12,751][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/account/fees?feeType=crypto_withdraw_fee&condition=USDT
+[2025-12-08 14:15:13,094][get_set_decimals.py 146][INFO]: USDT的截取小数位数为：0.00000000
+[2025-12-08 14:15:13,094][get_set_decimals.py 146][INFO]: USDT的截取小数位数为：89992154.82
+[2025-12-08 14:15:13,106][conftest.py 147][ERROR]: 用例 test_transfer_out.py::test_transfer_out_pass[钱包-加密资产转出_pass-USDT-avalanche-1.0] 执行失败！
+[2025-12-08 14:15:13,111][conftest.py 156][INFO]: 在执行前获取钱包的数据
+[2025-12-08 14:15:13,111][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取钱包列表 - {}
+[2025-12-08 14:15:13,111][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/wallets
+[2025-12-08 14:15:13,475][wallet_list_page.py 54][INFO]: 获取币种数据成功，币种数据为：{'id': 'e56f09e4-e2cc-4453-a513-3b90d565fa18', 'currency': 'USDT', 'amount': 89992154.82, 'price': '1.000348', 'total_balance': 90023472.08987737, 'currency_icon': 'https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/7593ba8c-7afc-4cb8-9db7-4faaab6d3a8a/2025-11-24/usdt.png', 'percent': 55.57}
+[2025-12-08 14:15:13,477][transfer_out.py 172][INFO]: Processing chain: ethereum, from_currency: USDT
+[2025-12-08 14:15:13,477][transfer_out.py 24][INFO]: Processing chain: ethereum, from_currency: USDT
+[2025-12-08 14:15:13,477][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取支持的链列表 - {}
+[2025-12-08 14:15:13,477][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/chain
+[2025-12-08 14:15:14,204][read_and_save_tool.py 107][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_api_testcase_framework/Common/config.ini
+[2025-12-08 14:15:14,204][wallet_list_page.py 136][INFO]: 获取链数据成功，链数据为：{'chain_id': '1', 'chain_name': 'ethereum', 'symbol': 'ethereum'}
+[2025-12-08 14:15:14,205][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取加密收款地址列表 - {}
+[2025-12-08 14:15:14,205][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/payee/crypto?page=1&take=100&currency=USDT&chain_id=1
+[2025-12-08 14:15:14,506][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2025-12-08 14:20:43,884][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2025-12-08 14:20:44,046][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2025-12-08 14:20:44,046][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2025-12-08 14:20:44,061][conftest.py 82][INFO]: ---前置处理器开始---
+[2025-12-08 14:20:44,061][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2025-12-08 14:20:44,075][excel_tools.py 406][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2025-12-08 14:20:44,075][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2025-12-08 14:20:44,075][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2025-12-08 14:20:46,126][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NjUxNzQ4NDYxODYsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2NTE3NDg0NiwiZXhwIjoxNzY1MTk2NDQ2fQ.s_Vh6--wK58-mWJkMi1_Y-AoI17ifGS9LfgBo9RCcDw
+[2025-12-08 14:20:46,126][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NjUxNzQ4NDYxODYsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2NTE3NDg0NiwiZXhwIjoxNzY1MTk2NDQ2fQ.s_Vh6--wK58-mWJkMi1_Y-AoI17ifGS9LfgBo9RCcDw'}
+[2025-12-08 14:20:46,127][conftest.py 156][INFO]: 在执行前获取钱包的数据
+[2025-12-08 14:20:46,127][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取钱包列表 - {}
+[2025-12-08 14:20:46,127][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/wallets
+[2025-12-08 14:20:47,187][wallet_list_page.py 54][INFO]: 获取币种数据成功，币种数据为：{'id': 'e56f09e4-e2cc-4453-a513-3b90d565fa18', 'currency': 'USDT', 'amount': 89992154.82, 'price': '1.000348', 'total_balance': 90023472.08987737, 'currency_icon': 'https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/7593ba8c-7afc-4cb8-9db7-4faaab6d3a8a/2025-11-24/usdt.png', 'percent': 55.57}
+[2025-12-08 14:20:47,189][transfer_out.py 172][INFO]: Processing chain: arbitrum, from_currency: USDT
+[2025-12-08 14:20:47,189][transfer_out.py 24][INFO]: Processing chain: arbitrum, from_currency: USDT
+[2025-12-08 14:20:47,190][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取支持的链列表 - {}
+[2025-12-08 14:20:47,190][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/chain
+[2025-12-08 14:20:48,463][read_and_save_tool.py 107][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_api_testcase_framework/Common/config.ini
+[2025-12-08 14:20:48,463][wallet_list_page.py 136][INFO]: 获取链数据成功，链数据为：{'chain_id': '42161', 'chain_name': 'arbitrum', 'symbol': 'arbitrum'}
+[2025-12-08 14:20:48,464][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取加密收款地址列表 - {}
+[2025-12-08 14:20:48,464][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/payee/crypto?page=1&take=100&currency=USDT&chain_id=42161
+[2025-12-08 14:20:48,778][transfer_out.py 84][INFO]: 获取的收款方ID列表为：['9a4d0d45-36dd-4c19-9962-87738e3c9374']
+[2025-12-08 14:20:48,779][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取支持的链列表 - {}
+[2025-12-08 14:20:48,779][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/chain
+[2025-12-08 14:20:49,702][read_and_save_tool.py 107][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_api_testcase_framework/Common/config.ini
+[2025-12-08 14:20:49,702][wallet_list_page.py 136][INFO]: 获取链数据成功，链数据为：{'chain_id': '42161', 'chain_name': 'arbitrum', 'symbol': 'arbitrum'}
+[2025-12-08 14:20:49,703][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取钱包列表 - {}
+[2025-12-08 14:20:49,703][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/wallets
+[2025-12-08 14:20:50,079][wallet_list_page.py 54][INFO]: 获取币种数据成功，币种数据为：{'id': 'e56f09e4-e2cc-4453-a513-3b90d565fa18', 'currency': 'USDT', 'amount': 89992154.82, 'price': '1.000348', 'total_balance': 90023472.08987737, 'currency_icon': 'https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/7593ba8c-7afc-4cb8-9db7-4faaab6d3a8a/2025-11-24/usdt.png', 'percent': 55.57}
+[2025-12-08 14:20:50,080][transfer_out.py 182][INFO]: 获取的钱包ID为：e56f09e4-e2cc-4453-a513-3b90d565fa18
+[2025-12-08 14:20:50,080][transfer_out.py 183][INFO]: 获取的链ID为：42161
+[2025-12-08 14:20:50,080][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-加密资产转出_pass - {"wallet_id": "e56f09e4-e2cc-4453-a513-3b90d565fa18", "chain_id": "42161", "payee_id": "9a4d0d45-36dd-4c19-9962-87738e3c9374", "amount": 1.0, "attachments": [], "check_method": "email", "access_code": "123456"}
+[2025-12-08 14:20:50,080][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/crypto/transfer-out
+[2025-12-08 14:20:50,081][simple_request.py 386][INFO]: Request data: {
+  "wallet_id": "e56f09e4-e2cc-4453-a513-3b90d565fa18",
+  "chain_id": "42161",
+  "payee_id": "9a4d0d45-36dd-4c19-9962-87738e3c9374",
+  "amount": 1.0,
+  "attachments": [],
+  "check_method": "email",
+  "access_code": "123456"
+}
+[2025-12-08 14:20:50,552][assert_tools.py 24][INFO]: 状态码断言成功：预期 201，实际 201
+[2025-12-08 14:20:50,552][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取钱包列表 - {}
+[2025-12-08 14:20:50,552][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/wallets
+[2025-12-08 14:20:50,989][wallet_list_page.py 54][INFO]: 获取币种数据成功，币种数据为：{'id': 'e56f09e4-e2cc-4453-a513-3b90d565fa18', 'currency': 'USDT', 'amount': 89992153.82, 'price': '1.000348', 'total_balance': 90023471.08952937, 'currency_icon': 'https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/7593ba8c-7afc-4cb8-9db7-4faaab6d3a8a/2025-11-24/usdt.png', 'percent': 55.57}
+[2025-12-08 14:20:50,990][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-转出费率 - {}
+[2025-12-08 14:20:50,990][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/account/fees?feeType=crypto_withdraw_fee&condition=USDT
+[2025-12-08 14:20:51,295][get_set_decimals.py 146][INFO]: USDT的截取小数位数为：0.00000000
+[2025-12-08 14:20:51,296][get_set_decimals.py 146][INFO]: USDT的截取小数位数为：89992153.82
+[2025-12-08 14:20:51,329][conftest.py 147][ERROR]: 用例 test_transfer_out.py::test_transfer_out_pass[钱包-加密资产转出_pass-USDT-arbitrum-1.0] 执行失败！
+[2025-12-08 14:20:51,332][conftest.py 156][INFO]: 在执行前获取钱包的数据
+[2025-12-08 14:20:51,332][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取钱包列表 - {}
+[2025-12-08 14:20:51,333][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/wallets
+[2025-12-08 14:20:52,378][wallet_list_page.py 54][INFO]: 获取币种数据成功，币种数据为：{'id': 'e56f09e4-e2cc-4453-a513-3b90d565fa18', 'currency': 'USDT', 'amount': 89992153.82, 'price': '1.000348', 'total_balance': 90023471.08952937, 'currency_icon': 'https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/7593ba8c-7afc-4cb8-9db7-4faaab6d3a8a/2025-11-24/usdt.png', 'percent': 55.57}
+[2025-12-08 14:20:52,380][transfer_out.py 172][INFO]: Processing chain: polygon, from_currency: USDT
+[2025-12-08 14:20:52,381][transfer_out.py 24][INFO]: Processing chain: polygon, from_currency: USDT
+[2025-12-08 14:20:52,381][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取支持的链列表 - {}
+[2025-12-08 14:20:52,381][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/chain
+[2025-12-08 14:20:53,226][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2025-12-08 14:26:03,304][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2025-12-08 14:26:03,463][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2025-12-08 14:26:03,463][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2025-12-08 14:26:03,477][conftest.py 82][INFO]: ---前置处理器开始---
+[2025-12-08 14:26:03,477][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2025-12-08 14:26:03,490][excel_tools.py 406][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2025-12-08 14:26:03,490][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2025-12-08 14:26:03,490][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2025-12-08 14:26:05,073][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NjUxNzUxNjUxOTEsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2NTE3NTE2NSwiZXhwIjoxNzY1MTk2NzY1fQ.qboWDsC_CuyaXnSAo-93ylPQkzd7xu5pbA2eiJ8m8fw
+[2025-12-08 14:26:05,075][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NjUxNzUxNjUxOTEsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2NTE3NTE2NSwiZXhwIjoxNzY1MTk2NzY1fQ.qboWDsC_CuyaXnSAo-93ylPQkzd7xu5pbA2eiJ8m8fw'}
+[2025-12-08 14:26:05,078][transfer_out.py 172][INFO]: Processing chain: arbitrum, from_currency: USDT
+[2025-12-08 14:26:05,078][transfer_out.py 24][INFO]: Processing chain: arbitrum, from_currency: USDT
+[2025-12-08 14:26:05,078][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取支持的链列表 - {}
+[2025-12-08 14:26:05,078][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/chain
+[2025-12-08 14:26:06,200][read_and_save_tool.py 107][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_api_testcase_framework/Common/config.ini
+[2025-12-08 14:26:06,200][wallet_list_page.py 136][INFO]: 获取链数据成功，链数据为：{'chain_id': '42161', 'chain_name': 'arbitrum', 'symbol': 'arbitrum'}
+[2025-12-08 14:26:06,201][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取加密收款地址列表 - {}
+[2025-12-08 14:26:06,201][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/payee/crypto?page=1&take=100&currency=USDT&chain_id=42161
+[2025-12-08 14:26:06,508][transfer_out.py 84][INFO]: 获取的收款方ID列表为：['9a4d0d45-36dd-4c19-9962-87738e3c9374']
+[2025-12-08 14:26:06,508][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取支持的链列表 - {}
+[2025-12-08 14:26:06,508][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/chain
+[2025-12-08 14:26:07,300][read_and_save_tool.py 107][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_api_testcase_framework/Common/config.ini
+[2025-12-08 14:26:07,301][wallet_list_page.py 136][INFO]: 获取链数据成功，链数据为：{'chain_id': '42161', 'chain_name': 'arbitrum', 'symbol': 'arbitrum'}
+[2025-12-08 14:26:07,302][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取钱包列表 - {}
+[2025-12-08 14:26:07,302][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/wallets
+[2025-12-08 14:26:07,685][wallet_list_page.py 54][INFO]: 获取币种数据成功，币种数据为：{'id': 'e56f09e4-e2cc-4453-a513-3b90d565fa18', 'currency': 'USDT', 'amount': 89992153.82, 'price': '1.000348', 'total_balance': 90023471.08952937, 'currency_icon': 'https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/7593ba8c-7afc-4cb8-9db7-4faaab6d3a8a/2025-11-24/usdt.png', 'percent': 55.57}
+[2025-12-08 14:26:07,686][transfer_out.py 182][INFO]: 获取的钱包ID为：e56f09e4-e2cc-4453-a513-3b90d565fa18
+[2025-12-08 14:26:07,686][transfer_out.py 183][INFO]: 获取的链ID为：42161
+[2025-12-08 14:26:07,686][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-加密资产转出_fail - {"wallet_id": "e56f09e4-e2cc-4453-a513-3b90d565fa18", "chain_id": "42161", "payee_id": "abe2a694-f069-4ce1-a791-34913b149872", "amount": 0.1, "attachments": [], "check_method": "email", "access_code": "123456"}
+[2025-12-08 14:26:07,687][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/crypto/transfer-out?wallet_id=e56f09e4-e2cc-4453-a513-3b90d565fa18&chain_id=42161&payee_id=9a4d0d45-36dd-4c19-9962-87738e3c9374&amount=0.1
+[2025-12-08 14:26:07,687][simple_request.py 386][INFO]: Request data: {
+  "wallet_id": "e56f09e4-e2cc-4453-a513-3b90d565fa18",
+  "chain_id": "42161",
+  "payee_id": "abe2a694-f069-4ce1-a791-34913b149872",
+  "amount": 0.1,
+  "attachments": [],
+  "check_method": "email",
+  "access_code": "123456"
+}
+[2025-12-08 14:26:07,996][simple_request.py 435][ERROR]: Request failed with status code: 400
+[2025-12-08 14:26:07,996][assert_tools.py 25][INFO]: 状态码断言成功：预期 400，实际 400
+[2025-12-08 14:26:07,997][conftest.py 149][INFO]: 用例 test_transfer_out.py::test_transfer_out_fail[钱包-加密资产转出_fail-USDT-arbitrum-0.1] 执行通过
+[2025-12-08 14:26:07,999][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2025-12-08 14:26:16,843][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2025-12-08 14:26:16,996][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2025-12-08 14:26:16,996][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2025-12-08 14:26:17,010][conftest.py 82][INFO]: ---前置处理器开始---
+[2025-12-08 14:26:17,011][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2025-12-08 14:26:17,024][excel_tools.py 406][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2025-12-08 14:26:17,024][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2025-12-08 14:26:17,024][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2025-12-08 14:26:18,255][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NjUxNzUxNzgzOTgsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2NTE3NTE3OCwiZXhwIjoxNzY1MTk2Nzc4fQ.TzQbCprq8BmlX3JWwP0cK4r48_3hhoI1Q7lMJI4_ZLY
+[2025-12-08 14:26:18,256][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NjUxNzUxNzgzOTgsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2NTE3NTE3OCwiZXhwIjoxNzY1MTk2Nzc4fQ.TzQbCprq8BmlX3JWwP0cK4r48_3hhoI1Q7lMJI4_ZLY'}
+[2025-12-08 14:26:18,256][conftest.py 156][INFO]: 在执行前获取钱包的数据
+[2025-12-08 14:26:18,257][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取钱包列表 - {}
+[2025-12-08 14:26:18,257][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/wallets
+[2025-12-08 14:26:19,303][wallet_list_page.py 54][INFO]: 获取币种数据成功，币种数据为：{'id': 'e56f09e4-e2cc-4453-a513-3b90d565fa18', 'currency': 'USDT', 'amount': 89992153.82, 'price': '1.000348', 'total_balance': 90023471.08952937, 'currency_icon': 'https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/7593ba8c-7afc-4cb8-9db7-4faaab6d3a8a/2025-11-24/usdt.png', 'percent': 55.57}
+[2025-12-08 14:26:19,306][transfer_out.py 172][INFO]: Processing chain: arbitrum, from_currency: USDT
+[2025-12-08 14:26:19,306][transfer_out.py 24][INFO]: Processing chain: arbitrum, from_currency: USDT
+[2025-12-08 14:26:19,307][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取支持的链列表 - {}
+[2025-12-08 14:26:19,307][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/chain
+[2025-12-08 14:26:20,322][read_and_save_tool.py 107][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_api_testcase_framework/Common/config.ini
+[2025-12-08 14:26:20,323][wallet_list_page.py 136][INFO]: 获取链数据成功，链数据为：{'chain_id': '42161', 'chain_name': 'arbitrum', 'symbol': 'arbitrum'}
+[2025-12-08 14:26:20,323][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取加密收款地址列表 - {}
+[2025-12-08 14:26:20,323][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/payee/crypto?page=1&take=100&currency=USDT&chain_id=42161
+[2025-12-08 14:26:20,629][transfer_out.py 84][INFO]: 获取的收款方ID列表为：['9a4d0d45-36dd-4c19-9962-87738e3c9374']
+[2025-12-08 14:26:20,629][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取支持的链列表 - {}
+[2025-12-08 14:26:20,629][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/chain
+[2025-12-08 14:26:21,429][read_and_save_tool.py 107][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_api_testcase_framework/Common/config.ini
+[2025-12-08 14:26:21,430][wallet_list_page.py 136][INFO]: 获取链数据成功，链数据为：{'chain_id': '42161', 'chain_name': 'arbitrum', 'symbol': 'arbitrum'}
+[2025-12-08 14:26:21,430][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取钱包列表 - {}
+[2025-12-08 14:26:21,430][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/wallets
+[2025-12-08 14:26:21,759][wallet_list_page.py 54][INFO]: 获取币种数据成功，币种数据为：{'id': 'e56f09e4-e2cc-4453-a513-3b90d565fa18', 'currency': 'USDT', 'amount': 89992153.82, 'price': '1.000348', 'total_balance': 90023471.08952937, 'currency_icon': 'https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/7593ba8c-7afc-4cb8-9db7-4faaab6d3a8a/2025-11-24/usdt.png', 'percent': 55.57}
+[2025-12-08 14:26:21,760][transfer_out.py 182][INFO]: 获取的钱包ID为：e56f09e4-e2cc-4453-a513-3b90d565fa18
+[2025-12-08 14:26:21,760][transfer_out.py 183][INFO]: 获取的链ID为：42161
+[2025-12-08 14:26:21,760][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-加密资产转出_pass - {"wallet_id": "e56f09e4-e2cc-4453-a513-3b90d565fa18", "chain_id": "42161", "payee_id": "9a4d0d45-36dd-4c19-9962-87738e3c9374", "amount": 1.0, "attachments": [], "check_method": "email", "access_code": "123456"}
+[2025-12-08 14:26:21,760][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/crypto/transfer-out
+[2025-12-08 14:26:21,761][simple_request.py 386][INFO]: Request data: {
+  "wallet_id": "e56f09e4-e2cc-4453-a513-3b90d565fa18",
+  "chain_id": "42161",
+  "payee_id": "9a4d0d45-36dd-4c19-9962-87738e3c9374",
+  "amount": 1.0,
+  "attachments": [],
+  "check_method": "email",
+  "access_code": "123456"
+}
+[2025-12-08 14:26:22,272][assert_tools.py 25][INFO]: 状态码断言成功：预期 201，实际 201
+[2025-12-08 14:26:22,273][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取钱包列表 - {}
+[2025-12-08 14:26:22,273][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/wallets
+[2025-12-08 14:26:22,684][wallet_list_page.py 54][INFO]: 获取币种数据成功，币种数据为：{'id': 'e56f09e4-e2cc-4453-a513-3b90d565fa18', 'currency': 'USDT', 'amount': 89992152.82, 'price': '1.000348', 'total_balance': 90023470.08918136, 'currency_icon': 'https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/7593ba8c-7afc-4cb8-9db7-4faaab6d3a8a/2025-11-24/usdt.png', 'percent': 55.57}
+[2025-12-08 14:26:22,685][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-转出费率 - {}
+[2025-12-08 14:26:22,685][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/account/fees?feeType=crypto_withdraw_fee&condition=USDT
+[2025-12-08 14:26:23,093][get_set_decimals.py 146][INFO]: USDT的截取小数位数为：0.00000000
+[2025-12-08 14:26:23,093][get_set_decimals.py 146][INFO]: USDT的截取小数位数为：89992152.82
+[2025-12-08 14:26:23,095][conftest.py 149][INFO]: 用例 test_transfer_out.py::test_transfer_out_pass[钱包-加密资产转出_pass-USDT-arbitrum-1.0] 执行通过
+[2025-12-08 14:26:23,098][conftest.py 156][INFO]: 在执行前获取钱包的数据
+[2025-12-08 14:26:23,098][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取钱包列表 - {}
+[2025-12-08 14:26:23,099][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/wallets
+[2025-12-08 14:26:23,421][wallet_list_page.py 54][INFO]: 获取币种数据成功，币种数据为：{'id': 'e56f09e4-e2cc-4453-a513-3b90d565fa18', 'currency': 'USDT', 'amount': 89992152.82, 'price': '1.000348', 'total_balance': 90023470.08918136, 'currency_icon': 'https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/7593ba8c-7afc-4cb8-9db7-4faaab6d3a8a/2025-11-24/usdt.png', 'percent': 55.57}
+[2025-12-08 14:26:23,423][transfer_out.py 172][INFO]: Processing chain: polygon, from_currency: USDT
+[2025-12-08 14:26:23,423][transfer_out.py 24][INFO]: Processing chain: polygon, from_currency: USDT
+[2025-12-08 14:26:23,424][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取支持的链列表 - {}
+[2025-12-08 14:26:23,424][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/chain
+[2025-12-08 14:26:24,505][read_and_save_tool.py 107][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_api_testcase_framework/Common/config.ini
+[2025-12-08 14:26:24,506][wallet_list_page.py 136][INFO]: 获取链数据成功，链数据为：{'chain_id': '137', 'chain_name': 'polygon', 'symbol': 'polygon'}
+[2025-12-08 14:26:24,506][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取加密收款地址列表 - {}
+[2025-12-08 14:26:24,506][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/payee/crypto?page=1&take=100&currency=USDT&chain_id=137
+[2025-12-08 14:26:24,804][transfer_out.py 84][INFO]: 获取的收款方ID列表为：['26fef1d7-3509-4551-bd32-8ba8bd9bd926']
+[2025-12-08 14:26:24,805][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取支持的链列表 - {}
+[2025-12-08 14:26:24,805][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/chain
+[2025-12-08 14:26:25,654][read_and_save_tool.py 107][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_api_testcase_framework/Common/config.ini
+[2025-12-08 14:26:25,654][wallet_list_page.py 136][INFO]: 获取链数据成功，链数据为：{'chain_id': '137', 'chain_name': 'polygon', 'symbol': 'polygon'}
+[2025-12-08 14:26:25,655][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取钱包列表 - {}
+[2025-12-08 14:26:25,655][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/wallets
+[2025-12-08 14:26:26,065][wallet_list_page.py 54][INFO]: 获取币种数据成功，币种数据为：{'id': 'e56f09e4-e2cc-4453-a513-3b90d565fa18', 'currency': 'USDT', 'amount': 89992152.82, 'price': '1.000348', 'total_balance': 90023470.08918136, 'currency_icon': 'https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/7593ba8c-7afc-4cb8-9db7-4faaab6d3a8a/2025-11-24/usdt.png', 'percent': 55.57}
+[2025-12-08 14:26:26,065][transfer_out.py 182][INFO]: 获取的钱包ID为：e56f09e4-e2cc-4453-a513-3b90d565fa18
+[2025-12-08 14:26:26,065][transfer_out.py 183][INFO]: 获取的链ID为：137
+[2025-12-08 14:26:26,066][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-加密资产转出_pass - {"wallet_id": "e56f09e4-e2cc-4453-a513-3b90d565fa18", "chain_id": "137", "payee_id": "26fef1d7-3509-4551-bd32-8ba8bd9bd926", "amount": 1.0, "attachments": [], "check_method": "email", "access_code": "123456"}
+[2025-12-08 14:26:26,066][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/crypto/transfer-out
+[2025-12-08 14:26:26,066][simple_request.py 386][INFO]: Request data: {
+  "wallet_id": "e56f09e4-e2cc-4453-a513-3b90d565fa18",
+  "chain_id": "137",
+  "payee_id": "26fef1d7-3509-4551-bd32-8ba8bd9bd926",
+  "amount": 1.0,
+  "attachments": [],
+  "check_method": "email",
+  "access_code": "123456"
+}
+[2025-12-08 14:26:26,574][assert_tools.py 25][INFO]: 状态码断言成功：预期 201，实际 201
+[2025-12-08 14:26:26,574][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取钱包列表 - {}
+[2025-12-08 14:26:26,574][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/wallets
+[2025-12-08 14:26:26,896][wallet_list_page.py 54][INFO]: 获取币种数据成功，币种数据为：{'id': 'e56f09e4-e2cc-4453-a513-3b90d565fa18', 'currency': 'USDT', 'amount': 89992151.82, 'price': '1.000348', 'total_balance': 90023469.08883336, 'currency_icon': 'https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/7593ba8c-7afc-4cb8-9db7-4faaab6d3a8a/2025-11-24/usdt.png', 'percent': 55.57}
+[2025-12-08 14:26:26,897][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-转出费率 - {}
+[2025-12-08 14:26:26,897][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/account/fees?feeType=crypto_withdraw_fee&condition=USDT
+[2025-12-08 14:26:27,192][get_set_decimals.py 146][INFO]: USDT的截取小数位数为：0.00000000
+[2025-12-08 14:26:27,193][get_set_decimals.py 146][INFO]: USDT的截取小数位数为：89992151.82
+[2025-12-08 14:26:27,194][conftest.py 149][INFO]: 用例 test_transfer_out.py::test_transfer_out_pass[钱包-加密资产转出_pass-USDT-polygon-1.0] 执行通过
+[2025-12-08 14:26:27,198][conftest.py 156][INFO]: 在执行前获取钱包的数据
+[2025-12-08 14:26:27,198][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取钱包列表 - {}
+[2025-12-08 14:26:27,198][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/wallets
+[2025-12-08 14:26:27,512][wallet_list_page.py 54][INFO]: 获取币种数据成功，币种数据为：{'id': 'e56f09e4-e2cc-4453-a513-3b90d565fa18', 'currency': 'USDT', 'amount': 89992151.82, 'price': '1.000348', 'total_balance': 90023469.08883336, 'currency_icon': 'https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/7593ba8c-7afc-4cb8-9db7-4faaab6d3a8a/2025-11-24/usdt.png', 'percent': 55.57}
+[2025-12-08 14:26:27,513][transfer_out.py 172][INFO]: Processing chain: avalanche, from_currency: USDT
+[2025-12-08 14:26:27,514][transfer_out.py 24][INFO]: Processing chain: avalanche, from_currency: USDT
+[2025-12-08 14:26:27,514][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取支持的链列表 - {}
+[2025-12-08 14:26:27,514][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/chain
+[2025-12-08 14:26:28,209][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2025-12-08 14:27:00,260][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2025-12-08 14:27:00,409][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2025-12-08 14:27:00,409][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2025-12-08 14:27:00,423][conftest.py 82][INFO]: ---前置处理器开始---
+[2025-12-08 14:27:00,423][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2025-12-08 14:27:00,436][excel_tools.py 406][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2025-12-08 14:27:00,436][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2025-12-08 14:27:00,436][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2025-12-08 14:27:03,651][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NjUxNzUyMjM3ODUsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2NTE3NTIyMywiZXhwIjoxNzY1MTk2ODIzfQ.Pv7GnVLe1dGxLWSmKr7iqOCZv_KWEEEyu_As_uHgiVA
+[2025-12-08 14:27:03,652][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NjUxNzUyMjM3ODUsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2NTE3NTIyMywiZXhwIjoxNzY1MTk2ODIzfQ.Pv7GnVLe1dGxLWSmKr7iqOCZv_KWEEEyu_As_uHgiVA'}
+[2025-12-08 14:27:03,654][transfer_out.py 172][INFO]: Processing chain: arbitrum, from_currency: USDT
+[2025-12-08 14:27:03,654][transfer_out.py 24][INFO]: Processing chain: arbitrum, from_currency: USDT
+[2025-12-08 14:27:03,655][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取支持的链列表 - {}
+[2025-12-08 14:27:03,655][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/chain
+[2025-12-08 14:27:04,734][read_and_save_tool.py 107][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_api_testcase_framework/Common/config.ini
+[2025-12-08 14:27:04,735][wallet_list_page.py 136][INFO]: 获取链数据成功，链数据为：{'chain_id': '42161', 'chain_name': 'arbitrum', 'symbol': 'arbitrum'}
+[2025-12-08 14:27:04,735][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取加密收款地址列表 - {}
+[2025-12-08 14:27:04,735][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/payee/crypto?page=1&take=100&currency=USDT&chain_id=42161
+[2025-12-08 14:27:05,072][transfer_out.py 84][INFO]: 获取的收款方ID列表为：['9a4d0d45-36dd-4c19-9962-87738e3c9374']
+[2025-12-08 14:27:05,073][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取支持的链列表 - {}
+[2025-12-08 14:27:05,073][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/chain
+[2025-12-08 14:27:05,555][read_and_save_tool.py 107][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_api_testcase_framework/Common/config.ini
+[2025-12-08 14:27:05,556][wallet_list_page.py 136][INFO]: 获取链数据成功，链数据为：{'chain_id': '42161', 'chain_name': 'arbitrum', 'symbol': 'arbitrum'}
+[2025-12-08 14:27:05,556][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取钱包列表 - {}
+[2025-12-08 14:27:05,556][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/wallets
+[2025-12-08 14:27:05,888][wallet_list_page.py 54][INFO]: 获取币种数据成功，币种数据为：{'id': 'e56f09e4-e2cc-4453-a513-3b90d565fa18', 'currency': 'USDT', 'amount': 89992151.82, 'price': '1.000348', 'total_balance': 90023469.08883336, 'currency_icon': 'https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/7593ba8c-7afc-4cb8-9db7-4faaab6d3a8a/2025-11-24/usdt.png', 'percent': 55.57}
+[2025-12-08 14:27:05,889][transfer_out.py 182][INFO]: 获取的钱包ID为：e56f09e4-e2cc-4453-a513-3b90d565fa18
+[2025-12-08 14:27:05,889][transfer_out.py 183][INFO]: 获取的链ID为：42161
+[2025-12-08 14:27:05,889][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-加密资产转出_fail - {"wallet_id": "e56f09e4-e2cc-4453-a513-3b90d565fa18", "chain_id": "42161", "payee_id": "abe2a694-f069-4ce1-a791-34913b149872", "amount": 0.1, "attachments": [], "check_method": "email", "access_code": "123456"}
+[2025-12-08 14:27:05,890][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/crypto/transfer-out?wallet_id=e56f09e4-e2cc-4453-a513-3b90d565fa18&chain_id=42161&payee_id=9a4d0d45-36dd-4c19-9962-87738e3c9374&amount=0.1
+[2025-12-08 14:27:05,890][simple_request.py 386][INFO]: Request data: {
+  "wallet_id": "e56f09e4-e2cc-4453-a513-3b90d565fa18",
+  "chain_id": "42161",
+  "payee_id": "abe2a694-f069-4ce1-a791-34913b149872",
+  "amount": 0.1,
+  "attachments": [],
+  "check_method": "email",
+  "access_code": "123456"
+}
+[2025-12-08 14:27:06,198][simple_request.py 435][ERROR]: Request failed with status code: 400
+[2025-12-08 14:27:06,198][assert_tools.py 25][INFO]: 状态码断言成功：预期 400，实际 400
+[2025-12-08 14:27:06,199][conftest.py 149][INFO]: 用例 test_transfer_out.py::test_transfer_out_fail[钱包-加密资产转出_fail-USDT-arbitrum-0.1] 执行通过
+[2025-12-08 14:27:06,200][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2025-12-08 16:18:12,093][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2025-12-08 16:18:12,255][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2025-12-08 16:18:12,255][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2025-12-08 16:18:12,270][conftest.py 82][INFO]: ---前置处理器开始---
+[2025-12-08 16:18:12,270][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2025-12-08 16:18:12,283][excel_tools.py 406][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2025-12-08 16:18:12,283][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2025-12-08 16:18:12,283][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2025-12-08 16:18:14,165][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NjUxODE4OTQyODEsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2NTE4MTg5NCwiZXhwIjoxNzY1MjAzNDk0fQ.gteiScQ3tGj8Np0lS2orPgG1hsNsL19VtbuYPj4gHBU
+[2025-12-08 16:18:14,165][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NjUxODE4OTQyODEsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2NTE4MTg5NCwiZXhwIjoxNzY1MjAzNDk0fQ.gteiScQ3tGj8Np0lS2orPgG1hsNsL19VtbuYPj4gHBU'}
+[2025-12-08 16:18:14,166][conftest.py 156][INFO]: 在执行前获取钱包的数据
+[2025-12-08 16:18:14,166][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取钱包列表 - {}
+[2025-12-08 16:18:14,166][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/wallets
+[2025-12-08 16:18:15,264][wallet_list_page.py 54][INFO]: 获取币种数据成功，币种数据为：{'id': 'e56f09e4-e2cc-4453-a513-3b90d565fa18', 'currency': 'USDT', 'amount': 89992151.82, 'price': '1.000175', 'total_balance': 90007900.4465685, 'currency_icon': 'https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/7593ba8c-7afc-4cb8-9db7-4faaab6d3a8a/2025-11-24/usdt.png', 'percent': 55.57}
+[2025-12-08 16:18:15,266][transfer_out.py 172][INFO]: Processing chain: arbitrum, from_currency: USDT
+[2025-12-08 16:18:15,266][transfer_out.py 24][INFO]: Processing chain: arbitrum, from_currency: USDT
+[2025-12-08 16:18:15,266][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取支持的链列表 - {}
+[2025-12-08 16:18:15,267][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/chain
+[2025-12-08 16:18:16,905][read_and_save_tool.py 107][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_api_testcase_framework/Common/config.ini
+[2025-12-08 16:18:16,905][wallet_list_page.py 136][INFO]: 获取链数据成功，链数据为：{'chain_id': '42161', 'chain_name': 'arbitrum', 'symbol': 'arbitrum'}
+[2025-12-08 16:18:16,906][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取加密收款地址列表 - {}
+[2025-12-08 16:18:16,906][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/payee/crypto?page=1&take=100&currency=USDT&chain_id=42161
+[2025-12-08 16:18:17,414][transfer_out.py 84][INFO]: 获取的收款方ID列表为：['9a4d0d45-36dd-4c19-9962-87738e3c9374']
+[2025-12-08 16:18:17,415][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取支持的链列表 - {}
+[2025-12-08 16:18:17,415][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/chain
+[2025-12-08 16:18:18,337][read_and_save_tool.py 107][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_api_testcase_framework/Common/config.ini
+[2025-12-08 16:18:18,337][wallet_list_page.py 136][INFO]: 获取链数据成功，链数据为：{'chain_id': '42161', 'chain_name': 'arbitrum', 'symbol': 'arbitrum'}
+[2025-12-08 16:18:18,338][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取钱包列表 - {}
+[2025-12-08 16:18:18,338][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/wallets
+[2025-12-08 16:18:18,755][wallet_list_page.py 54][INFO]: 获取币种数据成功，币种数据为：{'id': 'e56f09e4-e2cc-4453-a513-3b90d565fa18', 'currency': 'USDT', 'amount': 89992151.82, 'price': '1.000175', 'total_balance': 90007900.4465685, 'currency_icon': 'https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/7593ba8c-7afc-4cb8-9db7-4faaab6d3a8a/2025-11-24/usdt.png', 'percent': 55.57}
+[2025-12-08 16:18:18,756][transfer_out.py 182][INFO]: 获取的钱包ID为：e56f09e4-e2cc-4453-a513-3b90d565fa18
+[2025-12-08 16:18:18,756][transfer_out.py 183][INFO]: 获取的链ID为：42161
+[2025-12-08 16:18:18,757][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-加密资产转出_pass - {"wallet_id": "e56f09e4-e2cc-4453-a513-3b90d565fa18", "chain_id": "42161", "payee_id": "9a4d0d45-36dd-4c19-9962-87738e3c9374", "amount": 1.0, "attachments": [], "check_method": "email", "access_code": "123456"}
+[2025-12-08 16:18:18,757][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/crypto/transfer-out
+[2025-12-08 16:18:18,757][simple_request.py 386][INFO]: Request data: {
+  "wallet_id": "e56f09e4-e2cc-4453-a513-3b90d565fa18",
+  "chain_id": "42161",
+  "payee_id": "9a4d0d45-36dd-4c19-9962-87738e3c9374",
+  "amount": 1.0,
+  "attachments": [],
+  "check_method": "email",
+  "access_code": "123456"
+}
+[2025-12-08 16:18:19,196][assert_tools.py 25][INFO]: 状态码断言成功：预期 201，实际 201
+[2025-12-08 16:18:19,197][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取钱包列表 - {}
+[2025-12-08 16:18:19,198][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/wallets
+[2025-12-08 16:18:19,567][wallet_list_page.py 54][INFO]: 获取币种数据成功，币种数据为：{'id': 'e56f09e4-e2cc-4453-a513-3b90d565fa18', 'currency': 'USDT', 'amount': 89992150.82, 'price': '1.000175', 'total_balance': 90007899.4463935, 'currency_icon': 'https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/7593ba8c-7afc-4cb8-9db7-4faaab6d3a8a/2025-11-24/usdt.png', 'percent': 55.57}
+[2025-12-08 16:18:19,568][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-转出费率 - {}
+[2025-12-08 16:18:19,568][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/account/fees?feeType=crypto_withdraw_fee&condition=USDT
+[2025-12-08 16:18:19,886][get_set_decimals.py 145][INFO]: USDT的截取小数位数为：0.00000000
+[2025-12-08 16:18:19,887][get_set_decimals.py 145][INFO]: USDT的截取小数位数为：89992150.82
+[2025-12-08 16:18:19,888][conftest.py 149][INFO]: 用例 test_transfer_out.py::test_transfer_out_pass[钱包-加密资产转出_pass-USDT-arbitrum-1.0] 执行通过
+[2025-12-08 16:18:19,892][conftest.py 156][INFO]: 在执行前获取钱包的数据
+[2025-12-08 16:18:19,893][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取钱包列表 - {}
+[2025-12-08 16:18:19,893][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/wallets
+[2025-12-08 16:18:20,211][wallet_list_page.py 54][INFO]: 获取币种数据成功，币种数据为：{'id': 'e56f09e4-e2cc-4453-a513-3b90d565fa18', 'currency': 'USDT', 'amount': 89992150.82, 'price': '1.000175', 'total_balance': 90007899.4463935, 'currency_icon': 'https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/7593ba8c-7afc-4cb8-9db7-4faaab6d3a8a/2025-11-24/usdt.png', 'percent': 55.57}
+[2025-12-08 16:18:20,211][transfer_out.py 172][INFO]: Processing chain: polygon, from_currency: USDT
+[2025-12-08 16:18:20,211][transfer_out.py 24][INFO]: Processing chain: polygon, from_currency: USDT
+[2025-12-08 16:18:20,212][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取支持的链列表 - {}
+[2025-12-08 16:18:20,212][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/chain
+[2025-12-08 16:18:20,902][read_and_save_tool.py 107][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_api_testcase_framework/Common/config.ini
+[2025-12-08 16:18:20,903][wallet_list_page.py 136][INFO]: 获取链数据成功，链数据为：{'chain_id': '137', 'chain_name': 'polygon', 'symbol': 'polygon'}
+[2025-12-08 16:18:20,903][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取加密收款地址列表 - {}
+[2025-12-08 16:18:20,904][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/payee/crypto?page=1&take=100&currency=USDT&chain_id=137
+[2025-12-08 16:18:21,261][transfer_out.py 84][INFO]: 获取的收款方ID列表为：['26fef1d7-3509-4551-bd32-8ba8bd9bd926']
+[2025-12-08 16:18:21,262][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取支持的链列表 - {}
+[2025-12-08 16:18:21,262][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/chain
+[2025-12-08 16:18:22,048][read_and_save_tool.py 107][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_api_testcase_framework/Common/config.ini
+[2025-12-08 16:18:22,049][wallet_list_page.py 136][INFO]: 获取链数据成功，链数据为：{'chain_id': '137', 'chain_name': 'polygon', 'symbol': 'polygon'}
+[2025-12-08 16:18:22,050][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取钱包列表 - {}
+[2025-12-08 16:18:22,050][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/wallets
+[2025-12-08 16:18:22,660][wallet_list_page.py 54][INFO]: 获取币种数据成功，币种数据为：{'id': 'e56f09e4-e2cc-4453-a513-3b90d565fa18', 'currency': 'USDT', 'amount': 89992150.82, 'price': '1.000175', 'total_balance': 90007899.4463935, 'currency_icon': 'https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/7593ba8c-7afc-4cb8-9db7-4faaab6d3a8a/2025-11-24/usdt.png', 'percent': 55.57}
+[2025-12-08 16:18:22,660][transfer_out.py 182][INFO]: 获取的钱包ID为：e56f09e4-e2cc-4453-a513-3b90d565fa18
+[2025-12-08 16:18:22,660][transfer_out.py 183][INFO]: 获取的链ID为：137
+[2025-12-08 16:18:22,661][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-加密资产转出_pass - {"wallet_id": "e56f09e4-e2cc-4453-a513-3b90d565fa18", "chain_id": "137", "payee_id": "26fef1d7-3509-4551-bd32-8ba8bd9bd926", "amount": 1.0, "attachments": [], "check_method": "email", "access_code": "123456"}
+[2025-12-08 16:18:22,661][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/crypto/transfer-out
+[2025-12-08 16:18:22,661][simple_request.py 386][INFO]: Request data: {
+  "wallet_id": "e56f09e4-e2cc-4453-a513-3b90d565fa18",
+  "chain_id": "137",
+  "payee_id": "26fef1d7-3509-4551-bd32-8ba8bd9bd926",
+  "amount": 1.0,
+  "attachments": [],
+  "check_method": "email",
+  "access_code": "123456"
+}
+[2025-12-08 16:18:23,135][assert_tools.py 25][INFO]: 状态码断言成功：预期 201，实际 201
+[2025-12-08 16:18:23,136][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取钱包列表 - {}
+[2025-12-08 16:18:23,136][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/wallets
+[2025-12-08 16:18:23,866][wallet_list_page.py 54][INFO]: 获取币种数据成功，币种数据为：{'id': 'e56f09e4-e2cc-4453-a513-3b90d565fa18', 'currency': 'USDT', 'amount': 89992149.82, 'price': '1.000175', 'total_balance': 90007898.4462185, 'currency_icon': 'https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/7593ba8c-7afc-4cb8-9db7-4faaab6d3a8a/2025-11-24/usdt.png', 'percent': 55.57}
+[2025-12-08 16:18:23,867][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-转出费率 - {}
+[2025-12-08 16:18:23,867][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/account/fees?feeType=crypto_withdraw_fee&condition=USDT
+[2025-12-08 16:18:24,276][get_set_decimals.py 145][INFO]: USDT的截取小数位数为：0.00000000
+[2025-12-08 16:18:24,276][get_set_decimals.py 145][INFO]: USDT的截取小数位数为：89992149.82
+[2025-12-08 16:18:24,277][conftest.py 149][INFO]: 用例 test_transfer_out.py::test_transfer_out_pass[钱包-加密资产转出_pass-USDT-polygon-1.0] 执行通过
+[2025-12-08 16:18:24,281][conftest.py 156][INFO]: 在执行前获取钱包的数据
+[2025-12-08 16:18:24,281][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取钱包列表 - {}
+[2025-12-08 16:18:24,281][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/wallets
+[2025-12-08 16:18:24,603][wallet_list_page.py 54][INFO]: 获取币种数据成功，币种数据为：{'id': 'e56f09e4-e2cc-4453-a513-3b90d565fa18', 'currency': 'USDT', 'amount': 89992149.82, 'price': '1.000175', 'total_balance': 90007898.4462185, 'currency_icon': 'https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/7593ba8c-7afc-4cb8-9db7-4faaab6d3a8a/2025-11-24/usdt.png', 'percent': 55.57}
+[2025-12-08 16:18:24,605][transfer_out.py 172][INFO]: Processing chain: avalanche, from_currency: USDT
+[2025-12-08 16:18:24,605][transfer_out.py 24][INFO]: Processing chain: avalanche, from_currency: USDT
+[2025-12-08 16:18:24,606][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取支持的链列表 - {}
+[2025-12-08 16:18:24,606][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/chain
+[2025-12-08 16:18:25,235][read_and_save_tool.py 107][INFO]: 配置已保存到文件: /Users/alloyx/Desktop/alloxy_api_testcase_framework/Common/config.ini
+[2025-12-08 16:18:25,235][wallet_list_page.py 136][INFO]: 获取链数据成功，链数据为：{'chain_id': '43114', 'chain_name': 'avalanche', 'symbol': 'avalanche'}
+[2025-12-08 16:18:25,236][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取加密收款地址列表 - {}
+[2025-12-08 16:18:25,236][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/payee/crypto?page=1&take=100&currency=USDT&chain_id=43114
+[2025-12-08 16:18:25,602][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕

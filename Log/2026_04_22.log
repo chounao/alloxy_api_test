@@ -1,0 +1,585 @@
+[2026-04-22 10:26:31,380][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-04-22 10:26:31,654][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-04-22 10:26:31,654][conftest.py 49][INFO]: ---测试开始---执行的是 test 环境
+[2026-04-22 10:26:31,681][conftest.py 84][INFO]: ---前置处理器开始---
+[2026-04-22 10:26:31,681][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-04-22 10:26:31,705][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-04-22 10:26:31,705][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-04-22 10:26:31,705][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-04-22 10:26:33,389][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzY4MjQ3OTMxNjksImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NjgyNDc5MywiZXhwIjoxNzc2ODQ2MzkzfQ.WrmWaAYMI8xV0TJSS3aT93u2sGeZt6T4ZV8WqQsLHgc
+[2026-04-22 10:26:33,390][conftest.py 103][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-cn', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzY4MjQ3OTMxNjksImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NjgyNDc5MywiZXhwIjoxNzc2ODQ2MzkzfQ.WrmWaAYMI8xV0TJSS3aT93u2sGeZt6T4ZV8WqQsLHgc'}
+[2026-04-22 10:26:33,424][conftest.py 149][ERROR]: 用例 test_approval.py::test_operation_approval[操作审批-approved] 执行失败！
+[2026-04-22 10:26:33,431][conftest.py 149][ERROR]: 用例 test_approval.py::test_operation_approval[操作审批-rejected] 执行失败！
+[2026-04-22 10:26:33,432][conftest.py 52][INFO]: ---测试结束---test 环境执行完毕
+[2026-04-22 10:30:16,665][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-04-22 10:30:16,882][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-04-22 10:30:16,882][conftest.py 49][INFO]: ---测试开始---执行的是 test 环境
+[2026-04-22 10:30:16,908][conftest.py 84][INFO]: ---前置处理器开始---
+[2026-04-22 10:30:16,908][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-04-22 10:30:16,931][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-04-22 10:30:16,931][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-04-22 10:30:16,931][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-04-22 10:30:18,501][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzY4MjUwMTgyMTYsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NjgyNTAxOCwiZXhwIjoxNzc2ODQ2NjE4fQ.wP3794FWZqgzb6Bp_kSYId55qgh9C_R4yHxHNzIGeUQ
+[2026-04-22 10:30:18,502][conftest.py 103][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-cn', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzY4MjUwMTgyMTYsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NjgyNTAxOCwiZXhwIjoxNzc2ODQ2NjE4fQ.wP3794FWZqgzb6Bp_kSYId55qgh9C_R4yHxHNzIGeUQ'}
+[2026-04-22 10:30:18,538][conftest.py 149][ERROR]: 用例 test_approval.py::test_operation_approval[操作审批-rejected] 执行失败！
+[2026-04-22 10:30:18,539][conftest.py 52][INFO]: ---测试结束---test 环境执行完毕
+[2026-04-22 10:33:02,775][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-04-22 10:33:02,994][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-04-22 10:33:02,994][conftest.py 49][INFO]: ---测试开始---执行的是 test 环境
+[2026-04-22 10:33:03,021][conftest.py 84][INFO]: ---前置处理器开始---
+[2026-04-22 10:33:03,021][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-04-22 10:33:03,044][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-04-22 10:33:03,045][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-04-22 10:33:03,045][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-04-22 10:33:04,596][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzY4MjUxODQzMDcsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NjgyNTE4NCwiZXhwIjoxNzc2ODQ2Nzg0fQ.lL8YYse58bPnGGi2TTcrCzo1Qtjw6CiCAh1k5dRGjY4
+[2026-04-22 10:33:04,597][conftest.py 103][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-cn', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzY4MjUxODQzMDcsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NjgyNTE4NCwiZXhwIjoxNzc2ODQ2Nzg0fQ.lL8YYse58bPnGGi2TTcrCzo1Qtjw6CiCAh1k5dRGjY4'}
+[2026-04-22 10:33:04,599][excel_tools.py 405][INFO]: 更新测试用例结果: Approval - 获取审批列表 - {}
+[2026-04-22 10:33:04,600][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/trx/risk-approval?order_by_created_at=desc&status=pending&is_init=false
+[2026-04-22 10:33:06,031][approval.py 59][INFO]: 获取的审批数据为:{'total': 21, 'list': [{'id': 'fbd3ea9f-611f-4337-b995-63b482b3ef47', 'source_id': '6afbf950-3f86-4d91-9bbd-d7e26358be8a', 'step': 1, 'approver_id': 'c3e73a97-0283-43fd-86f0-a0bd9d94ff5f', 'status': 'pending', 'init_created_at': '2026-04-20T06:57:44.212Z', 'init_approver_id': '24e5490a-e481-409f-8f11-1798e6c1b7c7', 'init_approver_name': 'rayn zhou', 'lasted_status': 'pending', 'lasted_completed_at': None}, {'id': '01fb8f3c-1eb9-40cf-9b1a-27c333668e9c', 'source_id': 'b72b9d64-2173-4b38-88f8-2e202c4df7c8', 'step': 1, 'approver_id': 'c3e73a97-0283-43fd-86f0-a0bd9d94ff5f', 'status': 'pending', 'init_created_at': '2026-04-20T02:42:39.470Z', 'init_approver_id': '24e5490a-e481-409f-8f11-1798e6c1b7c7', 'init_approver_name': 'rayn zhou', 'lasted_status': 'pending', 'lasted_completed_at': None}, {'id': 'f53d4be7-de4c-4c04-bc21-e4ceb483e125', 'source_id': '1db5c57d-c31e-4358-b4c7-0481677cd260', 'step': 1, 'approver_id': 'c3e73a97-0283-43fd-86f0-a0bd9d94ff5f', 'status': 'pending', 'init_created_at': '2026-04-02T06:44:05.550Z', 'init_approver_id': '24e5490a-e481-409f-8f11-1798e6c1b7c7', 'init_approver_name': 'rayn zhou', 'lasted_status': 'pending', 'lasted_completed_at': None}, {'id': 'efdaadd5-fadd-43a2-81d0-3747a76fdcac', 'source_id': '247d5ed5-714a-42f6-9eb9-13fd01718e09', 'step': 1, 'approver_id': 'c3e73a97-0283-43fd-86f0-a0bd9d94ff5f', 'status': 'pending', 'init_created_at': '2026-04-02T06:34:21.578Z', 'init_approver_id': '24e5490a-e481-409f-8f11-1798e6c1b7c7', 'init_approver_name': 'rayn zhou', 'lasted_status': 'pending', 'lasted_completed_at': None}, {'id': '2d0151f4-83af-4e3a-84eb-dd54768b022c', 'source_id': '4fe159b4-ccd8-415f-b2cb-3952e058bc97', 'step': 1, 'approver_id': 'c3e73a97-0283-43fd-86f0-a0bd9d94ff5f', 'status': 'pending', 'init_created_at': '2026-04-02T06:28:40.852Z', 'init_approver_id': '24e5490a-e481-409f-8f11-1798e6c1b7c7', 'init_approver_name': 'rayn zhou', 'lasted_status': 'pending', 'lasted_completed_at': None}, {'id': 'ccb9b34b-dc14-489e-a5aa-55c7de94d6c3', 'source_id': '6eced15e-caa0-4623-9097-cc9b5a75ac65', 'step': 1, 'approver_id': 'c3e73a97-0283-43fd-86f0-a0bd9d94ff5f', 'status': 'pending', 'init_created_at': '2026-04-02T06:27:24.456Z', 'init_approver_id': '24e5490a-e481-409f-8f11-1798e6c1b7c7', 'init_approver_name': 'rayn zhou', 'lasted_status': 'pending', 'lasted_completed_at': None}, {'id': '5b4d5ce3-1ebf-4e0b-a8a5-964f434de2ed', 'source_id': '2f8a4edf-abc0-44d9-854d-e68eb5aadf47', 'step': 1, 'approver_id': 'c3e73a97-0283-43fd-86f0-a0bd9d94ff5f', 'status': 'pending', 'init_created_at': '2026-04-02T06:08:20.440Z', 'init_approver_id': '86c83230-047d-4d89-8c5a-348abf826e29', 'init_approver_name': 'sunliu zhou', 'lasted_status': 'pending', 'lasted_completed_at': None}, {'id': '86e2c104-227f-4071-b0e4-fd9a17cf00e8', 'source_id': '99f74ecd-6e97-4424-9224-52d5a1b542c3', 'step': 1, 'approver_id': 'c3e73a97-0283-43fd-86f0-a0bd9d94ff5f', 'status': 'pending', 'init_created_at': '2026-04-02T02:49:02.629Z', 'init_approver_id': '24e5490a-e481-409f-8f11-1798e6c1b7c7', 'init_approver_name': 'rayn zhou', 'lasted_status': 'pending', 'lasted_completed_at': None}, {'id': 'e55519e6-8b44-4d32-80c2-cbcf408b09d6', 'source_id': '293b5dec-fac5-470b-9b0a-5a1bfa4867f6', 'step': 1, 'approver_id': 'c3e73a97-0283-43fd-86f0-a0bd9d94ff5f', 'status': 'pending', 'init_created_at': '2026-01-29T08:22:33.581Z', 'init_approver_id': 'c3e73a97-0283-43fd-86f0-a0bd9d94ff5f', 'init_approver_name': 'ryan zhou', 'lasted_status': 'pending', 'lasted_completed_at': None}, {'id': 'dfa3622b-d656-41cb-8e39-d26eb76df12a', 'source_id': '020a7b56-442d-4c40-805e-8c8976c0247c', 'step': 1, 'approver_id': 'c3e73a97-0283-43fd-86f0-a0bd9d94ff5f', 'status': 'pending', 'init_created_at': '2026-01-29T08:20:58.357Z', 'init_approver_id': 'c3e73a97-0283-43fd-86f0-a0bd9d94ff5f', 'init_approver_name': 'ryan zhou', 'lasted_status': 'pending', 'lasted_completed_at': None}], 'current': 10}
+[2026-04-22 10:33:06,032][excel_tools.py 405][INFO]: 更新测试用例结果: Approval - 操作审批 - {"approval_log_id": {"total": 21, "list": [{"id": "fbd3ea9f-611f-4337-b995-63b482b3ef47", "source_id": "6afbf950-3f86-4d91-9bbd-d7e26358be8a", "step": 1, "approver_id": "c3e73a97-0283-43fd-86f0-a0bd9d94ff5f", "status": "pending", "init_created_at": "2026-04-20T06:57:44.212Z", "init_approver_id": "24e5490a-e481-409f-8f11-1798e6c1b7c7", "init_approver_name": "rayn zhou", "lasted_status": "pending", "lasted_completed_at": null}, {"id": "01fb8f3c-1eb9-40cf-9b1a-27c333668e9c", "source_id": "b72b9d64-2173-4b38-88f8-2e202c4df7c8", "step": 1, "approver_id": "c3e73a97-0283-43fd-86f0-a0bd9d94ff5f", "status": "pending", "init_created_at": "2026-04-20T02:42:39.470Z", "init_approver_id": "24e5490a-e481-409f-8f11-1798e6c1b7c7", "init_approver_name": "rayn zhou", "lasted_status": "pending", "lasted_completed_at": null}, {"id": "f53d4be7-de4c-4c04-bc21-e4ceb483e125", "source_id": "1db5c57d-c31e-4358-b4c7-0481677cd260", "step": 1, "approver_id": "c3e73a97-0283-43fd-86f0-a0bd9d94ff5f", "status": "pending", "init_created_at": "2026-04-02T06:44:05.550Z", "init_approver_id": "24e5490a-e481-409f-8f11-1798e6c1b7c7", "init_approver_name": "rayn zhou", "lasted_status": "pending", "lasted_completed_at": null}, {"id": "efdaadd5-fadd-43a2-81d0-3747a76fdcac", "source_id": "247d5ed5-714a-42f6-9eb9-13fd01718e09", "step": 1, "approver_id": "c3e73a97-0283-43fd-86f0-a0bd9d94ff5f", "status": "pending", "init_created_at": "2026-04-02T06:34:21.578Z", "init_approver_id": "24e5490a-e481-409f-8f11-1798e6c1b7c7", "init_approver_name": "rayn zhou", "lasted_status": "pending", "lasted_completed_at": null}, {"id": "2d0151f4-83af-4e3a-84eb-dd54768b022c", "source_id": "4fe159b4-ccd8-415f-b2cb-3952e058bc97", "step": 1, "approver_id": "c3e73a97-0283-43fd-86f0-a0bd9d94ff5f", "status": "pending", "init_created_at": "2026-04-02T06:28:40.852Z", "init_approver_id": "24e5490a-e481-409f-8f11-1798e6c1b7c7", "init_approver_name": "rayn zhou", "lasted_status": "pending", "lasted_completed_at": null}, {"id": "ccb9b34b-dc14-489e-a5aa-55c7de94d6c3", "source_id": "6eced15e-caa0-4623-9097-cc9b5a75ac65", "step": 1, "approver_id": "c3e73a97-0283-43fd-86f0-a0bd9d94ff5f", "status": "pending", "init_created_at": "2026-04-02T06:27:24.456Z", "init_approver_id": "24e5490a-e481-409f-8f11-1798e6c1b7c7", "init_approver_name": "rayn zhou", "lasted_status": "pending", "lasted_completed_at": null}, {"id": "5b4d5ce3-1ebf-4e0b-a8a5-964f434de2ed", "source_id": "2f8a4edf-abc0-44d9-854d-e68eb5aadf47", "step": 1, "approver_id": "c3e73a97-0283-43fd-86f0-a0bd9d94ff5f", "status": "pending", "init_created_at": "2026-04-02T06:08:20.440Z", "init_approver_id": "86c83230-047d-4d89-8c5a-348abf826e29", "init_approver_name": "sunliu zhou", "lasted_status": "pending", "lasted_completed_at": null}, {"id": "86e2c104-227f-4071-b0e4-fd9a17cf00e8", "source_id": "99f74ecd-6e97-4424-9224-52d5a1b542c3", "step": 1, "approver_id": "c3e73a97-0283-43fd-86f0-a0bd9d94ff5f", "status": "pending", "init_created_at": "2026-04-02T02:49:02.629Z", "init_approver_id": "24e5490a-e481-409f-8f11-1798e6c1b7c7", "init_approver_name": "rayn zhou", "lasted_status": "pending", "lasted_completed_at": null}, {"id": "e55519e6-8b44-4d32-80c2-cbcf408b09d6", "source_id": "293b5dec-fac5-470b-9b0a-5a1bfa4867f6", "step": 1, "approver_id": "c3e73a97-0283-43fd-86f0-a0bd9d94ff5f", "status": "pending", "init_created_at": "2026-01-29T08:22:33.581Z", "init_approver_id": "c3e73a97-0283-43fd-86f0-a0bd9d94ff5f", "init_approver_name": "ryan zhou", "lasted_status": "pending", "lasted_completed_at": null}, {"id": "dfa3622b-d656-41cb-8e39-d26eb76df12a", "source_id": "020a7b56-442d-4c40-805e-8c8976c0247c", "step": 1, "approver_id": "c3e73a97-0283-43fd-86f0-a0bd9d94ff5f", "status": "pending", "init_created_at": "2026-01-29T08:20:58.357Z", "init_approver_id": "c3e73a97-0283-43fd-86f0-a0bd9d94ff5f", "init_approver_name": "ryan zhou", "lasted_status": "pending", "lasted_completed_at": null}], "current": 10}, "status": "rejected", "attachments": [], "memo": "1"}
+[2026-04-22 10:33:06,032][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/trx/risk-approval
+[2026-04-22 10:33:06,032][simple_request.py 386][INFO]: Request data: {
+  "approval_log_id": {
+    "total": 21,
+    "list": [
+      {
+        "id": "fbd3ea9f-611f-4337-b995-63b482b3ef47",
+        "source_id": "6afbf950-3f86-4d91-9bbd-d7e26358be8a",
+        "step": 1,
+        "approver_id": "c3e73a97-0283-43fd-86f0-a0bd9d94ff5f",
+        "status": "pending",
+        "init_created_at": "2026-04-20T06:57:44.212Z",
+        "init_approver_id": "24e5490a-e481-409f-8f11-1798e6c1b7c7",
+        "init_approver_name": "rayn zhou",
+        "lasted_status": "pending",
+        "lasted_completed_at": null
+      },
+      {
+        "id": "01fb8f3c-1eb9-40cf-9b1a-27c333668e9c",
+        "source_id": "b72b9d64-2173-4b38-88f8-2e202c4df7c8",
+        "step": 1,
+        "approver_id": "c3e73a97-0283-43fd-86f0-a0bd9d94ff5f",
+        "status": "pending",
+        "init_created_at": "2026-04-20T02:42:39.470Z",
+        "init_approver_id": "24e5490a-e481-409f-8f11-1798e6c1b7c7",
+        "init_approver_name": "rayn zhou",
+        "lasted_status": "pending",
+        "lasted_completed_at": null
+      },
+      {
+        "id": "f53d4be7-de4c-4c04-bc21-e4ceb483e125",
+        "source_id": "1db5c57d-c31e-4358-b4c7-0481677cd260",
+        "step": 1,
+        "approver_id": "c3e73a97-0283-43fd-86f0-a0bd9d94ff5f",
+        "status": "pending",
+        "init_created_at": "2026-04-02T06:44:05.550Z",
+        "init_approver_id": "24e5490a-e481-409f-8f11-1798e6c1b7c7",
+        "init_approver_name": "rayn zhou",
+        "lasted_status": "pending",
+        "lasted_completed_at": null
+      },
+      {
+        "id": "efdaadd5-fadd-43a2-81d0-3747a76fdcac",
+        "source_id": "247d5ed5-714a-42f6-9eb9-13fd01718e09",
+        "step": 1,
+        "approver_id": "c3e73a97-0283-43fd-86f0-a0bd9d94ff5f",
+        "status": "pending",
+        "init_created_at": "2026-04-02T06:34:21.578Z",
+        "init_approver_id": "24e5490a-e481-409f-8f11-1798e6c1b7c7",
+        "init_approver_name": "rayn zhou",
+        "lasted_status": "pending",
+        "lasted_completed_at": null
+      },
+      {
+        "id": "2d0151f4-83af-4e3a-84eb-dd54768b022c",
+        "source_id": "4fe159b4-ccd8-415f-b2cb-3952e058bc97",
+        "step": 1,
+        "approver_id": "c3e73a97-0283-43fd-86f0-a0bd9d94ff5f",
+        "status": "pending",
+        "init_created_at": "2026-04-02T06:28:40.852Z",
+        "init_approver_id": "24e5490a-e481-409f-8f11-1798e6c1b7c7",
+        "init_approver_name": "rayn zhou",
+        "lasted_status": "pending",
+        "lasted_completed_at": null
+      },
+      {
+        "id": "ccb9b34b-dc14-489e-a5aa-55c7de94d6c3",
+        "source_id": "6eced15e-caa0-4623-9097-cc9b5a75ac65",
+        "step": 1,
+        "approver_id": "c3e73a97-0283-43fd-86f0-a0bd9d94ff5f",
+        "status": "pending",
+        "init_created_at": "2026-04-02T06:27:24.456Z",
+        "init_approver_id": "24e5490a-e481-409f-8f11-1798e6c1b7c7",
+        "init_approver_name": "rayn zhou",
+        "lasted_status": "pending",
+        "lasted_completed_at": null
+      },
+      {
+        "id": "5b4d5ce3-1ebf-4e0b-a8a5-964f434de2ed",
+        "source_id": "2f8a4edf-abc0-44d9-854d-e68eb5aadf47",
+        "step": 1,
+        "approver_id": "c3e73a97-0283-43fd-86f0-a0bd9d94ff5f",
+        "status": "pending",
+        "init_created_at": "2026-04-02T06:08:20.440Z",
+        "init_approver_id": "86c83230-047d-4d89-8c5a-348abf826e29",
+        "init_approver_name": "sunliu zhou",
+        "lasted_status": "pending",
+        "lasted_completed_at": null
+      },
+      {
+        "id": "86e2c104-227f-4071-b0e4-fd9a17cf00e8",
+        "source_id": "99f74ecd-6e97-4424-9224-52d5a1b542c3",
+        "step": 1,
+        "approver_id": "c3e73a97-0283-43fd-86f0-a0bd9d94ff5f",
+        "status": "pending",
+        "init_created_at": "2026-04-02T02:49:02.629Z",
+        "init_approver_id": "24e5490a-e481-409f-8f11-1798e6c1b7c7",
+        "init_approver_name": "rayn zhou",
+        "lasted_status": "pending",
+        "lasted_completed_at": null
+      },
+      {
+        "id": "e55519e6-8b44-4d32-80c2-cbcf408b09d6",
+        "source_id": "293b5dec-fac5-470b-9b0a-5a1bfa4867f6",
+        "step": 1,
+        "approver_id": "c3e73a97-0283-43fd-86f0-a0bd9d94ff5f",
+        "status": "pending",
+        "init_created_at": "2026-01-29T08:22:33.581Z",
+        "init_approver_id": "c3e73a97-0283-43fd-86f0-a0bd9d94ff5f",
+        "init_approver_name": "ryan zhou",
+        "lasted_status": "pending",
+        "lasted_completed_at": null
+      },
+      {
+        "id": "dfa3622b-d656-41cb-8e39-d26eb76df12a",
+        "source_id": "020a7b56-442d-4c40-805e-8c8976c0247c",
+        "step": 1,
+        "approver_id": "c3e73a97-0283-43fd-86f0-a0bd9d94ff5f",
+        "status": "pending",
+        "init_created_at": "2026-01-29T08:20:58.357Z",
+        "init_approver_id": "c3e73a97-0283-43fd-86f0-a0bd9d94ff5f",
+        "init_approver_name": "ryan zhou",
+        "lasted_status": "pending",
+        "lasted_completed_at": null
+      }
+    ],
+    "current": 10
+  },
+  "status": "rejected",
+  "attachments": [],
+  "memo": "1"
+}
+[2026-04-22 10:33:06,521][simple_request.py 435][ERROR]: Request failed with status code: 400
+[2026-04-22 10:33:06,522][approval.py 105][INFO]: 操作审核结果为:None
+[2026-04-22 10:33:06,560][conftest.py 149][ERROR]: 用例 test_approval.py::test_operation_approval[操作审批-rejected] 执行失败！
+[2026-04-22 10:33:06,563][conftest.py 52][INFO]: ---测试结束---test 环境执行完毕
+[2026-04-22 10:34:05,611][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-04-22 10:34:05,831][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-04-22 10:34:05,831][conftest.py 49][INFO]: ---测试开始---执行的是 test 环境
+[2026-04-22 10:34:05,858][conftest.py 84][INFO]: ---前置处理器开始---
+[2026-04-22 10:34:05,858][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-04-22 10:34:05,882][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-04-22 10:34:05,883][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-04-22 10:34:05,883][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-04-22 10:34:07,442][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzY4MjUyNDcyMjUsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NjgyNTI0NywiZXhwIjoxNzc2ODQ2ODQ3fQ.l5im90GjFxuBeS8gO59R4uR6IsL2Hru9_7V_qPWLqWs
+[2026-04-22 10:34:07,443][conftest.py 103][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-cn', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzY4MjUyNDcyMjUsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NjgyNTI0NywiZXhwIjoxNzc2ODQ2ODQ3fQ.l5im90GjFxuBeS8gO59R4uR6IsL2Hru9_7V_qPWLqWs'}
+[2026-04-22 10:34:07,447][excel_tools.py 405][INFO]: 更新测试用例结果: Approval - 获取审批列表 - {}
+[2026-04-22 10:34:07,447][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/trx/risk-approval?order_by_created_at=desc&status=pending&is_init=false
+[2026-04-22 10:34:09,213][approval.py 27][INFO]: 获取的审批数据为:fbd3ea9f-611f-4337-b995-63b482b3ef47
+[2026-04-22 10:34:09,213][excel_tools.py 405][INFO]: 更新测试用例结果: Approval - 操作审批 - {"approval_log_id": "fbd3ea9f-611f-4337-b995-63b482b3ef47", "status": "rejected", "attachments": [], "memo": "1"}
+[2026-04-22 10:34:09,214][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/trx/risk-approval
+[2026-04-22 10:34:09,214][simple_request.py 386][INFO]: Request data: {
+  "approval_log_id": "fbd3ea9f-611f-4337-b995-63b482b3ef47",
+  "status": "rejected",
+  "attachments": [],
+  "memo": "1"
+}
+[2026-04-22 10:34:09,850][approval.py 105][INFO]: 操作审核结果为:None
+[2026-04-22 10:34:09,889][conftest.py 149][ERROR]: 用例 test_approval.py::test_operation_approval[操作审批-rejected] 执行失败！
+[2026-04-22 10:34:09,891][conftest.py 52][INFO]: ---测试结束---test 环境执行完毕
+[2026-04-22 10:34:49,979][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-04-22 10:34:50,204][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-04-22 10:34:50,204][conftest.py 49][INFO]: ---测试开始---执行的是 test 环境
+[2026-04-22 10:34:50,232][conftest.py 84][INFO]: ---前置处理器开始---
+[2026-04-22 10:34:50,232][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-04-22 10:34:50,256][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-04-22 10:34:50,256][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-04-22 10:34:50,256][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-04-22 10:34:51,130][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzY4MjUyOTA5NDEsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NjgyNTI5MCwiZXhwIjoxNzc2ODQ2ODkwfQ.8wWxoCiYciC11jVe9zE-vKK4D2ZEB5LsGunioTavXZI
+[2026-04-22 10:34:51,132][conftest.py 103][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-cn', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzY4MjUyOTA5NDEsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NjgyNTI5MCwiZXhwIjoxNzc2ODQ2ODkwfQ.8wWxoCiYciC11jVe9zE-vKK4D2ZEB5LsGunioTavXZI'}
+[2026-04-22 10:34:51,135][excel_tools.py 405][INFO]: 更新测试用例结果: Approval - 获取审批列表 - {}
+[2026-04-22 10:34:51,136][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/trx/risk-approval?order_by_created_at=desc&status=pending&is_init=false
+[2026-04-22 10:34:52,729][approval.py 27][INFO]: 获取的审批数据为:01fb8f3c-1eb9-40cf-9b1a-27c333668e9c
+[2026-04-22 10:34:52,730][excel_tools.py 405][INFO]: 更新测试用例结果: Approval - 操作审批 - {"approval_log_id": "01fb8f3c-1eb9-40cf-9b1a-27c333668e9c", "status": "approved", "attachments": [], "memo": "1"}
+[2026-04-22 10:34:52,730][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/trx/risk-approval
+[2026-04-22 10:34:52,730][simple_request.py 386][INFO]: Request data: {
+  "approval_log_id": "01fb8f3c-1eb9-40cf-9b1a-27c333668e9c",
+  "status": "approved",
+  "attachments": [],
+  "memo": "1"
+}
+[2026-04-22 10:34:53,297][approval.py 105][INFO]: 操作审核结果为:None
+[2026-04-22 10:34:53,297][assert_tools.py 25][INFO]: 状态码断言成功：预期 201，实际 201
+[2026-04-22 10:34:53,298][conftest.py 151][INFO]: 用例 test_approval.py::test_operation_approval[操作审批-approved] 执行通过
+[2026-04-22 10:34:53,302][excel_tools.py 405][INFO]: 更新测试用例结果: Approval - 获取审批列表 - {}
+[2026-04-22 10:34:53,302][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/trx/risk-approval?order_by_created_at=desc&status=pending&is_init=false
+[2026-04-22 10:34:53,827][approval.py 27][INFO]: 获取的审批数据为:f53d4be7-de4c-4c04-bc21-e4ceb483e125
+[2026-04-22 10:34:53,827][excel_tools.py 405][INFO]: 更新测试用例结果: Approval - 操作审批 - {"approval_log_id": "f53d4be7-de4c-4c04-bc21-e4ceb483e125", "status": "rejected", "attachments": [], "memo": "1"}
+[2026-04-22 10:34:53,827][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/trx/risk-approval
+[2026-04-22 10:34:53,827][simple_request.py 386][INFO]: Request data: {
+  "approval_log_id": "f53d4be7-de4c-4c04-bc21-e4ceb483e125",
+  "status": "rejected",
+  "attachments": [],
+  "memo": "1"
+}
+[2026-04-22 10:34:54,417][approval.py 105][INFO]: 操作审核结果为:None
+[2026-04-22 10:34:54,417][assert_tools.py 25][INFO]: 状态码断言成功：预期 201，实际 201
+[2026-04-22 10:34:54,418][conftest.py 151][INFO]: 用例 test_approval.py::test_operation_approval[操作审批-rejected] 执行通过
+[2026-04-22 10:34:54,419][conftest.py 52][INFO]: ---测试结束---test 环境执行完毕
+[2026-04-22 15:08:37,566][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-04-22 15:08:37,790][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-04-22 15:08:37,790][conftest.py 49][INFO]: ---测试开始---执行的是 test 环境
+[2026-04-22 15:08:37,824][conftest.py 84][INFO]: ---前置处理器开始---
+[2026-04-22 15:08:37,824][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-04-22 15:08:37,851][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-04-22 15:08:37,851][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-04-22 15:08:37,851][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-04-22 15:08:39,644][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzY4NDE3MTk0NjEsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Njg0MTcxOSwiZXhwIjoxNzc2ODYzMzE5fQ.wTt6WoDkuFtui6wV5RjcbNuWDRTdCh0cmH82npcr4hU
+[2026-04-22 15:08:39,645][conftest.py 103][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-cn', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzY4NDE3MTk0NjEsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Njg0MTcxOSwiZXhwIjoxNzc2ODYzMzE5fQ.wTt6WoDkuFtui6wV5RjcbNuWDRTdCh0cmH82npcr4hU'}
+[2026-04-22 15:08:39,651][excel_tools.py 409][ERROR]: 更新测试用例结果失败: 未找到用例名称 '获取账户信息'
+[2026-04-22 15:08:39,651][RYT.py 34][ERROR]: 详情失败: 未找到用例名称 '获取账户信息'
+[2026-04-22 15:08:39,687][conftest.py 149][ERROR]: 用例 test_ryt.py::test_get_account_info 执行失败！
+[2026-04-22 15:08:39,689][conftest.py 52][INFO]: ---测试结束---test 环境执行完毕
+[2026-04-22 15:16:28,100][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-04-22 15:16:28,316][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-04-22 15:16:28,317][conftest.py 49][INFO]: ---测试开始---执行的是 test 环境
+[2026-04-22 15:16:28,345][conftest.py 84][INFO]: ---前置处理器开始---
+[2026-04-22 15:16:28,346][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-04-22 15:16:28,374][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-04-22 15:16:28,374][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-04-22 15:16:28,374][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-04-22 15:16:29,875][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzY4NDIxODk2OTMsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Njg0MjE4OSwiZXhwIjoxNzc2ODYzNzg5fQ.KDSXr5K43aOZE2k4fmXAN4Ja5hfQMj4fjaexsKA_eT8
+[2026-04-22 15:16:29,876][conftest.py 103][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-cn', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzY4NDIxODk2OTMsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Njg0MjE4OSwiZXhwIjoxNzc2ODYzNzg5fQ.KDSXr5K43aOZE2k4fmXAN4Ja5hfQMj4fjaexsKA_eT8'}
+[2026-04-22 15:16:29,877][excel_tools.py 405][INFO]: 更新测试用例结果: RYT_page - 获取交易记录 - {}
+[2026-04-22 15:16:29,877][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/contract/getRytTransactionList?page=1&take=20
+[2026-04-22 15:16:32,026][RYT.py 145][INFO]: 获取的交易记录为:{'total': 129, 'list': [{'id': 'dfe740f8-fdfc-4e93-86dd-51676e8a6c79', 'created_at': '2026-04-02T06:09:59.707Z', 'update_at': '2026-04-02T06:09:59.707Z', 'delete_at': None, 'version': 1, 'remarks': None, 'id_no': '2039586121556410370', 'account_id': '929ff175-e26b-43ad-ba02-467756bff867', 'balance_id': 'c407c1cf-b9f3-4747-92ed-3d0d10752e55', 'wallet_id': '881d5037-b04b-4be4-bb11-0ec0024ab6d3', 'from_currency': 'USDC', 'to_currency': 'RYT', 'amount': '0.0999163314458582000000000', 'business_type': 'crypto_contract_in', 'fee': '0.00000000', 'status': 'pending', 'process_status': 'pending_approval', 'transaction_id': None, 'share_confirm_time': None, 'quote': '1000.136800000000000000', 'actual_payment': '99.930000000000000000', 'usdc_amount': '100.000000000000000000', 'usdc_rate': '1000.837386170319300000', 'transaction_at': None, 'crypto_transaction_id': '74b93e4d-488c-469c-9f30-a87565f965c5', 'source_id': None, 'complete_at': None, 'batch_id': None, 'usdc_fee': '0.070000000000000000', 'approve_id': None, 'tx_id': None, 'identifier_id': '9498570428'}, {'id': 'ca40175a-e1e6-484a-af4a-40b54e3efaa5', 'created_at': '2026-04-02T06:09:44.076Z', 'update_at': '2026-04-02T06:09:44.076Z', 'delete_at': None, 'version': 1, 'remarks': None, 'id_no': '2039586057240928257', 'account_id': '929ff175-e26b-43ad-ba02-467756bff867', 'balance_id': 'c407c1cf-b9f3-4747-92ed-3d0d10752e55', 'wallet_id': '881d5037-b04b-4be4-bb11-0ec0024ab6d3', 'from_currency': 'RYT', 'to_currency': 'USDC', 'amount': '0.0000100000000000000000000', 'business_type': 'crypto_contract_out', 'fee': '0.00000000', 'status': 'pending', 'process_status': 'pending_approval', 'transaction_id': '3010aa95-7da8-4d46-a632-08b5ce458828', 'share_confirm_time': None, 'quote': '1000.136800000000000000', 'actual_payment': '0.000010000000000000', 'usdc_amount': '0.010008373861703192', 'usdc_rate': '0.000999163314458582', 'transaction_at': None, 'crypto_transaction_id': 'c18d0ffb-ae97-4e1b-817d-08e4072effac', 'source_id': None, 'complete_at': None, 'batch_id': None, 'usdc_fee': '0.000007005861703192', 'approve_id': None, 'tx_id': None, 'identifier_id': '9498570428'}, {'id': '510f62d0-ed82-4191-9f5c-2b07b39d0962', 'created_at': '2026-03-31T08:44:22.619Z', 'update_at': '2026-03-31T08:44:59.439Z', 'delete_at': None, 'version': 2, 'remarks': None, 'id_no': '2038900197302464513', 'account_id': '929ff175-e26b-43ad-ba02-467756bff867', 'balance_id': 'c407c1cf-b9f3-4747-92ed-3d0d10752e55', 'wallet_id': '881d5037-b04b-4be4-bb11-0ec0024ab6d3', 'from_currency': 'USDC', 'to_currency': 'RYT', 'amount': '9.9916331445858200000000000', 'business_type': 'crypto_contract_in', 'fee': '0.00000000', 'status': 'failed', 'process_status': 'rejected', 'transaction_id': None, 'share_confirm_time': None, 'quote': '1000.136800000000000000', 'actual_payment': '9993.000000000000000000', 'usdc_amount': '10000.000000000000000000', 'usdc_rate': '1000.837386170319300000', 'transaction_at': None, 'crypto_transaction_id': '143d0de1-cd90-4cf5-9663-bc2ac73aea27', 'source_id': None, 'complete_at': None, 'batch_id': None, 'usdc_fee': '7.000000000000000000', 'approve_id': None, 'tx_id': None, 'identifier_id': '9498570428'}, {'id': 'c5046e36-3ecc-4aac-88e0-d4bd4ae94aea', 'created_at': '2026-03-26T07:10:54.563Z', 'update_at': '2026-03-26T07:10:54.563Z', 'delete_at': None, 'version': 1, 'remarks': None, 'id_no': '2037064736091131905', 'account_id': '929ff175-e26b-43ad-ba02-467756bff867', 'balance_id': 'c407c1cf-b9f3-4747-92ed-3d0d10752e55', 'wallet_id': '881d5037-b04b-4be4-bb11-0ec0024ab6d3', 'from_currency': 'RYT', 'to_currency': 'RYT', 'amount': '0.0001000000000000000000000', 'business_type': 'failed_refund', 'fee': '0.00000000', 'status': 'completed', 'process_status': 'completed', 'transaction_id': 'efd915a3-bf90-41f5-be87-5642f5f3f05f', 'share_confirm_time': None, 'quote': None, 'actual_payment': None, 'usdc_amount': '0.100083738617031930', 'usdc_rate': None, 'transaction_at': None, 'crypto_transaction_id': None, 'source_id': '96c9a0c5-790f-469c-b80b-69dcf1666011', 'complete_at': None, 'batch_id': None, 'usdc_fee': None, 'approve_id': None, 'tx_id': None, 'identifier_id': '9498570428'}, {'id': '96c9a0c5-790f-469c-b80b-69dcf1666011', 'created_at': '2026-03-26T07:10:42.124Z', 'update_at': '2026-03-26T07:10:42.124Z', 'delete_at': None, 'version': 3, 'remarks': None, 'id_no': '2037064685168087041', 'account_id': '929ff175-e26b-43ad-ba02-467756bff867', 'balance_id': 'c407c1cf-b9f3-4747-92ed-3d0d10752e55', 'wallet_id': '881d5037-b04b-4be4-bb11-0ec0024ab6d3', 'from_currency': 'RYT', 'to_currency': 'USDC', 'amount': '0.0001000000000000000000000', 'business_type': 'crypto_contract_out', 'fee': '0.00000000', 'status': 'failed', 'process_status': 'rejected', 'transaction_id': 'a29cd7ae-283f-4424-bbc5-c772576423bf', 'share_confirm_time': None, 'quote': '1000.136800000000000000', 'actual_payment': '0.000100000000000000', 'usdc_amount': '0.100083738617031930', 'usdc_rate': '0.000999163314458582', 'transaction_at': None, 'crypto_transaction_id': 'bc23564c-6883-434f-a072-998b78a6d3e0', 'source_id': None, 'complete_at': None, 'batch_id': None, 'usdc_fee': '0.000070058617031922', 'approve_id': None, 'tx_id': None, 'identifier_id': '9498570428'}, {'id': '73462a98-59a4-46ac-8900-d04a734308ea', 'created_at': '2026-03-26T07:10:32.464Z', 'update_at': '2026-03-26T07:11:02.255Z', 'delete_at': None, 'version': 2, 'remarks': None, 'id_no': '2037064643388633090', 'account_id': '929ff175-e26b-43ad-ba02-467756bff867', 'balance_id': 'c407c1cf-b9f3-4747-92ed-3d0d10752e55', 'wallet_id': '881d5037-b04b-4be4-bb11-0ec0024ab6d3', 'from_currency': 'USDC', 'to_currency': 'RYT', 'amount': '0.0999163314458582000000000', 'business_type': 'crypto_contract_in', 'fee': '0.00000000', 'status': 'failed', 'process_status': 'rejected', 'transaction_id': None, 'share_confirm_time': None, 'quote': '1000.136800000000000000', 'actual_payment': '99.930000000000000000', 'usdc_amount': '100.000000000000000000', 'usdc_rate': '1000.837386170319300000', 'transaction_at': None, 'crypto_transaction_id': '0c756c82-a737-49fd-acd2-f9e01a4170c9', 'source_id': None, 'complete_at': None, 'batch_id': None, 'usdc_fee': '0.070000000000000000', 'approve_id': None, 'tx_id': None, 'identifier_id': '9498570428'}, {'id': '39d523cf-776d-4894-8033-75cc4ab4c78f', 'created_at': '2026-03-23T03:22:14.001Z', 'update_at': '2026-03-23T03:22:14.001Z', 'delete_at': None, 'version': 1, 'remarks': None, 'id_no': '2035920024311398402', 'account_id': '929ff175-e26b-43ad-ba02-467756bff867', 'balance_id': 'c407c1cf-b9f3-4747-92ed-3d0d10752e55', 'wallet_id': '881d5037-b04b-4be4-bb11-0ec0024ab6d3', 'from_currency': 'RYT', 'to_currency': 'RYT', 'amount': '0.0000100000000000000000000', 'business_type': 'failed_refund', 'fee': '0.00000000', 'status': 'completed', 'process_status': 'completed', 'transaction_id': 'ef3c5545-3590-4124-ad33-4e0d45edc041', 'share_confirm_time': None, 'quote': None, 'actual_payment': None, 'usdc_amount': '0.010008373861703192', 'usdc_rate': None, 'transaction_at': None, 'crypto_transaction_id': None, 'source_id': '706d3a47-e96d-432e-9130-1fb7852589e8', 'complete_at': None, 'batch_id': None, 'usdc_fee': None, 'approve_id': None, 'tx_id': None, 'identifier_id': '9498570428'}, {'id': 'a351bc49-50c9-40f3-a1d9-d0c751203bf2', 'created_at': '2026-03-23T03:21:43.738Z', 'update_at': '2026-03-23T03:21:43.738Z', 'delete_at': None, 'version': 3, 'remarks': None, 'id_no': '2035919898587045889', 'account_id': '929ff175-e26b-43ad-ba02-467756bff867', 'balance_id': 'c407c1cf-b9f3-4747-92ed-3d0d10752e55', 'wallet_id': '881d5037-b04b-4be4-bb11-0ec0024ab6d3', 'from_currency': 'RYT', 'to_currency': 'USDC', 'amount': '0.0000200000000000000000000', 'business_type': 'crypto_contract_out', 'fee': '0.00000000', 'status': 'pending', 'process_status': 'completed', 'transaction_id': 'd78e25c0-b30d-4342-a0a8-25dbe41be071', 'share_confirm_time': None, 'quote': '1000.136800000000000000', 'actual_payment': '0.000020000000000000', 'usdc_amount': '0.020016747723406385', 'usdc_rate': '0.000999163314458582', 'transaction_at': None, 'crypto_transaction_id': '4d107056-f433-4f6d-9d96-c0dbb5ccf427', 'source_id': '2a20080b-114e-4f82-9456-b9aa3aac7b5b', 'complete_at': None, 'batch_id': None, 'usdc_fee': '0.000014011723406384', 'approve_id': '2a20080b-114e-4f82-9456-b9aa3aac7b5b', 'tx_id': None, 'identifier_id': '9498570428'}, {'id': '706d3a47-e96d-432e-9130-1fb7852589e8', 'created_at': '2026-03-23T03:21:39.793Z', 'update_at': '2026-03-23T03:21:39.793Z', 'delete_at': None, 'version': 3, 'remarks': None, 'id_no': '2035919882023829506', 'account_id': '929ff175-e26b-43ad-ba02-467756bff867', 'balance_id': 'c407c1cf-b9f3-4747-92ed-3d0d10752e55', 'wallet_id': '881d5037-b04b-4be4-bb11-0ec0024ab6d3', 'from_currency': 'RYT', 'to_currency': 'USDC', 'amount': '0.0000100000000000000000000', 'business_type': 'crypto_contract_out', 'fee': '0.00000000', 'status': 'failed', 'process_status': 'rejected', 'transaction_id': '8e20d736-6990-4bfa-a209-6e4cae9fcba5', 'share_confirm_time': None, 'quote': '1000.136800000000000000', 'actual_payment': '0.000010000000000000', 'usdc_amount': '0.010008373861703192', 'usdc_rate': '0.000999163314458582', 'transaction_at': None, 'crypto_transaction_id': '9263d96d-3480-4d2a-a93b-1b49d8081266', 'source_id': None, 'complete_at': None, 'batch_id': None, 'usdc_fee': '0.000007005861703192', 'approve_id': None, 'tx_id': None, 'identifier_id': '9498570428'}, {'id': '6f740031-2b94-40bb-b81f-8b13f02b19bd', 'created_at': '2026-03-23T03:21:21.676Z', 'update_at': '2026-03-23T03:22:32.902Z', 'delete_at': None, 'version': 2, 'remarks': None, 'id_no': '2035919804798214145', 'account_id': '929ff175-e26b-43ad-ba02-467756bff867', 'balance_id': 'c407c1cf-b9f3-4747-92ed-3d0d10752e55', 'wallet_id': '881d5037-b04b-4be4-bb11-0ec0024ab6d3', 'from_currency': 'USDC', 'to_currency': 'RYT', 'amount': '0.0019983266289171640000000', 'business_type': 'crypto_contract_in', 'fee': '0.00000000', 'status': 'failed', 'process_status': 'rejected', 'transaction_id': None, 'share_confirm_time': None, 'quote': '1000.136800000000000000', 'actual_payment': '1.998600000000000000', 'usdc_amount': '2.000000000000000000', 'usdc_rate': '1000.837386170319300000', 'transaction_at': None, 'crypto_transaction_id': 'fc453280-2739-478d-a5dc-52fed2c0df40', 'source_id': None, 'complete_at': None, 'batch_id': None, 'usdc_fee': '0.001400000000000000', 'approve_id': None, 'tx_id': None, 'identifier_id': '9498570428'}, {'id': 'a7ec804e-19ec-4f4a-97ba-c5943c756f8b', 'created_at': '2026-03-23T03:21:16.491Z', 'update_at': '2026-03-23T03:21:16.491Z', 'delete_at': None, 'version': 3, 'remarks': None, 'id_no': '2035919783063330818', 'account_id': '929ff175-e26b-43ad-ba02-467756bff867', 'balance_id': 'c407c1cf-b9f3-4747-92ed-3d0d10752e55', 'wallet_id': '881d5037-b04b-4be4-bb11-0ec0024ab6d3', 'from_currency': 'USDC', 'to_currency': 'RYT', 'amount': '0.0009991633144585820000000', 'business_type': 'crypto_contract_in', 'fee': '0.00000000', 'status': 'pending', 'process_status': 'completed', 'transaction_id': None, 'share_confirm_time': None, 'quote': '1000.136800000000000000', 'actual_payment': '0.999300000000000000', 'usdc_amount': '1.000000000000000000', 'usdc_rate': '1000.837386170319300000', 'transaction_at': None, 'crypto_transaction_id': '97fceee9-68e4-4393-a15a-610414c710ce', 'source_id': '985dfe9d-2bd3-428c-8552-443ee9533628', 'complete_at': None, 'batch_id': None, 'usdc_fee': '0.000700000000000000', 'approve_id': '985dfe9d-2bd3-428c-8552-443ee9533628', 'tx_id': None, 'identifier_id': '9498570428'}, {'id': 'ad72942d-cb9f-4ece-8a35-937d98e94453', 'created_at': '2026-03-20T03:39:37.015Z', 'update_at': '2026-03-20T03:39:37.015Z', 'delete_at': None, 'version': 3, 'remarks': None, 'id_no': '2034837235478499329', 'account_id': '929ff175-e26b-43ad-ba02-467756bff867', 'balance_id': 'c407c1cf-b9f3-4747-92ed-3d0d10752e55', 'wallet_id': '881d5037-b04b-4be4-bb11-0ec0024ab6d3', 'from_currency': 'USDC', 'to_currency': 'RYT', 'amount': '0.0099916331445858200000000', 'business_type': 'crypto_contract_in', 'fee': '0.00000000', 'status': 'pending', 'process_status': 'completed', 'transaction_id': None, 'share_confirm_time': None, 'quote': '1000.136800000000000000', 'actual_payment': '9.993000000000000000', 'usdc_amount': '10.000000000000000000', 'usdc_rate': '1000.837386170319300000', 'transaction_at': None, 'crypto_transaction_id': '223dad03-4611-4e47-8ed3-18ad32ed954a', 'source_id': '7f9cecf3-890f-44dd-b209-6a99c1839ed4', 'complete_at': None, 'batch_id': None, 'usdc_fee': '0.007000000000000000', 'approve_id': '7f9cecf3-890f-44dd-b209-6a99c1839ed4', 'tx_id': None, 'identifier_id': '9498570428'}, {'id': '770508ee-03a8-4b77-8300-630d801e1754', 'created_at': '2026-03-20T03:09:17.630Z', 'update_at': '2026-03-20T03:09:17.630Z', 'delete_at': None, 'version': 3, 'remarks': None, 'id_no': '2034829604340813826', 'account_id': '929ff175-e26b-43ad-ba02-467756bff867', 'balance_id': 'c407c1cf-b9f3-4747-92ed-3d0d10752e55', 'wallet_id': '881d5037-b04b-4be4-bb11-0ec0024ab6d3', 'from_currency': 'USDC', 'to_currency': 'RYT', 'amount': '0.0999163314458582000000000', 'business_type': 'crypto_contract_in', 'fee': '0.00000000', 'status': 'pending', 'process_status': 'completed', 'transaction_id': None, 'share_confirm_time': None, 'quote': '1000.136800000000000000', 'actual_payment': '99.930000000000000000', 'usdc_amount': '100.000000000000000000', 'usdc_rate': '1000.837386170319300000', 'transaction_at': None, 'crypto_transaction_id': '714fb6db-fa3e-4ae2-bb01-237ae9c9c507', 'source_id': 'ab591bdc-ffb9-4737-9031-fa0f8377a3a0', 'complete_at': None, 'batch_id': None, 'usdc_fee': '0.070000000000000000', 'approve_id': 'ab591bdc-ffb9-4737-9031-fa0f8377a3a0', 'tx_id': None, 'identifier_id': '9498570428'}, {'id': '09c60963-0043-451e-888c-7d7c71ffe42e', 'created_at': '2026-03-19T08:39:31.894Z', 'update_at': '2026-03-19T08:39:31.894Z', 'delete_at': None, 'version': 1, 'remarks': None, 'id_no': '2034550323534553089', 'account_id': '929ff175-e26b-43ad-ba02-467756bff867', 'balance_id': 'c407c1cf-b9f3-4747-92ed-3d0d10752e55', 'wallet_id': '881d5037-b04b-4be4-bb11-0ec0024ab6d3', 'from_currency': 'RYT', 'to_currency': 'RYT', 'amount': '0.0001000000000000000000000', 'business_type': 'failed_refund', 'fee': '0.00000000', 'status': 'completed', 'process_status': 'completed', 'transaction_id': 'f213a82d-a76e-45cc-8b70-af88f70c37e8', 'share_confirm_time': None, 'quote': None, 'actual_payment': None, 'usdc_amount': '0.100083738617031930', 'usdc_rate': None, 'transaction_at': None, 'crypto_transaction_id': None, 'source_id': 'fa8dde16-8f86-4fc1-b54f-ed40edf15030', 'complete_at': None, 'batch_id': None, 'usdc_fee': None, 'approve_id': None, 'tx_id': None, 'identifier_id': '9498570428'}, {'id': '89c3b71a-ccc6-4cc4-8f53-cc55fc0da362', 'created_at': '2026-03-19T08:39:06.732Z', 'update_at': '2026-03-19T08:39:06.732Z', 'delete_at': None, 'version': 3, 'remarks': None, 'id_no': '2034550219759030274', 'account_id': '929ff175-e26b-43ad-ba02-467756bff867', 'balance_id': 'c407c1cf-b9f3-4747-92ed-3d0d10752e55', 'wallet_id': '881d5037-b04b-4be4-bb11-0ec0024ab6d3', 'from_currency': 'RYT', 'to_currency': 'USDC', 'amount': '0.0002000000000000000000000', 'business_type': 'crypto_contract_out', 'fee': '0.00000000', 'status': 'pending', 'process_status': 'completed', 'transaction_id': '34b7a18b-db75-4956-b910-1a4f744ba743', 'share_confirm_time': None, 'quote': '1000.136800000000000000', 'actual_payment': '0.000200000000000000', 'usdc_amount': '0.200167477234063860', 'usdc_rate': '0.000999163314458582', 'transaction_at': None, 'crypto_transaction_id': '5757b13a-35e0-4148-9c4b-f690b636fc14', 'source_id': '3fd67d48-2a62-41d2-92f1-bc5e1e6847c5', 'complete_at': None, 'batch_id': None, 'usdc_fee': '0.000140117234063845', 'approve_id': '3fd67d48-2a62-41d2-92f1-bc5e1e6847c5', 'tx_id': None, 'identifier_id': '9498570428'}, {'id': 'fa8dde16-8f86-4fc1-b54f-ed40edf15030', 'created_at': '2026-03-19T08:38:56.190Z', 'update_at': '2026-03-19T08:38:56.190Z', 'delete_at': None, 'version': 3, 'remarks': None, 'id_no': '2034550175202938881', 'account_id': '929ff175-e26b-43ad-ba02-467756bff867', 'balance_id': 'c407c1cf-b9f3-4747-92ed-3d0d10752e55', 'wallet_id': '881d5037-b04b-4be4-bb11-0ec0024ab6d3', 'from_currency': 'RYT', 'to_currency': 'USDC', 'amount': '0.0001000000000000000000000', 'business_type': 'crypto_contract_out', 'fee': '0.00000000', 'status': 'failed', 'process_status': 'rejected', 'transaction_id': '9dccaccd-3d5f-43fd-9d0f-15782cd8ad94', 'share_confirm_time': None, 'quote': '1000.136800000000000000', 'actual_payment': '0.000100000000000000', 'usdc_amount': '0.100083738617031930', 'usdc_rate': '0.000999163314458582', 'transaction_at': None, 'crypto_transaction_id': 'eb7329c4-6827-492a-ab77-485a50b19a67', 'source_id': None, 'complete_at': None, 'batch_id': None, 'usdc_fee': '0.000070058617031922', 'approve_id': None, 'tx_id': None, 'identifier_id': '9498570428'}, {'id': '785d82f3-df8e-44b8-8b74-02e7c879ec66', 'created_at': '2026-03-19T08:38:27.601Z', 'update_at': '2026-03-19T08:38:27.601Z', 'delete_at': None, 'version': 3, 'remarks': None, 'id_no': '2034550053907861505', 'account_id': '929ff175-e26b-43ad-ba02-467756bff867', 'balance_id': 'c407c1cf-b9f3-4747-92ed-3d0d10752e55', 'wallet_id': '881d5037-b04b-4be4-bb11-0ec0024ab6d3', 'from_currency': 'USDC', 'to_currency': 'RYT', 'amount': '0.0019983266289171640000000', 'business_type': 'crypto_contract_in', 'fee': '0.00000000', 'status': 'pending', 'process_status': 'completed', 'transaction_id': None, 'share_confirm_time': None, 'quote': '1000.136800000000000000', 'actual_payment': '1.998600000000000000', 'usdc_amount': '2.000000000000000000', 'usdc_rate': '1000.837386170319300000', 'transaction_at': None, 'crypto_transaction_id': 'dfc2a2e4-854f-40ce-8003-29d11d4b0859', 'source_id': '3667ad38-1407-47e5-a77a-c35b614d3ed4', 'complete_at': None, 'batch_id': None, 'usdc_fee': '0.001400000000000000', 'approve_id': '3667ad38-1407-47e5-a77a-c35b614d3ed4', 'tx_id': None, 'identifier_id': '9498570428'}, {'id': '8e05a248-c86e-44ae-88c2-a19d74b91dc6', 'created_at': '2026-03-19T08:38:22.838Z', 'update_at': '2026-03-19T08:39:59.424Z', 'delete_at': None, 'version': 2, 'remarks': None, 'id_no': '2034550033888501762', 'account_id': '929ff175-e26b-43ad-ba02-467756bff867', 'balance_id': 'c407c1cf-b9f3-4747-92ed-3d0d10752e55', 'wallet_id': '881d5037-b04b-4be4-bb11-0ec0024ab6d3', 'from_currency': 'USDC', 'to_currency': 'RYT', 'amount': '0.0009991633144585820000000', 'business_type': 'crypto_contract_in', 'fee': '0.00000000', 'status': 'failed', 'process_status': 'rejected', 'transaction_id': None, 'share_confirm_time': None, 'quote': '1000.136800000000000000', 'actual_payment': '0.999300000000000000', 'usdc_amount': '1.000000000000000000', 'usdc_rate': '1000.837386170319300000', 'transaction_at': None, 'crypto_transaction_id': '5e39ca03-a308-4518-8c58-4b5e41553bc4', 'source_id': None, 'complete_at': None, 'batch_id': None, 'usdc_fee': '0.000700000000000000', 'approve_id': None, 'tx_id': None, 'identifier_id': '9498570428'}, {'id': 'a5382f38-aa67-44db-afd6-1614ce2bb792', 'created_at': '2026-03-12T01:45:49.520Z', 'update_at': '2026-03-12T01:46:05.213Z', 'delete_at': None, 'version': 2, 'remarks': None, 'id_no': '2031909495880278017', 'account_id': '929ff175-e26b-43ad-ba02-467756bff867', 'balance_id': 'c407c1cf-b9f3-4747-92ed-3d0d10752e55', 'wallet_id': '881d5037-b04b-4be4-bb11-0ec0024ab6d3', 'from_currency': 'USDC', 'to_currency': 'RYT', 'amount': '0.0009991633144585820000000', 'business_type': 'crypto_contract_in', 'fee': '0.00000000', 'status': 'failed', 'process_status': 'rejected', 'transaction_id': None, 'share_confirm_time': None, 'quote': '1000.136800000000000000', 'actual_payment': '0.999300000000000000', 'usdc_amount': '1.000000000000000000', 'usdc_rate': '1000.837386170319300000', 'transaction_at': None, 'crypto_transaction_id': '9fa44050-ae81-442d-b858-fa763d1e4ab3', 'source_id': None, 'complete_at': None, 'batch_id': None, 'usdc_fee': '0.000700000000000000', 'approve_id': None, 'tx_id': None, 'identifier_id': '9498570428'}, {'id': '1a0ab77a-8273-4024-b18a-b74551dd31b4', 'created_at': '2026-03-11T08:36:47.171Z', 'update_at': '2026-03-11T08:36:47.171Z', 'delete_at': None, 'version': 1, 'remarks': None, 'id_no': '2031650529728245761', 'account_id': '929ff175-e26b-43ad-ba02-467756bff867', 'balance_id': 'c407c1cf-b9f3-4747-92ed-3d0d10752e55', 'wallet_id': '881d5037-b04b-4be4-bb11-0ec0024ab6d3', 'from_currency': 'RYT', 'to_currency': 'RYT', 'amount': '0.0001000000000000000000000', 'business_type': 'failed_refund', 'fee': '0.00000000', 'status': 'completed', 'process_status': 'completed', 'transaction_id': 'd8681317-a819-4ebd-8512-ef913c9ad1b2', 'share_confirm_time': None, 'quote': None, 'actual_payment': None, 'usdc_amount': '0.100083738617031930', 'usdc_rate': None, 'transaction_at': None, 'crypto_transaction_id': None, 'source_id': '485fdf04-684c-4fd1-8375-18083d7e3a8c', 'complete_at': None, 'batch_id': None, 'usdc_fee': None, 'approve_id': None, 'tx_id': None, 'identifier_id': '9498570428'}], 'current': 20}
+[2026-04-22 15:16:32,027][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-22 15:16:32,028][conftest.py 151][INFO]: 用例 test_ryt.py::test_get_transaction_data 执行通过
+[2026-04-22 15:16:32,030][conftest.py 52][INFO]: ---测试结束---test 环境执行完毕
+[2026-04-22 15:16:34,426][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-04-22 15:16:34,609][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-04-22 15:16:34,609][conftest.py 49][INFO]: ---测试开始---执行的是 test 环境
+[2026-04-22 15:16:34,639][conftest.py 84][INFO]: ---前置处理器开始---
+[2026-04-22 15:16:34,640][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-04-22 15:16:34,667][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-04-22 15:16:34,667][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-04-22 15:16:34,668][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-04-22 15:16:36,744][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzY4NDIxOTYzMzAsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Njg0MjE5NiwiZXhwIjoxNzc2ODYzNzk2fQ.HDuZHgv2SypRM7anXmLCkAK7rf7lr_UiqWjPfhwY1Js
+[2026-04-22 15:16:36,745][conftest.py 103][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-cn', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzY4NDIxOTYzMzAsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Njg0MjE5NiwiZXhwIjoxNzc2ODYzNzk2fQ.HDuZHgv2SypRM7anXmLCkAK7rf7lr_UiqWjPfhwY1Js'}
+[2026-04-22 15:16:36,747][excel_tools.py 405][INFO]: 更新测试用例结果: RYT_page - 获取利润清单信息 - {}
+[2026-04-22 15:16:36,748][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/contract/getProfitList
+[2026-04-22 15:16:38,263][RYT.py 115][INFO]: 获取的利润清单信息为:[]
+[2026-04-22 15:16:38,263][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-22 15:16:38,263][conftest.py 151][INFO]: 用例 test_ryt.py::test_get_profit_list_info 执行通过
+[2026-04-22 15:16:38,264][conftest.py 52][INFO]: ---测试结束---test 环境执行完毕
+[2026-04-22 15:17:08,986][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-04-22 15:17:09,199][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-04-22 15:17:09,200][conftest.py 49][INFO]: ---测试开始---执行的是 test 环境
+[2026-04-22 15:17:09,228][conftest.py 84][INFO]: ---前置处理器开始---
+[2026-04-22 15:17:09,229][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-04-22 15:17:09,256][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-04-22 15:17:09,256][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-04-22 15:17:09,256][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-04-22 15:17:10,823][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzY4NDIyMzA2MzQsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Njg0MjIzMCwiZXhwIjoxNzc2ODYzODMwfQ.PzHLq_w_4M3jtLd_ISLV0-Odouj96QqyoA2JwSoZTLc
+[2026-04-22 15:17:10,824][conftest.py 103][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-cn', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzY4NDIyMzA2MzQsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Njg0MjIzMCwiZXhwIjoxNzc2ODYzODMwfQ.PzHLq_w_4M3jtLd_ISLV0-Odouj96QqyoA2JwSoZTLc'}
+[2026-04-22 15:17:10,830][excel_tools.py 409][ERROR]: 更新测试用例结果失败: 未找到用例名称 '获取账户信息'
+[2026-04-22 15:17:10,831][RYT.py 34][ERROR]: 详情失败: 未找到用例名称 '获取账户信息'
+[2026-04-22 15:17:10,865][conftest.py 149][ERROR]: 用例 test_ryt.py::test_get_account_info 执行失败！
+[2026-04-22 15:17:10,867][conftest.py 52][INFO]: ---测试结束---test 环境执行完毕
+[2026-04-22 15:17:26,884][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-04-22 15:17:27,093][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-04-22 15:17:27,093][conftest.py 49][INFO]: ---测试开始---执行的是 test 环境
+[2026-04-22 15:17:27,122][conftest.py 84][INFO]: ---前置处理器开始---
+[2026-04-22 15:17:27,122][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-04-22 15:17:27,150][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-04-22 15:17:27,150][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-04-22 15:17:27,150][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-04-22 15:17:29,711][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzY4NDIyNDk0OTIsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Njg0MjI0OSwiZXhwIjoxNzc2ODYzODQ5fQ.c04IJR8QSGxG3n6D-xgkBmpMwiKYVAvhjAhf7ANBiu0
+[2026-04-22 15:17:29,712][conftest.py 103][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-cn', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzY4NDIyNDk0OTIsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Njg0MjI0OSwiZXhwIjoxNzc2ODYzODQ5fQ.c04IJR8QSGxG3n6D-xgkBmpMwiKYVAvhjAhf7ANBiu0'}
+[2026-04-22 15:17:29,715][excel_tools.py 405][INFO]: 更新测试用例结果: RYT_page - 获取用户ryt信息 - {}
+[2026-04-22 15:17:29,715][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/contract/getContractAccountInfo
+[2026-04-22 15:17:31,778][RYT.py 28][INFO]: 获取的账户信息为:None
+[2026-04-22 15:17:31,778][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-22 15:17:31,779][conftest.py 151][INFO]: 用例 test_ryt.py::test_get_account_info 执行通过
+[2026-04-22 15:17:31,781][conftest.py 52][INFO]: ---测试结束---test 环境执行完毕
+[2026-04-22 15:17:34,442][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-04-22 15:17:34,626][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-04-22 15:17:34,626][conftest.py 49][INFO]: ---测试开始---执行的是 test 环境
+[2026-04-22 15:17:34,656][conftest.py 84][INFO]: ---前置处理器开始---
+[2026-04-22 15:17:34,656][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-04-22 15:17:34,684][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-04-22 15:17:34,684][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-04-22 15:17:34,684][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-04-22 15:17:35,696][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzY4NDIyNTU0NjUsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Njg0MjI1NSwiZXhwIjoxNzc2ODYzODU1fQ.u9_L1ub3CdDdNO36qdvjHKxOKBvngVKfwj3LrvmX7_Y
+[2026-04-22 15:17:35,697][conftest.py 103][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-cn', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzY4NDIyNTU0NjUsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Njg0MjI1NSwiZXhwIjoxNzc2ODYzODU1fQ.u9_L1ub3CdDdNO36qdvjHKxOKBvngVKfwj3LrvmX7_Y'}
+[2026-04-22 15:17:35,700][excel_tools.py 405][INFO]: 更新测试用例结果: RYT_page - 获取供应量信息 - {}
+[2026-04-22 15:17:35,701][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/contract/getRytSupply
+[2026-04-22 15:17:37,726][RYT.py 57][INFO]: 获取的供应量信息为:None
+[2026-04-22 15:17:37,726][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-22 15:17:37,727][conftest.py 151][INFO]: 用例 test_ryt.py::test_get_supply_info 执行通过
+[2026-04-22 15:17:37,728][conftest.py 52][INFO]: ---测试结束---test 环境执行完毕
+[2026-04-22 15:17:45,068][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-04-22 15:17:45,252][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-04-22 15:17:45,252][conftest.py 49][INFO]: ---测试开始---执行的是 test 环境
+[2026-04-22 15:17:45,280][conftest.py 84][INFO]: ---前置处理器开始---
+[2026-04-22 15:17:45,281][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-04-22 15:17:45,308][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-04-22 15:17:45,308][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-04-22 15:17:45,308][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-04-22 15:17:46,417][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzY4NDIyNjYyMDAsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Njg0MjI2NiwiZXhwIjoxNzc2ODYzODY2fQ.8wTKPTZoK17C1R4cCd9LGYkOS9EY9e16VsSHS8Z448k
+[2026-04-22 15:17:46,417][conftest.py 103][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-cn', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzY4NDIyNjYyMDAsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Njg0MjI2NiwiZXhwIjoxNzc2ODYzODY2fQ.8wTKPTZoK17C1R4cCd9LGYkOS9EY9e16VsSHS8Z448k'}
+[2026-04-22 15:17:46,420][excel_tools.py 405][INFO]: 更新测试用例结果: RYT_page - 获取价格列表信息 - {}
+[2026-04-22 15:17:46,420][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/contract/getPriceList
+[2026-04-22 15:17:49,017][RYT.py 86][INFO]: 获取的价格列表信息为:None
+[2026-04-22 15:17:49,017][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-22 15:17:49,018][conftest.py 151][INFO]: 用例 test_ryt.py::test_get_price_list_info 执行通过
+[2026-04-22 15:17:49,019][conftest.py 52][INFO]: ---测试结束---test 环境执行完毕
+[2026-04-22 15:17:50,980][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-04-22 15:17:51,168][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-04-22 15:17:51,168][conftest.py 49][INFO]: ---测试开始---执行的是 test 环境
+[2026-04-22 15:17:51,197][conftest.py 84][INFO]: ---前置处理器开始---
+[2026-04-22 15:17:51,198][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-04-22 15:17:51,227][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-04-22 15:17:51,227][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-04-22 15:17:51,227][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-04-22 15:17:52,165][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzY4NDIyNzE5NzMsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Njg0MjI3MSwiZXhwIjoxNzc2ODYzODcxfQ.bIN-DQs8RDC_Qu-MGzVQO81GcP6yIwt5YO1dlDI2GC8
+[2026-04-22 15:17:52,166][conftest.py 103][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-cn', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzY4NDIyNzE5NzMsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Njg0MjI3MSwiZXhwIjoxNzc2ODYzODcxfQ.bIN-DQs8RDC_Qu-MGzVQO81GcP6yIwt5YO1dlDI2GC8'}
+[2026-04-22 15:17:52,168][excel_tools.py 405][INFO]: 更新测试用例结果: RYT_page - 获取利润清单信息 - {}
+[2026-04-22 15:17:52,168][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/contract/getProfitList
+[2026-04-22 15:17:53,798][RYT.py 115][INFO]: 获取的利润清单信息为:None
+[2026-04-22 15:17:53,798][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-22 15:17:53,799][conftest.py 151][INFO]: 用例 test_ryt.py::test_get_profit_list_info 执行通过
+[2026-04-22 15:17:53,800][conftest.py 52][INFO]: ---测试结束---test 环境执行完毕
+[2026-04-22 15:28:33,016][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-04-22 15:28:33,233][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-04-22 15:28:33,233][conftest.py 49][INFO]: ---测试开始---执行的是 test 环境
+[2026-04-22 15:28:33,262][conftest.py 84][INFO]: ---前置处理器开始---
+[2026-04-22 15:28:33,262][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-04-22 15:28:33,291][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-04-22 15:28:33,291][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-04-22 15:28:33,291][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-04-22 15:28:35,038][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzY4NDI5MTQ4MTQsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Njg0MjkxNCwiZXhwIjoxNzc2ODY0NTE0fQ.w5GRug1DGwnbWI9YhByPdALTBmS3LZo5lehn0OWD_tQ
+[2026-04-22 15:28:35,039][conftest.py 103][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-cn', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzY4NDI5MTQ4MTQsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Njg0MjkxNCwiZXhwIjoxNzc2ODY0NTE0fQ.w5GRug1DGwnbWI9YhByPdALTBmS3LZo5lehn0OWD_tQ'}
+[2026-04-22 15:28:35,042][excel_tools.py 405][INFO]: 更新测试用例结果: RYT_page - 获取用户ryt信息 - {}
+[2026-04-22 15:28:35,042][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/contract/getContractAccountInfo
+[2026-04-22 15:28:36,562][RYT.py 28][INFO]: 获取的账户信息为:None
+[2026-04-22 15:28:36,563][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-22 15:28:36,564][conftest.py 151][INFO]: 用例 test_ryt.py::test_get_account_info 执行通过
+[2026-04-22 15:28:36,567][excel_tools.py 405][INFO]: 更新测试用例结果: RYT_page - 获取供应量信息 - {}
+[2026-04-22 15:28:36,567][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/contract/getRytSupply
+[2026-04-22 15:28:38,224][RYT.py 57][INFO]: 获取的供应量信息为:None
+[2026-04-22 15:28:38,224][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-22 15:28:38,226][conftest.py 151][INFO]: 用例 test_ryt.py::test_get_supply_info 执行通过
+[2026-04-22 15:28:38,229][excel_tools.py 405][INFO]: 更新测试用例结果: RYT_page - 获取价格列表信息 - {}
+[2026-04-22 15:28:38,229][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/contract/getPriceList
+[2026-04-22 15:28:39,538][RYT.py 86][INFO]: 获取的价格列表信息为:None
+[2026-04-22 15:28:39,538][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-22 15:28:39,539][conftest.py 151][INFO]: 用例 test_ryt.py::test_get_price_list_info 执行通过
+[2026-04-22 15:28:39,542][excel_tools.py 405][INFO]: 更新测试用例结果: RYT_page - 获取利润清单信息 - {}
+[2026-04-22 15:28:39,542][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/contract/getProfitList
+[2026-04-22 15:28:40,040][RYT.py 115][INFO]: 获取的利润清单信息为:None
+[2026-04-22 15:28:40,041][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-22 15:28:40,041][conftest.py 151][INFO]: 用例 test_ryt.py::test_get_profit_list_info 执行通过
+[2026-04-22 15:28:40,045][excel_tools.py 405][INFO]: 更新测试用例结果: RYT_page - 获取交易记录 - {}
+[2026-04-22 15:28:40,045][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/contract/getRytTransactionList?page=1&take=20
+[2026-04-22 15:28:40,557][RYT.py 145][INFO]: 获取的交易记录为:None
+[2026-04-22 15:28:40,557][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-22 15:28:40,557][conftest.py 151][INFO]: 用例 test_ryt.py::test_get_transaction_data 执行通过
+[2026-04-22 15:28:40,557][conftest.py 52][INFO]: ---测试结束---test 环境执行完毕
+[2026-04-22 16:24:53,624][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-04-22 16:24:53,848][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-04-22 16:24:53,849][conftest.py 49][INFO]: ---测试开始---执行的是 test 环境
+[2026-04-22 16:24:53,879][conftest.py 84][INFO]: ---前置处理器开始---
+[2026-04-22 16:24:53,879][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-04-22 16:24:53,907][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-04-22 16:24:53,907][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-04-22 16:24:53,907][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-04-22 16:24:55,468][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzY4NDYyOTUyODcsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Njg0NjI5NSwiZXhwIjoxNzc2ODY3ODk1fQ.fvRyziy9hSnWlw09EgZOQJgTP75AStiU6_1KbAtOufs
+[2026-04-22 16:24:55,469][conftest.py 103][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-cn', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzY4NDYyOTUyODcsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Njg0NjI5NSwiZXhwIjoxNzc2ODY3ODk1fQ.fvRyziy9hSnWlw09EgZOQJgTP75AStiU6_1KbAtOufs'}
+[2026-04-22 16:24:55,471][excel_tools.py 405][INFO]: 更新测试用例结果: RYT_page - 获取用户ryt信息 - {}
+[2026-04-22 16:24:55,471][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/contract/getContractAccountInfo
+[2026-04-22 16:24:58,069][RYT.py 28][INFO]: 获取的账户信息为:None
+[2026-04-22 16:24:58,070][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-22 16:24:58,070][conftest.py 151][INFO]: 用例 test_ryt.py::test_get_account_info 执行通过
+[2026-04-22 16:24:58,073][excel_tools.py 405][INFO]: 更新测试用例结果: RYT_page - 获取供应量信息 - {}
+[2026-04-22 16:24:58,074][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/contract/getRytSupply
+[2026-04-22 16:25:01,295][RYT.py 57][INFO]: 获取的供应量信息为:None
+[2026-04-22 16:25:01,296][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-22 16:25:01,297][conftest.py 151][INFO]: 用例 test_ryt.py::test_get_supply_info 执行通过
+[2026-04-22 16:25:01,299][excel_tools.py 405][INFO]: 更新测试用例结果: RYT_page - 获取价格列表信息 - {}
+[2026-04-22 16:25:01,300][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/contract/getPriceList
+[2026-04-22 16:25:02,512][RYT.py 86][INFO]: 获取的价格列表信息为:None
+[2026-04-22 16:25:02,512][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-22 16:25:02,513][conftest.py 151][INFO]: 用例 test_ryt.py::test_get_price_list_info 执行通过
+[2026-04-22 16:25:02,517][excel_tools.py 405][INFO]: 更新测试用例结果: RYT_page - 获取利润清单信息 - {}
+[2026-04-22 16:25:02,517][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/contract/getProfitList
+[2026-04-22 16:25:03,087][RYT.py 115][INFO]: 获取的利润清单信息为:None
+[2026-04-22 16:25:03,088][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-22 16:25:03,089][conftest.py 151][INFO]: 用例 test_ryt.py::test_get_profit_list_info 执行通过
+[2026-04-22 16:25:03,092][excel_tools.py 405][INFO]: 更新测试用例结果: RYT_page - 获取交易记录 - {}
+[2026-04-22 16:25:03,092][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/contract/getRytTransactionList?page=1&take=20
+[2026-04-22 16:25:04,623][RYT.py 145][INFO]: 获取的交易记录为:None
+[2026-04-22 16:25:04,624][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-22 16:25:04,624][conftest.py 151][INFO]: 用例 test_ryt.py::test_get_transaction_data 执行通过
+[2026-04-22 16:25:04,629][excel_tools.py 405][INFO]: 更新测试用例结果: RYT_page - RYT购入 - {"amount": "100", "check_method": "email", "access_code": "123456", "know_terms": true}
+[2026-04-22 16:25:04,630][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/contract/buyRyt
+[2026-04-22 16:25:04,630][simple_request.py 386][INFO]: Request data: {
+  "amount": "100",
+  "check_method": "email",
+  "access_code": "123456",
+  "know_terms": true
+}
+[2026-04-22 16:25:05,515][RYT.py 177][INFO]: 购买ryt结果为:None
+[2026-04-22 16:25:05,515][assert_tools.py 25][INFO]: 状态码断言成功：预期 201，实际 201
+[2026-04-22 16:25:05,516][conftest.py 151][INFO]: 用例 test_ryt.py::test_buy_ryt[RYT购入-100] 执行通过
+[2026-04-22 16:25:05,521][excel_tools.py 405][INFO]: 更新测试用例结果: RYT_page - RYT购入 - {"amount": "1000", "check_method": "email", "access_code": "123456", "know_terms": true}
+[2026-04-22 16:25:05,521][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/contract/buyRyt
+[2026-04-22 16:25:05,521][simple_request.py 386][INFO]: Request data: {
+  "amount": "1000",
+  "check_method": "email",
+  "access_code": "123456",
+  "know_terms": true
+}
+[2026-04-22 16:25:06,442][RYT.py 177][INFO]: 购买ryt结果为:None
+[2026-04-22 16:25:06,442][assert_tools.py 25][INFO]: 状态码断言成功：预期 201，实际 201
+[2026-04-22 16:25:06,443][conftest.py 151][INFO]: 用例 test_ryt.py::test_buy_ryt[RYT购入-1000] 执行通过
+[2026-04-22 16:25:06,447][excel_tools.py 405][INFO]: 更新测试用例结果: RYT_page - RYT购入 - {"amount": "10000", "check_method": "email", "access_code": "123456", "know_terms": true}
+[2026-04-22 16:25:06,447][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/contract/buyRyt
+[2026-04-22 16:25:06,447][simple_request.py 386][INFO]: Request data: {
+  "amount": "10000",
+  "check_method": "email",
+  "access_code": "123456",
+  "know_terms": true
+}
+[2026-04-22 16:25:07,330][RYT.py 177][INFO]: 购买ryt结果为:None
+[2026-04-22 16:25:07,330][assert_tools.py 25][INFO]: 状态码断言成功：预期 201，实际 201
+[2026-04-22 16:25:07,331][conftest.py 151][INFO]: 用例 test_ryt.py::test_buy_ryt[RYT购入-10000] 执行通过
+[2026-04-22 16:25:07,334][excel_tools.py 405][INFO]: 更新测试用例结果: RYT_page - RYT购入 - {"amount": "100000", "check_method": "email", "access_code": "123456", "know_terms": true}
+[2026-04-22 16:25:07,334][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/contract/buyRyt
+[2026-04-22 16:25:07,334][simple_request.py 386][INFO]: Request data: {
+  "amount": "100000",
+  "check_method": "email",
+  "access_code": "123456",
+  "know_terms": true
+}
+[2026-04-22 16:25:08,302][RYT.py 177][INFO]: 购买ryt结果为:None
+[2026-04-22 16:25:08,303][assert_tools.py 25][INFO]: 状态码断言成功：预期 201，实际 201
+[2026-04-22 16:25:08,303][conftest.py 151][INFO]: 用例 test_ryt.py::test_buy_ryt[RYT购入-100000] 执行通过
+[2026-04-22 16:25:08,304][excel_tools.py 405][INFO]: 更新测试用例结果: RYT_page - RYT购入 - {"amount": "1000000", "check_method": "email", "access_code": "123456", "know_terms": true}
+[2026-04-22 16:25:08,304][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/contract/buyRyt
+[2026-04-22 16:25:08,304][simple_request.py 386][INFO]: Request data: {
+  "amount": "1000000",
+  "check_method": "email",
+  "access_code": "123456",
+  "know_terms": true
+}
+[2026-04-22 16:25:09,171][RYT.py 177][INFO]: 购买ryt结果为:None
+[2026-04-22 16:25:09,172][assert_tools.py 25][INFO]: 状态码断言成功：预期 201，实际 201
+[2026-04-22 16:25:09,173][conftest.py 151][INFO]: 用例 test_ryt.py::test_buy_ryt[RYT购入-1000000] 执行通过
+[2026-04-22 16:25:09,177][excel_tools.py 405][INFO]: 更新测试用例结果: RYT_page - RYT购入 - {"amount": "10000000", "check_method": "email", "access_code": "123456", "know_terms": true}
+[2026-04-22 16:25:09,177][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/contract/buyRyt
+[2026-04-22 16:25:09,177][simple_request.py 386][INFO]: Request data: {
+  "amount": "10000000",
+  "check_method": "email",
+  "access_code": "123456",
+  "know_terms": true
+}
+[2026-04-22 16:25:10,160][RYT.py 177][INFO]: 购买ryt结果为:None
+[2026-04-22 16:25:10,161][assert_tools.py 25][INFO]: 状态码断言成功：预期 201，实际 201
+[2026-04-22 16:25:10,162][conftest.py 151][INFO]: 用例 test_ryt.py::test_buy_ryt[RYT购入-10000000] 执行通过
+[2026-04-22 16:25:10,165][excel_tools.py 405][INFO]: 更新测试用例结果: RYT_page - RYT赎回 - {"amount": "0.0001", "check_method": "email", "access_code": "123456"}
+[2026-04-22 16:25:10,165][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/contract/sellRyt
+[2026-04-22 16:25:10,165][simple_request.py 386][INFO]: Request data: {
+  "amount": "0.0001",
+  "check_method": "email",
+  "access_code": "123456"
+}
+[2026-04-22 16:25:11,319][RYT.py 210][INFO]: 赎回RYT结果为:None
+[2026-04-22 16:25:11,319][assert_tools.py 25][INFO]: 状态码断言成功：预期 201，实际 201
+[2026-04-22 16:25:11,320][conftest.py 151][INFO]: 用例 test_ryt.py::test_sell_ryt[RYT赎回-0.0001] 执行通过
+[2026-04-22 16:25:11,321][conftest.py 52][INFO]: ---测试结束---test 环境执行完毕

@@ -1,0 +1,869 @@
+[2026-04-02 14:43:38,786][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-04-02 14:43:39,139][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-04-02 14:43:39,139][conftest.py 49][INFO]: ---测试开始---执行的是 test 环境
+[2026-04-02 14:43:39,163][conftest.py 84][INFO]: ---前置处理器开始---
+[2026-04-02 14:43:39,163][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-04-02 14:43:39,186][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-04-02 14:43:39,186][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-04-02 14:43:39,186][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-04-02 14:43:40,008][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzUxMTIyMTk5MDcsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTExMjIxOSwiZXhwIjoxNzc1MTMzODE5fQ.nAhwTgG26jajMuHWd-cu9ZanqD_oxZiEiWrv5h7joY0
+[2026-04-02 14:43:40,009][conftest.py 103][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzUxMTIyMTk5MDcsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTExMjIxOSwiZXhwIjoxNzc1MTMzODE5fQ.nAhwTgG26jajMuHWd-cu9ZanqD_oxZiEiWrv5h7joY0'}
+[2026-04-02 14:43:40,012][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 14:43:40,012][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_consume&status=pending&transaction_sub_type=card
+[2026-04-02 14:43:40,933][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 14:43:40,934][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_consume-pending-card] 执行通过
+[2026-04-02 14:43:40,936][conftest.py 52][INFO]: ---测试结束---test 环境执行完毕
+[2026-04-02 15:07:10,000][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-04-02 15:08:48,254][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-04-02 15:08:48,482][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-04-02 15:08:48,483][conftest.py 49][INFO]: ---测试开始---执行的是 test 环境
+[2026-04-02 15:08:48,507][conftest.py 84][INFO]: ---前置处理器开始---
+[2026-04-02 15:08:48,507][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-04-02 15:08:48,529][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-04-02 15:08:48,529][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-04-02 15:08:48,529][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-04-02 15:08:49,033][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzUxMTM3Mjg5NTMsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTExMzcyOCwiZXhwIjoxNzc1MTM1MzI4fQ.A343_S-I7uaq3rGyKoTWXl_h7l2DMJvMln9w-Tawiaw
+[2026-04-02 15:08:49,033][conftest.py 103][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzUxMTM3Mjg5NTMsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTExMzcyOCwiZXhwIjoxNzc1MTM1MzI4fQ.A343_S-I7uaq3rGyKoTWXl_h7l2DMJvMln9w-Tawiaw'}
+[2026-04-02 15:08:49,034][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:08:49,034][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_consume&status=pending&transaction_sub_type=card
+[2026-04-02 15:08:49,976][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:08:49,977][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_consume-pending-card] 执行通过
+[2026-04-02 15:08:49,982][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:08:49,982][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_consume&status=completed&transaction_sub_type=card
+[2026-04-02 15:08:50,313][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:08:50,314][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_consume-completed-card] 执行通过
+[2026-04-02 15:08:50,318][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:08:50,319][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_consume&status=failed&transaction_sub_type=card
+[2026-04-02 15:08:50,629][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:08:50,630][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_consume-failed-card] 执行通过
+[2026-04-02 15:08:50,634][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:08:50,634][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_clearing&status=pending&transaction_sub_type=card
+[2026-04-02 15:08:50,851][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:08:50,851][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_clearing-pending-card] 执行通过
+[2026-04-02 15:08:50,853][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:08:50,853][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_clearing&status=completed&transaction_sub_type=card
+[2026-04-02 15:08:51,073][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:08:51,074][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_clearing-completed-card] 执行通过
+[2026-04-02 15:08:51,077][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:08:51,078][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_clearing&status=failed&transaction_sub_type=card
+[2026-04-02 15:08:51,289][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:08:51,292][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_clearing-failed-card] 执行通过
+[2026-04-02 15:08:51,295][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:08:51,296][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_reversal&status=pending&transaction_sub_type=card
+[2026-04-02 15:08:51,507][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:08:51,508][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_reversal-pending-card] 执行通过
+[2026-04-02 15:08:51,511][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:08:51,511][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_reversal&status=completed&transaction_sub_type=card
+[2026-04-02 15:08:51,804][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:08:51,805][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_reversal-completed-card] 执行通过
+[2026-04-02 15:08:51,808][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:08:51,809][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_reversal&status=failed&transaction_sub_type=card
+[2026-04-02 15:08:52,023][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:08:52,024][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_reversal-failed-card] 执行通过
+[2026-04-02 15:08:52,028][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:08:52,028][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_refund&status=pending&transaction_sub_type=card
+[2026-04-02 15:08:52,241][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:08:52,243][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_refund-pending-card] 执行通过
+[2026-04-02 15:08:52,246][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:08:52,247][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_refund&status=completed&transaction_sub_type=card
+[2026-04-02 15:08:52,489][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:08:52,490][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_refund-completed-card] 执行通过
+[2026-04-02 15:08:52,493][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:08:52,493][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_refund&status=failed&transaction_sub_type=card
+[2026-04-02 15:08:52,709][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:08:52,711][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_refund-failed-card] 执行通过
+[2026-04-02 15:08:52,714][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:08:52,715][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_deposit&status=pending&transaction_sub_type=card
+[2026-04-02 15:08:52,933][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:08:52,934][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_deposit-pending-card] 执行通过
+[2026-04-02 15:08:52,937][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:08:52,937][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_deposit&status=completed&transaction_sub_type=card
+[2026-04-02 15:08:53,356][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:08:53,358][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_deposit-completed-card] 执行通过
+[2026-04-02 15:08:53,361][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:08:53,362][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_deposit&status=failed&transaction_sub_type=card
+[2026-04-02 15:08:53,574][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:08:53,575][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_deposit-failed-card] 执行通过
+[2026-04-02 15:08:53,579][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:08:53,579][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_to_card_account&status=pending&transaction_sub_type=card
+[2026-04-02 15:08:53,800][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:08:53,801][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_to_card_account-pending-card] 执行通过
+[2026-04-02 15:08:53,804][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:08:53,804][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_to_card_account&status=completed&transaction_sub_type=card
+[2026-04-02 15:08:54,100][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:08:54,101][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_to_card_account-completed-card] 执行通过
+[2026-04-02 15:08:54,106][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:08:54,106][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_to_card_account&status=failed&transaction_sub_type=card
+[2026-04-02 15:08:54,321][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:08:54,322][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_to_card_account-failed-card] 执行通过
+[2026-04-02 15:08:54,326][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:08:54,326][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_clearing_deduction&status=pending&transaction_sub_type=card
+[2026-04-02 15:08:54,573][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:08:54,574][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_clearing_deduction-pending-card] 执行通过
+[2026-04-02 15:08:54,578][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:08:54,579][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_clearing_deduction&status=completed&transaction_sub_type=card
+[2026-04-02 15:08:54,801][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:08:54,803][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_clearing_deduction-completed-card] 执行通过
+[2026-04-02 15:08:54,807][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:08:54,807][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_clearing_deduction&status=failed&transaction_sub_type=card
+[2026-04-02 15:08:55,023][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:08:55,024][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_clearing_deduction-failed-card] 执行通过
+[2026-04-02 15:08:55,027][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:08:55,027][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_clearing_refund&status=pending&transaction_sub_type=card
+[2026-04-02 15:08:55,248][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:08:55,249][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_clearing_refund-pending-card] 执行通过
+[2026-04-02 15:08:55,252][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:08:55,252][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_clearing_refund&status=completed&transaction_sub_type=card
+[2026-04-02 15:08:55,481][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:08:55,481][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_clearing_refund-completed-card] 执行通过
+[2026-04-02 15:08:55,483][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:08:55,483][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_clearing_refund&status=failed&transaction_sub_type=card
+[2026-04-02 15:08:55,691][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:08:55,692][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_clearing_refund-failed-card] 执行通过
+[2026-04-02 15:08:55,696][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:08:55,696][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_transaction_authorization_fee&status=pending&transaction_sub_type=card
+[2026-04-02 15:08:55,910][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:08:55,911][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_transaction_authorization_fee-pending-card] 执行通过
+[2026-04-02 15:08:55,912][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:08:55,912][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_transaction_authorization_fee&status=completed&transaction_sub_type=card
+[2026-04-02 15:08:56,150][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:08:56,151][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_transaction_authorization_fee-completed-card] 执行通过
+[2026-04-02 15:08:56,155][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:08:56,155][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_transaction_authorization_fee&status=failed&transaction_sub_type=card
+[2026-04-02 15:08:56,608][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:08:56,610][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_transaction_authorization_fee-failed-card] 执行通过
+[2026-04-02 15:08:56,615][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:08:56,615][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_atm&status=pending&transaction_sub_type=card
+[2026-04-02 15:08:56,871][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:08:56,872][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_atm-pending-card] 执行通过
+[2026-04-02 15:08:56,876][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:08:56,876][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_atm&status=completed&transaction_sub_type=card
+[2026-04-02 15:08:57,093][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:08:57,094][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_atm-completed-card] 执行通过
+[2026-04-02 15:08:57,097][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:08:57,097][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_atm&status=failed&transaction_sub_type=card
+[2026-04-02 15:08:57,308][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:08:57,309][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_atm-failed-card] 执行通过
+[2026-04-02 15:08:57,313][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:08:57,313][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_declined_refund&status=pending&transaction_sub_type=card
+[2026-04-02 15:08:57,524][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:08:57,525][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_declined_refund-pending-card] 执行通过
+[2026-04-02 15:08:57,527][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:08:57,527][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_declined_refund&status=completed&transaction_sub_type=card
+[2026-04-02 15:08:57,787][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:08:57,788][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_declined_refund-completed-card] 执行通过
+[2026-04-02 15:08:57,790][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:08:57,790][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_declined_refund&status=failed&transaction_sub_type=card
+[2026-04-02 15:08:58,001][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:08:58,002][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_declined_refund-failed-card] 执行通过
+[2026-04-02 15:08:58,003][conftest.py 52][INFO]: ---测试结束---test 环境执行完毕
+[2026-04-02 15:27:13,687][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-04-02 15:27:13,940][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-04-02 15:27:13,940][conftest.py 49][INFO]: ---测试开始---执行的是 test 环境
+[2026-04-02 15:27:13,967][conftest.py 84][INFO]: ---前置处理器开始---
+[2026-04-02 15:27:13,967][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-04-02 15:27:13,991][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-04-02 15:27:13,991][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-04-02 15:27:13,991][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-04-02 15:27:14,884][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzUxMTQ4MzQ4MDYsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTExNDgzNCwiZXhwIjoxNzc1MTM2NDM0fQ.XktNjXOv4URgxeC47VhJXLijIcWsIslR6SVaByr5qzo
+[2026-04-02 15:27:14,885][conftest.py 103][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzUxMTQ4MzQ4MDYsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTExNDgzNCwiZXhwIjoxNzc1MTM2NDM0fQ.XktNjXOv4URgxeC47VhJXLijIcWsIslR6SVaByr5qzo'}
+[2026-04-02 15:27:14,888][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:27:14,888][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_consume&status=pending&transaction_sub_type=card
+[2026-04-02 15:27:16,177][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:27:16,178][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_consume-pending-card] 执行通过
+[2026-04-02 15:27:16,184][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:27:16,184][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_consume&status=completed&transaction_sub_type=card
+[2026-04-02 15:27:16,671][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:27:16,672][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_consume-completed-card] 执行通过
+[2026-04-02 15:27:16,674][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:27:16,674][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_consume&status=failed&transaction_sub_type=card
+[2026-04-02 15:27:16,984][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:27:16,985][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_consume-failed-card] 执行通过
+[2026-04-02 15:27:16,989][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:27:16,989][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_clearing&status=pending&transaction_sub_type=card
+[2026-04-02 15:27:17,210][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:27:17,211][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_clearing-pending-card] 执行通过
+[2026-04-02 15:27:17,215][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:27:17,215][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_clearing&status=completed&transaction_sub_type=card
+[2026-04-02 15:27:17,430][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:27:17,431][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_clearing-completed-card] 执行通过
+[2026-04-02 15:27:17,434][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:27:17,435][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_clearing&status=failed&transaction_sub_type=card
+[2026-04-02 15:27:17,649][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:27:17,650][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_clearing-failed-card] 执行通过
+[2026-04-02 15:27:17,652][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:27:17,652][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_reversal&status=pending&transaction_sub_type=card
+[2026-04-02 15:27:17,864][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:27:17,866][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_reversal-pending-card] 执行通过
+[2026-04-02 15:27:17,870][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:27:17,870][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_reversal&status=completed&transaction_sub_type=card
+[2026-04-02 15:27:18,428][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:27:18,430][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_reversal-completed-card] 执行通过
+[2026-04-02 15:27:18,434][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:27:18,434][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_reversal&status=failed&transaction_sub_type=card
+[2026-04-02 15:27:18,642][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:27:18,643][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_reversal-failed-card] 执行通过
+[2026-04-02 15:27:18,644][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:27:18,644][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_refund&status=pending&transaction_sub_type=card
+[2026-04-02 15:27:19,101][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:27:19,103][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_refund-pending-card] 执行通过
+[2026-04-02 15:27:19,106][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:27:19,106][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_refund&status=completed&transaction_sub_type=card
+[2026-04-02 15:27:19,480][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:27:19,481][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_refund-completed-card] 执行通过
+[2026-04-02 15:27:19,484][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:27:19,485][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_refund&status=failed&transaction_sub_type=card
+[2026-04-02 15:27:19,703][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:27:19,703][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_refund-failed-card] 执行通过
+[2026-04-02 15:27:19,706][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:27:19,707][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_deposit&status=pending&transaction_sub_type=card
+[2026-04-02 15:27:19,920][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:27:19,922][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_deposit-pending-card] 执行通过
+[2026-04-02 15:27:19,925][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:27:19,925][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_deposit&status=completed&transaction_sub_type=card
+[2026-04-02 15:27:20,396][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:27:20,398][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_deposit-completed-card] 执行通过
+[2026-04-02 15:27:20,402][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:27:20,403][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_deposit&status=failed&transaction_sub_type=card
+[2026-04-02 15:27:20,611][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:27:20,613][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_deposit-failed-card] 执行通过
+[2026-04-02 15:27:20,616][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:27:20,616][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_to_card_account&status=pending&transaction_sub_type=card
+[2026-04-02 15:27:20,830][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:27:20,832][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_to_card_account-pending-card] 执行通过
+[2026-04-02 15:27:20,836][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:27:20,836][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_to_card_account&status=completed&transaction_sub_type=card
+[2026-04-02 15:27:21,109][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:27:21,110][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_to_card_account-completed-card] 执行通过
+[2026-04-02 15:27:21,113][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:27:21,113][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_to_card_account&status=failed&transaction_sub_type=card
+[2026-04-02 15:27:21,324][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:27:21,325][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_to_card_account-failed-card] 执行通过
+[2026-04-02 15:27:21,329][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:27:21,329][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_clearing_deduction&status=pending&transaction_sub_type=card
+[2026-04-02 15:27:21,544][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:27:21,545][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_clearing_deduction-pending-card] 执行通过
+[2026-04-02 15:27:21,549][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:27:21,549][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_clearing_deduction&status=completed&transaction_sub_type=card
+[2026-04-02 15:27:21,765][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:27:21,766][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_clearing_deduction-completed-card] 执行通过
+[2026-04-02 15:27:21,770][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:27:21,770][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_clearing_deduction&status=failed&transaction_sub_type=card
+[2026-04-02 15:27:21,976][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:27:21,977][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_clearing_deduction-failed-card] 执行通过
+[2026-04-02 15:27:21,981][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:27:21,981][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_clearing_refund&status=pending&transaction_sub_type=card
+[2026-04-02 15:27:22,430][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:27:22,432][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_clearing_refund-pending-card] 执行通过
+[2026-04-02 15:27:22,436][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:27:22,436][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_clearing_refund&status=completed&transaction_sub_type=card
+[2026-04-02 15:27:22,751][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:27:22,753][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_clearing_refund-completed-card] 执行通过
+[2026-04-02 15:27:22,757][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:27:22,757][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_clearing_refund&status=failed&transaction_sub_type=card
+[2026-04-02 15:27:22,966][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:27:22,967][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_clearing_refund-failed-card] 执行通过
+[2026-04-02 15:27:22,971][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:27:22,972][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_transaction_authorization_fee&status=pending&transaction_sub_type=card
+[2026-04-02 15:27:23,187][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:27:23,188][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_transaction_authorization_fee-pending-card] 执行通过
+[2026-04-02 15:27:23,190][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:27:23,190][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_transaction_authorization_fee&status=completed&transaction_sub_type=card
+[2026-04-02 15:27:23,560][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:27:23,561][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_transaction_authorization_fee-completed-card] 执行通过
+[2026-04-02 15:27:23,566][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:27:23,566][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_transaction_authorization_fee&status=failed&transaction_sub_type=card
+[2026-04-02 15:27:23,778][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:27:23,779][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_transaction_authorization_fee-failed-card] 执行通过
+[2026-04-02 15:27:23,783][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:27:23,783][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_atm&status=pending&transaction_sub_type=card
+[2026-04-02 15:27:23,994][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:27:23,995][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_atm-pending-card] 执行通过
+[2026-04-02 15:27:23,998][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:27:23,998][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_atm&status=completed&transaction_sub_type=card
+[2026-04-02 15:27:24,209][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:27:24,210][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_atm-completed-card] 执行通过
+[2026-04-02 15:27:24,213][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:27:24,213][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_atm&status=failed&transaction_sub_type=card
+[2026-04-02 15:27:24,424][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:27:24,425][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_atm-failed-card] 执行通过
+[2026-04-02 15:27:24,429][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:27:24,429][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_declined_refund&status=pending&transaction_sub_type=card
+[2026-04-02 15:27:24,640][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:27:24,642][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_declined_refund-pending-card] 执行通过
+[2026-04-02 15:27:24,646][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:27:24,646][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_declined_refund&status=completed&transaction_sub_type=card
+[2026-04-02 15:27:24,871][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:27:24,872][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_declined_refund-completed-card] 执行通过
+[2026-04-02 15:27:24,876][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:27:24,876][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_declined_refund&status=failed&transaction_sub_type=card
+[2026-04-02 15:27:25,085][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:27:25,087][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_declined_refund-failed-card] 执行通过
+[2026-04-02 15:27:25,088][conftest.py 52][INFO]: ---测试结束---test 环境执行完毕
+[2026-04-02 15:30:46,626][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-04-02 15:30:46,851][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-04-02 15:30:46,851][conftest.py 49][INFO]: ---测试开始---执行的是 test 环境
+[2026-04-02 15:30:46,874][conftest.py 84][INFO]: ---前置处理器开始---
+[2026-04-02 15:30:46,874][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-04-02 15:30:46,895][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-04-02 15:30:46,896][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-04-02 15:30:46,896][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-04-02 15:30:48,071][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzUxMTUwNDc5ODAsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTExNTA0NywiZXhwIjoxNzc1MTM2NjQ3fQ.tskAp7SDVQdVSk777KoYnSjWT9W-CRzY59vY10_lVdo
+[2026-04-02 15:30:48,073][conftest.py 103][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzUxMTUwNDc5ODAsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTExNTA0NywiZXhwIjoxNzc1MTM2NjQ3fQ.tskAp7SDVQdVSk777KoYnSjWT9W-CRzY59vY10_lVdo'}
+[2026-04-02 15:30:48,076][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:30:48,076][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_consume&status=pending&transaction_sub_type=card
+[2026-04-02 15:30:49,413][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:30:49,414][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_consume-pending-card] 执行通过
+[2026-04-02 15:30:49,418][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:30:49,418][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_consume&status=completed&transaction_sub_type=card
+[2026-04-02 15:30:49,770][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:30:49,771][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_consume-completed-card] 执行通过
+[2026-04-02 15:30:49,774][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:30:49,774][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_consume&status=failed&transaction_sub_type=card
+[2026-04-02 15:30:50,027][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:30:50,028][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_consume-failed-card] 执行通过
+[2026-04-02 15:30:50,032][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:30:50,032][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_clearing&status=pending&transaction_sub_type=card
+[2026-04-02 15:30:50,268][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:30:50,269][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_clearing-pending-card] 执行通过
+[2026-04-02 15:30:50,271][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:30:50,271][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_clearing&status=completed&transaction_sub_type=card
+[2026-04-02 15:30:50,502][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:30:50,504][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_clearing-completed-card] 执行通过
+[2026-04-02 15:30:50,508][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:30:50,508][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_clearing&status=failed&transaction_sub_type=card
+[2026-04-02 15:30:50,736][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:30:50,737][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_clearing-failed-card] 执行通过
+[2026-04-02 15:30:50,742][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:30:50,742][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_reversal&status=pending&transaction_sub_type=card
+[2026-04-02 15:30:50,965][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:30:50,967][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_reversal-pending-card] 执行通过
+[2026-04-02 15:30:50,970][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:30:50,970][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_reversal&status=completed&transaction_sub_type=card
+[2026-04-02 15:30:51,387][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:30:51,388][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_reversal-completed-card] 执行通过
+[2026-04-02 15:30:51,392][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:30:51,392][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_reversal&status=failed&transaction_sub_type=card
+[2026-04-02 15:30:51,607][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:30:51,608][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_reversal-failed-card] 执行通过
+[2026-04-02 15:30:51,611][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:30:51,612][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_refund&status=pending&transaction_sub_type=card
+[2026-04-02 15:30:51,835][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:30:51,836][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_refund-pending-card] 执行通过
+[2026-04-02 15:30:51,840][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:30:51,840][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_refund&status=completed&transaction_sub_type=card
+[2026-04-02 15:30:52,116][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:30:52,117][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_refund-completed-card] 执行通过
+[2026-04-02 15:30:52,121][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:30:52,122][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_refund&status=failed&transaction_sub_type=card
+[2026-04-02 15:30:52,351][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:30:52,352][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_refund-failed-card] 执行通过
+[2026-04-02 15:30:52,354][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:30:52,354][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_deposit&status=pending&transaction_sub_type=card
+[2026-04-02 15:30:52,591][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:30:52,592][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_deposit-pending-card] 执行通过
+[2026-04-02 15:30:52,594][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:30:52,594][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_deposit&status=completed&transaction_sub_type=card
+[2026-04-02 15:30:52,862][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:30:52,863][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_deposit-completed-card] 执行通过
+[2026-04-02 15:30:52,865][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:30:52,865][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_deposit&status=failed&transaction_sub_type=card
+[2026-04-02 15:30:53,087][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:30:53,088][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_deposit-failed-card] 执行通过
+[2026-04-02 15:30:53,092][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:30:53,092][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_to_card_account&status=pending&transaction_sub_type=card
+[2026-04-02 15:30:53,339][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:30:53,339][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_to_card_account-pending-card] 执行通过
+[2026-04-02 15:30:53,342][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:30:53,342][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_to_card_account&status=completed&transaction_sub_type=card
+[2026-04-02 15:30:53,925][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:30:53,927][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_to_card_account-completed-card] 执行通过
+[2026-04-02 15:30:53,931][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:30:53,931][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_to_card_account&status=failed&transaction_sub_type=card
+[2026-04-02 15:30:54,145][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:30:54,146][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_to_card_account-failed-card] 执行通过
+[2026-04-02 15:30:54,149][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:30:54,150][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_clearing_deduction&status=pending&transaction_sub_type=card
+[2026-04-02 15:30:54,395][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:30:54,396][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_clearing_deduction-pending-card] 执行通过
+[2026-04-02 15:30:54,400][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:30:54,400][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_clearing_deduction&status=completed&transaction_sub_type=card
+[2026-04-02 15:30:54,629][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:30:54,630][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_clearing_deduction-completed-card] 执行通过
+[2026-04-02 15:30:54,634][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:30:54,634][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_clearing_deduction&status=failed&transaction_sub_type=card
+[2026-04-02 15:30:54,847][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:30:54,848][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_clearing_deduction-failed-card] 执行通过
+[2026-04-02 15:30:54,849][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:30:54,849][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_clearing_refund&status=pending&transaction_sub_type=card
+[2026-04-02 15:30:55,071][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:30:55,072][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_clearing_refund-pending-card] 执行通过
+[2026-04-02 15:30:55,076][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:30:55,077][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_clearing_refund&status=completed&transaction_sub_type=card
+[2026-04-02 15:30:55,335][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:30:55,336][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_clearing_refund-completed-card] 执行通过
+[2026-04-02 15:30:55,339][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:30:55,339][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_clearing_refund&status=failed&transaction_sub_type=card
+[2026-04-02 15:30:55,556][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:30:55,558][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_clearing_refund-failed-card] 执行通过
+[2026-04-02 15:30:55,560][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:30:55,560][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_transaction_authorization_fee&status=pending&transaction_sub_type=card
+[2026-04-02 15:30:55,779][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:30:55,780][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_transaction_authorization_fee-pending-card] 执行通过
+[2026-04-02 15:30:55,785][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:30:55,785][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_transaction_authorization_fee&status=completed&transaction_sub_type=card
+[2026-04-02 15:30:56,073][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:30:56,074][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_transaction_authorization_fee-completed-card] 执行通过
+[2026-04-02 15:30:56,078][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:30:56,078][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_transaction_authorization_fee&status=failed&transaction_sub_type=card
+[2026-04-02 15:30:56,298][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:30:56,298][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_transaction_authorization_fee-failed-card] 执行通过
+[2026-04-02 15:30:56,301][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:30:56,301][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_atm&status=pending&transaction_sub_type=card
+[2026-04-02 15:30:56,529][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:30:56,531][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_atm-pending-card] 执行通过
+[2026-04-02 15:30:56,535][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:30:56,535][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_atm&status=completed&transaction_sub_type=card
+[2026-04-02 15:30:56,759][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:30:56,760][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_atm-completed-card] 执行通过
+[2026-04-02 15:30:56,764][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:30:56,764][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_atm&status=failed&transaction_sub_type=card
+[2026-04-02 15:30:56,998][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:30:56,998][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_atm-failed-card] 执行通过
+[2026-04-02 15:30:57,002][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:30:57,002][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_declined_refund&status=pending&transaction_sub_type=card
+[2026-04-02 15:30:57,220][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:30:57,221][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_declined_refund-pending-card] 执行通过
+[2026-04-02 15:30:57,225][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:30:57,225][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_declined_refund&status=completed&transaction_sub_type=card
+[2026-04-02 15:30:57,452][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:30:57,453][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_declined_refund-completed-card] 执行通过
+[2026-04-02 15:30:57,456][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:30:57,456][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_declined_refund&status=failed&transaction_sub_type=card
+[2026-04-02 15:30:57,677][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:30:57,679][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_declined_refund-failed-card] 执行通过
+[2026-04-02 15:30:57,680][conftest.py 52][INFO]: ---测试结束---test 环境执行完毕
+[2026-04-02 15:30:59,732][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-04-02 15:30:59,921][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-04-02 15:30:59,921][conftest.py 49][INFO]: ---测试开始---执行的是 test 环境
+[2026-04-02 15:30:59,945][conftest.py 84][INFO]: ---前置处理器开始---
+[2026-04-02 15:30:59,945][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-04-02 15:30:59,966][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-04-02 15:30:59,966][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-04-02 15:30:59,966][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-04-02 15:31:00,746][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzUxMTUwNjA2NDAsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTExNTA2MCwiZXhwIjoxNzc1MTM2NjYwfQ.hgWoSZJ1j65cuIFwLs8qaq4NK2sqvmXuMjtrYsyIJUM
+[2026-04-02 15:31:00,747][conftest.py 103][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzUxMTUwNjA2NDAsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTExNTA2MCwiZXhwIjoxNzc1MTM2NjYwfQ.hgWoSZJ1j65cuIFwLs8qaq4NK2sqvmXuMjtrYsyIJUM'}
+[2026-04-02 15:31:00,751][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:31:00,751][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=vcc_in&status=pending&transaction_sub_type=card_account
+[2026-04-02 15:31:03,774][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:31:03,776][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_account_transaction[获取交易记录-vcc_in-pending-card_account] 执行通过
+[2026-04-02 15:31:03,779][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:31:03,780][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=vcc_in&status=completed&transaction_sub_type=card_account
+[2026-04-02 15:31:04,425][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:31:04,426][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_account_transaction[获取交易记录-vcc_in-completed-card_account] 执行通过
+[2026-04-02 15:31:04,429][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:31:04,430][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=vcc_in&status=failed&transaction_sub_type=card_account
+[2026-04-02 15:31:04,857][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:31:04,859][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_account_transaction[获取交易记录-vcc_in-failed-card_account] 执行通过
+[2026-04-02 15:31:04,863][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:31:04,863][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=vcc_out&status=pending&transaction_sub_type=card_account
+[2026-04-02 15:31:05,092][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:31:05,093][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_account_transaction[获取交易记录-vcc_out-pending-card_account] 执行通过
+[2026-04-02 15:31:05,097][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:31:05,097][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=vcc_out&status=completed&transaction_sub_type=card_account
+[2026-04-02 15:31:05,514][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:31:05,516][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_account_transaction[获取交易记录-vcc_out-completed-card_account] 执行通过
+[2026-04-02 15:31:05,520][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:31:05,520][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=vcc_out&status=failed&transaction_sub_type=card_account
+[2026-04-02 15:31:05,751][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:31:05,752][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_account_transaction[获取交易记录-vcc_out-failed-card_account] 执行通过
+[2026-04-02 15:31:05,756][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:31:05,757][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_transaction_authorization_fee&status=pending&transaction_sub_type=card_account
+[2026-04-02 15:31:05,988][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:31:05,989][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_account_transaction[获取交易记录-card_transaction_authorization_fee-pending-card_account] 执行通过
+[2026-04-02 15:31:05,992][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:31:05,992][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_transaction_authorization_fee&status=completed&transaction_sub_type=card_account
+[2026-04-02 15:31:06,278][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:31:06,280][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_account_transaction[获取交易记录-card_transaction_authorization_fee-completed-card_account] 执行通过
+[2026-04-02 15:31:06,284][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:31:06,284][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_transaction_authorization_fee&status=failed&transaction_sub_type=card_account
+[2026-04-02 15:31:06,556][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:31:06,558][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_account_transaction[获取交易记录-card_transaction_authorization_fee-failed-card_account] 执行通过
+[2026-04-02 15:31:06,562][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:31:06,562][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=system_deduction&status=pending&transaction_sub_type=card_account
+[2026-04-02 15:31:06,795][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:31:06,796][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_account_transaction[获取交易记录-system_deduction-pending-card_account] 执行通过
+[2026-04-02 15:31:06,800][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:31:06,800][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=system_deduction&status=completed&transaction_sub_type=card_account
+[2026-04-02 15:31:07,038][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:31:07,040][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_account_transaction[获取交易记录-system_deduction-completed-card_account] 执行通过
+[2026-04-02 15:31:07,043][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:31:07,043][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=system_deduction&status=failed&transaction_sub_type=card_account
+[2026-04-02 15:31:07,319][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:31:07,320][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_account_transaction[获取交易记录-system_deduction-failed-card_account] 执行通过
+[2026-04-02 15:31:07,324][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:31:07,324][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=system_recharge&status=pending&transaction_sub_type=card_account
+[2026-04-02 15:31:07,650][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:31:07,651][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_account_transaction[获取交易记录-system_recharge-pending-card_account] 执行通过
+[2026-04-02 15:31:07,654][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:31:07,655][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=system_recharge&status=completed&transaction_sub_type=card_account
+[2026-04-02 15:31:07,929][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:31:07,930][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_account_transaction[获取交易记录-system_recharge-completed-card_account] 执行通过
+[2026-04-02 15:31:07,932][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:31:07,932][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=system_recharge&status=failed&transaction_sub_type=card_account
+[2026-04-02 15:31:08,160][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:31:08,162][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_account_transaction[获取交易记录-system_recharge-failed-card_account] 执行通过
+[2026-04-02 15:31:08,166][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:31:08,166][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_holder_kyc_fee_out&status=pending&transaction_sub_type=card_account
+[2026-04-02 15:31:08,387][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:31:08,388][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_account_transaction[获取交易记录-card_holder_kyc_fee_out-pending-card_account] 执行通过
+[2026-04-02 15:31:08,391][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:31:08,392][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_holder_kyc_fee_out&status=completed&transaction_sub_type=card_account
+[2026-04-02 15:31:08,635][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:31:08,636][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_account_transaction[获取交易记录-card_holder_kyc_fee_out-completed-card_account] 执行通过
+[2026-04-02 15:31:08,639][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:31:08,639][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_holder_kyc_fee_out&status=failed&transaction_sub_type=card_account
+[2026-04-02 15:31:08,866][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:31:08,867][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_account_transaction[获取交易记录-card_holder_kyc_fee_out-failed-card_account] 执行通过
+[2026-04-02 15:31:08,871][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:31:08,871][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_holder_kyc_fee_refund&status=pending&transaction_sub_type=card_account
+[2026-04-02 15:31:09,092][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:31:09,093][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_account_transaction[获取交易记录-card_holder_kyc_fee_refund-pending-card_account] 执行通过
+[2026-04-02 15:31:09,097][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:31:09,097][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_holder_kyc_fee_refund&status=completed&transaction_sub_type=card_account
+[2026-04-02 15:31:09,426][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:31:09,427][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_account_transaction[获取交易记录-card_holder_kyc_fee_refund-completed-card_account] 执行通过
+[2026-04-02 15:31:09,430][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:31:09,430][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_holder_kyc_fee_refund&status=failed&transaction_sub_type=card_account
+[2026-04-02 15:31:09,644][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:31:09,646][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_account_transaction[获取交易记录-card_holder_kyc_fee_refund-failed-card_account] 执行通过
+[2026-04-02 15:31:09,649][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:31:09,649][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=logistics_fee&status=pending&transaction_sub_type=card_account
+[2026-04-02 15:31:09,882][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:31:09,884][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_account_transaction[获取交易记录-logistics_fee-pending-card_account] 执行通过
+[2026-04-02 15:31:09,888][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:31:09,888][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=logistics_fee&status=completed&transaction_sub_type=card_account
+[2026-04-02 15:31:10,125][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:31:10,126][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_account_transaction[获取交易记录-logistics_fee-completed-card_account] 执行通过
+[2026-04-02 15:31:10,131][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:31:10,131][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=logistics_fee&status=failed&transaction_sub_type=card_account
+[2026-04-02 15:31:10,376][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:31:10,377][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_account_transaction[获取交易记录-logistics_fee-failed-card_account] 执行通过
+[2026-04-02 15:31:10,380][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:31:10,381][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_create_virtual&status=pending&transaction_sub_type=card_account
+[2026-04-02 15:31:10,847][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:31:10,849][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_account_transaction[获取交易记录-card_create_virtual-pending-card_account] 执行通过
+[2026-04-02 15:31:10,852][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:31:10,852][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_create_virtual&status=completed&transaction_sub_type=card_account
+[2026-04-02 15:31:11,225][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:31:11,226][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_account_transaction[获取交易记录-card_create_virtual-completed-card_account] 执行通过
+[2026-04-02 15:31:11,230][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:31:11,231][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_create_virtual&status=failed&transaction_sub_type=card_account
+[2026-04-02 15:31:11,450][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:31:11,451][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_account_transaction[获取交易记录-card_create_virtual-failed-card_account] 执行通过
+[2026-04-02 15:31:11,453][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:31:11,453][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_create_physical&status=pending&transaction_sub_type=card_account
+[2026-04-02 15:31:11,694][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:31:11,696][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_account_transaction[获取交易记录-card_create_physical-pending-card_account] 执行通过
+[2026-04-02 15:31:11,699][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:31:11,700][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_create_physical&status=completed&transaction_sub_type=card_account
+[2026-04-02 15:31:11,956][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:31:11,957][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_account_transaction[获取交易记录-card_create_physical-completed-card_account] 执行通过
+[2026-04-02 15:31:11,959][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 15:31:11,959][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_create_physical&status=failed&transaction_sub_type=card_account
+[2026-04-02 15:31:12,209][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 15:31:12,210][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_account_transaction[获取交易记录-card_create_physical-failed-card_account] 执行通过
+[2026-04-02 15:31:12,212][conftest.py 52][INFO]: ---测试结束---test 环境执行完毕
+[2026-04-02 16:08:26,332][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-04-02 16:08:26,555][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-04-02 16:08:26,555][conftest.py 49][INFO]: ---测试开始---执行的是 test 环境
+[2026-04-02 16:08:26,578][conftest.py 84][INFO]: ---前置处理器开始---
+[2026-04-02 16:08:26,578][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-04-02 16:08:26,600][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-04-02 16:08:26,600][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-04-02 16:08:26,600][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-04-02 16:08:27,375][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzUxMTczMDcyOTgsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTExNzMwNywiZXhwIjoxNzc1MTM4OTA3fQ.wv9349-NVauwESg__A_l6Y9NYhrM6N-MJXgg8Lu8zjI
+[2026-04-02 16:08:27,375][conftest.py 103][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzUxMTczMDcyOTgsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTExNzMwNywiZXhwIjoxNzc1MTM4OTA3fQ.wv9349-NVauwESg__A_l6Y9NYhrM6N-MJXgg8Lu8zjI'}
+[2026-04-02 16:08:27,378][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 16:08:27,378][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_consume&status=pending&transaction_sub_type=card
+[2026-04-02 16:08:28,991][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 16:08:28,992][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_consume-pending-card] 执行通过
+[2026-04-02 16:08:28,996][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 16:08:28,996][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_consume&status=completed&transaction_sub_type=card
+[2026-04-02 16:08:29,296][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 16:08:29,297][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_consume-completed-card] 执行通过
+[2026-04-02 16:08:29,300][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 16:08:29,300][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_consume&status=failed&transaction_sub_type=card
+[2026-04-02 16:08:29,542][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 16:08:29,543][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_consume-failed-card] 执行通过
+[2026-04-02 16:08:29,547][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 16:08:29,547][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_clearing&status=pending&transaction_sub_type=card
+[2026-04-02 16:08:29,757][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 16:08:29,757][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_clearing-pending-card] 执行通过
+[2026-04-02 16:08:29,759][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 16:08:29,759][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_clearing&status=completed&transaction_sub_type=card
+[2026-04-02 16:08:29,965][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 16:08:29,966][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_clearing-completed-card] 执行通过
+[2026-04-02 16:08:29,970][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 16:08:29,970][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_clearing&status=failed&transaction_sub_type=card
+[2026-04-02 16:08:30,182][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 16:08:30,183][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_clearing-failed-card] 执行通过
+[2026-04-02 16:08:30,187][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 16:08:30,187][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_reversal&status=pending&transaction_sub_type=card
+[2026-04-02 16:08:30,390][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 16:08:30,392][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_reversal-pending-card] 执行通过
+[2026-04-02 16:08:30,396][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 16:08:30,396][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_reversal&status=completed&transaction_sub_type=card
+[2026-04-02 16:08:30,729][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 16:08:30,730][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_reversal-completed-card] 执行通过
+[2026-04-02 16:08:30,734][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 16:08:30,734][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_reversal&status=failed&transaction_sub_type=card
+[2026-04-02 16:08:30,937][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 16:08:30,938][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_reversal-failed-card] 执行通过
+[2026-04-02 16:08:30,941][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 16:08:30,941][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_refund&status=pending&transaction_sub_type=card
+[2026-04-02 16:08:31,160][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 16:08:31,162][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_refund-pending-card] 执行通过
+[2026-04-02 16:08:31,166][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 16:08:31,166][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_refund&status=completed&transaction_sub_type=card
+[2026-04-02 16:08:31,470][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 16:08:31,471][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_refund-completed-card] 执行通过
+[2026-04-02 16:08:31,474][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 16:08:31,474][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_refund&status=failed&transaction_sub_type=card
+[2026-04-02 16:08:31,678][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 16:08:31,679][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_refund-failed-card] 执行通过
+[2026-04-02 16:08:31,682][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 16:08:31,682][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_deposit&status=pending&transaction_sub_type=card
+[2026-04-02 16:08:31,885][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 16:08:31,887][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_deposit-pending-card] 执行通过
+[2026-04-02 16:08:31,890][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 16:08:31,891][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_deposit&status=completed&transaction_sub_type=card
+[2026-04-02 16:08:32,180][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 16:08:32,181][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_deposit-completed-card] 执行通过
+[2026-04-02 16:08:32,184][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 16:08:32,185][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_deposit&status=failed&transaction_sub_type=card
+[2026-04-02 16:08:32,389][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 16:08:32,390][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_deposit-failed-card] 执行通过
+[2026-04-02 16:08:32,393][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 16:08:32,393][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_to_card_account&status=pending&transaction_sub_type=card
+[2026-04-02 16:08:32,601][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 16:08:32,603][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_to_card_account-pending-card] 执行通过
+[2026-04-02 16:08:32,607][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 16:08:32,607][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_to_card_account&status=completed&transaction_sub_type=card
+[2026-04-02 16:08:32,887][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 16:08:32,888][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_to_card_account-completed-card] 执行通过
+[2026-04-02 16:08:32,892][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 16:08:32,892][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_to_card_account&status=failed&transaction_sub_type=card
+[2026-04-02 16:08:33,100][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 16:08:33,102][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_to_card_account-failed-card] 执行通过
+[2026-04-02 16:08:33,105][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 16:08:33,105][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_clearing_deduction&status=pending&transaction_sub_type=card
+[2026-04-02 16:08:33,316][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 16:08:33,317][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_clearing_deduction-pending-card] 执行通过
+[2026-04-02 16:08:33,319][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 16:08:33,319][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_clearing_deduction&status=completed&transaction_sub_type=card
+[2026-04-02 16:08:33,761][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 16:08:33,762][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_clearing_deduction-completed-card] 执行通过
+[2026-04-02 16:08:33,766][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 16:08:33,767][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_clearing_deduction&status=failed&transaction_sub_type=card
+[2026-04-02 16:08:33,981][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 16:08:33,982][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_clearing_deduction-failed-card] 执行通过
+[2026-04-02 16:08:33,986][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 16:08:33,986][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_clearing_refund&status=pending&transaction_sub_type=card
+[2026-04-02 16:08:34,199][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 16:08:34,200][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_clearing_refund-pending-card] 执行通过
+[2026-04-02 16:08:34,203][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 16:08:34,204][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_clearing_refund&status=completed&transaction_sub_type=card
+[2026-04-02 16:08:34,434][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 16:08:34,435][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_clearing_refund-completed-card] 执行通过
+[2026-04-02 16:08:34,438][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 16:08:34,438][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_clearing_refund&status=failed&transaction_sub_type=card
+[2026-04-02 16:08:34,644][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 16:08:34,645][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_clearing_refund-failed-card] 执行通过
+[2026-04-02 16:08:34,649][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 16:08:34,649][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_transaction_authorization_fee&status=pending&transaction_sub_type=card
+[2026-04-02 16:08:34,853][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 16:08:34,854][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_transaction_authorization_fee-pending-card] 执行通过
+[2026-04-02 16:08:34,856][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 16:08:34,857][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_transaction_authorization_fee&status=completed&transaction_sub_type=card
+[2026-04-02 16:08:35,089][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 16:08:35,090][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_transaction_authorization_fee-completed-card] 执行通过
+[2026-04-02 16:08:35,094][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 16:08:35,094][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_transaction_authorization_fee&status=failed&transaction_sub_type=card
+[2026-04-02 16:08:35,299][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 16:08:35,300][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_transaction_authorization_fee-failed-card] 执行通过
+[2026-04-02 16:08:35,302][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 16:08:35,302][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_atm&status=pending&transaction_sub_type=card
+[2026-04-02 16:08:35,562][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 16:08:35,563][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_atm-pending-card] 执行通过
+[2026-04-02 16:08:35,567][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 16:08:35,567][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_atm&status=completed&transaction_sub_type=card
+[2026-04-02 16:08:35,815][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 16:08:35,816][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_atm-completed-card] 执行通过
+[2026-04-02 16:08:35,818][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 16:08:35,818][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_atm&status=failed&transaction_sub_type=card
+[2026-04-02 16:08:36,023][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 16:08:36,024][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_atm-failed-card] 执行通过
+[2026-04-02 16:08:36,027][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 16:08:36,027][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_declined_refund&status=pending&transaction_sub_type=card
+[2026-04-02 16:08:36,230][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 16:08:36,232][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_declined_refund-pending-card] 执行通过
+[2026-04-02 16:08:36,236][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 16:08:36,236][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_declined_refund&status=completed&transaction_sub_type=card
+[2026-04-02 16:08:36,458][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 16:08:36,459][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_declined_refund-completed-card] 执行通过
+[2026-04-02 16:08:36,462][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 16:08:36,462][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_declined_refund&status=failed&transaction_sub_type=card
+[2026-04-02 16:08:36,671][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 16:08:36,672][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_transaction[获取交易记录-card_declined_refund-failed-card] 执行通过
+[2026-04-02 16:08:36,676][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 16:08:36,676][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=vcc_in&status=pending&transaction_sub_type=card_account
+[2026-04-02 16:08:36,882][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 16:08:36,883][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_account_transaction[获取交易记录-vcc_in-pending-card_account] 执行通过
+[2026-04-02 16:08:36,885][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 16:08:36,885][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=vcc_in&status=completed&transaction_sub_type=card_account
+[2026-04-02 16:08:37,107][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 16:08:37,108][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_account_transaction[获取交易记录-vcc_in-completed-card_account] 执行通过
+[2026-04-02 16:08:37,112][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 16:08:37,112][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=vcc_in&status=failed&transaction_sub_type=card_account
+[2026-04-02 16:08:37,316][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 16:08:37,317][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_account_transaction[获取交易记录-vcc_in-failed-card_account] 执行通过
+[2026-04-02 16:08:37,320][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 16:08:37,320][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=vcc_out&status=pending&transaction_sub_type=card_account
+[2026-04-02 16:08:37,523][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 16:08:37,525][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_account_transaction[获取交易记录-vcc_out-pending-card_account] 执行通过
+[2026-04-02 16:08:37,529][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 16:08:37,529][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=vcc_out&status=completed&transaction_sub_type=card_account
+[2026-04-02 16:08:37,747][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 16:08:37,748][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_account_transaction[获取交易记录-vcc_out-completed-card_account] 执行通过
+[2026-04-02 16:08:37,752][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 16:08:37,752][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=vcc_out&status=failed&transaction_sub_type=card_account
+[2026-04-02 16:08:37,959][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 16:08:37,960][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_account_transaction[获取交易记录-vcc_out-failed-card_account] 执行通过
+[2026-04-02 16:08:37,964][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 16:08:37,964][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_transaction_authorization_fee&status=pending&transaction_sub_type=card_account
+[2026-04-02 16:08:38,408][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 16:08:38,409][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_account_transaction[获取交易记录-card_transaction_authorization_fee-pending-card_account] 执行通过
+[2026-04-02 16:08:38,412][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 16:08:38,413][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_transaction_authorization_fee&status=completed&transaction_sub_type=card_account
+[2026-04-02 16:08:38,631][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 16:08:38,632][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_account_transaction[获取交易记录-card_transaction_authorization_fee-completed-card_account] 执行通过
+[2026-04-02 16:08:38,636][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 16:08:38,636][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_transaction_authorization_fee&status=failed&transaction_sub_type=card_account
+[2026-04-02 16:08:38,850][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 16:08:38,850][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_account_transaction[获取交易记录-card_transaction_authorization_fee-failed-card_account] 执行通过
+[2026-04-02 16:08:38,852][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 16:08:38,853][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=system_deduction&status=pending&transaction_sub_type=card_account
+[2026-04-02 16:08:39,062][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 16:08:39,064][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_account_transaction[获取交易记录-system_deduction-pending-card_account] 执行通过
+[2026-04-02 16:08:39,068][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 16:08:39,068][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=system_deduction&status=completed&transaction_sub_type=card_account
+[2026-04-02 16:08:39,283][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 16:08:39,285][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_account_transaction[获取交易记录-system_deduction-completed-card_account] 执行通过
+[2026-04-02 16:08:39,290][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 16:08:39,290][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=system_deduction&status=failed&transaction_sub_type=card_account
+[2026-04-02 16:08:39,504][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 16:08:39,505][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_account_transaction[获取交易记录-system_deduction-failed-card_account] 执行通过
+[2026-04-02 16:08:39,508][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 16:08:39,509][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=system_recharge&status=pending&transaction_sub_type=card_account
+[2026-04-02 16:08:39,774][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 16:08:39,775][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_account_transaction[获取交易记录-system_recharge-pending-card_account] 执行通过
+[2026-04-02 16:08:39,780][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 16:08:39,780][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=system_recharge&status=completed&transaction_sub_type=card_account
+[2026-04-02 16:08:40,021][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 16:08:40,022][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_account_transaction[获取交易记录-system_recharge-completed-card_account] 执行通过
+[2026-04-02 16:08:40,025][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 16:08:40,025][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=system_recharge&status=failed&transaction_sub_type=card_account
+[2026-04-02 16:08:40,239][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 16:08:40,241][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_account_transaction[获取交易记录-system_recharge-failed-card_account] 执行通过
+[2026-04-02 16:08:40,245][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 16:08:40,245][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_holder_kyc_fee_out&status=pending&transaction_sub_type=card_account
+[2026-04-02 16:08:40,447][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 16:08:40,448][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_account_transaction[获取交易记录-card_holder_kyc_fee_out-pending-card_account] 执行通过
+[2026-04-02 16:08:40,451][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 16:08:40,451][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_holder_kyc_fee_out&status=completed&transaction_sub_type=card_account
+[2026-04-02 16:08:40,684][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 16:08:40,685][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_account_transaction[获取交易记录-card_holder_kyc_fee_out-completed-card_account] 执行通过
+[2026-04-02 16:08:40,690][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 16:08:40,690][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_holder_kyc_fee_out&status=failed&transaction_sub_type=card_account
+[2026-04-02 16:08:40,894][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 16:08:40,895][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_account_transaction[获取交易记录-card_holder_kyc_fee_out-failed-card_account] 执行通过
+[2026-04-02 16:08:40,897][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 16:08:40,897][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_holder_kyc_fee_refund&status=pending&transaction_sub_type=card_account
+[2026-04-02 16:08:41,104][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 16:08:41,105][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_account_transaction[获取交易记录-card_holder_kyc_fee_refund-pending-card_account] 执行通过
+[2026-04-02 16:08:41,108][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 16:08:41,108][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_holder_kyc_fee_refund&status=completed&transaction_sub_type=card_account
+[2026-04-02 16:08:41,365][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 16:08:41,366][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_account_transaction[获取交易记录-card_holder_kyc_fee_refund-completed-card_account] 执行通过
+[2026-04-02 16:08:41,368][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 16:08:41,368][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_holder_kyc_fee_refund&status=failed&transaction_sub_type=card_account
+[2026-04-02 16:08:41,571][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 16:08:41,572][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_account_transaction[获取交易记录-card_holder_kyc_fee_refund-failed-card_account] 执行通过
+[2026-04-02 16:08:41,576][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 16:08:41,576][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=logistics_fee&status=pending&transaction_sub_type=card_account
+[2026-04-02 16:08:41,782][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 16:08:41,784][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_account_transaction[获取交易记录-logistics_fee-pending-card_account] 执行通过
+[2026-04-02 16:08:41,788][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 16:08:41,788][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=logistics_fee&status=completed&transaction_sub_type=card_account
+[2026-04-02 16:08:42,002][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 16:08:42,003][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_account_transaction[获取交易记录-logistics_fee-completed-card_account] 执行通过
+[2026-04-02 16:08:42,006][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 16:08:42,006][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=logistics_fee&status=failed&transaction_sub_type=card_account
+[2026-04-02 16:08:42,230][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 16:08:42,232][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_account_transaction[获取交易记录-logistics_fee-failed-card_account] 执行通过
+[2026-04-02 16:08:42,236][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 16:08:42,236][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_create_virtual&status=pending&transaction_sub_type=card_account
+[2026-04-02 16:08:42,443][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 16:08:42,444][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_account_transaction[获取交易记录-card_create_virtual-pending-card_account] 执行通过
+[2026-04-02 16:08:42,445][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 16:08:42,446][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_create_virtual&status=completed&transaction_sub_type=card_account
+[2026-04-02 16:08:42,666][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 16:08:42,667][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_account_transaction[获取交易记录-card_create_virtual-completed-card_account] 执行通过
+[2026-04-02 16:08:42,671][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 16:08:42,671][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_create_virtual&status=failed&transaction_sub_type=card_account
+[2026-04-02 16:08:42,875][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 16:08:42,876][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_account_transaction[获取交易记录-card_create_virtual-failed-card_account] 执行通过
+[2026-04-02 16:08:42,880][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 16:08:42,880][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_create_physical&status=pending&transaction_sub_type=card_account
+[2026-04-02 16:08:43,084][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 16:08:43,085][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_account_transaction[获取交易记录-card_create_physical-pending-card_account] 执行通过
+[2026-04-02 16:08:43,089][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 16:08:43,089][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_create_physical&status=completed&transaction_sub_type=card_account
+[2026-04-02 16:08:43,308][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 16:08:43,309][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_account_transaction[获取交易记录-card_create_physical-completed-card_account] 执行通过
+[2026-04-02 16:08:43,313][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取交易记录 - {}
+[2026-04-02 16:08:43,313][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/transaction-list?page=1&take=20&transaction_type=card_create_physical&status=failed&transaction_sub_type=card_account
+[2026-04-02 16:08:43,515][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-04-02 16:08:43,516][conftest.py 151][INFO]: 用例 test_card_transaction.py::test_get_card_account_transaction[获取交易记录-card_create_physical-failed-card_account] 执行通过
+[2026-04-02 16:08:43,517][conftest.py 52][INFO]: ---测试结束---test 环境执行完毕

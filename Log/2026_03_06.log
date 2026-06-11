@@ -1,0 +1,926 @@
+[2026-03-06 10:09:41,884][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-03-06 10:09:42,173][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-03-06 10:09:42,173][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2026-03-06 10:09:42,195][conftest.py 82][INFO]: ---前置处理器开始---
+[2026-03-06 10:09:42,195][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-03-06 10:09:42,213][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-03-06 10:09:42,213][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-03-06 10:09:42,213][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-03-06 10:09:44,227][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3NjI5ODQxNDksImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Mjc2Mjk4NCwiZXhwIjoxNzcyNzg0NTg0fQ.Z4ZNnrXW9BqI6T2Qi4WSEEyLxLd1XpxDHxJJnLmnvzs
+[2026-03-06 10:09:44,228][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3NjI5ODQxNDksImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Mjc2Mjk4NCwiZXhwIjoxNzcyNzg0NTg0fQ.Z4ZNnrXW9BqI6T2Qi4WSEEyLxLd1XpxDHxJJnLmnvzs'}
+[2026-03-06 10:09:44,231][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-查询风控设置 - {}
+[2026-03-06 10:09:44,231][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/trx/risk-policy
+[2026-03-06 10:09:45,069][setting.py 151][INFO]: id:['ad2acc94-93c4-4aea-a1e9-3fcfb0ff868f', '47e61592-7ec4-41d8-a446-04fd65fff755', '269feb3a-fb18-44f1-82f8-a8d93863f7ad', '9e144a82-91e7-401b-b7c1-a09825930b95']
+[2026-03-06 10:09:45,070][conftest.py 149][INFO]: 用例 test_setting.py::test_find_create_risk_policy_settings_data 执行通过
+[2026-03-06 10:09:45,071][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2026-03-06 11:27:29,834][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-03-06 11:27:30,056][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-03-06 11:27:30,056][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2026-03-06 11:27:30,078][conftest.py 82][INFO]: ---前置处理器开始---
+[2026-03-06 11:27:30,078][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-03-06 11:27:30,097][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-03-06 11:27:30,097][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-03-06 11:27:30,097][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-03-06 11:27:30,881][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3Njc2NTA3ODYsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Mjc2NzY1MCwiZXhwIjoxNzcyNzg5MjUwfQ.TP06hgprKu66kft7I9AVhv5ZPriycwG_g0AU64hW2kI
+[2026-03-06 11:27:30,882][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3Njc2NTA3ODYsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Mjc2NzY1MCwiZXhwIjoxNzcyNzg5MjUwfQ.TP06hgprKu66kft7I9AVhv5ZPriycwG_g0AU64hW2kI'}
+[2026-03-06 11:27:30,888][excel_tools.py 409][ERROR]: 更新测试用例结果失败: 未找到用例名称 '管理-获取风控策略列表'
+[2026-03-06 11:27:30,889][setting.py 138][ERROR]: 失败: 未找到用例名称 '管理-获取风控策略列表'
+[2026-03-06 11:27:30,889][conftest.py 149][INFO]: 用例 test_setting.py::test_get_risk_policy_settings[管理-删除黑名单] 执行通过
+[2026-03-06 11:27:30,890][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2026-03-06 11:31:37,458][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-03-06 11:31:37,676][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-03-06 11:31:37,676][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2026-03-06 11:31:37,697][conftest.py 82][INFO]: ---前置处理器开始---
+[2026-03-06 11:31:37,697][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-03-06 11:31:37,715][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-03-06 11:31:37,715][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-03-06 11:31:37,715][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-03-06 11:31:38,451][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3Njc4OTgzNzMsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Mjc2Nzg5OCwiZXhwIjoxNzcyNzg5NDk4fQ.cpv9EoWFCg-coXoENARLONY5foNfbr-7IIlM-AJ_W8s
+[2026-03-06 11:31:38,452][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3Njc4OTgzNzMsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Mjc2Nzg5OCwiZXhwIjoxNzcyNzg5NDk4fQ.cpv9EoWFCg-coXoENARLONY5foNfbr-7IIlM-AJ_W8s'}
+[2026-03-06 11:31:38,455][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-查询黑名单列表 - {}
+[2026-03-06 11:31:38,455][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/trx/namelist?page=1&take=10&name_type=black
+[2026-03-06 11:31:39,170][setting.py 316][INFO]: id:None
+[2026-03-06 11:31:39,171][conftest.py 149][INFO]: 用例 test_setting.py::test_find_trx_namelist_black_list_data 执行通过
+[2026-03-06 11:31:39,171][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2026-03-06 11:31:48,694][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-03-06 11:31:48,897][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-03-06 11:31:48,897][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2026-03-06 11:31:48,918][conftest.py 82][INFO]: ---前置处理器开始---
+[2026-03-06 11:31:48,918][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-03-06 11:31:48,937][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-03-06 11:31:48,937][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-03-06 11:31:48,937][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-03-06 11:31:49,377][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3Njc5MDkzMDMsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Mjc2NzkwOSwiZXhwIjoxNzcyNzg5NTA5fQ.4nyh7P4jPUO-fciaupj38jBK89Bs9fEQkXRytjI7lX8
+[2026-03-06 11:31:49,378][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3Njc5MDkzMDMsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Mjc2NzkwOSwiZXhwIjoxNzcyNzg5NTA5fQ.4nyh7P4jPUO-fciaupj38jBK89Bs9fEQkXRytjI7lX8'}
+[2026-03-06 11:31:49,379][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-查询黑名单列表 - {}
+[2026-03-06 11:31:49,379][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/trx/namelist?page=1&take=10&name_type=black
+[2026-03-06 11:31:50,235][setting.py 316][INFO]: id:None
+[2026-03-06 11:31:50,235][conftest.py 149][INFO]: 用例 test_setting.py::test_find_trx_namelist_black_list_data 执行通过
+[2026-03-06 11:31:50,236][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2026-03-06 11:32:18,256][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-03-06 11:32:18,456][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-03-06 11:32:18,456][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2026-03-06 11:32:18,477][conftest.py 82][INFO]: ---前置处理器开始---
+[2026-03-06 11:32:18,477][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-03-06 11:32:18,495][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-03-06 11:32:18,495][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-03-06 11:32:18,495][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-03-06 11:32:19,239][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3Njc5MzkxNjcsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Mjc2NzkzOSwiZXhwIjoxNzcyNzg5NTM5fQ.yseLuVUgpRKigmtRbjkVAY8sTXAScoPP1GCWy9iuDOw
+[2026-03-06 11:32:19,240][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3Njc5MzkxNjcsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Mjc2NzkzOSwiZXhwIjoxNzcyNzg5NTM5fQ.yseLuVUgpRKigmtRbjkVAY8sTXAScoPP1GCWy9iuDOw'}
+[2026-03-06 11:32:19,241][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-查询黑名单列表 - {}
+[2026-03-06 11:32:19,241][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/trx/namelist?page=1&take=10&name_type=black
+[2026-03-06 11:32:19,694][setting.py 316][INFO]: id:None
+[2026-03-06 11:32:19,694][conftest.py 149][INFO]: 用例 test_setting.py::test_find_trx_namelist_black_list_data 执行通过
+[2026-03-06 11:32:19,695][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2026-03-06 11:33:12,059][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-03-06 11:33:12,277][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-03-06 11:33:12,277][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2026-03-06 11:33:12,300][conftest.py 82][INFO]: ---前置处理器开始---
+[2026-03-06 11:33:12,300][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-03-06 11:33:12,323][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-03-06 11:33:12,323][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-03-06 11:33:12,323][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-03-06 11:33:13,107][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3Njc5OTMwMjIsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Mjc2Nzk5MywiZXhwIjoxNzcyNzg5NTkzfQ.DNLlmRixkspbzx3zM7JkinYWybkC4GFlIqsAqNdvcHU
+[2026-03-06 11:33:13,108][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3Njc5OTMwMjIsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Mjc2Nzk5MywiZXhwIjoxNzcyNzg5NTkzfQ.DNLlmRixkspbzx3zM7JkinYWybkC4GFlIqsAqNdvcHU'}
+[2026-03-06 11:33:13,108][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-查询黑名单列表 - {}
+[2026-03-06 11:33:13,109][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/trx/namelist?page=1&take=10&name_type=black
+[2026-03-06 11:33:13,852][setting.py 316][INFO]: id:['1c77c3ec-882c-4a55-9f31-91c985247b8c', '4db10cf9-e453-43c2-94b4-0f776073bc88']
+[2026-03-06 11:33:13,853][conftest.py 149][INFO]: 用例 test_setting.py::test_find_trx_namelist_black_list_data 执行通过
+[2026-03-06 11:33:13,854][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2026-03-06 13:46:15,151][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-03-06 13:46:15,369][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-03-06 13:46:15,369][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2026-03-06 13:46:15,391][conftest.py 82][INFO]: ---前置处理器开始---
+[2026-03-06 13:46:15,391][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-03-06 13:46:15,410][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-03-06 13:46:15,410][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-03-06 13:46:15,410][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-03-06 13:46:16,247][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3NzU5NzYxNDQsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Mjc3NTk3NiwiZXhwIjoxNzcyNzk3NTc2fQ.K2xc-thekj-O6-M3C7xQonYXiPmP3gqn9-qKZgEKZyU
+[2026-03-06 13:46:16,247][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3NzU5NzYxNDQsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Mjc3NTk3NiwiZXhwIjoxNzcyNzk3NTc2fQ.K2xc-thekj-O6-M3C7xQonYXiPmP3gqn9-qKZgEKZyU'}
+[2026-03-06 13:46:16,249][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-查询黑名单列表 - {}
+[2026-03-06 13:46:16,249][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/trx/namelist?page=1&take=10&name_type=black
+[2026-03-06 13:46:16,972][setting.py 316][INFO]: id:['1c77c3ec-882c-4a55-9f31-91c985247b8c', '4db10cf9-e453-43c2-94b4-0f776073bc88']
+[2026-03-06 13:46:16,972][excel_tools.py 196][INFO]: URL已处理: https://ax-api.pertest.tech/web/trx/namelist/4db10cf9-e453-43c2-94b4-0f776073bc88
+[2026-03-06 13:46:16,972][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-删除黑名单 - {}
+[2026-03-06 13:46:16,973][simple_request.py 384][INFO]: Making DELETE request to https://ax-api.pertest.tech/web/trx/namelist/4db10cf9-e453-43c2-94b4-0f776073bc88
+[2026-03-06 13:46:17,492][setting.py 376][INFO]: id:None
+[2026-03-06 13:46:17,531][conftest.py 147][ERROR]: 用例 test_setting.py::test_delete_trx_namelist_black_list[管理-删除黑名单] 执行失败！
+[2026-03-06 13:46:17,534][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2026-03-06 14:23:21,998][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-03-06 14:23:22,226][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-03-06 14:23:22,226][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2026-03-06 14:23:22,249][conftest.py 82][INFO]: ---前置处理器开始---
+[2026-03-06 14:23:22,249][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-03-06 14:23:22,268][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-03-06 14:23:22,268][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-03-06 14:23:22,268][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-03-06 14:23:23,196][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3NzgyMDMwNDksImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Mjc3ODIwMywiZXhwIjoxNzcyNzk5ODAzfQ.K1PJMSBF5K1e9YGjOw7sOtd_CbMVTkQvRWjYPvWdlRQ
+[2026-03-06 14:23:23,197][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3NzgyMDMwNDksImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Mjc3ODIwMywiZXhwIjoxNzcyNzk5ODAzfQ.K1PJMSBF5K1e9YGjOw7sOtd_CbMVTkQvRWjYPvWdlRQ'}
+[2026-03-06 14:23:23,204][excel_tools.py 409][ERROR]: 更新测试用例结果失败: 未找到用例名称 '管理-获取风控策略列表'
+[2026-03-06 14:23:23,204][setting.py 138][ERROR]: 失败: 未找到用例名称 '管理-获取风控策略列表'
+[2026-03-06 14:23:23,253][conftest.py 147][ERROR]: 用例 test_setting.py::test_get_risk_policy_settings[管理-查看黑名单日志] 执行失败！
+[2026-03-06 14:23:23,255][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2026-03-06 14:24:53,131][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-03-06 14:24:53,339][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-03-06 14:24:53,339][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2026-03-06 14:24:53,360][conftest.py 82][INFO]: ---前置处理器开始---
+[2026-03-06 14:24:53,360][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-03-06 14:24:53,379][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-03-06 14:24:53,379][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-03-06 14:24:53,379][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-03-06 14:24:54,155][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3NzgyOTQwOTUsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Mjc3ODI5NCwiZXhwIjoxNzcyNzk5ODk0fQ.JypcleIkIyjAyEq2TuE6j-FcGKXgYNuoD4HYP8P6uIo
+[2026-03-06 14:24:54,156][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3NzgyOTQwOTUsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Mjc3ODI5NCwiZXhwIjoxNzcyNzk5ODk0fQ.JypcleIkIyjAyEq2TuE6j-FcGKXgYNuoD4HYP8P6uIo'}
+[2026-03-06 14:24:54,162][excel_tools.py 409][ERROR]: 更新测试用例结果失败: 未找到用例名称 '管理 - 创建黑名单列表'
+[2026-03-06 14:24:54,163][setting.py 343][ERROR]: 失败: 未找到用例名称 '管理 - 创建黑名单列表'
+[2026-03-06 14:24:54,190][conftest.py 147][ERROR]: 用例 test_setting.py::test_create_trx_namelist_black_list[管理 - 创建黑名单列表-payload0] 执行失败！
+[2026-03-06 14:24:54,193][excel_tools.py 409][ERROR]: 更新测试用例结果失败: 未找到用例名称 '管理 - 创建黑名单列表'
+[2026-03-06 14:24:54,193][setting.py 343][ERROR]: 失败: 未找到用例名称 '管理 - 创建黑名单列表'
+[2026-03-06 14:24:54,197][conftest.py 147][ERROR]: 用例 test_setting.py::test_create_trx_namelist_black_list[管理 - 创建黑名单列表-payload1] 执行失败！
+[2026-03-06 14:24:54,198][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2026-03-06 14:27:56,425][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-03-06 14:27:56,654][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-03-06 14:27:56,654][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2026-03-06 14:27:56,675][conftest.py 82][INFO]: ---前置处理器开始---
+[2026-03-06 14:27:56,675][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-03-06 14:27:56,694][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-03-06 14:27:56,694][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-03-06 14:27:56,694][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-03-06 14:27:57,628][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3Nzg0Nzc0NjAsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Mjc3ODQ3NywiZXhwIjoxNzcyODAwMDc3fQ._J8eeksOpys0MjUOPrtxdiTA4Oqv9lZxH8H3Di93ikI
+[2026-03-06 14:27:57,628][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3Nzg0Nzc0NjAsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Mjc3ODQ3NywiZXhwIjoxNzcyODAwMDc3fQ._J8eeksOpys0MjUOPrtxdiTA4Oqv9lZxH8H3Di93ikI'}
+[2026-03-06 14:27:57,633][excel_tools.py 409][ERROR]: 更新测试用例结果失败: 未找到用例名称 '管理 - 创建黑名单列表'
+[2026-03-06 14:27:57,633][setting.py 343][ERROR]: 失败: 未找到用例名称 '管理 - 创建黑名单列表'
+[2026-03-06 14:27:57,668][conftest.py 147][ERROR]: 用例 test_setting.py::test_create_trx_namelist_black_list[管理 - 创建黑名单列表-payload0] 执行失败！
+[2026-03-06 14:27:57,673][excel_tools.py 409][ERROR]: 更新测试用例结果失败: 未找到用例名称 '管理 - 创建黑名单列表'
+[2026-03-06 14:27:57,673][setting.py 343][ERROR]: 失败: 未找到用例名称 '管理 - 创建黑名单列表'
+[2026-03-06 14:27:57,677][conftest.py 147][ERROR]: 用例 test_setting.py::test_create_trx_namelist_black_list[管理 - 创建黑名单列表-payload1] 执行失败！
+[2026-03-06 14:27:57,677][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2026-03-06 14:29:37,522][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-03-06 14:29:37,740][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-03-06 14:29:37,740][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2026-03-06 14:29:37,761][conftest.py 82][INFO]: ---前置处理器开始---
+[2026-03-06 14:29:37,761][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-03-06 14:29:37,781][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-03-06 14:29:37,781][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-03-06 14:29:37,781][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-03-06 14:29:38,640][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3Nzg1Nzg1NTMsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Mjc3ODU3OCwiZXhwIjoxNzcyODAwMTc4fQ.jRdLleNTPTZ4w_ncY45Y-cw9i2JLNUKG5HZEwHTI4zQ
+[2026-03-06 14:29:38,641][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3Nzg1Nzg1NTMsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Mjc3ODU3OCwiZXhwIjoxNzcyODAwMTc4fQ.jRdLleNTPTZ4w_ncY45Y-cw9i2JLNUKG5HZEwHTI4zQ'}
+[2026-03-06 14:29:38,644][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-创建黑名单列表 - {"business_type": "18888888888", "no_address": "0x175aa0ecbe43e52bd002a30d65ede10b16c75408", "name_type": "black"}
+[2026-03-06 14:29:38,644][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/trx/namelist
+[2026-03-06 14:29:38,644][simple_request.py 386][INFO]: Request data: {
+  "business_type": "18888888888",
+  "no_address": "0x175aa0ecbe43e52bd002a30d65ede10b16c75408",
+  "name_type": "black"
+}
+[2026-03-06 14:29:39,158][simple_request.py 435][ERROR]: Request failed with status code: 400
+[2026-03-06 14:29:39,159][setting.py 336][INFO]: id:None
+[2026-03-06 14:29:39,199][conftest.py 147][ERROR]: 用例 test_setting.py::test_create_trx_namelist_black_list[管理-创建黑名单列表-payload0] 执行失败！
+[2026-03-06 14:29:39,204][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-创建黑名单列表 - {"business_type": "18888888889", "no_address": "0x175aa0ecbe43e52bd002a30d65ede10b16c75409", "name_type": "black"}
+[2026-03-06 14:29:39,204][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/trx/namelist
+[2026-03-06 14:29:39,204][simple_request.py 386][INFO]: Request data: {
+  "business_type": "18888888889",
+  "no_address": "0x175aa0ecbe43e52bd002a30d65ede10b16c75409",
+  "name_type": "black"
+}
+[2026-03-06 14:29:39,685][simple_request.py 435][ERROR]: Request failed with status code: 400
+[2026-03-06 14:29:39,685][setting.py 336][INFO]: id:None
+[2026-03-06 14:29:39,700][conftest.py 147][ERROR]: 用例 test_setting.py::test_create_trx_namelist_black_list[管理-创建黑名单列表-payload1] 执行失败！
+[2026-03-06 14:29:39,702][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2026-03-06 14:30:23,254][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-03-06 14:30:23,469][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-03-06 14:30:23,469][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2026-03-06 14:30:23,490][conftest.py 82][INFO]: ---前置处理器开始---
+[2026-03-06 14:30:23,490][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-03-06 14:30:23,509][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-03-06 14:30:23,509][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-03-06 14:30:23,509][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-03-06 14:30:24,229][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3Nzg2MjQxNzUsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Mjc3ODYyNCwiZXhwIjoxNzcyODAwMjI0fQ.XSxxxXF8cFp6ELcdtHwCuG6HlFOZE9MYS3PysyE-g6s
+[2026-03-06 14:30:24,230][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3Nzg2MjQxNzUsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Mjc3ODYyNCwiZXhwIjoxNzcyODAwMjI0fQ.XSxxxXF8cFp6ELcdtHwCuG6HlFOZE9MYS3PysyE-g6s'}
+[2026-03-06 14:30:24,234][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-创建黑名单列表 - {"business_type": "18888888888", "no_address": "0x175aa0ecbe43e52bd002a30d65ede10b16c75408", "name_type": "black"}
+[2026-03-06 14:30:24,234][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/trx/namelist
+[2026-03-06 14:30:24,234][simple_request.py 386][INFO]: Request data: {
+  "business_type": "18888888888",
+  "no_address": "0x175aa0ecbe43e52bd002a30d65ede10b16c75408",
+  "name_type": "black"
+}
+[2026-03-06 14:30:24,982][simple_request.py 435][ERROR]: Request failed with status code: 400
+[2026-03-06 14:30:24,982][setting.py 336][INFO]: id:None
+[2026-03-06 14:30:25,023][conftest.py 147][ERROR]: 用例 test_setting.py::test_create_trx_namelist_black_list[管理-创建黑名单列表-payload0] 执行失败！
+[2026-03-06 14:30:25,027][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-创建黑名单列表 - {"business_type": "18888888889", "no_address": "0x175aa0ecbe43e52bd002a30d65ede10b16c75409", "name_type": "black"}
+[2026-03-06 14:30:25,027][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/trx/namelist
+[2026-03-06 14:30:25,027][simple_request.py 386][INFO]: Request data: {
+  "business_type": "18888888889",
+  "no_address": "0x175aa0ecbe43e52bd002a30d65ede10b16c75409",
+  "name_type": "black"
+}
+[2026-03-06 14:30:25,241][simple_request.py 435][ERROR]: Request failed with status code: 400
+[2026-03-06 14:30:25,241][setting.py 336][INFO]: id:None
+[2026-03-06 14:30:25,249][conftest.py 147][ERROR]: 用例 test_setting.py::test_create_trx_namelist_black_list[管理-创建黑名单列表-payload1] 执行失败！
+[2026-03-06 14:30:25,249][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2026-03-06 14:31:54,117][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-03-06 14:31:54,379][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-03-06 14:31:54,379][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2026-03-06 14:31:54,403][conftest.py 82][INFO]: ---前置处理器开始---
+[2026-03-06 14:31:54,403][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-03-06 14:31:54,424][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-03-06 14:31:54,424][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-03-06 14:31:54,424][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-03-06 14:31:54,896][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3Nzg3MTQ4MzEsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Mjc3ODcxNCwiZXhwIjoxNzcyODAwMzE0fQ.KxUAqpVowVIrGkG1zdlhZHy9P6jwobikIdN4Xv_eceg
+[2026-03-06 14:31:54,896][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3Nzg3MTQ4MzEsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Mjc3ODcxNCwiZXhwIjoxNzcyODAwMzE0fQ.KxUAqpVowVIrGkG1zdlhZHy9P6jwobikIdN4Xv_eceg'}
+[2026-03-06 14:31:54,898][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-创建黑名单列表 - {"business_type": "bank_no", "no_address": "0x175aa0ecbe43e52bd002a30d65ede10b16c75408", "name_type": "black"}
+[2026-03-06 14:31:54,898][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/trx/namelist
+[2026-03-06 14:31:54,898][simple_request.py 386][INFO]: Request data: {
+  "business_type": "bank_no",
+  "no_address": "0x175aa0ecbe43e52bd002a30d65ede10b16c75408",
+  "name_type": "black"
+}
+[2026-03-06 14:31:55,708][setting.py 336][INFO]: id:None
+[2026-03-06 14:31:55,708][assert_tools.py 25][INFO]: 状态码断言成功：预期 201，实际 201
+[2026-03-06 14:31:55,709][conftest.py 149][INFO]: 用例 test_setting.py::test_create_trx_namelist_black_list[管理-创建黑名单列表-payload0] 执行通过
+[2026-03-06 14:31:55,710][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-创建黑名单列表 - {"business_type": "crypto_address", "no_address": "0x175aa0ecbe43e52bd002a30d65ede10b16c75409", "name_type": "black"}
+[2026-03-06 14:31:55,710][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/trx/namelist
+[2026-03-06 14:31:55,710][simple_request.py 386][INFO]: Request data: {
+  "business_type": "crypto_address",
+  "no_address": "0x175aa0ecbe43e52bd002a30d65ede10b16c75409",
+  "name_type": "black"
+}
+[2026-03-06 14:31:55,924][setting.py 336][INFO]: id:None
+[2026-03-06 14:31:55,925][assert_tools.py 25][INFO]: 状态码断言成功：预期 201，实际 201
+[2026-03-06 14:31:55,925][conftest.py 149][INFO]: 用例 test_setting.py::test_create_trx_namelist_black_list[管理-创建黑名单列表-payload1] 执行通过
+[2026-03-06 14:31:55,926][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2026-03-06 17:30:40,317][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-03-06 17:30:40,541][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-03-06 17:30:40,542][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2026-03-06 17:30:40,563][conftest.py 82][INFO]: ---前置处理器开始---
+[2026-03-06 17:30:40,563][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-03-06 17:30:40,582][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-03-06 17:30:40,582][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-03-06 17:30:40,582][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-03-06 17:30:41,492][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3ODk0NDEzMDYsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Mjc4OTQ0MSwiZXhwIjoxNzcyODExMDQxfQ.V8vUA3wcUu59TpHTkTnByVKn8DdGj2F9RjVVnRdGFLc
+[2026-03-06 17:30:41,493][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3ODk0NDEzMDYsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Mjc4OTQ0MSwiZXhwIjoxNzcyODExMDQxfQ.V8vUA3wcUu59TpHTkTnByVKn8DdGj2F9RjVVnRdGFLc'}
+[2026-03-06 17:30:41,496][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-查询黑名单列表 - {}
+[2026-03-06 17:30:41,497][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/trx/namelist?page=1&take=10&name_type=black
+[2026-03-06 17:30:42,331][setting.py 316][INFO]: id:['b0aca179-34e7-47b7-a0fa-12f0814de55a', 'e15a44f8-d1c6-42f6-81b4-26d65d69fa67']
+[2026-03-06 17:30:42,332][excel_tools.py 196][INFO]: URL已处理: https://ax-api.pertest.tech/web/trx/namelist/e15a44f8-d1c6-42f6-81b4-26d65d69fa67
+[2026-03-06 17:30:42,332][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-删除黑名单 - {}
+[2026-03-06 17:30:42,332][simple_request.py 384][INFO]: Making DELETE request to https://ax-api.pertest.tech/web/trx/namelist/e15a44f8-d1c6-42f6-81b4-26d65d69fa67
+[2026-03-06 17:30:42,539][setting.py 377][INFO]: id:None
+[2026-03-06 17:30:42,578][conftest.py 147][ERROR]: 用例 test_setting.py::test_delete_trx_namelist_black_list[管理-删除黑名单] 执行失败！
+[2026-03-06 17:30:42,580][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2026-03-06 17:34:57,201][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-03-06 17:34:57,411][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-03-06 17:34:57,411][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2026-03-06 17:34:57,433][conftest.py 82][INFO]: ---前置处理器开始---
+[2026-03-06 17:34:57,433][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-03-06 17:34:57,452][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-03-06 17:34:57,452][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-03-06 17:34:57,452][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-03-06 17:34:58,150][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3ODk2OTgwNjUsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Mjc4OTY5OCwiZXhwIjoxNzcyODExMjk4fQ.Yei_O4cMJ0PI3Tv4iTs9SIyxl62n2oQqMNE-8XULkQc
+[2026-03-06 17:34:58,151][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3ODk2OTgwNjUsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Mjc4OTY5OCwiZXhwIjoxNzcyODExMjk4fQ.Yei_O4cMJ0PI3Tv4iTs9SIyxl62n2oQqMNE-8XULkQc'}
+[2026-03-06 17:34:58,153][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-查询黑名单列表 - {}
+[2026-03-06 17:34:58,153][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/trx/namelist?page=1&take=10&name_type=black
+[2026-03-06 17:34:58,857][setting.py 316][INFO]: id:3e3cc4f4-a29e-489b-ab86-d50285ae67ef
+[2026-03-06 17:34:58,858][excel_tools.py 196][INFO]: URL已处理: https://ax-api.pertest.tech/web/trx/namelist/7
+[2026-03-06 17:34:58,858][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-删除黑名单 - {}
+[2026-03-06 17:34:58,858][simple_request.py 384][INFO]: Making DELETE request to https://ax-api.pertest.tech/web/trx/namelist/7
+[2026-03-06 17:34:59,081][simple_request.py 435][ERROR]: Request failed with status code: 500
+[2026-03-06 17:34:59,082][setting.py 377][INFO]: id:None
+[2026-03-06 17:34:59,124][conftest.py 147][ERROR]: 用例 test_setting.py::test_delete_trx_namelist_black_list[管理-删除黑名单] 执行失败！
+[2026-03-06 17:34:59,125][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2026-03-06 17:36:54,112][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-03-06 17:36:54,332][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-03-06 17:36:54,333][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2026-03-06 17:36:54,355][conftest.py 82][INFO]: ---前置处理器开始---
+[2026-03-06 17:36:54,355][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-03-06 17:36:54,374][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-03-06 17:36:54,374][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-03-06 17:36:54,374][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-03-06 17:36:55,353][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3ODk4MTUxMTcsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Mjc4OTgxNSwiZXhwIjoxNzcyODExNDE1fQ.h6aXc83OrdQU6x7V5OdMDDFclQ6gTy69hncqwEdtJzY
+[2026-03-06 17:36:55,354][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3ODk4MTUxMTcsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Mjc4OTgxNSwiZXhwIjoxNzcyODExNDE1fQ.h6aXc83OrdQU6x7V5OdMDDFclQ6gTy69hncqwEdtJzY'}
+[2026-03-06 17:36:55,356][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-查询黑名单列表 - {}
+[2026-03-06 17:36:55,356][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/trx/namelist?page=1&take=10&name_type=black
+[2026-03-06 17:36:56,101][setting.py 316][INFO]: id:3e3cc4f4-a29e-489b-ab86-d50285ae67ef
+[2026-03-06 17:36:56,101][excel_tools.py 196][INFO]: URL已处理: https://ax-api.pertest.tech/web/trx/namelist/3e3cc4f4-a29e-489b-ab86-d50285ae67ef
+[2026-03-06 17:36:56,101][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-删除黑名单 - {}
+[2026-03-06 17:36:56,101][simple_request.py 384][INFO]: Making DELETE request to https://ax-api.pertest.tech/web/trx/namelist/3e3cc4f4-a29e-489b-ab86-d50285ae67ef
+[2026-03-06 17:36:56,316][setting.py 381][INFO]: id:None
+[2026-03-06 17:36:56,343][conftest.py 147][ERROR]: 用例 test_setting.py::test_delete_trx_namelist_black_list[管理-删除黑名单] 执行失败！
+[2026-03-06 17:36:56,344][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2026-03-06 17:37:41,116][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-03-06 17:37:41,340][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-03-06 17:37:41,340][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2026-03-06 17:37:41,361][conftest.py 82][INFO]: ---前置处理器开始---
+[2026-03-06 17:37:41,361][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-03-06 17:37:41,380][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-03-06 17:37:41,380][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-03-06 17:37:41,380][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-03-06 17:37:42,363][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3ODk4NjIyMjgsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Mjc4OTg2MiwiZXhwIjoxNzcyODExNDYyfQ.nNdV9IbEGor6nQJWZKufa7VvDHzDcxWiG2gvEKs-lCk
+[2026-03-06 17:37:42,364][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3ODk4NjIyMjgsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Mjc4OTg2MiwiZXhwIjoxNzcyODExNDYyfQ.nNdV9IbEGor6nQJWZKufa7VvDHzDcxWiG2gvEKs-lCk'}
+[2026-03-06 17:37:42,368][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-查询黑名单列表 - {}
+[2026-03-06 17:37:42,368][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/trx/namelist?page=1&take=10&name_type=black
+[2026-03-06 17:37:42,888][setting.py 316][INFO]: id:None
+[2026-03-06 17:37:42,889][excel_tools.py 196][INFO]: URL已处理: https://ax-api.pertest.tech/web/trx/namelist/None
+[2026-03-06 17:37:42,890][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-删除黑名单 - {}
+[2026-03-06 17:37:42,890][simple_request.py 384][INFO]: Making DELETE request to https://ax-api.pertest.tech/web/trx/namelist/None
+[2026-03-06 17:37:43,127][simple_request.py 435][ERROR]: Request failed with status code: 500
+[2026-03-06 17:37:43,128][setting.py 381][INFO]: None
+[2026-03-06 17:37:43,169][conftest.py 147][ERROR]: 用例 test_setting.py::test_delete_trx_namelist_black_list[管理-删除黑名单] 执行失败！
+[2026-03-06 17:37:43,171][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2026-03-06 17:38:47,176][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-03-06 17:38:47,397][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-03-06 17:38:47,397][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2026-03-06 17:38:47,418][conftest.py 82][INFO]: ---前置处理器开始---
+[2026-03-06 17:38:47,419][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-03-06 17:38:47,437][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-03-06 17:38:47,437][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-03-06 17:38:47,437][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-03-06 17:38:48,194][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3ODk5MjgxMDksImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Mjc4OTkyOCwiZXhwIjoxNzcyODExNTI4fQ.2Y-LqkEju3jVNIb8fo2GQQ8j00Rb-QyUIvlLBNJYgYY
+[2026-03-06 17:38:48,195][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3ODk5MjgxMDksImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Mjc4OTkyOCwiZXhwIjoxNzcyODExNTI4fQ.2Y-LqkEju3jVNIb8fo2GQQ8j00Rb-QyUIvlLBNJYgYY'}
+[2026-03-06 17:38:48,198][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-查询黑名单列表 - {}
+[2026-03-06 17:38:48,199][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/trx/namelist?page=1&take=10&name_type=black
+[2026-03-06 17:38:48,990][setting.py 316][INFO]: id:None
+[2026-03-06 17:38:48,991][excel_tools.py 196][INFO]: URL已处理: https://ax-api.pertest.tech/web/trx/namelist/None
+[2026-03-06 17:38:48,991][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-删除黑名单 - {}
+[2026-03-06 17:38:48,991][simple_request.py 384][INFO]: Making DELETE request to https://ax-api.pertest.tech/web/trx/namelist/None
+[2026-03-06 17:38:49,213][simple_request.py 435][ERROR]: Request failed with status code: 500
+[2026-03-06 17:38:49,214][setting.py 381][INFO]: <Response [500]>
+[2026-03-06 17:38:49,237][conftest.py 147][ERROR]: 用例 test_setting.py::test_delete_trx_namelist_black_list[管理-删除黑名单] 执行失败！
+[2026-03-06 17:38:49,239][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2026-03-06 17:41:08,132][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-03-06 17:41:08,349][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-03-06 17:41:08,349][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2026-03-06 17:41:08,370][conftest.py 82][INFO]: ---前置处理器开始---
+[2026-03-06 17:41:08,370][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-03-06 17:41:08,389][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-03-06 17:41:08,389][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-03-06 17:41:08,389][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-03-06 17:41:09,112][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3OTAwNjkwNTUsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Mjc5MDA2OSwiZXhwIjoxNzcyODExNjY5fQ.VIuPsiS4Ow6OJ5XZWKcHLodJXj2fkkQ2nQJM9JebtSs
+[2026-03-06 17:41:09,114][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3OTAwNjkwNTUsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Mjc5MDA2OSwiZXhwIjoxNzcyODExNjY5fQ.VIuPsiS4Ow6OJ5XZWKcHLodJXj2fkkQ2nQJM9JebtSs'}
+[2026-03-06 17:41:09,117][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-查询黑名单列表 - {}
+[2026-03-06 17:41:09,117][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/trx/namelist?page=1&take=10&name_type=black
+[2026-03-06 17:41:09,848][setting.py 316][INFO]: id:['fc83eda2-5616-4195-bd65-343ae155532a', 'ac1f1bca-6d2a-4588-ae30-e349cd62d2f8']
+[2026-03-06 17:41:09,848][excel_tools.py 196][INFO]: URL已处理: https://ax-api.pertest.tech/web/trx/namelist/ac1f1bca-6d2a-4588-ae30-e349cd62d2f8
+[2026-03-06 17:41:09,849][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-删除黑名单 - {}
+[2026-03-06 17:41:09,849][simple_request.py 384][INFO]: Making DELETE request to https://ax-api.pertest.tech/web/trx/namelist/ac1f1bca-6d2a-4588-ae30-e349cd62d2f8
+[2026-03-06 17:41:10,064][setting.py 381][INFO]: <Response [200]>
+[2026-03-06 17:41:10,103][conftest.py 147][ERROR]: 用例 test_setting.py::test_delete_trx_namelist_black_list[管理-删除黑名单] 执行失败！
+[2026-03-06 17:41:10,105][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2026-03-06 17:43:14,478][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-03-06 17:43:14,713][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-03-06 17:43:14,713][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2026-03-06 17:43:14,736][conftest.py 82][INFO]: ---前置处理器开始---
+[2026-03-06 17:43:14,736][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-03-06 17:43:14,755][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-03-06 17:43:14,756][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-03-06 17:43:14,756][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-03-06 17:43:15,538][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3OTAxOTU0ODQsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Mjc5MDE5NSwiZXhwIjoxNzcyODExNzk1fQ.hBgl42-iuK2Ac_Qnl15zg_zZ141aq0atYaXX-lyRdf8
+[2026-03-06 17:43:15,539][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3OTAxOTU0ODQsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Mjc5MDE5NSwiZXhwIjoxNzcyODExNzk1fQ.hBgl42-iuK2Ac_Qnl15zg_zZ141aq0atYaXX-lyRdf8'}
+[2026-03-06 17:43:15,542][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-查询黑名单列表 - {}
+[2026-03-06 17:43:15,542][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/trx/namelist?page=1&take=10&name_type=black
+[2026-03-06 17:43:16,268][setting.py 316][INFO]: id:['fa4fbe7a-4e42-46fe-87c5-237886f6027f', 'fc83eda2-5616-4195-bd65-343ae155532a']
+[2026-03-06 17:43:16,269][excel_tools.py 196][INFO]: URL已处理: https://ax-api.pertest.tech/web/trx/namelist/fa4fbe7a-4e42-46fe-87c5-237886f6027f
+[2026-03-06 17:43:16,269][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-删除黑名单 - {}
+[2026-03-06 17:43:16,269][simple_request.py 384][INFO]: Making DELETE request to https://ax-api.pertest.tech/web/trx/namelist/fa4fbe7a-4e42-46fe-87c5-237886f6027f
+[2026-03-06 17:43:16,488][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-03-06 17:43:16,489][conftest.py 149][INFO]: 用例 test_setting.py::test_delete_trx_namelist_black_list[管理-删除黑名单] 执行通过
+[2026-03-06 17:43:16,492][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2026-03-06 17:43:22,317][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-03-06 17:43:22,507][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-03-06 17:43:22,507][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2026-03-06 17:43:22,527][conftest.py 82][INFO]: ---前置处理器开始---
+[2026-03-06 17:43:22,528][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-03-06 17:43:22,546][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-03-06 17:43:22,546][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-03-06 17:43:22,546][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-03-06 17:43:23,264][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3OTAyMDMyMDEsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Mjc5MDIwMywiZXhwIjoxNzcyODExODAzfQ.Tkvol7LGEJ3fuWVy5Bft1exfsDb_Shw-SZGCSViY8w0
+[2026-03-06 17:43:23,265][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3OTAyMDMyMDEsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Mjc5MDIwMywiZXhwIjoxNzcyODExODAzfQ.Tkvol7LGEJ3fuWVy5Bft1exfsDb_Shw-SZGCSViY8w0'}
+[2026-03-06 17:43:23,268][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-查询黑名单列表 - {}
+[2026-03-06 17:43:23,268][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/trx/namelist?page=1&take=10&name_type=black
+[2026-03-06 17:43:23,997][setting.py 316][INFO]: id:fc83eda2-5616-4195-bd65-343ae155532a
+[2026-03-06 17:43:23,998][excel_tools.py 196][INFO]: URL已处理: https://ax-api.pertest.tech/web/trx/namelist/fc83eda2-5616-4195-bd65-343ae155532a
+[2026-03-06 17:43:23,998][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-删除黑名单 - {}
+[2026-03-06 17:43:23,998][simple_request.py 384][INFO]: Making DELETE request to https://ax-api.pertest.tech/web/trx/namelist/fc83eda2-5616-4195-bd65-343ae155532a
+[2026-03-06 17:43:24,196][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-03-06 17:43:24,198][conftest.py 149][INFO]: 用例 test_setting.py::test_delete_trx_namelist_black_list[管理-删除黑名单] 执行通过
+[2026-03-06 17:43:24,199][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2026-03-06 17:45:29,654][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-03-06 17:45:29,873][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-03-06 17:45:29,874][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2026-03-06 17:45:29,894][conftest.py 82][INFO]: ---前置处理器开始---
+[2026-03-06 17:45:29,895][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-03-06 17:45:29,914][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-03-06 17:45:29,914][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-03-06 17:45:29,914][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-03-06 17:45:30,680][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3OTAzMzA2MjQsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Mjc5MDMzMCwiZXhwIjoxNzcyODExOTMwfQ.SnRqEQVnNlC-dqfsm0cBcPA_PaLYjdobF2lMTBDJ1e8
+[2026-03-06 17:45:30,681][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3OTAzMzA2MjQsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Mjc5MDMzMCwiZXhwIjoxNzcyODExOTMwfQ.SnRqEQVnNlC-dqfsm0cBcPA_PaLYjdobF2lMTBDJ1e8'}
+[2026-03-06 17:45:30,684][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-查询黑名单列表 - {}
+[2026-03-06 17:45:30,685][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/trx/namelist?page=1&take=10&name_type=black
+[2026-03-06 17:45:31,176][setting.py 316][INFO]: id:604db35b-3964-4402-9c1b-e342045386d8
+[2026-03-06 17:45:31,177][excel_tools.py 196][INFO]: URL已处理: https://ax-api.pertest.tech/web/trx/namelist/logs?namelist_id=604db35b-3964-4402-9c1b-e342045386d8
+[2026-03-06 17:45:31,177][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-查看黑名单日志 - {}
+[2026-03-06 17:45:31,177][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/trx/namelist/logs?namelist_id=604db35b-3964-4402-9c1b-e342045386d8
+[2026-03-06 17:45:31,377][setting.py 358][INFO]: id:None
+[2026-03-06 17:45:31,378][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-03-06 17:45:31,379][conftest.py 149][INFO]: 用例 test_setting.py::test_get_risk_policy_settings[管理-查看黑名单日志] 执行通过
+[2026-03-06 17:45:31,381][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2026-03-06 17:46:39,400][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-03-06 17:46:39,609][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-03-06 17:46:39,609][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2026-03-06 17:46:39,630][conftest.py 82][INFO]: ---前置处理器开始---
+[2026-03-06 17:46:39,630][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-03-06 17:46:39,648][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-03-06 17:46:39,648][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-03-06 17:46:39,648][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-03-06 17:46:40,382][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3OTA0MDAzMjgsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Mjc5MDQwMCwiZXhwIjoxNzcyODEyMDAwfQ.dknBG3vK_fjS90jQEh-2spCOrzArwei8Ujg_k2fhH04
+[2026-03-06 17:46:40,384][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3OTA0MDAzMjgsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Mjc5MDQwMCwiZXhwIjoxNzcyODEyMDAwfQ.dknBG3vK_fjS90jQEh-2spCOrzArwei8Ujg_k2fhH04'}
+[2026-03-06 17:46:40,387][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-创建黑名单列表 - {"business_type": "bank_no", "no_address": "0x175aa0ecbe43e52bd002a30d65ede10b16c75408", "name_type": "black"}
+[2026-03-06 17:46:40,387][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/trx/namelist
+[2026-03-06 17:46:40,387][simple_request.py 386][INFO]: Request data: {
+  "business_type": "bank_no",
+  "no_address": "0x175aa0ecbe43e52bd002a30d65ede10b16c75408",
+  "name_type": "black"
+}
+[2026-03-06 17:46:41,101][simple_request.py 435][ERROR]: Request failed with status code: 400
+[2026-03-06 17:46:41,101][setting.py 336][INFO]: id:None
+[2026-03-06 17:46:41,143][conftest.py 147][ERROR]: 用例 test_setting.py::test_create_trx_namelist_black_list[管理-创建黑名单列表-payload0] 执行失败！
+[2026-03-06 17:46:41,146][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-创建黑名单列表 - {"business_type": "crypto_address", "no_address": "0x175aa0ecbe43e52bd002a30d65ede10b16c75409", "name_type": "black"}
+[2026-03-06 17:46:41,146][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/trx/namelist
+[2026-03-06 17:46:41,146][simple_request.py 386][INFO]: Request data: {
+  "business_type": "crypto_address",
+  "no_address": "0x175aa0ecbe43e52bd002a30d65ede10b16c75409",
+  "name_type": "black"
+}
+[2026-03-06 17:46:41,351][setting.py 336][INFO]: id:None
+[2026-03-06 17:46:41,352][assert_tools.py 25][INFO]: 状态码断言成功：预期 201，实际 201
+[2026-03-06 17:46:41,352][conftest.py 149][INFO]: 用例 test_setting.py::test_create_trx_namelist_black_list[管理-创建黑名单列表-payload1] 执行通过
+[2026-03-06 17:46:41,353][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2026-03-06 17:47:06,911][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-03-06 17:47:07,105][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-03-06 17:47:07,106][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2026-03-06 17:47:07,128][conftest.py 82][INFO]: ---前置处理器开始---
+[2026-03-06 17:47:07,128][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-03-06 17:47:07,147][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-03-06 17:47:07,147][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-03-06 17:47:07,147][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-03-06 17:47:08,910][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3OTA0Mjg4NTMsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Mjc5MDQyOCwiZXhwIjoxNzcyODEyMDI4fQ.SHYme-n7FP95rDUcDmCNfJZCc3RpXqlCZidCLbNgceg
+[2026-03-06 17:47:08,911][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3OTA0Mjg4NTMsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Mjc5MDQyOCwiZXhwIjoxNzcyODEyMDI4fQ.SHYme-n7FP95rDUcDmCNfJZCc3RpXqlCZidCLbNgceg'}
+[2026-03-06 17:47:08,914][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-创建黑名单列表 - {"business_type": "bank_no", "no_address": "0x175aa0ecbe43e52bd002a30d65ede10b16c75408", "name_type": "black"}
+[2026-03-06 17:47:08,914][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/trx/namelist
+[2026-03-06 17:47:08,914][simple_request.py 386][INFO]: Request data: {
+  "business_type": "bank_no",
+  "no_address": "0x175aa0ecbe43e52bd002a30d65ede10b16c75408",
+  "name_type": "black"
+}
+[2026-03-06 17:47:09,645][setting.py 336][INFO]: id:None
+[2026-03-06 17:47:09,645][assert_tools.py 25][INFO]: 状态码断言成功：预期 201，实际 201
+[2026-03-06 17:47:09,647][conftest.py 149][INFO]: 用例 test_setting.py::test_create_trx_namelist_black_list[管理-创建黑名单列表-payload0] 执行通过
+[2026-03-06 17:47:09,651][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-创建黑名单列表 - {"business_type": "crypto_address", "no_address": "0x175aa0ecbe43e52bd002a30d65ede10b16c75409", "name_type": "black"}
+[2026-03-06 17:47:09,651][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/trx/namelist
+[2026-03-06 17:47:09,651][simple_request.py 386][INFO]: Request data: {
+  "business_type": "crypto_address",
+  "no_address": "0x175aa0ecbe43e52bd002a30d65ede10b16c75409",
+  "name_type": "black"
+}
+[2026-03-06 17:47:09,861][setting.py 336][INFO]: id:None
+[2026-03-06 17:47:09,862][assert_tools.py 25][INFO]: 状态码断言成功：预期 201，实际 201
+[2026-03-06 17:47:09,863][conftest.py 149][INFO]: 用例 test_setting.py::test_create_trx_namelist_black_list[管理-创建黑名单列表-payload1] 执行通过
+[2026-03-06 17:47:09,864][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2026-03-06 17:47:36,195][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-03-06 17:47:36,393][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-03-06 17:47:36,393][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2026-03-06 17:47:36,415][conftest.py 82][INFO]: ---前置处理器开始---
+[2026-03-06 17:47:36,415][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-03-06 17:47:36,433][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-03-06 17:47:36,433][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-03-06 17:47:36,433][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-03-06 17:47:37,234][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3OTA0NTcxNTUsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Mjc5MDQ1NywiZXhwIjoxNzcyODEyMDU3fQ.4D0tQ5r5uxk5hj526iVCphI0-_m4ZoIp1qlSU6BsfFQ
+[2026-03-06 17:47:37,235][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3OTA0NTcxNTUsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Mjc5MDQ1NywiZXhwIjoxNzcyODEyMDU3fQ.4D0tQ5r5uxk5hj526iVCphI0-_m4ZoIp1qlSU6BsfFQ'}
+[2026-03-06 17:47:37,238][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-查询黑名单列表 - {}
+[2026-03-06 17:47:37,238][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/trx/namelist?page=1&take=10&name_type=black
+[2026-03-06 17:47:37,705][setting.py 316][INFO]: id:['8e247184-e9de-4d2c-b8e4-f78bde080ec9', '05819ed5-e7ba-404a-b406-1574d84cb84c']
+[2026-03-06 17:47:37,706][excel_tools.py 196][INFO]: URL已处理: https://ax-api.pertest.tech/web/trx/namelist/05819ed5-e7ba-404a-b406-1574d84cb84c
+[2026-03-06 17:47:37,706][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-删除黑名单 - {}
+[2026-03-06 17:47:37,706][simple_request.py 384][INFO]: Making DELETE request to https://ax-api.pertest.tech/web/trx/namelist/05819ed5-e7ba-404a-b406-1574d84cb84c
+[2026-03-06 17:47:37,926][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-03-06 17:47:37,928][conftest.py 149][INFO]: 用例 test_setting.py::test_delete_trx_namelist_black_list[管理-删除黑名单] 执行通过
+[2026-03-06 17:47:37,929][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2026-03-06 17:47:39,465][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-03-06 17:47:39,619][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-03-06 17:47:39,619][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2026-03-06 17:47:39,639][conftest.py 82][INFO]: ---前置处理器开始---
+[2026-03-06 17:47:39,640][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-03-06 17:47:39,658][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-03-06 17:47:39,658][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-03-06 17:47:39,658][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-03-06 17:47:40,098][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3OTA0NjAwNDMsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Mjc5MDQ2MCwiZXhwIjoxNzcyODEyMDYwfQ.z_oOpmvbQZXkE1jxbozPJbVMHdC7FZjIakd_3v9K_E4
+[2026-03-06 17:47:40,099][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3OTA0NjAwNDMsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Mjc5MDQ2MCwiZXhwIjoxNzcyODEyMDYwfQ.z_oOpmvbQZXkE1jxbozPJbVMHdC7FZjIakd_3v9K_E4'}
+[2026-03-06 17:47:40,102][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-查询黑名单列表 - {}
+[2026-03-06 17:47:40,102][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/trx/namelist?page=1&take=10&name_type=black
+[2026-03-06 17:47:40,544][setting.py 316][INFO]: id:8e247184-e9de-4d2c-b8e4-f78bde080ec9
+[2026-03-06 17:47:40,545][excel_tools.py 196][INFO]: URL已处理: https://ax-api.pertest.tech/web/trx/namelist/8e247184-e9de-4d2c-b8e4-f78bde080ec9
+[2026-03-06 17:47:40,545][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-删除黑名单 - {}
+[2026-03-06 17:47:40,545][simple_request.py 384][INFO]: Making DELETE request to https://ax-api.pertest.tech/web/trx/namelist/8e247184-e9de-4d2c-b8e4-f78bde080ec9
+[2026-03-06 17:47:40,751][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-03-06 17:47:40,751][conftest.py 149][INFO]: 用例 test_setting.py::test_delete_trx_namelist_black_list[管理-删除黑名单] 执行通过
+[2026-03-06 17:47:40,752][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2026-03-06 17:47:43,455][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-03-06 17:47:43,613][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-03-06 17:47:43,613][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2026-03-06 17:47:43,634][conftest.py 82][INFO]: ---前置处理器开始---
+[2026-03-06 17:47:43,634][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-03-06 17:47:43,653][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-03-06 17:47:43,653][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-03-06 17:47:43,653][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-03-06 17:47:44,100][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3OTA0NjQwNDEsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Mjc5MDQ2NCwiZXhwIjoxNzcyODEyMDY0fQ.ozOhdWF7AokbVlfPPkfPGAK1uhgv0mabgMbIlK-B0ag
+[2026-03-06 17:47:44,101][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3OTA0NjQwNDEsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Mjc5MDQ2NCwiZXhwIjoxNzcyODEyMDY0fQ.ozOhdWF7AokbVlfPPkfPGAK1uhgv0mabgMbIlK-B0ag'}
+[2026-03-06 17:47:44,105][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-查询黑名单列表 - {}
+[2026-03-06 17:47:44,105][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/trx/namelist?page=1&take=10&name_type=black
+[2026-03-06 17:47:44,515][setting.py 316][INFO]: id:None
+[2026-03-06 17:47:44,516][excel_tools.py 196][INFO]: URL已处理: https://ax-api.pertest.tech/web/trx/namelist/logs?namelist_id=None
+[2026-03-06 17:47:44,516][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-查看黑名单日志 - {}
+[2026-03-06 17:47:44,516][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/trx/namelist/logs?namelist_id=None
+[2026-03-06 17:47:44,711][simple_request.py 435][ERROR]: Request failed with status code: 400
+[2026-03-06 17:47:44,711][setting.py 358][INFO]: id:None
+[2026-03-06 17:47:44,753][conftest.py 147][ERROR]: 用例 test_setting.py::test_get_risk_policy_settings[管理-查看黑名单日志] 执行失败！
+[2026-03-06 17:47:44,755][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2026-03-06 17:56:38,759][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-03-06 17:56:38,977][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-03-06 17:56:38,977][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2026-03-06 17:56:38,998][conftest.py 82][INFO]: ---前置处理器开始---
+[2026-03-06 17:56:38,998][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-03-06 17:56:39,016][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-03-06 17:56:39,016][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-03-06 17:56:39,016][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-03-06 17:56:39,832][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3OTA5OTk3NTIsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Mjc5MDk5OSwiZXhwIjoxNzcyODEyNTk5fQ.pS7wEINrAjlBjYflATLDJOCXXyfaVxsXJ_XB0t55v1E
+[2026-03-06 17:56:39,834][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3OTA5OTk3NTIsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Mjc5MDk5OSwiZXhwIjoxNzcyODEyNTk5fQ.pS7wEINrAjlBjYflATLDJOCXXyfaVxsXJ_XB0t55v1E'}
+[2026-03-06 17:56:39,838][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-查询黑名单列表 - {}
+[2026-03-06 17:56:39,838][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/trx/namelist?page=1&take=10&name_type=black
+[2026-03-06 17:56:40,628][setting.py 300][INFO]: id:None
+[2026-03-06 17:56:40,629][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-03-06 17:56:40,630][conftest.py 149][INFO]: 用例 test_setting.py::test_get_risk_policy_settings[管理-查询黑名单列表] 执行通过
+[2026-03-06 17:56:40,632][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2026-03-06 17:59:11,085][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-03-06 17:59:11,298][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-03-06 17:59:11,298][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2026-03-06 17:59:11,323][conftest.py 82][INFO]: ---前置处理器开始---
+[2026-03-06 17:59:11,323][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-03-06 17:59:11,342][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-03-06 17:59:11,342][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-03-06 17:59:11,342][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-03-06 17:59:12,161][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3OTExNTIwODksImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Mjc5MTE1MiwiZXhwIjoxNzcyODEyNzUyfQ.IMmWvIoPwLPSKiStgav3VVwC_ICWF_dZx9f9Yvvvorg
+[2026-03-06 17:59:12,162][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3OTExNTIwODksImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Mjc5MTE1MiwiZXhwIjoxNzcyODEyNzUyfQ.IMmWvIoPwLPSKiStgav3VVwC_ICWF_dZx9f9Yvvvorg'}
+[2026-03-06 17:59:12,165][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-创建白名单列表 - {"business_type": "bank_no", "no_address": "0x175aa0ecbe43e52bd002a30d65ede10b16c75408", "day_limit": 1, "single_limit": 10, "total_limit": 20, "name_type": "white"}
+[2026-03-06 17:59:12,165][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/trx/namelist
+[2026-03-06 17:59:12,165][simple_request.py 386][INFO]: Request data: {
+  "business_type": "bank_no",
+  "no_address": "0x175aa0ecbe43e52bd002a30d65ede10b16c75408",
+  "day_limit": 1,
+  "single_limit": 10,
+  "total_limit": 20,
+  "name_type": "white"
+}
+[2026-03-06 17:59:12,897][simple_request.py 435][ERROR]: Request failed with status code: 400
+[2026-03-06 17:59:12,897][setting.py 236][INFO]: id:None
+[2026-03-06 17:59:12,938][conftest.py 147][ERROR]: 用例 test_setting.py::test_create_trx_namelist_white_list[管理-创建白名单列表-payload0] 执行失败！
+[2026-03-06 17:59:12,941][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-创建白名单列表 - {"business_type": "crypto_address", "no_address": "0x175aa0ecbe43e52bd002a30d65ede10b16c75408", "day_limit": 1, "single_limit": 10, "total_limit": 20, "name_type": "white"}
+[2026-03-06 17:59:12,941][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/trx/namelist
+[2026-03-06 17:59:12,941][simple_request.py 386][INFO]: Request data: {
+  "business_type": "crypto_address",
+  "no_address": "0x175aa0ecbe43e52bd002a30d65ede10b16c75408",
+  "day_limit": 1,
+  "single_limit": 10,
+  "total_limit": 20,
+  "name_type": "white"
+}
+[2026-03-06 17:59:13,154][simple_request.py 435][ERROR]: Request failed with status code: 400
+[2026-03-06 17:59:13,154][setting.py 236][INFO]: id:None
+[2026-03-06 17:59:13,162][conftest.py 147][ERROR]: 用例 test_setting.py::test_create_trx_namelist_white_list[管理-创建白名单列表-payload1] 执行失败！
+[2026-03-06 17:59:13,163][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2026-03-06 18:01:20,220][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-03-06 18:01:20,437][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-03-06 18:01:20,437][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2026-03-06 18:01:20,458][conftest.py 82][INFO]: ---前置处理器开始---
+[2026-03-06 18:01:20,458][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-03-06 18:01:20,477][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-03-06 18:01:20,477][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-03-06 18:01:20,477][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-03-06 18:01:21,240][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3OTEyODExNjcsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Mjc5MTI4MSwiZXhwIjoxNzcyODEyODgxfQ.s5YsTjAfME-hFDnrbDKXeU5LIRE30wDjZBGU8znBARw
+[2026-03-06 18:01:21,242][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3OTEyODExNjcsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Mjc5MTI4MSwiZXhwIjoxNzcyODEyODgxfQ.s5YsTjAfME-hFDnrbDKXeU5LIRE30wDjZBGU8znBARw'}
+[2026-03-06 18:01:21,245][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-创建白名单列表 - {"business_type": "bank_no", "no_address": "0x175aa0ecbe43e52bd002a30d65ede10b16c75408", "day_limit": 1, "single_limit": 10, "total_limit": 20, "name_type": "white"}
+[2026-03-06 18:01:21,245][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/trx/namelist
+[2026-03-06 18:01:21,245][simple_request.py 386][INFO]: Request data: {
+  "business_type": "bank_no",
+  "no_address": "0x175aa0ecbe43e52bd002a30d65ede10b16c75408",
+  "day_limit": 1,
+  "single_limit": 10,
+  "total_limit": 20,
+  "name_type": "white"
+}
+[2026-03-06 18:01:21,690][simple_request.py 435][ERROR]: Request failed with status code: 400
+[2026-03-06 18:01:21,690][setting.py 236][INFO]: id:None
+[2026-03-06 18:01:21,730][conftest.py 147][ERROR]: 用例 test_setting.py::test_create_trx_namelist_white_list[管理-创建白名单列表-payload0] 执行失败！
+[2026-03-06 18:01:21,735][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-创建白名单列表 - {"business_type": "crypto_address", "no_address": "0x175aa0ecbe43e52bd002a30d65ede10b16c75408", "day_limit": 1, "single_limit": 10, "total_limit": 20, "name_type": "white"}
+[2026-03-06 18:01:21,735][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/trx/namelist
+[2026-03-06 18:01:21,735][simple_request.py 386][INFO]: Request data: {
+  "business_type": "crypto_address",
+  "no_address": "0x175aa0ecbe43e52bd002a30d65ede10b16c75408",
+  "day_limit": 1,
+  "single_limit": 10,
+  "total_limit": 20,
+  "name_type": "white"
+}
+[2026-03-06 18:01:21,943][simple_request.py 435][ERROR]: Request failed with status code: 400
+[2026-03-06 18:01:21,943][setting.py 236][INFO]: id:None
+[2026-03-06 18:01:21,950][conftest.py 147][ERROR]: 用例 test_setting.py::test_create_trx_namelist_white_list[管理-创建白名单列表-payload1] 执行失败！
+[2026-03-06 18:01:21,951][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2026-03-06 18:01:46,543][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-03-06 18:01:46,758][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-03-06 18:01:46,758][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2026-03-06 18:01:46,780][conftest.py 82][INFO]: ---前置处理器开始---
+[2026-03-06 18:01:46,780][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-03-06 18:01:46,800][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-03-06 18:01:46,800][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-03-06 18:01:46,800][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-03-06 18:01:47,276][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3OTEzMDcyMDYsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Mjc5MTMwNywiZXhwIjoxNzcyODEyOTA3fQ.dEHK5aMxo7gislAYlcctSsxXBDkgVYBAHkxWpqq-3cY
+[2026-03-06 18:01:47,277][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3OTEzMDcyMDYsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Mjc5MTMwNywiZXhwIjoxNzcyODEyOTA3fQ.dEHK5aMxo7gislAYlcctSsxXBDkgVYBAHkxWpqq-3cY'}
+[2026-03-06 18:01:47,281][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-创建白名单列表 - {"business_type": "bank_no", "no_address": "0x175aa0ecbe43e52bd002a30d65ede10b16c75408", "day_limit": 1, "single_limit": 10, "total_limit": 20, "name_type": "white"}
+[2026-03-06 18:01:47,281][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/trx/namelist
+[2026-03-06 18:01:47,281][simple_request.py 386][INFO]: Request data: {
+  "business_type": "bank_no",
+  "no_address": "0x175aa0ecbe43e52bd002a30d65ede10b16c75408",
+  "day_limit": 1,
+  "single_limit": 10,
+  "total_limit": 20,
+  "name_type": "white"
+}
+[2026-03-06 18:01:47,694][setting.py 236][INFO]: id:None
+[2026-03-06 18:01:47,694][assert_tools.py 25][INFO]: 状态码断言成功：预期 201，实际 201
+[2026-03-06 18:01:47,694][conftest.py 149][INFO]: 用例 test_setting.py::test_create_trx_namelist_white_list[管理-创建白名单列表-payload0] 执行通过
+[2026-03-06 18:01:47,698][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-创建白名单列表 - {"business_type": "crypto_address", "no_address": "0x175aa0ecbe43e52bd002a30d65ede10b16c75408", "day_limit": 1, "single_limit": 10, "total_limit": 20, "name_type": "white"}
+[2026-03-06 18:01:47,698][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/trx/namelist
+[2026-03-06 18:01:47,698][simple_request.py 386][INFO]: Request data: {
+  "business_type": "crypto_address",
+  "no_address": "0x175aa0ecbe43e52bd002a30d65ede10b16c75408",
+  "day_limit": 1,
+  "single_limit": 10,
+  "total_limit": 20,
+  "name_type": "white"
+}
+[2026-03-06 18:01:47,910][setting.py 236][INFO]: id:None
+[2026-03-06 18:01:47,910][assert_tools.py 25][INFO]: 状态码断言成功：预期 201，实际 201
+[2026-03-06 18:01:47,911][conftest.py 149][INFO]: 用例 test_setting.py::test_create_trx_namelist_white_list[管理-创建白名单列表-payload1] 执行通过
+[2026-03-06 18:01:47,912][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2026-03-06 18:04:37,751][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-03-06 18:06:03,750][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-03-06 18:06:03,977][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-03-06 18:06:03,977][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2026-03-06 18:06:03,998][conftest.py 82][INFO]: ---前置处理器开始---
+[2026-03-06 18:06:03,998][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-03-06 18:06:04,016][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-03-06 18:06:04,016][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-03-06 18:06:04,016][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-03-06 18:06:04,834][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3OTE1NjQ3NTgsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Mjc5MTU2NCwiZXhwIjoxNzcyODEzMTY0fQ.brueFGlA8QZYZo5o6vQ-NTt21TTweM3eCjCMexGozkk
+[2026-03-06 18:06:04,835][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3OTE1NjQ3NTgsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Mjc5MTU2NCwiZXhwIjoxNzcyODEzMTY0fQ.brueFGlA8QZYZo5o6vQ-NTt21TTweM3eCjCMexGozkk'}
+[2026-03-06 18:06:04,838][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-查询白名单列表 - {}
+[2026-03-06 18:06:04,838][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/trx/namelist?page=1&take=10&name_type=white
+[2026-03-06 18:06:05,600][setting.py 238][INFO]: id:['1092d29d-588e-4a15-9f0d-0f3f94279822', 'e0d774d5-d9e4-459d-b377-257ce433bf29']
+[2026-03-06 18:06:05,600][excel_tools.py 196][INFO]: URL已处理: https://ax-api.pertest.tech/web/trx/namelist/logs?namelist_id=e0d774d5-d9e4-459d-b377-257ce433bf29
+[2026-03-06 18:06:05,600][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-查看白名单日志 - {}
+[2026-03-06 18:06:05,601][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/trx/namelist/logs?namelist_id=e0d774d5-d9e4-459d-b377-257ce433bf29
+[2026-03-06 18:06:05,811][setting.py 301][INFO]: id:None
+[2026-03-06 18:06:05,852][conftest.py 147][ERROR]: 用例 test_setting.py::test_get_trx_namelist_white_logs[管理-查看白名单日志] 执行失败！
+[2026-03-06 18:06:05,854][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2026-03-06 18:06:31,272][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-03-06 18:06:31,471][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-03-06 18:06:31,472][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2026-03-06 18:06:31,493][conftest.py 82][INFO]: ---前置处理器开始---
+[2026-03-06 18:06:31,493][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-03-06 18:06:31,512][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-03-06 18:06:31,512][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-03-06 18:06:31,512][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-03-06 18:06:32,299][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3OTE1OTIxNzksImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Mjc5MTU5MiwiZXhwIjoxNzcyODEzMTkyfQ.EDMl0kO6mj8YGxx0jjvTy774JhLvKvYXhmvD4phy1dM
+[2026-03-06 18:06:32,299][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3OTE1OTIxNzksImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Mjc5MTU5MiwiZXhwIjoxNzcyODEzMTkyfQ.EDMl0kO6mj8YGxx0jjvTy774JhLvKvYXhmvD4phy1dM'}
+[2026-03-06 18:06:32,301][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-查询白名单列表 - {}
+[2026-03-06 18:06:32,302][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/trx/namelist?page=1&take=10&name_type=white
+[2026-03-06 18:06:32,756][setting.py 238][INFO]: id:['1092d29d-588e-4a15-9f0d-0f3f94279822', 'e0d774d5-d9e4-459d-b377-257ce433bf29']
+[2026-03-06 18:06:32,757][excel_tools.py 196][INFO]: URL已处理: https://ax-api.pertest.tech/web/trx/namelist/logs?namelist_id=e0d774d5-d9e4-459d-b377-257ce433bf29
+[2026-03-06 18:06:32,757][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-查看白名单日志 - {}
+[2026-03-06 18:06:32,757][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/trx/namelist/logs?namelist_id=e0d774d5-d9e4-459d-b377-257ce433bf29
+[2026-03-06 18:06:32,966][setting.py 301][INFO]: id:None
+[2026-03-06 18:06:32,966][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-03-06 18:06:32,966][conftest.py 149][INFO]: 用例 test_setting.py::test_get_trx_namelist_white_logs[管理-查看白名单日志] 执行通过
+[2026-03-06 18:06:32,968][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2026-03-06 18:06:37,998][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-03-06 18:06:38,190][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-03-06 18:06:38,190][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2026-03-06 18:06:38,211][conftest.py 82][INFO]: ---前置处理器开始---
+[2026-03-06 18:06:38,211][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-03-06 18:06:38,229][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-03-06 18:06:38,230][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-03-06 18:06:38,230][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-03-06 18:06:38,669][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3OTE1OTg1ODIsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Mjc5MTU5OCwiZXhwIjoxNzcyODEzMTk4fQ.sV9xREKtiw8TR-uspBE1mCIg8SiTwhSxVvZIl83W69Q
+[2026-03-06 18:06:38,670][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3OTE1OTg1ODIsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Mjc5MTU5OCwiZXhwIjoxNzcyODEzMTk4fQ.sV9xREKtiw8TR-uspBE1mCIg8SiTwhSxVvZIl83W69Q'}
+[2026-03-06 18:06:38,674][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-查询白名单列表 - {}
+[2026-03-06 18:06:38,674][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/trx/namelist?page=1&take=10&name_type=white
+[2026-03-06 18:06:39,137][setting.py 238][INFO]: id:['1092d29d-588e-4a15-9f0d-0f3f94279822', 'e0d774d5-d9e4-459d-b377-257ce433bf29']
+[2026-03-06 18:06:39,138][excel_tools.py 196][INFO]: URL已处理: https://ax-api.pertest.tech/web/trx/namelist/e0d774d5-d9e4-459d-b377-257ce433bf29
+[2026-03-06 18:06:39,138][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-删除白名单 - {}
+[2026-03-06 18:06:39,138][simple_request.py 384][INFO]: Making DELETE request to https://ax-api.pertest.tech/web/trx/namelist/e0d774d5-d9e4-459d-b377-257ce433bf29
+[2026-03-06 18:06:39,348][setting.py 277][INFO]: id:None
+[2026-03-06 18:06:39,348][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-03-06 18:06:39,349][conftest.py 149][INFO]: 用例 test_setting.py::test_delete_trx_namelist_white_list[管理-删除白名单] 执行通过
+[2026-03-06 18:06:39,351][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2026-03-06 18:06:44,477][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-03-06 18:06:44,631][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-03-06 18:06:44,631][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2026-03-06 18:06:44,652][conftest.py 82][INFO]: ---前置处理器开始---
+[2026-03-06 18:06:44,652][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-03-06 18:06:44,670][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-03-06 18:06:44,670][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-03-06 18:06:44,670][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-03-06 18:06:45,409][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3OTE2MDUzMDUsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Mjc5MTYwNSwiZXhwIjoxNzcyODEzMjA1fQ.b1b5wQg8KsHxSj_9SccGuXEcsV9B3mFB0CfF7s7W0UU
+[2026-03-06 18:06:45,410][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3OTE2MDUzMDUsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3Mjc5MTYwNSwiZXhwIjoxNzcyODEzMjA1fQ.b1b5wQg8KsHxSj_9SccGuXEcsV9B3mFB0CfF7s7W0UU'}
+[2026-03-06 18:06:45,413][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-查询白名单列表 - {}
+[2026-03-06 18:06:45,413][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/trx/namelist?page=1&take=10&name_type=white
+[2026-03-06 18:06:45,839][setting.py 238][INFO]: id:1092d29d-588e-4a15-9f0d-0f3f94279822
+[2026-03-06 18:06:45,839][excel_tools.py 196][INFO]: URL已处理: https://ax-api.pertest.tech/web/trx/namelist/1092d29d-588e-4a15-9f0d-0f3f94279822
+[2026-03-06 18:06:45,839][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-删除白名单 - {}
+[2026-03-06 18:06:45,840][simple_request.py 384][INFO]: Making DELETE request to https://ax-api.pertest.tech/web/trx/namelist/1092d29d-588e-4a15-9f0d-0f3f94279822
+[2026-03-06 18:06:46,047][setting.py 277][INFO]: id:None
+[2026-03-06 18:06:46,048][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-03-06 18:06:46,049][conftest.py 149][INFO]: 用例 test_setting.py::test_delete_trx_namelist_white_list[管理-删除白名单] 执行通过
+[2026-03-06 18:06:46,050][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕

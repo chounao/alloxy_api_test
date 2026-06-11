@@ -1,0 +1,74 @@
+[2026-03-30 15:03:41,921][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-03-30 15:03:42,198][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-03-30 15:03:42,198][conftest.py 49][INFO]: ---测试开始---执行的是 test 环境
+[2026-03-30 15:03:42,222][conftest.py 84][INFO]: ---前置处理器开始---
+[2026-03-30 15:03:42,222][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-03-30 15:03:42,244][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-03-30 15:03:42,244][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-03-30 15:03:42,244][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-03-30 15:03:43,346][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzQ4NTQyMjMyNjQsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NDg1NDIyMywiZXhwIjoxNzc0ODc1ODIzfQ.df2jGux81sBRWWhikOu5eFxKWwPsoaJ6kBTQVCTRiyY
+[2026-03-30 15:03:43,347][conftest.py 103][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzQ4NTQyMjMyNjQsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NDg1NDIyMywiZXhwIjoxNzc0ODc1ODIzfQ.df2jGux81sBRWWhikOu5eFxKWwPsoaJ6kBTQVCTRiyY'}
+[2026-03-30 15:03:43,350][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取虚拟卡持有人列表 - {}
+[2026-03-30 15:03:43,350][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/get-holders?page=1&take=20
+[2026-03-30 15:03:44,371][cardHolder.py 127][ERROR]: [获取虚拟卡持有人列表] 获取钱包交易数据失败: 'Response' object has no attribute 'get'
+[2026-03-30 15:03:44,372][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-03-30 15:03:44,373][conftest.py 151][INFO]: 用例 test_card_holders.py::test_card_holder_list[获取虚拟卡持有人列表-body0] 执行通过
+[2026-03-30 15:03:44,378][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取虚拟卡持有人列表 - {}
+[2026-03-30 15:03:44,378][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/get-holders?page=1&take=20&nickname=a
+[2026-03-30 15:03:44,609][cardHolder.py 127][ERROR]: [获取虚拟卡持有人列表] 获取钱包交易数据失败: 'Response' object has no attribute 'get'
+[2026-03-30 15:03:44,609][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-03-30 15:03:44,610][conftest.py 151][INFO]: 用例 test_card_holders.py::test_card_holder_list[获取虚拟卡持有人列表-body1] 执行通过
+[2026-03-30 15:03:44,612][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取虚拟卡持有人列表 - {}
+[2026-03-30 15:03:44,612][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/get-holders?page=1&take=20&kyc_review_status=NA
+[2026-03-30 15:03:44,820][cardHolder.py 127][ERROR]: [获取虚拟卡持有人列表] 获取钱包交易数据失败: 'Response' object has no attribute 'get'
+[2026-03-30 15:03:44,820][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-03-30 15:03:44,821][conftest.py 151][INFO]: 用例 test_card_holders.py::test_card_holder_list[获取虚拟卡持有人列表-body2] 执行通过
+[2026-03-30 15:03:44,822][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取虚拟卡持有人列表 - {}
+[2026-03-30 15:03:44,823][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/get-holders?page=1&take=20&kyc_review_status=COMPLETED
+[2026-03-30 15:03:45,049][cardHolder.py 127][ERROR]: [获取虚拟卡持有人列表] 获取钱包交易数据失败: 'Response' object has no attribute 'get'
+[2026-03-30 15:03:45,049][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-03-30 15:03:45,050][conftest.py 151][INFO]: 用例 test_card_holders.py::test_card_holder_list[获取虚拟卡持有人列表-body3] 执行通过
+[2026-03-30 15:03:45,053][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取虚拟卡持有人列表 - {}
+[2026-03-30 15:03:45,054][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/get-holders?page=1&take=20&kyc_review_status=REJECTED
+[2026-03-30 15:03:45,303][cardHolder.py 127][ERROR]: [获取虚拟卡持有人列表] 获取钱包交易数据失败: 'Response' object has no attribute 'get'
+[2026-03-30 15:03:45,303][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-03-30 15:03:45,304][conftest.py 151][INFO]: 用例 test_card_holders.py::test_card_holder_list[获取虚拟卡持有人列表-body4] 执行通过
+[2026-03-30 15:03:45,305][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取虚拟卡持有人列表 - {}
+[2026-03-30 15:03:45,305][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/get-holders?page=1&take=20&kyc_review_status=EXPIRED
+[2026-03-30 15:03:45,514][cardHolder.py 127][ERROR]: [获取虚拟卡持有人列表] 获取钱包交易数据失败: 'Response' object has no attribute 'get'
+[2026-03-30 15:03:45,514][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-03-30 15:03:45,515][conftest.py 151][INFO]: 用例 test_card_holders.py::test_card_holder_list[获取虚拟卡持有人列表-body5] 执行通过
+[2026-03-30 15:03:45,517][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取虚拟卡持有人列表 - {}
+[2026-03-30 15:03:45,518][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/get-holders?page=1&take=20&kyc_review_status=RETRY
+[2026-03-30 15:03:45,725][cardHolder.py 127][ERROR]: [获取虚拟卡持有人列表] 获取钱包交易数据失败: 'Response' object has no attribute 'get'
+[2026-03-30 15:03:45,725][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-03-30 15:03:45,725][conftest.py 151][INFO]: 用例 test_card_holders.py::test_card_holder_list[获取虚拟卡持有人列表-body6] 执行通过
+[2026-03-30 15:03:45,728][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取虚拟卡持有人列表 - {}
+[2026-03-30 15:03:45,728][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/get-holders?page=1&take=20&label=a
+[2026-03-30 15:03:45,939][cardHolder.py 127][ERROR]: [获取虚拟卡持有人列表] 获取钱包交易数据失败: 'Response' object has no attribute 'get'
+[2026-03-30 15:03:45,939][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-03-30 15:03:45,940][conftest.py 151][INFO]: 用例 test_card_holders.py::test_card_holder_list[获取虚拟卡持有人列表-body7] 执行通过
+[2026-03-30 15:03:45,941][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取虚拟卡持有人列表 - {}
+[2026-03-30 15:03:45,941][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/get-holders?page=1&take=20&status=BAN
+[2026-03-30 15:03:46,145][cardHolder.py 127][ERROR]: [获取虚拟卡持有人列表] 获取钱包交易数据失败: 'Response' object has no attribute 'get'
+[2026-03-30 15:03:46,145][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-03-30 15:03:46,145][conftest.py 151][INFO]: 用例 test_card_holders.py::test_card_holder_list[获取虚拟卡持有人列表-body8] 执行通过
+[2026-03-30 15:03:46,146][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取虚拟卡持有人列表 - {}
+[2026-03-30 15:03:46,147][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/get-holders?page=1&take=20&status=ACTIVE
+[2026-03-30 15:03:46,359][cardHolder.py 127][ERROR]: [获取虚拟卡持有人列表] 获取钱包交易数据失败: 'Response' object has no attribute 'get'
+[2026-03-30 15:03:46,359][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-03-30 15:03:46,359][conftest.py 151][INFO]: 用例 test_card_holders.py::test_card_holder_list[获取虚拟卡持有人列表-body9] 执行通过
+[2026-03-30 15:03:46,361][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 管理-获取部门列表 - {}
+[2026-03-30 15:03:46,361][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/rbac/departments
+[2026-03-30 15:03:46,560][cardHolder.py 60][INFO]: 部门ID为：6b4ad0cf-9006-4490-9715-e8fbe398e16e
+[2026-03-30 15:03:46,560][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 获取虚拟卡持有人列表 - {}
+[2026-03-30 15:03:46,561][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/get-holders?page=1&take=20&rbac_department_id=6b4ad0cf-9006-4490-9715-e8fbe398e16e
+[2026-03-30 15:03:46,770][cardHolder.py 127][ERROR]: [获取虚拟卡持有人列表] 获取钱包交易数据失败: 'Response' object has no attribute 'get'
+[2026-03-30 15:03:46,770][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-03-30 15:03:46,770][conftest.py 151][INFO]: 用例 test_card_holders.py::test_card_holder_list[获取虚拟卡持有人列表-<lambda>] 执行通过
+[2026-03-30 15:03:46,770][conftest.py 52][INFO]: ---测试结束---test 环境执行完毕

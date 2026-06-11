@@ -1,0 +1,835 @@
+[2026-04-08 09:32:36,968][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-04-08 09:32:37,234][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-04-08 09:32:37,235][conftest.py 49][INFO]: ---测试开始---执行的是 test 环境
+[2026-04-08 09:32:37,261][conftest.py 84][INFO]: ---前置处理器开始---
+[2026-04-08 09:32:37,262][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-04-08 09:32:37,285][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-04-08 09:32:37,285][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-04-08 09:32:37,285][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-04-08 09:32:38,211][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2MTE5NTgxNTgsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTYxMTk1OCwiZXhwIjoxNzc1NjMzNTU4fQ.c2IWGNB98zu6njf1nSJSpRcRaO1pbNQkgA3IReoT8HU
+[2026-04-08 09:32:38,211][conftest.py 103][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-cn', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2MTE5NTgxNTgsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTYxMTk1OCwiZXhwIjoxNzc1NjMzNTU4fQ.c2IWGNB98zu6njf1nSJSpRcRaO1pbNQkgA3IReoT8HU'}
+[2026-04-08 09:32:38,212][excel_tools.py 405][INFO]: 更新测试用例结果: Common - 获取国家/地址信息 - {}
+[2026-04-08 09:32:38,212][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/country/country-info?business_type=reap_card
+[2026-04-08 09:32:39,428][common_data.py 53][INFO]: 国家信息:{'id': '411c6012-204e-4720-b94f-c1cb2e28a2ae', 'country_code': '975', 'country_name': '不丹', 'phone_code': '+975', 'flag': '🇧🇹', 'iso3': 'BTN', 'iso2': 'BT', 'province': [{'shortCode': 'BT-15', 'province_name': '廷布'}, {'shortCode': 'BT-11', 'province_name': '帕罗'}, {'shortCode': 'BT-23', 'province_name': '普那卡'}, {'shortCode': 'BT-32', 'province_name': '通萨'}, {'shortCode': 'BT-33', 'province_name': '布姆唐'}, {'shortCode': 'BT-41', 'province_name': '塔希冈'}, {'shortCode': 'BT-45', 'province_name': '森楚宗卡尔'}, {'shortCode': 'BT-13', 'province_name': '哈阿'}, {'shortCode': 'BT-12', 'province_name': '楚卡'}, {'shortCode': 'BT-42', 'province_name': '塔希扬齐'}, {'shortCode': 'BT-34', 'province_name': '谢姆冈'}, {'shortCode': 'BT-42', 'province_name': '蒙加尔'}, {'shortCode': 'BT-14', 'province_name': '桑切'}, {'shortCode': 'BT-21', 'province_name': '奇朗'}, {'shortCode': 'BT-GA', 'province_name': '加萨'}, {'shortCode': 'BT-44', 'province_name': '伦齐'}, {'shortCode': 'BT-22', 'province_name': '萨尔潘'}, {'shortCode': 'BT-24', 'province_name': '达加纳'}, {'shortCode': 'BT-43', 'province_name': '佩马加策尔'}, {'shortCode': 'BT-14', 'province_name': '桑塔'}], 'business_type': ['common', 'reap_physical_cards_shipment', 'reap_card', 'kyb']}
+[2026-04-08 09:32:39,428][excel_tools.py 405][INFO]: 更新测试用例结果: Common - 获取用户信息 - {}
+[2026-04-08 09:32:39,428][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/rbac/members?page=1&take=10&name=
+[2026-04-08 09:32:39,649][common_data.py 107][INFO]: id:{'id': 'c3e73a97-0283-43fd-86f0-a0bd9d94ff5f', 'created_at': '2025-10-24T06:32:35.978Z', 'first_name': 'ryan', 'last_name': 'zhou', 'nickname': 'ryan zhou', 'phone': '17767214510', 'email': 'rayn.zhou@alloyx.com', 'type': 'operator', 'employee_no': '00005', 'user_extend': {'id': '211bb870-a131-413b-8d11-2961c7cf991e', 'user_id': 'c3e73a97-0283-43fd-86f0-a0bd9d94ff5f', 'last_login_time': '2026-04-08T01:32:38.160Z'}, 'departments': [{'user_id': 'c3e73a97-0283-43fd-86f0-a0bd9d94ff5f', 'department_id': '069a95c9-483e-4cc0-830b-7c4c6e8d8a6c', 'department_name': '测试部门'}], 'roles': [{'user_id': 'c3e73a97-0283-43fd-86f0-a0bd9d94ff5f', 'role_id': '7bafb32b-5818-4d32-b14d-e21f8d831de0', 'role_name': '超级管理员'}]}
+[2026-04-08 09:32:39,650][excel_tools.py 405][INFO]: 更新测试用例结果: Common - 获取部门信息 - {}
+[2026-04-08 09:32:39,650][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/rbac/departments
+[2026-04-08 09:32:39,878][common_data.py 84][INFO]: id:069a95c9-483e-4cc0-830b-7c4c6e8d8a6c
+[2026-04-08 09:32:39,879][conftest.py 151][INFO]: 用例 test_card_holders.py::test_get_params[不丹-ryan-测试部门] 执行通过
+[2026-04-08 09:32:39,881][conftest.py 52][INFO]: ---测试结束---test 环境执行完毕
+[2026-04-08 10:25:15,603][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-04-08 10:26:52,181][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-04-08 10:32:04,290][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-04-08 10:32:18,900][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-04-08 10:32:19,097][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-04-08 10:32:19,097][conftest.py 49][INFO]: ---测试开始---执行的是 test 环境
+[2026-04-08 10:32:19,122][conftest.py 84][INFO]: ---前置处理器开始---
+[2026-04-08 10:32:19,122][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-04-08 10:32:19,143][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-04-08 10:32:19,144][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-04-08 10:32:19,144][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-04-08 10:32:20,034][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2MTU1Mzk5ODgsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTYxNTUzOSwiZXhwIjoxNzc1NjM3MTM5fQ.OrsODQ40DNMan-TiAd-mqMLPUZRamQN9AnTjIM0m2FA
+[2026-04-08 10:32:20,036][conftest.py 103][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-cn', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2MTU1Mzk5ODgsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTYxNTUzOSwiZXhwIjoxNzc1NjM3MTM5fQ.OrsODQ40DNMan-TiAd-mqMLPUZRamQN9AnTjIM0m2FA'}
+[2026-04-08 10:32:20,044][conftest.py 52][INFO]: ---测试结束---test 环境执行完毕
+[2026-04-08 10:32:32,957][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-04-08 10:32:33,117][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-04-08 10:32:33,117][conftest.py 49][INFO]: ---测试开始---执行的是 test 环境
+[2026-04-08 10:32:33,141][conftest.py 84][INFO]: ---前置处理器开始---
+[2026-04-08 10:32:33,141][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-04-08 10:32:33,163][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-04-08 10:32:33,163][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-04-08 10:32:33,163][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-04-08 10:32:34,040][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2MTU1NTM5OTIsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTYxNTU1MywiZXhwIjoxNzc1NjM3MTUzfQ.UU1jm6BAx5jLvaDdsZt4Ufyif8yDMNJLQInAu03W8Hg
+[2026-04-08 10:32:34,041][conftest.py 103][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-cn', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2MTU1NTM5OTIsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTYxNTU1MywiZXhwIjoxNzc1NjM3MTUzfQ.UU1jm6BAx5jLvaDdsZt4Ufyif8yDMNJLQInAu03W8Hg'}
+[2026-04-08 10:32:34,044][conftest.py 52][INFO]: ---测试结束---test 环境执行完毕
+[2026-04-08 10:35:34,963][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-04-08 10:35:35,255][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-04-08 10:35:35,255][conftest.py 49][INFO]: ---测试开始---执行的是 test 环境
+[2026-04-08 10:35:35,283][conftest.py 84][INFO]: ---前置处理器开始---
+[2026-04-08 10:35:35,283][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-04-08 10:35:35,309][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-04-08 10:35:35,310][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-04-08 10:35:35,310][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-04-08 10:35:36,178][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2MTU3MzYxMzEsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTYxNTczNiwiZXhwIjoxNzc1NjM3MzM2fQ.HAPi0-ubScOOCOwc7R8MDBlF4SDIknKXru4QF4OXBIM
+[2026-04-08 10:35:36,179][conftest.py 103][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-cn', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2MTU3MzYxMzEsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTYxNTczNiwiZXhwIjoxNzc1NjM3MzM2fQ.HAPi0-ubScOOCOwc7R8MDBlF4SDIknKXru4QF4OXBIM'}
+[2026-04-08 10:35:36,185][conftest.py 52][INFO]: ---测试结束---test 环境执行完毕
+[2026-04-08 10:36:33,795][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-04-08 10:36:34,013][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-04-08 10:36:34,013][conftest.py 49][INFO]: ---测试开始---执行的是 test 环境
+[2026-04-08 10:36:34,037][conftest.py 84][INFO]: ---前置处理器开始---
+[2026-04-08 10:36:34,038][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-04-08 10:36:34,059][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-04-08 10:36:34,059][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-04-08 10:36:34,059][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-04-08 10:36:34,610][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2MTU3OTQ1NjUsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTYxNTc5NCwiZXhwIjoxNzc1NjM3Mzk0fQ.RXQI6puNGeNcV_SvyOsbafzQniE7JXQUhobWVjVmvvw
+[2026-04-08 10:36:34,611][conftest.py 103][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-cn', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2MTU3OTQ1NjUsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTYxNTc5NCwiZXhwIjoxNzc1NjM3Mzk0fQ.RXQI6puNGeNcV_SvyOsbafzQniE7JXQUhobWVjVmvvw'}
+[2026-04-08 10:36:34,611][conftest.py 239][INFO]: 获取卡片持有人所需数据
+[2026-04-08 10:36:34,612][excel_tools.py 405][INFO]: 更新测试用例结果: Common - 获取国家/地址信息 - {}
+[2026-04-08 10:36:34,612][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/country/country-info?business_type=reap_card
+[2026-04-08 10:36:35,933][common_data.py 53][INFO]: 国家信息:{'id': '411c6012-204e-4720-b94f-c1cb2e28a2ae', 'country_code': '975', 'country_name': '不丹', 'phone_code': '+975', 'flag': '🇧🇹', 'iso3': 'BTN', 'iso2': 'BT', 'province': [{'shortCode': 'BT-15', 'province_name': '廷布'}, {'shortCode': 'BT-11', 'province_name': '帕罗'}, {'shortCode': 'BT-23', 'province_name': '普那卡'}, {'shortCode': 'BT-32', 'province_name': '通萨'}, {'shortCode': 'BT-33', 'province_name': '布姆唐'}, {'shortCode': 'BT-41', 'province_name': '塔希冈'}, {'shortCode': 'BT-45', 'province_name': '森楚宗卡尔'}, {'shortCode': 'BT-13', 'province_name': '哈阿'}, {'shortCode': 'BT-12', 'province_name': '楚卡'}, {'shortCode': 'BT-42', 'province_name': '塔希扬齐'}, {'shortCode': 'BT-34', 'province_name': '谢姆冈'}, {'shortCode': 'BT-42', 'province_name': '蒙加尔'}, {'shortCode': 'BT-14', 'province_name': '桑切'}, {'shortCode': 'BT-21', 'province_name': '奇朗'}, {'shortCode': 'BT-GA', 'province_name': '加萨'}, {'shortCode': 'BT-44', 'province_name': '伦齐'}, {'shortCode': 'BT-22', 'province_name': '萨尔潘'}, {'shortCode': 'BT-24', 'province_name': '达加纳'}, {'shortCode': 'BT-43', 'province_name': '佩马加策尔'}, {'shortCode': 'BT-14', 'province_name': '桑塔'}], 'business_type': ['common', 'reap_physical_cards_shipment', 'reap_card', 'kyb']}
+[2026-04-08 10:36:35,934][excel_tools.py 405][INFO]: 更新测试用例结果: Common - 获取用户信息 - {}
+[2026-04-08 10:36:35,934][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/rbac/members?page=1&take=10&name=
+[2026-04-08 10:36:36,176][common_data.py 107][INFO]: id:{'id': 'c3e73a97-0283-43fd-86f0-a0bd9d94ff5f', 'created_at': '2025-10-24T06:32:35.978Z', 'first_name': 'ryan', 'last_name': 'zhou', 'nickname': 'ryan zhou', 'phone': '17767214510', 'email': 'rayn.zhou@alloyx.com', 'type': 'operator', 'employee_no': '00005', 'user_extend': {'id': '211bb870-a131-413b-8d11-2961c7cf991e', 'user_id': 'c3e73a97-0283-43fd-86f0-a0bd9d94ff5f', 'last_login_time': '2026-04-08T02:36:34.567Z'}, 'departments': [{'user_id': 'c3e73a97-0283-43fd-86f0-a0bd9d94ff5f', 'department_id': '069a95c9-483e-4cc0-830b-7c4c6e8d8a6c', 'department_name': '测试部门'}], 'roles': [{'user_id': 'c3e73a97-0283-43fd-86f0-a0bd9d94ff5f', 'role_id': '7bafb32b-5818-4d32-b14d-e21f8d831de0', 'role_name': '超级管理员'}]}
+[2026-04-08 10:36:36,177][excel_tools.py 405][INFO]: 更新测试用例结果: Common - 获取部门信息 - {}
+[2026-04-08 10:36:36,177][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/rbac/departments
+[2026-04-08 10:36:36,408][common_data.py 84][INFO]: id:069a95c9-483e-4cc0-830b-7c4c6e8d8a6c
+[2026-04-08 10:36:36,436][conftest.py 149][ERROR]: 用例 test_card_holders.py::test_create_card_holder[card_holder_data0] 执行失败！
+[2026-04-08 10:36:36,437][conftest.py 52][INFO]: ---测试结束---test 环境执行完毕
+[2026-04-08 10:37:29,125][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-04-08 10:37:29,330][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-04-08 10:37:29,330][conftest.py 49][INFO]: ---测试开始---执行的是 test 环境
+[2026-04-08 10:37:29,354][conftest.py 84][INFO]: ---前置处理器开始---
+[2026-04-08 10:37:29,354][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-04-08 10:37:29,376][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-04-08 10:37:29,376][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-04-08 10:37:29,376][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-04-08 10:37:30,114][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2MTU4NTAwNjQsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTYxNTg1MCwiZXhwIjoxNzc1NjM3NDUwfQ.Y6YYsHkfgiDFZDJRgcg84q1gC-vI2FV4rWKhW8uHKXM
+[2026-04-08 10:37:30,115][conftest.py 103][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-cn', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2MTU4NTAwNjQsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTYxNTg1MCwiZXhwIjoxNzc1NjM3NDUwfQ.Y6YYsHkfgiDFZDJRgcg84q1gC-vI2FV4rWKhW8uHKXM'}
+[2026-04-08 10:37:30,120][conftest.py 52][INFO]: ---测试结束---test 环境执行完毕
+[2026-04-08 10:42:45,146][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-04-08 10:42:45,354][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-04-08 10:42:45,354][conftest.py 49][INFO]: ---测试开始---执行的是 test 环境
+[2026-04-08 10:42:45,378][conftest.py 84][INFO]: ---前置处理器开始---
+[2026-04-08 10:42:45,378][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-04-08 10:42:45,399][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-04-08 10:42:45,399][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-04-08 10:42:45,399][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-04-08 10:42:46,312][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2MTYxNjYyMTYsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTYxNjE2NiwiZXhwIjoxNzc1NjM3NzY2fQ.AdmdjJYlyQR9psk8FcdzBUYPb_YDUkEo8EP-n7cZtbc
+[2026-04-08 10:42:46,313][conftest.py 103][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-cn', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2MTYxNjYyMTYsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTYxNjE2NiwiZXhwIjoxNzc1NjM3NzY2fQ.AdmdjJYlyQR9psk8FcdzBUYPb_YDUkEo8EP-n7cZtbc'}
+[2026-04-08 10:42:46,319][conftest.py 52][INFO]: ---测试结束---test 环境执行完毕
+[2026-04-08 10:43:34,107][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-04-08 10:43:34,321][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-04-08 10:43:34,321][conftest.py 49][INFO]: ---测试开始---执行的是 test 环境
+[2026-04-08 10:43:34,346][conftest.py 84][INFO]: ---前置处理器开始---
+[2026-04-08 10:43:34,346][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-04-08 10:43:34,368][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-04-08 10:43:34,368][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-04-08 10:43:34,368][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-04-08 10:43:35,080][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2MTYyMTUwMjgsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTYxNjIxNSwiZXhwIjoxNzc1NjM3ODE1fQ.w8vg6B9ShhO8rvvQH4pg9mi7NbTO9bFpRLtKGDt_cq8
+[2026-04-08 10:43:35,080][conftest.py 103][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-cn', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2MTYyMTUwMjgsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTYxNjIxNSwiZXhwIjoxNzc1NjM3ODE1fQ.w8vg6B9ShhO8rvvQH4pg9mi7NbTO9bFpRLtKGDt_cq8'}
+[2026-04-08 10:43:35,086][conftest.py 52][INFO]: ---测试结束---test 环境执行完毕
+[2026-04-08 10:44:14,238][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-04-08 10:44:14,439][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-04-08 10:44:14,439][conftest.py 49][INFO]: ---测试开始---执行的是 test 环境
+[2026-04-08 10:44:14,463][conftest.py 84][INFO]: ---前置处理器开始---
+[2026-04-08 10:44:14,463][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-04-08 10:44:14,484][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-04-08 10:44:14,484][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-04-08 10:44:14,484][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-04-08 10:44:15,309][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2MTYyNTUyNjAsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTYxNjI1NSwiZXhwIjoxNzc1NjM3ODU1fQ.CjsU6HeDAV9pTy-msnnrt71z3taJvPxAmLz4l3D0eTY
+[2026-04-08 10:44:15,310][conftest.py 103][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-cn', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2MTYyNTUyNjAsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTYxNjI1NSwiZXhwIjoxNzc1NjM3ODU1fQ.CjsU6HeDAV9pTy-msnnrt71z3taJvPxAmLz4l3D0eTY'}
+[2026-04-08 10:44:15,310][conftest.py 239][INFO]: 获取卡片持有人所需数据
+[2026-04-08 10:44:15,311][excel_tools.py 405][INFO]: 更新测试用例结果: Common - 获取国家/地址信息 - {}
+[2026-04-08 10:44:15,311][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/country/country-info?business_type=reap_card
+[2026-04-08 10:44:16,474][common_data.py 53][INFO]: 国家信息:{'id': '411c6012-204e-4720-b94f-c1cb2e28a2ae', 'country_code': '975', 'country_name': '不丹', 'phone_code': '+975', 'flag': '🇧🇹', 'iso3': 'BTN', 'iso2': 'BT', 'province': [{'shortCode': 'BT-15', 'province_name': '廷布'}, {'shortCode': 'BT-11', 'province_name': '帕罗'}, {'shortCode': 'BT-23', 'province_name': '普那卡'}, {'shortCode': 'BT-32', 'province_name': '通萨'}, {'shortCode': 'BT-33', 'province_name': '布姆唐'}, {'shortCode': 'BT-41', 'province_name': '塔希冈'}, {'shortCode': 'BT-45', 'province_name': '森楚宗卡尔'}, {'shortCode': 'BT-13', 'province_name': '哈阿'}, {'shortCode': 'BT-12', 'province_name': '楚卡'}, {'shortCode': 'BT-42', 'province_name': '塔希扬齐'}, {'shortCode': 'BT-34', 'province_name': '谢姆冈'}, {'shortCode': 'BT-42', 'province_name': '蒙加尔'}, {'shortCode': 'BT-14', 'province_name': '桑切'}, {'shortCode': 'BT-21', 'province_name': '奇朗'}, {'shortCode': 'BT-GA', 'province_name': '加萨'}, {'shortCode': 'BT-44', 'province_name': '伦齐'}, {'shortCode': 'BT-22', 'province_name': '萨尔潘'}, {'shortCode': 'BT-24', 'province_name': '达加纳'}, {'shortCode': 'BT-43', 'province_name': '佩马加策尔'}, {'shortCode': 'BT-14', 'province_name': '桑塔'}], 'business_type': ['common', 'reap_physical_cards_shipment', 'reap_card', 'kyb']}
+[2026-04-08 10:44:16,474][excel_tools.py 405][INFO]: 更新测试用例结果: Common - 获取用户信息 - {}
+[2026-04-08 10:44:16,474][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/rbac/members?page=1&take=10&name=
+[2026-04-08 10:44:16,723][common_data.py 107][INFO]: id:{'id': 'c3e73a97-0283-43fd-86f0-a0bd9d94ff5f', 'created_at': '2025-10-24T06:32:35.978Z', 'first_name': 'ryan', 'last_name': 'zhou', 'nickname': 'ryan zhou', 'phone': '17767214510', 'email': 'rayn.zhou@alloyx.com', 'type': 'operator', 'employee_no': '00005', 'user_extend': {'id': '211bb870-a131-413b-8d11-2961c7cf991e', 'user_id': 'c3e73a97-0283-43fd-86f0-a0bd9d94ff5f', 'last_login_time': '2026-04-08T02:44:15.262Z'}, 'departments': [{'user_id': 'c3e73a97-0283-43fd-86f0-a0bd9d94ff5f', 'department_id': '069a95c9-483e-4cc0-830b-7c4c6e8d8a6c', 'department_name': '测试部门'}], 'roles': [{'user_id': 'c3e73a97-0283-43fd-86f0-a0bd9d94ff5f', 'role_id': '7bafb32b-5818-4d32-b14d-e21f8d831de0', 'role_name': '超级管理员'}]}
+[2026-04-08 10:44:16,723][excel_tools.py 405][INFO]: 更新测试用例结果: Common - 获取部门信息 - {}
+[2026-04-08 10:44:16,723][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/rbac/departments
+[2026-04-08 10:44:16,942][common_data.py 84][INFO]: id:069a95c9-483e-4cc0-830b-7c4c6e8d8a6c
+[2026-04-08 10:44:16,945][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 创建持卡人 - {"is_external": 0, "first_name": "ryan", "last_name": "zhou", "birthday": "2023-05-01", "id_document_type": "Passport", "id_document_number": "123456789", "phone": "17767214510", "email": "rayn.zhou@alloyx.com", "label": "test", "country": "不丹", "province": "廷布", "city": "address", "address": "address", "rbac_department_id": "069a95c9-483e-4cc0-830b-7c4c6e8d8a6c", "user_id": "c3e73a97-0283-43fd-86f0-a0bd9d94ff5f", "area_code": "86", "iso_code": "BTN"}
+[2026-04-08 10:44:16,945][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/virtual-card/create-card-holders
+[2026-04-08 10:44:16,945][simple_request.py 386][INFO]: Request data: {
+  "is_external": 0,
+  "first_name": "ryan",
+  "last_name": "zhou",
+  "birthday": "2023-05-01",
+  "id_document_type": "Passport",
+  "id_document_number": "123456789",
+  "phone": "17767214510",
+  "email": "rayn.zhou@alloyx.com",
+  "label": "test",
+  "country": "不丹",
+  "province": "廷布",
+  "city": "address",
+  "address": "address",
+  "rbac_department_id": "069a95c9-483e-4cc0-830b-7c4c6e8d8a6c",
+  "user_id": "c3e73a97-0283-43fd-86f0-a0bd9d94ff5f",
+  "area_code": "86",
+  "iso_code": "BTN"
+}
+[2026-04-08 10:44:17,965][conftest.py 151][INFO]: 用例 test_card_holders.py::test_create_card_holder[card_holder_data0] 执行通过
+[2026-04-08 10:44:17,967][conftest.py 52][INFO]: ---测试结束---test 环境执行完毕
+[2026-04-08 10:53:24,622][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-04-08 10:53:24,828][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-04-08 10:53:24,829][conftest.py 49][INFO]: ---测试开始---执行的是 test 环境
+[2026-04-08 10:53:24,852][conftest.py 84][INFO]: ---前置处理器开始---
+[2026-04-08 10:53:24,852][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-04-08 10:53:24,874][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-04-08 10:53:24,874][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-04-08 10:53:24,874][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-04-08 10:53:25,753][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2MTY4MDU2OTgsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTYxNjgwNSwiZXhwIjoxNzc1NjM4NDA1fQ._499hN2pccw0L8hpWv4KxW7Cs6cGacSUK9TbvnTVV54
+[2026-04-08 10:53:25,753][conftest.py 103][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-cn', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2MTY4MDU2OTgsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTYxNjgwNSwiZXhwIjoxNzc1NjM4NDA1fQ._499hN2pccw0L8hpWv4KxW7Cs6cGacSUK9TbvnTVV54'}
+[2026-04-08 10:53:25,754][conftest.py 239][INFO]: 获取卡片持有人所需数据
+[2026-04-08 10:53:25,755][excel_tools.py 405][INFO]: 更新测试用例结果: Common - 获取国家/地址信息 - {}
+[2026-04-08 10:53:25,755][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/country/country-info?business_type=reap_card
+[2026-04-08 10:53:26,906][common_data.py 53][INFO]: 国家信息:{'id': '411c6012-204e-4720-b94f-c1cb2e28a2ae', 'country_code': '975', 'country_name': '不丹', 'phone_code': '+975', 'flag': '🇧🇹', 'iso3': 'BTN', 'iso2': 'BT', 'province': [{'shortCode': 'BT-15', 'province_name': '廷布'}, {'shortCode': 'BT-11', 'province_name': '帕罗'}, {'shortCode': 'BT-23', 'province_name': '普那卡'}, {'shortCode': 'BT-32', 'province_name': '通萨'}, {'shortCode': 'BT-33', 'province_name': '布姆唐'}, {'shortCode': 'BT-41', 'province_name': '塔希冈'}, {'shortCode': 'BT-45', 'province_name': '森楚宗卡尔'}, {'shortCode': 'BT-13', 'province_name': '哈阿'}, {'shortCode': 'BT-12', 'province_name': '楚卡'}, {'shortCode': 'BT-42', 'province_name': '塔希扬齐'}, {'shortCode': 'BT-34', 'province_name': '谢姆冈'}, {'shortCode': 'BT-42', 'province_name': '蒙加尔'}, {'shortCode': 'BT-14', 'province_name': '桑切'}, {'shortCode': 'BT-21', 'province_name': '奇朗'}, {'shortCode': 'BT-GA', 'province_name': '加萨'}, {'shortCode': 'BT-44', 'province_name': '伦齐'}, {'shortCode': 'BT-22', 'province_name': '萨尔潘'}, {'shortCode': 'BT-24', 'province_name': '达加纳'}, {'shortCode': 'BT-43', 'province_name': '佩马加策尔'}, {'shortCode': 'BT-14', 'province_name': '桑塔'}], 'business_type': ['common', 'reap_physical_cards_shipment', 'reap_card', 'kyb']}
+[2026-04-08 10:53:26,907][excel_tools.py 405][INFO]: 更新测试用例结果: Common - 获取用户信息 - {}
+[2026-04-08 10:53:26,907][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/rbac/members?page=1&take=10&name=
+[2026-04-08 10:53:27,216][common_data.py 107][INFO]: id:{'id': 'c3e73a97-0283-43fd-86f0-a0bd9d94ff5f', 'created_at': '2025-10-24T06:32:35.978Z', 'first_name': 'ryan', 'last_name': 'zhou', 'nickname': 'ryan zhou', 'phone': '17767214510', 'email': 'rayn.zhou@alloyx.com', 'type': 'operator', 'employee_no': '00005', 'user_extend': {'id': '211bb870-a131-413b-8d11-2961c7cf991e', 'user_id': 'c3e73a97-0283-43fd-86f0-a0bd9d94ff5f', 'last_login_time': '2026-04-08T02:53:25.704Z'}, 'departments': [{'user_id': 'c3e73a97-0283-43fd-86f0-a0bd9d94ff5f', 'department_id': '069a95c9-483e-4cc0-830b-7c4c6e8d8a6c', 'department_name': '测试部门'}], 'roles': [{'user_id': 'c3e73a97-0283-43fd-86f0-a0bd9d94ff5f', 'role_id': '7bafb32b-5818-4d32-b14d-e21f8d831de0', 'role_name': '超级管理员'}]}
+[2026-04-08 10:53:27,216][excel_tools.py 405][INFO]: 更新测试用例结果: Common - 获取部门信息 - {}
+[2026-04-08 10:53:27,216][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/rbac/departments
+[2026-04-08 10:53:27,420][common_data.py 84][INFO]: id:069a95c9-483e-4cc0-830b-7c4c6e8d8a6c
+[2026-04-08 10:53:27,422][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 创建持卡人 - {"is_external": 0, "first_name": "ryan", "last_name": "zhou", "birthday": "2023-05-01", "id_document_type": "Passport", "id_document_number": "123456789", "phone": "17767214510", "email": "rayn.zhou@alloyx.com", "label": "test", "country": "不丹", "province": "廷布", "city": "address", "address": "address", "rbac_department_id": "069a95c9-483e-4cc0-830b-7c4c6e8d8a6c", "user_id": "c3e73a97-0283-43fd-86f0-a0bd9d94ff5f", "area_code": "86", "iso_code": "BTN"}
+[2026-04-08 10:53:27,422][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/virtual-card/create-card-holders
+[2026-04-08 10:53:27,422][simple_request.py 386][INFO]: Request data: {
+  "is_external": 0,
+  "first_name": "ryan",
+  "last_name": "zhou",
+  "birthday": "2023-05-01",
+  "id_document_type": "Passport",
+  "id_document_number": "123456789",
+  "phone": "17767214510",
+  "email": "rayn.zhou@alloyx.com",
+  "label": "test",
+  "country": "不丹",
+  "province": "廷布",
+  "city": "address",
+  "address": "address",
+  "rbac_department_id": "069a95c9-483e-4cc0-830b-7c4c6e8d8a6c",
+  "user_id": "c3e73a97-0283-43fd-86f0-a0bd9d94ff5f",
+  "area_code": "86",
+  "iso_code": "BTN"
+}
+[2026-04-08 10:53:27,731][simple_request.py 435][ERROR]: Request failed with status code: 400
+[2026-04-08 10:53:27,731][conftest.py 151][INFO]: 用例 test_card_holders.py::test_create_card_holder[card_holder_data0] 执行通过
+[2026-04-08 10:53:27,732][conftest.py 52][INFO]: ---测试结束---test 环境执行完毕
+[2026-04-08 11:05:38,475][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-04-08 11:10:41,077][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-04-08 11:10:41,280][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-04-08 11:10:41,281][conftest.py 49][INFO]: ---测试开始---执行的是 test 环境
+[2026-04-08 11:10:41,306][conftest.py 84][INFO]: ---前置处理器开始---
+[2026-04-08 11:10:41,306][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-04-08 11:10:41,327][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-04-08 11:10:41,327][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-04-08 11:10:41,327][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-04-08 11:10:42,278][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2MTc4NDIyMTMsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTYxNzg0MiwiZXhwIjoxNzc1NjM5NDQyfQ.Dc62fGrsHudZSQxiyVPIrANO5Pw-DRyIJEBEm5e7jgs
+[2026-04-08 11:10:42,279][conftest.py 103][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-cn', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2MTc4NDIyMTMsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTYxNzg0MiwiZXhwIjoxNzc1NjM5NDQyfQ.Dc62fGrsHudZSQxiyVPIrANO5Pw-DRyIJEBEm5e7jgs'}
+[2026-04-08 11:10:42,284][conftest.py 52][INFO]: ---测试结束---test 环境执行完毕
+[2026-04-08 11:12:29,336][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-04-08 11:12:29,540][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-04-08 11:12:29,540][conftest.py 49][INFO]: ---测试开始---执行的是 test 环境
+[2026-04-08 11:12:29,564][conftest.py 84][INFO]: ---前置处理器开始---
+[2026-04-08 11:12:29,564][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-04-08 11:12:29,585][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-04-08 11:12:29,585][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-04-08 11:12:29,585][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-04-08 11:12:30,376][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2MTc5NTAzMTksImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTYxNzk1MCwiZXhwIjoxNzc1NjM5NTUwfQ.SUGfzljgimsSzslb3PSGMXF-sh6-cWtwM-LRj9E7-Jo
+[2026-04-08 11:12:30,376][conftest.py 103][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-cn', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2MTc5NTAzMTksImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTYxNzk1MCwiZXhwIjoxNzc1NjM5NTUwfQ.SUGfzljgimsSzslb3PSGMXF-sh6-cWtwM-LRj9E7-Jo'}
+[2026-04-08 11:12:30,376][conftest.py 239][INFO]: 获取卡片持有人所需数据
+[2026-04-08 11:12:30,377][excel_tools.py 405][INFO]: 更新测试用例结果: Common - 获取国家/地址信息 - {}
+[2026-04-08 11:12:30,377][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/country/country-info?business_type=reap_card
+[2026-04-08 11:12:31,535][common_data.py 53][INFO]: 国家信息:{'id': '411c6012-204e-4720-b94f-c1cb2e28a2ae', 'country_code': '975', 'country_name': '不丹', 'phone_code': '+975', 'flag': '🇧🇹', 'iso3': 'BTN', 'iso2': 'BT', 'province': [{'shortCode': 'BT-15', 'province_name': '廷布'}, {'shortCode': 'BT-11', 'province_name': '帕罗'}, {'shortCode': 'BT-23', 'province_name': '普那卡'}, {'shortCode': 'BT-32', 'province_name': '通萨'}, {'shortCode': 'BT-33', 'province_name': '布姆唐'}, {'shortCode': 'BT-41', 'province_name': '塔希冈'}, {'shortCode': 'BT-45', 'province_name': '森楚宗卡尔'}, {'shortCode': 'BT-13', 'province_name': '哈阿'}, {'shortCode': 'BT-12', 'province_name': '楚卡'}, {'shortCode': 'BT-42', 'province_name': '塔希扬齐'}, {'shortCode': 'BT-34', 'province_name': '谢姆冈'}, {'shortCode': 'BT-42', 'province_name': '蒙加尔'}, {'shortCode': 'BT-14', 'province_name': '桑切'}, {'shortCode': 'BT-21', 'province_name': '奇朗'}, {'shortCode': 'BT-GA', 'province_name': '加萨'}, {'shortCode': 'BT-44', 'province_name': '伦齐'}, {'shortCode': 'BT-22', 'province_name': '萨尔潘'}, {'shortCode': 'BT-24', 'province_name': '达加纳'}, {'shortCode': 'BT-43', 'province_name': '佩马加策尔'}, {'shortCode': 'BT-14', 'province_name': '桑塔'}], 'business_type': ['common', 'reap_physical_cards_shipment', 'reap_card', 'kyb']}
+[2026-04-08 11:12:31,535][excel_tools.py 405][INFO]: 更新测试用例结果: Common - 获取用户信息 - {}
+[2026-04-08 11:12:31,535][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/rbac/members?page=1&take=10&name=
+[2026-04-08 11:12:32,108][common_data.py 107][INFO]: id:{'id': 'c3e73a97-0283-43fd-86f0-a0bd9d94ff5f', 'created_at': '2025-10-24T06:32:35.978Z', 'first_name': 'ryan', 'last_name': 'zhou', 'nickname': 'ryan zhou', 'phone': '17767214510', 'email': 'rayn.zhou@alloyx.com', 'type': 'operator', 'employee_no': '00005', 'user_extend': {'id': '211bb870-a131-413b-8d11-2961c7cf991e', 'user_id': 'c3e73a97-0283-43fd-86f0-a0bd9d94ff5f', 'last_login_time': '2026-04-08T03:12:30.320Z'}, 'departments': [{'user_id': 'c3e73a97-0283-43fd-86f0-a0bd9d94ff5f', 'department_id': '069a95c9-483e-4cc0-830b-7c4c6e8d8a6c', 'department_name': '测试部门'}], 'roles': [{'user_id': 'c3e73a97-0283-43fd-86f0-a0bd9d94ff5f', 'role_id': '7bafb32b-5818-4d32-b14d-e21f8d831de0', 'role_name': '超级管理员'}]}
+[2026-04-08 11:12:32,109][excel_tools.py 405][INFO]: 更新测试用例结果: Common - 获取部门信息 - {}
+[2026-04-08 11:12:32,109][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/rbac/departments
+[2026-04-08 11:12:32,328][common_data.py 84][INFO]: id:069a95c9-483e-4cc0-830b-7c4c6e8d8a6c
+[2026-04-08 11:12:32,330][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 创建持卡人 - {"is_external": 0, "first_name": "ryan", "last_name": "zhou", "birthday": "2023-05-01", "id_document_type": "Passport", "id_document_number": "123456789", "phone": "17767214510", "email": "rayn.zhou@alloyx.com", "label": "test", "country": "不丹", "province": "廷布", "city": "address", "address": "address", "rbac_department_id": "069a95c9-483e-4cc0-830b-7c4c6e8d8a6c", "user_id": "c3e73a97-0283-43fd-86f0-a0bd9d94ff5f", "area_code": "86", "iso_code": "BTN"}
+[2026-04-08 11:12:32,330][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/virtual-card/create-card-holders
+[2026-04-08 11:12:32,330][simple_request.py 386][INFO]: Request data: {
+  "is_external": 0,
+  "first_name": "ryan",
+  "last_name": "zhou",
+  "birthday": "2023-05-01",
+  "id_document_type": "Passport",
+  "id_document_number": "123456789",
+  "phone": "17767214510",
+  "email": "rayn.zhou@alloyx.com",
+  "label": "test",
+  "country": "不丹",
+  "province": "廷布",
+  "city": "address",
+  "address": "address",
+  "rbac_department_id": "069a95c9-483e-4cc0-830b-7c4c6e8d8a6c",
+  "user_id": "c3e73a97-0283-43fd-86f0-a0bd9d94ff5f",
+  "area_code": "86",
+  "iso_code": "BTN"
+}
+[2026-04-08 11:12:32,540][simple_request.py 435][ERROR]: Request failed with status code: 400
+[2026-04-08 11:12:32,541][conftest.py 151][INFO]: 用例 test_card_holders.py::test_create_card_holder[card_holder_data0] 执行通过
+[2026-04-08 11:12:32,543][conftest.py 52][INFO]: ---测试结束---test 环境执行完毕
+[2026-04-08 15:00:56,015][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-04-08 15:02:17,079][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-04-08 15:02:17,283][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-04-08 15:02:17,283][conftest.py 49][INFO]: ---测试开始---执行的是 test 环境
+[2026-04-08 15:02:17,307][conftest.py 84][INFO]: ---前置处理器开始---
+[2026-04-08 15:02:17,307][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-04-08 15:02:17,328][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-04-08 15:02:17,328][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-04-08 15:02:17,328][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-04-08 15:02:18,107][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2MzE3MzgwNTQsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTYzMTczOCwiZXhwIjoxNzc1NjUzMzM4fQ.pJ6qQW7Oj05XP87w4Ot0AApxrzw9G5JidSXofPRnBEc
+[2026-04-08 15:02:18,108][conftest.py 103][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-cn', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2MzE3MzgwNTQsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTYzMTczOCwiZXhwIjoxNzc1NjUzMzM4fQ.pJ6qQW7Oj05XP87w4Ot0AApxrzw9G5JidSXofPRnBEc'}
+[2026-04-08 15:02:18,114][conftest.py 52][INFO]: ---测试结束---test 环境执行完毕
+[2026-04-08 15:03:12,858][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-04-08 15:03:13,064][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-04-08 15:03:13,064][conftest.py 49][INFO]: ---测试开始---执行的是 test 环境
+[2026-04-08 15:03:13,087][conftest.py 84][INFO]: ---前置处理器开始---
+[2026-04-08 15:03:13,087][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-04-08 15:03:13,109][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-04-08 15:03:13,109][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-04-08 15:03:13,109][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-04-08 15:03:13,835][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2MzE3OTM3ODQsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTYzMTc5MywiZXhwIjoxNzc1NjUzMzkzfQ.MnzkyMobZvx1fXpXWtnM31YYmC1wXzm61aipI8MRckE
+[2026-04-08 15:03:13,835][conftest.py 103][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-cn', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2MzE3OTM3ODQsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTYzMTc5MywiZXhwIjoxNzc1NjUzMzkzfQ.MnzkyMobZvx1fXpXWtnM31YYmC1wXzm61aipI8MRckE'}
+[2026-04-08 15:03:13,841][conftest.py 52][INFO]: ---测试结束---test 环境执行完毕
+[2026-04-08 15:04:35,713][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-04-08 15:04:35,912][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-04-08 15:04:35,912][conftest.py 49][INFO]: ---测试开始---执行的是 test 环境
+[2026-04-08 15:04:35,936][conftest.py 84][INFO]: ---前置处理器开始---
+[2026-04-08 15:04:35,936][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-04-08 15:04:35,957][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-04-08 15:04:35,957][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-04-08 15:04:35,957][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-04-08 15:04:36,687][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2MzE4NzY2MzYsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTYzMTg3NiwiZXhwIjoxNzc1NjUzNDc2fQ.CTqULlq04G_9JtPtYOCGotS5xl99OaNVN6knoMFXwT8
+[2026-04-08 15:04:36,688][conftest.py 103][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-cn', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2MzE4NzY2MzYsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTYzMTg3NiwiZXhwIjoxNzc1NjUzNDc2fQ.CTqULlq04G_9JtPtYOCGotS5xl99OaNVN6knoMFXwT8'}
+[2026-04-08 15:04:36,689][conftest.py 178][INFO]: 在执行前获取钱包的数据
+[2026-04-08 15:04:36,689][excel_tools.py 405][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取钱包列表 - {}
+[2026-04-08 15:04:36,689][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/wallets
+[2026-04-08 15:04:37,471][wallet_list_page.py 54][INFO]: 获取币种数据成功，币种数据为：{'id': 'e56f09e4-e2cc-4453-a513-3b90d565fa18', 'currency': 'USDT', 'amount': 89101920.09, 'price': '0.999855', 'total_balance': 89089000.31158695, 'currency_icon': 'https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/7593ba8c-7afc-4cb8-9db7-4faaab6d3a8a/2025-11-24/usdt.png', 'percent': 55.36}
+[2026-04-08 15:04:37,507][conftest.py 149][ERROR]: 用例 test_card_account_management.py::test_card_account_recharge_params[USDT-100] 执行失败！
+[2026-04-08 15:04:37,509][conftest.py 52][INFO]: ---测试结束---test 环境执行完毕
+[2026-04-08 15:05:35,178][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-04-08 15:05:35,385][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-04-08 15:05:35,386][conftest.py 49][INFO]: ---测试开始---执行的是 test 环境
+[2026-04-08 15:05:35,412][conftest.py 84][INFO]: ---前置处理器开始---
+[2026-04-08 15:05:35,412][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-04-08 15:05:35,433][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-04-08 15:05:35,433][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-04-08 15:05:35,434][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-04-08 15:05:36,242][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2MzE5MzYxODksImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTYzMTkzNiwiZXhwIjoxNzc1NjUzNTM2fQ.vJHHFhpd8hlwtf219x9pk7P8r1n7DBql-nPjJEEpass
+[2026-04-08 15:05:36,243][conftest.py 103][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-cn', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2MzE5MzYxODksImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTYzMTkzNiwiZXhwIjoxNzc1NjUzNTM2fQ.vJHHFhpd8hlwtf219x9pk7P8r1n7DBql-nPjJEEpass'}
+[2026-04-08 15:05:36,244][conftest.py 178][INFO]: 在执行前获取钱包的数据
+[2026-04-08 15:05:36,245][excel_tools.py 405][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取钱包列表 - {}
+[2026-04-08 15:05:36,245][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/wallets
+[2026-04-08 15:05:36,981][wallet_list_page.py 54][INFO]: 获取币种数据成功，币种数据为：{'id': 'e56f09e4-e2cc-4453-a513-3b90d565fa18', 'currency': 'USDT', 'amount': 89101920.09, 'price': '0.999855', 'total_balance': 89089000.31158695, 'currency_icon': 'https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/7593ba8c-7afc-4cb8-9db7-4faaab6d3a8a/2025-11-24/usdt.png', 'percent': 55.36}
+[2026-04-08 15:05:37,016][conftest.py 149][ERROR]: 用例 test_card_account_management.py::test_card_account_recharge_params[USDT-100] 执行失败！
+[2026-04-08 15:05:37,018][conftest.py 52][INFO]: ---测试结束---test 环境执行完毕
+[2026-04-08 15:22:27,199][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-04-08 15:22:27,416][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-04-08 15:22:27,417][conftest.py 49][INFO]: ---测试开始---执行的是 test 环境
+[2026-04-08 15:22:27,440][conftest.py 84][INFO]: ---前置处理器开始---
+[2026-04-08 15:22:27,440][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-04-08 15:22:27,462][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-04-08 15:22:27,462][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-04-08 15:22:27,462][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-04-08 15:22:28,987][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2MzI5NDg0MDUsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTYzMjk0OCwiZXhwIjoxNzc1NjU0NTQ4fQ.UQ4PEnlmHda3v-Cgbm6XLwk4R_J5s3Fh-oSg4NEEsPM
+[2026-04-08 15:22:28,989][conftest.py 103][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-cn', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2MzI5NDg0MDUsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTYzMjk0OCwiZXhwIjoxNzc1NjU0NTQ4fQ.UQ4PEnlmHda3v-Cgbm6XLwk4R_J5s3Fh-oSg4NEEsPM'}
+[2026-04-08 15:22:28,989][conftest.py 178][INFO]: 在执行前获取钱包的数据
+[2026-04-08 15:22:28,990][excel_tools.py 405][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取钱包列表 - {}
+[2026-04-08 15:22:28,990][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/wallets
+[2026-04-08 15:22:30,125][wallet_list_page.py 54][INFO]: 获取币种数据成功，币种数据为：{'id': 'e56f09e4-e2cc-4453-a513-3b90d565fa18', 'currency': 'USDT', 'amount': 89101920.09, 'price': '0.999855', 'total_balance': 89089000.31158695, 'currency_icon': 'https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/7593ba8c-7afc-4cb8-9db7-4faaab6d3a8a/2025-11-24/usdt.png', 'percent': 55.36}
+[2026-04-08 15:22:30,129][conftest.py 151][INFO]: 用例 test_card_account_management.py::test_card_account_recharge_params[USDT-100] 执行通过
+[2026-04-08 15:22:30,130][conftest.py 52][INFO]: ---测试结束---test 环境执行完毕
+[2026-04-08 15:49:59,946][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-04-08 15:50:00,163][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-04-08 15:50:00,163][conftest.py 49][INFO]: ---测试开始---执行的是 test 环境
+[2026-04-08 15:50:00,186][conftest.py 84][INFO]: ---前置处理器开始---
+[2026-04-08 15:50:00,186][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-04-08 15:50:00,208][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-04-08 15:50:00,208][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-04-08 15:50:00,208][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-04-08 15:50:01,806][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2MzQ2MDE0NzIsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTYzNDYwMSwiZXhwIjoxNzc1NjU2MjAxfQ.dv7X5BQI_2MXVs8XyA-h8ME2MkIp7mUCYYfHD3KWbhc
+[2026-04-08 15:50:01,808][conftest.py 103][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-cn', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2MzQ2MDE0NzIsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTYzNDYwMSwiZXhwIjoxNzc1NjU2MjAxfQ.dv7X5BQI_2MXVs8XyA-h8ME2MkIp7mUCYYfHD3KWbhc'}
+[2026-04-08 15:50:01,808][conftest.py 239][INFO]: 获取卡片持有人所需数据
+[2026-04-08 15:50:01,809][excel_tools.py 405][INFO]: 更新测试用例结果: Common - 获取国家/地址信息 - {}
+[2026-04-08 15:50:01,809][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/country/country-info?business_type=reap_card
+[2026-04-08 15:50:03,271][common_data.py 53][INFO]: 国家信息:{'id': '411c6012-204e-4720-b94f-c1cb2e28a2ae', 'country_code': '975', 'country_name': '不丹', 'phone_code': '+975', 'flag': '🇧🇹', 'iso3': 'BTN', 'iso2': 'BT', 'province': [{'shortCode': 'BT-15', 'province_name': '廷布'}, {'shortCode': 'BT-11', 'province_name': '帕罗'}, {'shortCode': 'BT-23', 'province_name': '普那卡'}, {'shortCode': 'BT-32', 'province_name': '通萨'}, {'shortCode': 'BT-33', 'province_name': '布姆唐'}, {'shortCode': 'BT-41', 'province_name': '塔希冈'}, {'shortCode': 'BT-45', 'province_name': '森楚宗卡尔'}, {'shortCode': 'BT-13', 'province_name': '哈阿'}, {'shortCode': 'BT-12', 'province_name': '楚卡'}, {'shortCode': 'BT-42', 'province_name': '塔希扬齐'}, {'shortCode': 'BT-34', 'province_name': '谢姆冈'}, {'shortCode': 'BT-42', 'province_name': '蒙加尔'}, {'shortCode': 'BT-14', 'province_name': '桑切'}, {'shortCode': 'BT-21', 'province_name': '奇朗'}, {'shortCode': 'BT-GA', 'province_name': '加萨'}, {'shortCode': 'BT-44', 'province_name': '伦齐'}, {'shortCode': 'BT-22', 'province_name': '萨尔潘'}, {'shortCode': 'BT-24', 'province_name': '达加纳'}, {'shortCode': 'BT-43', 'province_name': '佩马加策尔'}, {'shortCode': 'BT-14', 'province_name': '桑塔'}], 'business_type': ['common', 'reap_physical_cards_shipment', 'reap_card', 'kyb']}
+[2026-04-08 15:50:03,271][excel_tools.py 405][INFO]: 更新测试用例结果: Common - 获取用户信息 - {}
+[2026-04-08 15:50:03,271][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/rbac/members?page=1&take=10&name=
+[2026-04-08 15:50:03,599][common_data.py 107][INFO]: id:{'id': 'c3e73a97-0283-43fd-86f0-a0bd9d94ff5f', 'created_at': '2025-10-24T06:32:35.978Z', 'first_name': 'ryan', 'last_name': 'zhou', 'nickname': 'ryan zhou', 'phone': '17767214510', 'email': 'rayn.zhou@alloyx.com', 'type': 'operator', 'employee_no': '00005', 'user_extend': {'id': '211bb870-a131-413b-8d11-2961c7cf991e', 'user_id': 'c3e73a97-0283-43fd-86f0-a0bd9d94ff5f', 'last_login_time': '2026-04-08T07:50:01.475Z'}, 'departments': [{'user_id': 'c3e73a97-0283-43fd-86f0-a0bd9d94ff5f', 'department_id': '069a95c9-483e-4cc0-830b-7c4c6e8d8a6c', 'department_name': '测试部门'}], 'roles': [{'user_id': 'c3e73a97-0283-43fd-86f0-a0bd9d94ff5f', 'role_id': '7bafb32b-5818-4d32-b14d-e21f8d831de0', 'role_name': '超级管理员'}]}
+[2026-04-08 15:50:03,599][excel_tools.py 405][INFO]: 更新测试用例结果: Common - 获取部门信息 - {}
+[2026-04-08 15:50:03,599][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/rbac/departments
+[2026-04-08 15:50:03,927][common_data.py 84][INFO]: id:069a95c9-483e-4cc0-830b-7c4c6e8d8a6c
+[2026-04-08 15:50:03,929][conftest.py 151][INFO]: 用例 test_card_holders.py::test_get_params[card_holder_data0] 执行通过
+[2026-04-08 15:50:03,930][conftest.py 52][INFO]: ---测试结束---test 环境执行完毕
+[2026-04-08 15:55:05,239][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-04-08 15:55:05,446][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-04-08 15:55:05,446][conftest.py 49][INFO]: ---测试开始---执行的是 test 环境
+[2026-04-08 15:55:05,469][conftest.py 84][INFO]: ---前置处理器开始---
+[2026-04-08 15:55:05,469][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-04-08 15:55:05,491][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-04-08 15:55:05,491][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-04-08 15:55:05,491][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-04-08 15:55:06,425][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2MzQ5MDYyNDEsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTYzNDkwNiwiZXhwIjoxNzc1NjU2NTA2fQ.u5D14d65fzriAqRqpZ_vqYPvDY8VO5RBwYTpBpUs7BA
+[2026-04-08 15:55:06,426][conftest.py 103][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-cn', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2MzQ5MDYyNDEsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTYzNDkwNiwiZXhwIjoxNzc1NjU2NTA2fQ.u5D14d65fzriAqRqpZ_vqYPvDY8VO5RBwYTpBpUs7BA'}
+[2026-04-08 15:55:06,427][conftest.py 178][INFO]: 在执行前获取钱包的数据
+[2026-04-08 15:55:06,427][excel_tools.py 405][INFO]: 更新测试用例结果: Wallte_page - 钱包-获取钱包列表 - {}
+[2026-04-08 15:55:06,427][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/crypto/wallets
+[2026-04-08 15:55:07,269][wallet_list_page.py 54][INFO]: 获取币种数据成功，币种数据为：{'id': 'e56f09e4-e2cc-4453-a513-3b90d565fa18', 'currency': 'USDT', 'amount': 89101920.09, 'price': '0.999855', 'total_balance': 89089000.31158695, 'currency_icon': 'https://sandbox-hangzhou-web.s3.ap-southeast-2.amazonaws.com/7593ba8c-7afc-4cb8-9db7-4faaab6d3a8a/2025-11-24/usdt.png', 'percent': 55.36}
+[2026-04-08 15:55:07,276][conftest.py 151][INFO]: 用例 test_card_account_management.py::test_card_account_recharge_params[USDT-100] 执行通过
+[2026-04-08 15:55:07,277][conftest.py 52][INFO]: ---测试结束---test 环境执行完毕
+[2026-04-08 16:23:54,097][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-04-08 16:24:15,879][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-04-08 16:27:36,952][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-04-08 16:28:07,576][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-04-08 16:28:23,761][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-04-08 16:29:37,049][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-04-08 16:30:25,452][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-04-08 16:30:25,671][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-04-08 16:30:25,671][conftest.py 49][INFO]: ---测试开始---执行的是 test 环境
+[2026-04-08 16:30:25,696][conftest.py 84][INFO]: ---前置处理器开始---
+[2026-04-08 16:30:25,696][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-04-08 16:30:25,717][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-04-08 16:30:25,717][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-04-08 16:30:25,717][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-04-08 16:30:26,501][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2MzcwMjY0MzcsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTYzNzAyNiwiZXhwIjoxNzc1NjU4NjI2fQ.dGBnlEE7iiZyPQshSPT-jwskF3JV-SaMyR-3hzMtOu0
+[2026-04-08 16:30:26,502][conftest.py 103][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-cn', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2MzcwMjY0MzcsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTYzNzAyNiwiZXhwIjoxNzc1NjU4NjI2fQ.dGBnlEE7iiZyPQshSPT-jwskF3JV-SaMyR-3hzMtOu0'}
+[2026-04-08 16:30:26,507][conftest.py 52][INFO]: ---测试结束---test 环境执行完毕
+[2026-04-08 16:30:33,802][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-04-08 16:30:33,989][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-04-08 16:30:33,989][conftest.py 49][INFO]: ---测试开始---执行的是 test 环境
+[2026-04-08 16:30:34,012][conftest.py 84][INFO]: ---前置处理器开始---
+[2026-04-08 16:30:34,012][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-04-08 16:30:34,033][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-04-08 16:30:34,034][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-04-08 16:30:34,034][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-04-08 16:30:34,823][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2MzcwMzQ3MTEsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTYzNzAzNCwiZXhwIjoxNzc1NjU4NjM0fQ.mLuArcbpOgsr7xeGxDXB4IFiOAikcwsX3P9SWtfH6eQ
+[2026-04-08 16:30:34,824][conftest.py 103][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-cn', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2MzcwMzQ3MTEsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTYzNzAzNCwiZXhwIjoxNzc1NjU4NjM0fQ.mLuArcbpOgsr7xeGxDXB4IFiOAikcwsX3P9SWtfH6eQ'}
+[2026-04-08 16:30:34,829][conftest.py 52][INFO]: ---测试结束---test 环境执行完毕
+[2026-04-08 16:32:44,042][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-04-08 16:32:44,258][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-04-08 16:32:44,258][conftest.py 49][INFO]: ---测试开始---执行的是 test 环境
+[2026-04-08 16:32:44,282][conftest.py 84][INFO]: ---前置处理器开始---
+[2026-04-08 16:32:44,282][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-04-08 16:32:44,303][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-04-08 16:32:44,303][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-04-08 16:32:44,303][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-04-08 16:32:45,092][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2MzcxNjUwMjQsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTYzNzE2NSwiZXhwIjoxNzc1NjU4NzY1fQ.T9O_0NQsWpje5DUb4_o7xcM0vXwNwhcf3fba76bfVC8
+[2026-04-08 16:32:45,093][conftest.py 103][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-cn', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2MzcxNjUwMjQsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTYzNzE2NSwiZXhwIjoxNzc1NjU4NzY1fQ.T9O_0NQsWpje5DUb4_o7xcM0vXwNwhcf3fba76bfVC8'}
+[2026-04-08 16:32:45,098][conftest.py 52][INFO]: ---测试结束---test 环境执行完毕
+[2026-04-08 16:33:45,379][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-04-08 16:33:45,594][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-04-08 16:33:45,594][conftest.py 49][INFO]: ---测试开始---执行的是 test 环境
+[2026-04-08 16:33:45,618][conftest.py 84][INFO]: ---前置处理器开始---
+[2026-04-08 16:33:45,618][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-04-08 16:33:45,640][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-04-08 16:33:45,640][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-04-08 16:33:45,640][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-04-08 16:33:46,432][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2MzcyMjYzNzIsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTYzNzIyNiwiZXhwIjoxNzc1NjU4ODI2fQ.D0QIjVjbCSH4UClwJF-wL0vqMm09pVSCZ_jAvT57S94
+[2026-04-08 16:33:46,434][conftest.py 103][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-cn', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2MzcyMjYzNzIsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTYzNzIyNiwiZXhwIjoxNzc1NjU4ODI2fQ.D0QIjVjbCSH4UClwJF-wL0vqMm09pVSCZ_jAvT57S94'}
+[2026-04-08 16:33:46,439][conftest.py 52][INFO]: ---测试结束---test 环境执行完毕
+[2026-04-08 16:34:42,338][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-04-08 16:34:42,557][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-04-08 16:34:42,557][conftest.py 49][INFO]: ---测试开始---执行的是 test 环境
+[2026-04-08 16:34:42,581][conftest.py 84][INFO]: ---前置处理器开始---
+[2026-04-08 16:34:42,581][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-04-08 16:34:42,602][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-04-08 16:34:42,602][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-04-08 16:34:42,602][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-04-08 16:34:43,666][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2MzcyODM2MDgsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTYzNzI4MywiZXhwIjoxNzc1NjU4ODgzfQ.dPceLzDQ8eGM8P18EH9QzNeCQEW7ZN8YdhsQ6o4USgw
+[2026-04-08 16:34:43,668][conftest.py 103][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-cn', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2MzcyODM2MDgsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTYzNzI4MywiZXhwIjoxNzc1NjU4ODgzfQ.dPceLzDQ8eGM8P18EH9QzNeCQEW7ZN8YdhsQ6o4USgw'}
+[2026-04-08 16:34:43,676][conftest.py 52][INFO]: ---测试结束---test 环境执行完毕
+[2026-04-08 16:35:26,075][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-04-08 16:35:26,272][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-04-08 16:35:26,272][conftest.py 49][INFO]: ---测试开始---执行的是 test 环境
+[2026-04-08 16:35:26,295][conftest.py 84][INFO]: ---前置处理器开始---
+[2026-04-08 16:35:26,296][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-04-08 16:35:26,317][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-04-08 16:35:26,317][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-04-08 16:35:26,317][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-04-08 16:35:27,105][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2MzczMjcwMzcsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTYzNzMyNywiZXhwIjoxNzc1NjU4OTI3fQ.Jp-aNtf6LtwrbLpOJkIu2xVM7v4ucU01a6Q7qVV9R6s
+[2026-04-08 16:35:27,106][conftest.py 103][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-cn', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2MzczMjcwMzcsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTYzNzMyNywiZXhwIjoxNzc1NjU4OTI3fQ.Jp-aNtf6LtwrbLpOJkIu2xVM7v4ucU01a6Q7qVV9R6s'}
+[2026-04-08 16:35:27,112][conftest.py 52][INFO]: ---测试结束---test 环境执行完毕
+[2026-04-08 16:37:39,785][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-04-08 16:37:40,004][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-04-08 16:37:40,004][conftest.py 49][INFO]: ---测试开始---执行的是 test 环境
+[2026-04-08 16:37:40,027][conftest.py 84][INFO]: ---前置处理器开始---
+[2026-04-08 16:37:40,027][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-04-08 16:37:40,048][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-04-08 16:37:40,048][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-04-08 16:37:40,048][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-04-08 16:37:41,116][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2Mzc0NjA5NjMsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTYzNzQ2MCwiZXhwIjoxNzc1NjU5MDYwfQ.cUorVvXdApHj_tt3Vo0qNICz4KOGUWqoeesMIjfq7sw
+[2026-04-08 16:37:41,117][conftest.py 103][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-cn', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2Mzc0NjA5NjMsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTYzNzQ2MCwiZXhwIjoxNzc1NjU5MDYwfQ.cUorVvXdApHj_tt3Vo0qNICz4KOGUWqoeesMIjfq7sw'}
+[2026-04-08 16:37:41,122][conftest.py 52][INFO]: ---测试结束---test 环境执行完毕
+[2026-04-08 16:38:58,575][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-04-08 16:38:58,784][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-04-08 16:38:58,784][conftest.py 49][INFO]: ---测试开始---执行的是 test 环境
+[2026-04-08 16:38:58,808][conftest.py 84][INFO]: ---前置处理器开始---
+[2026-04-08 16:38:58,808][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-04-08 16:38:58,829][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-04-08 16:38:58,830][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-04-08 16:38:58,830][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-04-08 16:38:59,658][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2Mzc1Mzk1ODYsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTYzNzUzOSwiZXhwIjoxNzc1NjU5MTM5fQ.X17mYoktI6AjVJvdYOg1zCXVAFdpZtGGELvfPHHo3xc
+[2026-04-08 16:38:59,659][conftest.py 103][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-cn', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2Mzc1Mzk1ODYsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTYzNzUzOSwiZXhwIjoxNzc1NjU5MTM5fQ.X17mYoktI6AjVJvdYOg1zCXVAFdpZtGGELvfPHHo3xc'}
+[2026-04-08 16:38:59,664][conftest.py 52][INFO]: ---测试结束---test 环境执行完毕
+[2026-04-08 16:40:56,931][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-04-08 16:40:57,141][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-04-08 16:40:57,141][conftest.py 49][INFO]: ---测试开始---执行的是 test 环境
+[2026-04-08 16:40:57,164][conftest.py 84][INFO]: ---前置处理器开始---
+[2026-04-08 16:40:57,164][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-04-08 16:40:57,185][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-04-08 16:40:57,186][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-04-08 16:40:57,186][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-04-08 16:40:58,025][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2Mzc2NTc5MDIsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTYzNzY1NywiZXhwIjoxNzc1NjU5MjU3fQ.dwaOJy1OW4RSnAJPcPr-I1bt4HxHOwuPVXiZFE09c2c
+[2026-04-08 16:40:58,026][conftest.py 103][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-cn', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2Mzc2NTc5MDIsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTYzNzY1NywiZXhwIjoxNzc1NjU5MjU3fQ.dwaOJy1OW4RSnAJPcPr-I1bt4HxHOwuPVXiZFE09c2c'}
+[2026-04-08 16:40:58,026][conftest.py 209][INFO]: 获取部门ID
+[2026-04-08 16:40:58,027][excel_tools.py 405][INFO]: 更新测试用例结果: Common - 获取部门信息 - {}
+[2026-04-08 16:40:58,027][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/rbac/departments
+[2026-04-08 16:40:58,851][common_data.py 84][INFO]: id:{'department_id': '069a95c9-483e-4cc0-830b-7c4c6e8d8a6c', 'name': '测试部门'}
+[2026-04-08 16:40:58,852][conftest.py 218][INFO]: 获取国家ID
+[2026-04-08 16:40:58,852][excel_tools.py 405][INFO]: 更新测试用例结果: Common - 获取国家/地址信息 - {}
+[2026-04-08 16:40:58,852][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/country/country-info?business_type=reap_card
+[2026-04-08 16:40:59,508][common_data.py 53][INFO]: 国家信息:{'id': '411c6012-204e-4720-b94f-c1cb2e28a2ae', 'country_code': '975', 'country_name': '不丹', 'phone_code': '+975', 'flag': '🇧🇹', 'iso3': 'BTN', 'iso2': 'BT', 'province': [{'shortCode': 'BT-15', 'province_name': '廷布'}, {'shortCode': 'BT-11', 'province_name': '帕罗'}, {'shortCode': 'BT-23', 'province_name': '普那卡'}, {'shortCode': 'BT-32', 'province_name': '通萨'}, {'shortCode': 'BT-33', 'province_name': '布姆唐'}, {'shortCode': 'BT-41', 'province_name': '塔希冈'}, {'shortCode': 'BT-45', 'province_name': '森楚宗卡尔'}, {'shortCode': 'BT-13', 'province_name': '哈阿'}, {'shortCode': 'BT-12', 'province_name': '楚卡'}, {'shortCode': 'BT-42', 'province_name': '塔希扬齐'}, {'shortCode': 'BT-34', 'province_name': '谢姆冈'}, {'shortCode': 'BT-42', 'province_name': '蒙加尔'}, {'shortCode': 'BT-14', 'province_name': '桑切'}, {'shortCode': 'BT-21', 'province_name': '奇朗'}, {'shortCode': 'BT-GA', 'province_name': '加萨'}, {'shortCode': 'BT-44', 'province_name': '伦齐'}, {'shortCode': 'BT-22', 'province_name': '萨尔潘'}, {'shortCode': 'BT-24', 'province_name': '达加纳'}, {'shortCode': 'BT-43', 'province_name': '佩马加策尔'}, {'shortCode': 'BT-14', 'province_name': '桑塔'}], 'business_type': ['common', 'reap_physical_cards_shipment', 'reap_card', 'kyb']}
+[2026-04-08 16:40:59,509][conftest.py 227][INFO]: 获取用户ID
+[2026-04-08 16:40:59,509][excel_tools.py 405][INFO]: 更新测试用例结果: Common - 获取用户信息 - {}
+[2026-04-08 16:40:59,509][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/rbac/members?page=1&take=10&name=
+[2026-04-08 16:40:59,746][common_data.py 107][INFO]: id:{'id': 'c3e73a97-0283-43fd-86f0-a0bd9d94ff5f', 'created_at': '2025-10-24T06:32:35.978Z', 'first_name': 'ryan', 'last_name': 'zhou', 'nickname': 'ryan zhou', 'phone': '17767214510', 'email': 'rayn.zhou@alloyx.com', 'type': 'operator', 'employee_no': '00005', 'user_extend': {'id': '211bb870-a131-413b-8d11-2961c7cf991e', 'user_id': 'c3e73a97-0283-43fd-86f0-a0bd9d94ff5f', 'last_login_time': '2026-04-08T08:40:57.904Z'}, 'departments': [{'user_id': 'c3e73a97-0283-43fd-86f0-a0bd9d94ff5f', 'department_id': '069a95c9-483e-4cc0-830b-7c4c6e8d8a6c', 'department_name': '测试部门'}], 'roles': [{'user_id': 'c3e73a97-0283-43fd-86f0-a0bd9d94ff5f', 'role_id': '7bafb32b-5818-4d32-b14d-e21f8d831de0', 'role_name': '超级管理员'}]}
+[2026-04-08 16:40:59,748][conftest.py 151][INFO]: 用例 test_card_holders.py::test_get_params[测试部门-不丹-ryan] 执行通过
+[2026-04-08 16:40:59,750][conftest.py 52][INFO]: ---测试结束---test 环境执行完毕
+[2026-04-08 16:47:55,057][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-04-08 16:47:55,272][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-04-08 16:47:55,272][conftest.py 49][INFO]: ---测试开始---执行的是 test 环境
+[2026-04-08 16:47:55,296][conftest.py 84][INFO]: ---前置处理器开始---
+[2026-04-08 16:47:55,296][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-04-08 16:47:55,318][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-04-08 16:47:55,318][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-04-08 16:47:55,318][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-04-08 16:47:56,237][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2MzgwNzYxMjgsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTYzODA3NiwiZXhwIjoxNzc1NjU5Njc2fQ.dWtBkqWC1bSsq6sqV1p9VuRCou6QvqTWMQGJFULiwD4
+[2026-04-08 16:47:56,237][conftest.py 103][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-cn', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2MzgwNzYxMjgsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTYzODA3NiwiZXhwIjoxNzc1NjU5Njc2fQ.dWtBkqWC1bSsq6sqV1p9VuRCou6QvqTWMQGJFULiwD4'}
+[2026-04-08 16:47:56,244][conftest.py 52][INFO]: ---测试结束---test 环境执行完毕
+[2026-04-08 16:48:23,480][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-04-08 16:48:23,687][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-04-08 16:48:23,687][conftest.py 49][INFO]: ---测试开始---执行的是 test 环境
+[2026-04-08 16:48:23,711][conftest.py 84][INFO]: ---前置处理器开始---
+[2026-04-08 16:48:23,711][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-04-08 16:48:23,732][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-04-08 16:48:23,732][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-04-08 16:48:23,732][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-04-08 16:48:24,456][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2MzgxMDQ0MDAsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTYzODEwNCwiZXhwIjoxNzc1NjU5NzA0fQ.mTPzofi8EaAktS7wsXluR9poaQcW5jVi7GiavbVG16k
+[2026-04-08 16:48:24,458][conftest.py 103][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-cn', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2MzgxMDQ0MDAsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTYzODEwNCwiZXhwIjoxNzc1NjU5NzA0fQ.mTPzofi8EaAktS7wsXluR9poaQcW5jVi7GiavbVG16k'}
+[2026-04-08 16:48:24,464][conftest.py 52][INFO]: ---测试结束---test 环境执行完毕
+[2026-04-08 17:37:21,849][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-04-08 17:37:22,075][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-04-08 17:37:22,075][conftest.py 49][INFO]: ---测试开始---执行的是 test 环境
+[2026-04-08 17:37:22,100][conftest.py 84][INFO]: ---前置处理器开始---
+[2026-04-08 17:37:22,100][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-04-08 17:37:22,122][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-04-08 17:37:22,122][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-04-08 17:37:22,122][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-04-08 17:37:23,784][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2NDEwNDM3MjYsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTY0MTA0MywiZXhwIjoxNzc1NjYyNjQzfQ.sBS1aZnJ54Dg76h0_2UPAATN5Jh5nH4D-mPmMhq5im8
+[2026-04-08 17:37:23,785][conftest.py 103][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-cn', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2NDEwNDM3MjYsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTY0MTA0MywiZXhwIjoxNzc1NjYyNjQzfQ.sBS1aZnJ54Dg76h0_2UPAATN5Jh5nH4D-mPmMhq5im8'}
+[2026-04-08 17:37:23,790][conftest.py 52][INFO]: ---测试结束---test 环境执行完毕
+[2026-04-08 17:37:48,719][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-04-08 17:37:48,916][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-04-08 17:37:48,916][conftest.py 49][INFO]: ---测试开始---执行的是 test 环境
+[2026-04-08 17:37:48,940][conftest.py 84][INFO]: ---前置处理器开始---
+[2026-04-08 17:37:48,940][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-04-08 17:37:48,961][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-04-08 17:37:48,961][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-04-08 17:37:48,961][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-04-08 17:37:50,180][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2NDEwNjk4OTAsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTY0MTA2OSwiZXhwIjoxNzc1NjYyNjY5fQ.271SsFAtvtUtxqgEOGyAlPbHmX75X_JdL2MxTbHxxtU
+[2026-04-08 17:37:50,181][conftest.py 103][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-cn', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2NDEwNjk4OTAsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTY0MTA2OSwiZXhwIjoxNzc1NjYyNjY5fQ.271SsFAtvtUtxqgEOGyAlPbHmX75X_JdL2MxTbHxxtU'}
+[2026-04-08 17:37:50,186][conftest.py 52][INFO]: ---测试结束---test 环境执行完毕
+[2026-04-08 17:41:26,257][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-04-08 17:41:26,471][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-04-08 17:41:26,472][conftest.py 49][INFO]: ---测试开始---执行的是 test 环境
+[2026-04-08 17:41:26,495][conftest.py 84][INFO]: ---前置处理器开始---
+[2026-04-08 17:41:26,495][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-04-08 17:41:26,516][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-04-08 17:41:26,516][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-04-08 17:41:26,516][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-04-08 17:41:27,344][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2NDEyODcyODUsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTY0MTI4NywiZXhwIjoxNzc1NjYyODg3fQ.46UaotIKlQmm5IfxUHT5zQd_X_Qh8qwt58tN6j38eIE
+[2026-04-08 17:41:27,345][conftest.py 103][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-cn', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2NDEyODcyODUsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTY0MTI4NywiZXhwIjoxNzc1NjYyODg3fQ.46UaotIKlQmm5IfxUHT5zQd_X_Qh8qwt58tN6j38eIE'}
+[2026-04-08 17:41:27,351][conftest.py 52][INFO]: ---测试结束---test 环境执行完毕
+[2026-04-08 17:41:50,447][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-04-08 17:41:50,647][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-04-08 17:41:50,647][conftest.py 49][INFO]: ---测试开始---执行的是 test 环境
+[2026-04-08 17:41:50,670][conftest.py 84][INFO]: ---前置处理器开始---
+[2026-04-08 17:41:50,670][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-04-08 17:41:50,691][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-04-08 17:41:50,692][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-04-08 17:41:50,692][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-04-08 17:41:51,545][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2NDEzMTE0OTAsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTY0MTMxMSwiZXhwIjoxNzc1NjYyOTExfQ.Uy_WgEZ1CUXC02yR2wrGkM0N2ehPY3of3WXdn_yYgTU
+[2026-04-08 17:41:51,546][conftest.py 103][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-cn', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2NDEzMTE0OTAsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTY0MTMxMSwiZXhwIjoxNzc1NjYyOTExfQ.Uy_WgEZ1CUXC02yR2wrGkM0N2ehPY3of3WXdn_yYgTU'}
+[2026-04-08 17:41:51,551][conftest.py 52][INFO]: ---测试结束---test 环境执行完毕
+[2026-04-08 17:45:31,501][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-04-08 17:45:31,722][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-04-08 17:45:31,722][conftest.py 49][INFO]: ---测试开始---执行的是 test 环境
+[2026-04-08 17:45:31,746][conftest.py 84][INFO]: ---前置处理器开始---
+[2026-04-08 17:45:31,746][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-04-08 17:45:31,767][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-04-08 17:45:31,767][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-04-08 17:45:31,767][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-04-08 17:45:32,657][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2NDE1MzI0MDEsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTY0MTUzMiwiZXhwIjoxNzc1NjYzMTMyfQ.jKYE96jQWoYJCXF4yJ1tNU5uur3IloLpruRICLSYiRI
+[2026-04-08 17:45:32,658][conftest.py 103][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-cn', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2NDE1MzI0MDEsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTY0MTUzMiwiZXhwIjoxNzc1NjYzMTMyfQ.jKYE96jQWoYJCXF4yJ1tNU5uur3IloLpruRICLSYiRI'}
+[2026-04-08 17:45:32,663][conftest.py 52][INFO]: ---测试结束---test 环境执行完毕
+[2026-04-08 17:53:16,568][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-04-08 17:53:16,787][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-04-08 17:53:16,788][conftest.py 49][INFO]: ---测试开始---执行的是 test 环境
+[2026-04-08 17:53:16,811][conftest.py 84][INFO]: ---前置处理器开始---
+[2026-04-08 17:53:16,811][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-04-08 17:53:16,832][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-04-08 17:53:16,832][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-04-08 17:53:16,832][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-04-08 17:53:17,944][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2NDE5OTc4ODQsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTY0MTk5NywiZXhwIjoxNzc1NjYzNTk3fQ.B68iPLAmAqZQm34HWMvNh1ICNjOTAFoQL5y3AxKYT2A
+[2026-04-08 17:53:17,945][conftest.py 103][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-cn', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2NDE5OTc4ODQsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTY0MTk5NywiZXhwIjoxNzc1NjYzNTk3fQ.B68iPLAmAqZQm34HWMvNh1ICNjOTAFoQL5y3AxKYT2A'}
+[2026-04-08 17:53:17,950][conftest.py 52][INFO]: ---测试结束---test 环境执行完毕
+[2026-04-08 17:53:52,231][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-04-08 17:53:52,447][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-04-08 17:53:52,447][conftest.py 49][INFO]: ---测试开始---执行的是 test 环境
+[2026-04-08 17:53:52,470][conftest.py 84][INFO]: ---前置处理器开始---
+[2026-04-08 17:53:52,470][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-04-08 17:53:52,490][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-04-08 17:53:52,490][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-04-08 17:53:52,490][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-04-08 17:53:53,462][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2NDIwMzM0MDMsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTY0MjAzMywiZXhwIjoxNzc1NjYzNjMzfQ.VfD5VuETZ3QnEGXYGRptIjmgtnFxrrI2ORuJLtXdJEk
+[2026-04-08 17:53:53,463][conftest.py 103][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-cn', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2NDIwMzM0MDMsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTY0MjAzMywiZXhwIjoxNzc1NjYzNjMzfQ.VfD5VuETZ3QnEGXYGRptIjmgtnFxrrI2ORuJLtXdJEk'}
+[2026-04-08 17:53:53,464][conftest.py 209][INFO]: 获取部门ID
+[2026-04-08 17:53:53,465][excel_tools.py 405][INFO]: 更新测试用例结果: Common - 获取部门信息 - {}
+[2026-04-08 17:53:53,465][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/rbac/departments
+[2026-04-08 17:53:54,346][common_data.py 84][INFO]: id:{'department_id': '069a95c9-483e-4cc0-830b-7c4c6e8d8a6c', 'name': '测试部门'}
+[2026-04-08 17:53:54,346][conftest.py 219][INFO]: 获取国家ID
+[2026-04-08 17:53:54,346][excel_tools.py 405][INFO]: 更新测试用例结果: Common - 获取国家/地址信息 - {}
+[2026-04-08 17:53:54,346][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/country/country-info?business_type=reap_card
+[2026-04-08 17:53:55,101][common_data.py 53][INFO]: 国家信息:{'id': '411c6012-204e-4720-b94f-c1cb2e28a2ae', 'country_code': '975', 'country_name': '不丹', 'phone_code': '+975', 'flag': '🇧🇹', 'iso3': 'BTN', 'iso2': 'BT', 'province': [{'shortCode': 'BT-15', 'province_name': '廷布'}, {'shortCode': 'BT-11', 'province_name': '帕罗'}, {'shortCode': 'BT-23', 'province_name': '普那卡'}, {'shortCode': 'BT-32', 'province_name': '通萨'}, {'shortCode': 'BT-33', 'province_name': '布姆唐'}, {'shortCode': 'BT-41', 'province_name': '塔希冈'}, {'shortCode': 'BT-45', 'province_name': '森楚宗卡尔'}, {'shortCode': 'BT-13', 'province_name': '哈阿'}, {'shortCode': 'BT-12', 'province_name': '楚卡'}, {'shortCode': 'BT-42', 'province_name': '塔希扬齐'}, {'shortCode': 'BT-34', 'province_name': '谢姆冈'}, {'shortCode': 'BT-42', 'province_name': '蒙加尔'}, {'shortCode': 'BT-14', 'province_name': '桑切'}, {'shortCode': 'BT-21', 'province_name': '奇朗'}, {'shortCode': 'BT-GA', 'province_name': '加萨'}, {'shortCode': 'BT-44', 'province_name': '伦齐'}, {'shortCode': 'BT-22', 'province_name': '萨尔潘'}, {'shortCode': 'BT-24', 'province_name': '达加纳'}, {'shortCode': 'BT-43', 'province_name': '佩马加策尔'}, {'shortCode': 'BT-14', 'province_name': '桑塔'}], 'business_type': ['common', 'reap_physical_cards_shipment', 'reap_card', 'kyb']}
+[2026-04-08 17:53:55,101][conftest.py 228][INFO]: 获取用户ID
+[2026-04-08 17:53:55,102][excel_tools.py 405][INFO]: 更新测试用例结果: Common - 获取用户信息 - {}
+[2026-04-08 17:53:55,102][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/rbac/members?page=1&take=10&name=
+[2026-04-08 17:53:55,385][common_data.py 107][INFO]: id:{'id': 'c3e73a97-0283-43fd-86f0-a0bd9d94ff5f', 'created_at': '2025-10-24T06:32:35.978Z', 'first_name': 'ryan', 'last_name': 'zhou', 'nickname': 'ryan zhou', 'phone': '17767214510', 'email': 'rayn.zhou@alloyx.com', 'type': 'operator', 'employee_no': '00005', 'user_extend': {'id': '211bb870-a131-413b-8d11-2961c7cf991e', 'user_id': 'c3e73a97-0283-43fd-86f0-a0bd9d94ff5f', 'last_login_time': '2026-04-08T09:53:53.405Z'}, 'departments': [{'user_id': 'c3e73a97-0283-43fd-86f0-a0bd9d94ff5f', 'department_id': '069a95c9-483e-4cc0-830b-7c4c6e8d8a6c', 'department_name': '测试部门'}], 'roles': [{'user_id': 'c3e73a97-0283-43fd-86f0-a0bd9d94ff5f', 'role_id': '7bafb32b-5818-4d32-b14d-e21f8d831de0', 'role_name': '超级管理员'}]}
+[2026-04-08 17:53:55,387][conftest.py 151][INFO]: 用例 test_card_holders.py::test_get_params[测试部门-不丹-ryan] 执行通过
+[2026-04-08 17:53:55,388][conftest.py 52][INFO]: ---测试结束---test 环境执行完毕
+[2026-04-08 17:55:18,136][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-04-08 17:55:40,136][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-04-08 17:55:40,341][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-04-08 17:55:40,341][conftest.py 49][INFO]: ---测试开始---执行的是 test 环境
+[2026-04-08 17:55:40,364][conftest.py 84][INFO]: ---前置处理器开始---
+[2026-04-08 17:55:40,365][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-04-08 17:55:40,386][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-04-08 17:55:40,386][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-04-08 17:55:40,386][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-04-08 17:55:41,324][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2NDIxNDEyMTcsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTY0MjE0MSwiZXhwIjoxNzc1NjYzNzQxfQ.44RWDO697iF20zmzO0RChGrkU62c0HJ3ZJtl0FTyCQU
+[2026-04-08 17:55:41,325][conftest.py 103][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-cn', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzU2NDIxNDEyMTcsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3NTY0MjE0MSwiZXhwIjoxNzc1NjYzNzQxfQ.44RWDO697iF20zmzO0RChGrkU62c0HJ3ZJtl0FTyCQU'}
+[2026-04-08 17:55:41,326][conftest.py 209][INFO]: 获取部门ID
+[2026-04-08 17:55:41,326][excel_tools.py 405][INFO]: 更新测试用例结果: Common - 获取部门信息 - {}
+[2026-04-08 17:55:41,327][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/rbac/departments
+[2026-04-08 17:55:42,249][common_data.py 84][INFO]: id:{'department_id': '069a95c9-483e-4cc0-830b-7c4c6e8d8a6c', 'name': '测试部门'}
+[2026-04-08 17:55:42,249][conftest.py 219][INFO]: 获取国家ID
+[2026-04-08 17:55:42,250][excel_tools.py 405][INFO]: 更新测试用例结果: Common - 获取国家/地址信息 - {}
+[2026-04-08 17:55:42,250][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/country/country-info?business_type=reap_card
+[2026-04-08 17:55:43,059][common_data.py 53][INFO]: 国家信息:{'id': '411c6012-204e-4720-b94f-c1cb2e28a2ae', 'country_code': '975', 'country_name': '不丹', 'phone_code': '+975', 'flag': '🇧🇹', 'iso3': 'BTN', 'iso2': 'BT', 'province': [{'shortCode': 'BT-15', 'province_name': '廷布'}, {'shortCode': 'BT-11', 'province_name': '帕罗'}, {'shortCode': 'BT-23', 'province_name': '普那卡'}, {'shortCode': 'BT-32', 'province_name': '通萨'}, {'shortCode': 'BT-33', 'province_name': '布姆唐'}, {'shortCode': 'BT-41', 'province_name': '塔希冈'}, {'shortCode': 'BT-45', 'province_name': '森楚宗卡尔'}, {'shortCode': 'BT-13', 'province_name': '哈阿'}, {'shortCode': 'BT-12', 'province_name': '楚卡'}, {'shortCode': 'BT-42', 'province_name': '塔希扬齐'}, {'shortCode': 'BT-34', 'province_name': '谢姆冈'}, {'shortCode': 'BT-42', 'province_name': '蒙加尔'}, {'shortCode': 'BT-14', 'province_name': '桑切'}, {'shortCode': 'BT-21', 'province_name': '奇朗'}, {'shortCode': 'BT-GA', 'province_name': '加萨'}, {'shortCode': 'BT-44', 'province_name': '伦齐'}, {'shortCode': 'BT-22', 'province_name': '萨尔潘'}, {'shortCode': 'BT-24', 'province_name': '达加纳'}, {'shortCode': 'BT-43', 'province_name': '佩马加策尔'}, {'shortCode': 'BT-14', 'province_name': '桑塔'}], 'business_type': ['common', 'reap_physical_cards_shipment', 'reap_card', 'kyb']}
+[2026-04-08 17:55:43,059][conftest.py 228][INFO]: 获取用户ID
+[2026-04-08 17:55:43,059][excel_tools.py 405][INFO]: 更新测试用例结果: Common - 获取用户信息 - {}
+[2026-04-08 17:55:43,059][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/rbac/members?page=1&take=10&name=
+[2026-04-08 17:55:43,293][common_data.py 107][INFO]: id:{'id': 'c3e73a97-0283-43fd-86f0-a0bd9d94ff5f', 'created_at': '2025-10-24T06:32:35.978Z', 'first_name': 'ryan', 'last_name': 'zhou', 'nickname': 'ryan zhou', 'phone': '17767214510', 'email': 'rayn.zhou@alloyx.com', 'type': 'operator', 'employee_no': '00005', 'user_extend': {'id': '211bb870-a131-413b-8d11-2961c7cf991e', 'user_id': 'c3e73a97-0283-43fd-86f0-a0bd9d94ff5f', 'last_login_time': '2026-04-08T09:55:41.219Z'}, 'departments': [{'user_id': 'c3e73a97-0283-43fd-86f0-a0bd9d94ff5f', 'department_id': '069a95c9-483e-4cc0-830b-7c4c6e8d8a6c', 'department_name': '测试部门'}], 'roles': [{'user_id': 'c3e73a97-0283-43fd-86f0-a0bd9d94ff5f', 'role_id': '7bafb32b-5818-4d32-b14d-e21f8d831de0', 'role_name': '超级管理员'}]}
+[2026-04-08 17:55:43,295][excel_tools.py 405][INFO]: 更新测试用例结果: Card_page - 创建持卡人 - {"is_external": 0, "first_name": "ryan", "last_name": "zhou", "birthday": "2000-01-01", "id_document_type": "Passport", "id_document_number": "E12345678", "phone": "17767214510", "email": "rayn.zhou@alloyx.com", "label": "test_auto", "country": "不丹", "province": "廷布", "city": "TestCity", "address": "123 Test Street", "rbac_department_id": {"department_id": "069a95c9-483e-4cc0-830b-7c4c6e8d8a6c", "name": "测试部门"}, "user_id": "c3e73a97-0283-43fd-86f0-a0bd9d94ff5f", "area_code": "86", "iso_code": "BTN"}
+[2026-04-08 17:55:43,296][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/virtual-card/create-card-holders
+[2026-04-08 17:55:43,296][simple_request.py 386][INFO]: Request data: {
+  "is_external": 0,
+  "first_name": "ryan",
+  "last_name": "zhou",
+  "birthday": "2000-01-01",
+  "id_document_type": "Passport",
+  "id_document_number": "E12345678",
+  "phone": "17767214510",
+  "email": "rayn.zhou@alloyx.com",
+  "label": "test_auto",
+  "country": "不丹",
+  "province": "廷布",
+  "city": "TestCity",
+  "address": "123 Test Street",
+  "rbac_department_id": {
+    "department_id": "069a95c9-483e-4cc0-830b-7c4c6e8d8a6c",
+    "name": "测试部门"
+  },
+  "user_id": "c3e73a97-0283-43fd-86f0-a0bd9d94ff5f",
+  "area_code": "86",
+  "iso_code": "BTN"
+}
+[2026-04-08 17:55:43,582][simple_request.py 435][ERROR]: Request failed with status code: 400
+[2026-04-08 17:55:43,582][cardHolder.py 362][INFO]: id:None
+[2026-04-08 17:55:43,582][conftest.py 151][INFO]: 用例 test_card_holders.py::test_create_card_holder[测试部门-不丹-ryan] 执行通过
+[2026-04-08 17:55:43,585][conftest.py 52][INFO]: ---测试结束---test 环境执行完毕

@@ -1,0 +1,640 @@
+[2025-12-19 14:56:06,107][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2025-12-19 14:56:06,348][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2025-12-19 14:56:06,348][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2025-12-19 14:56:06,365][conftest.py 82][INFO]: ---前置处理器开始---
+[2025-12-19 14:56:06,366][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2025-12-19 14:56:06,381][excel_tools.py 406][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2025-12-19 14:56:06,381][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2025-12-19 14:56:06,381][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2025-12-19 14:56:07,590][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NjYxMjczNjc3ODYsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2NjEyNzM2NywiZXhwIjoxNzY2MTQ4OTY3fQ.rQgeS8ufxQF13uiX5O1-TDUVNGe-jAOraMVgMv3PcPs
+[2025-12-19 14:56:07,591][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NjYxMjczNjc3ODYsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2NjEyNzM2NywiZXhwIjoxNzY2MTQ4OTY3fQ.rQgeS8ufxQF13uiX5O1-TDUVNGe-jAOraMVgMv3PcPs'}
+[2025-12-19 14:56:07,593][cardHolder.py 155][ERROR]: 获取持卡人列表数据时发生异常: 'HttpRequest' object has no attribute 'get_card_holder_info'
+[2025-12-19 14:56:07,617][conftest.py 147][ERROR]: 用例 test_card_holders.py::test_get_card_holder_detail[获取虚拟卡持有人详情] 执行失败！
+[2025-12-19 14:56:07,618][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2025-12-19 14:56:36,588][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2025-12-19 14:56:36,740][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2025-12-19 14:56:36,741][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2025-12-19 14:56:36,757][conftest.py 82][INFO]: ---前置处理器开始---
+[2025-12-19 14:56:36,757][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2025-12-19 14:56:36,773][excel_tools.py 406][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2025-12-19 14:56:36,773][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2025-12-19 14:56:36,773][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2025-12-19 14:56:38,126][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NjYxMjczOTgxOTIsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2NjEyNzM5OCwiZXhwIjoxNzY2MTQ4OTk4fQ.ituLKJkTXPWHJY6OpemD1QQjGhAlwKt2uieAbI8MDI8
+[2025-12-19 14:56:38,128][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NjYxMjczOTgxOTIsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2NjEyNzM5OCwiZXhwIjoxNzY2MTQ4OTk4fQ.ituLKJkTXPWHJY6OpemD1QQjGhAlwKt2uieAbI8MDI8'}
+[2025-12-19 14:56:38,131][excel_tools.py 406][INFO]: 更新测试用例结果: Card_page - 获取虚拟卡持有人列表 - {}
+[2025-12-19 14:56:38,131][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/get-holders?page=1&take=20
+[2025-12-19 14:56:38,896][cardHolder.py 124][ERROR]: [获取虚拟卡持有人列表] 获取钱包交易数据失败: 'Response' object has no attribute 'get'
+[2025-12-19 14:56:38,897][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2025-12-19 14:56:38,898][conftest.py 149][INFO]: 用例 test_card_holders.py::test_card_holder_list[获取虚拟卡持有人列表-body0] 执行通过
+[2025-12-19 14:56:38,903][excel_tools.py 406][INFO]: 更新测试用例结果: Card_page - 获取虚拟卡持有人列表 - {}
+[2025-12-19 14:56:38,904][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/get-holders?page=1&take=20&nickname=a
+[2025-12-19 14:56:39,131][cardHolder.py 124][ERROR]: [获取虚拟卡持有人列表] 获取钱包交易数据失败: 'Response' object has no attribute 'get'
+[2025-12-19 14:56:39,131][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2025-12-19 14:56:39,132][conftest.py 149][INFO]: 用例 test_card_holders.py::test_card_holder_list[获取虚拟卡持有人列表-body1] 执行通过
+[2025-12-19 14:56:39,133][excel_tools.py 406][INFO]: 更新测试用例结果: Card_page - 获取虚拟卡持有人列表 - {}
+[2025-12-19 14:56:39,133][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/get-holders?page=1&take=20&kyc_review_status=NA
+[2025-12-19 14:56:39,347][cardHolder.py 124][ERROR]: [获取虚拟卡持有人列表] 获取钱包交易数据失败: 'Response' object has no attribute 'get'
+[2025-12-19 14:56:39,347][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2025-12-19 14:56:39,347][conftest.py 149][INFO]: 用例 test_card_holders.py::test_card_holder_list[获取虚拟卡持有人列表-body2] 执行通过
+[2025-12-19 14:56:39,349][excel_tools.py 406][INFO]: 更新测试用例结果: Card_page - 获取虚拟卡持有人列表 - {}
+[2025-12-19 14:56:39,349][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/get-holders?page=1&take=20&kyc_review_status=COMPLETED
+[2025-12-19 14:56:39,560][cardHolder.py 124][ERROR]: [获取虚拟卡持有人列表] 获取钱包交易数据失败: 'Response' object has no attribute 'get'
+[2025-12-19 14:56:39,560][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2025-12-19 14:56:39,560][conftest.py 149][INFO]: 用例 test_card_holders.py::test_card_holder_list[获取虚拟卡持有人列表-body3] 执行通过
+[2025-12-19 14:56:39,561][excel_tools.py 406][INFO]: 更新测试用例结果: Card_page - 获取虚拟卡持有人列表 - {}
+[2025-12-19 14:56:39,561][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/get-holders?page=1&take=20&kyc_review_status=REJECTED
+[2025-12-19 14:56:39,766][cardHolder.py 124][ERROR]: [获取虚拟卡持有人列表] 获取钱包交易数据失败: 'Response' object has no attribute 'get'
+[2025-12-19 14:56:39,766][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2025-12-19 14:56:39,766][conftest.py 149][INFO]: 用例 test_card_holders.py::test_card_holder_list[获取虚拟卡持有人列表-body4] 执行通过
+[2025-12-19 14:56:39,768][excel_tools.py 406][INFO]: 更新测试用例结果: Card_page - 获取虚拟卡持有人列表 - {}
+[2025-12-19 14:56:39,768][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/get-holders?page=1&take=20&kyc_review_status=EXPIRED
+[2025-12-19 14:56:39,973][cardHolder.py 124][ERROR]: [获取虚拟卡持有人列表] 获取钱包交易数据失败: 'Response' object has no attribute 'get'
+[2025-12-19 14:56:39,973][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2025-12-19 14:56:39,973][conftest.py 149][INFO]: 用例 test_card_holders.py::test_card_holder_list[获取虚拟卡持有人列表-body5] 执行通过
+[2025-12-19 14:56:39,975][excel_tools.py 406][INFO]: 更新测试用例结果: Card_page - 获取虚拟卡持有人列表 - {}
+[2025-12-19 14:56:39,975][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/get-holders?page=1&take=20&kyc_review_status=RETRY
+[2025-12-19 14:56:40,180][cardHolder.py 124][ERROR]: [获取虚拟卡持有人列表] 获取钱包交易数据失败: 'Response' object has no attribute 'get'
+[2025-12-19 14:56:40,180][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2025-12-19 14:56:40,181][conftest.py 149][INFO]: 用例 test_card_holders.py::test_card_holder_list[获取虚拟卡持有人列表-body6] 执行通过
+[2025-12-19 14:56:40,183][excel_tools.py 406][INFO]: 更新测试用例结果: Card_page - 获取虚拟卡持有人列表 - {}
+[2025-12-19 14:56:40,183][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/get-holders?page=1&take=20&label=a
+[2025-12-19 14:56:40,395][cardHolder.py 124][ERROR]: [获取虚拟卡持有人列表] 获取钱包交易数据失败: 'Response' object has no attribute 'get'
+[2025-12-19 14:56:40,396][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2025-12-19 14:56:40,396][conftest.py 149][INFO]: 用例 test_card_holders.py::test_card_holder_list[获取虚拟卡持有人列表-body7] 执行通过
+[2025-12-19 14:56:40,399][excel_tools.py 406][INFO]: 更新测试用例结果: Card_page - 获取虚拟卡持有人列表 - {}
+[2025-12-19 14:56:40,399][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/get-holders?page=1&take=20&status=BAN
+[2025-12-19 14:56:40,612][cardHolder.py 124][ERROR]: [获取虚拟卡持有人列表] 获取钱包交易数据失败: 'Response' object has no attribute 'get'
+[2025-12-19 14:56:40,612][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2025-12-19 14:56:40,612][conftest.py 149][INFO]: 用例 test_card_holders.py::test_card_holder_list[获取虚拟卡持有人列表-body8] 执行通过
+[2025-12-19 14:56:40,614][excel_tools.py 406][INFO]: 更新测试用例结果: Card_page - 获取虚拟卡持有人列表 - {}
+[2025-12-19 14:56:40,614][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/get-holders?page=1&take=20&status=ACTIVE
+[2025-12-19 14:56:40,830][cardHolder.py 124][ERROR]: [获取虚拟卡持有人列表] 获取钱包交易数据失败: 'Response' object has no attribute 'get'
+[2025-12-19 14:56:40,830][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2025-12-19 14:56:40,831][conftest.py 149][INFO]: 用例 test_card_holders.py::test_card_holder_list[获取虚拟卡持有人列表-body9] 执行通过
+[2025-12-19 14:56:40,834][excel_tools.py 406][INFO]: 更新测试用例结果: Card_page - 管理-获取部门列表 - {}
+[2025-12-19 14:56:40,834][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/rbac/departments
+[2025-12-19 14:56:41,032][cardHolder.py 57][INFO]: 部门ID为：6b4ad0cf-9006-4490-9715-e8fbe398e16e
+[2025-12-19 14:56:41,033][excel_tools.py 406][INFO]: 更新测试用例结果: Card_page - 获取虚拟卡持有人列表 - {}
+[2025-12-19 14:56:41,033][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/get-holders?page=1&take=20&rbac_department_id=6b4ad0cf-9006-4490-9715-e8fbe398e16e
+[2025-12-19 14:56:41,237][cardHolder.py 124][ERROR]: [获取虚拟卡持有人列表] 获取钱包交易数据失败: 'Response' object has no attribute 'get'
+[2025-12-19 14:56:41,238][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2025-12-19 14:56:41,239][conftest.py 149][INFO]: 用例 test_card_holders.py::test_card_holder_list[获取虚拟卡持有人列表-<lambda>] 执行通过
+[2025-12-19 14:56:41,240][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2025-12-19 14:56:46,317][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2025-12-19 14:56:46,450][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2025-12-19 14:56:46,450][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2025-12-19 14:56:46,466][conftest.py 82][INFO]: ---前置处理器开始---
+[2025-12-19 14:56:46,466][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2025-12-19 14:56:46,482][excel_tools.py 406][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2025-12-19 14:56:46,482][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2025-12-19 14:56:46,482][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2025-12-19 14:56:47,954][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NjYxMjc0MDgwODYsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2NjEyNzQwOCwiZXhwIjoxNzY2MTQ5MDA4fQ.QEoiZSrxoVsnF4djD8Cdiau9QxSD9sOAqYSgsWVFY7s
+[2025-12-19 14:56:47,955][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NjYxMjc0MDgwODYsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2NjEyNzQwOCwiZXhwIjoxNzY2MTQ5MDA4fQ.QEoiZSrxoVsnF4djD8Cdiau9QxSD9sOAqYSgsWVFY7s'}
+[2025-12-19 14:56:47,957][excel_tools.py 406][INFO]: 更新测试用例结果: Card_page - 获取虚拟卡持有人列表 - {}
+[2025-12-19 14:56:47,957][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/get-holders?page=1&take=20
+[2025-12-19 14:56:48,899][cardHolder.py 124][ERROR]: [获取虚拟卡持有人列表] 获取钱包交易数据失败: 'Response' object has no attribute 'get'
+[2025-12-19 14:56:48,899][cardHolder.py 151][INFO]: 获取到持卡人ID列表为：['a9227dc4-4811-4ae1-ac6e-ecf3b961762d', '63bc81c8-9bbb-4eff-94ca-74ce6ea0b922', 'a61ad747-f887-40d0-ab9f-4a1447cb0f21', 'b502ab1d-dda2-49df-ac46-05d3a9dfa71b', 'ac0ffe99-952f-4231-a143-d29ae397e29e', 'bebc1416-692c-403f-a36a-593b81f5cb65', 'ab849939-0aa9-4fcc-833c-96ce847251bf', 'ad2c2602-f8c2-4776-8371-b42cb68d6143', '1e069d3b-954b-4c8f-b742-ce27c07469e3', '450df09f-1410-47f9-9e76-c0219e5b5b07', '195fec23-495e-4150-94cd-2b7965f23100', '31632684-7d1e-4bc9-833d-8027892b772a', '4fae3dd5-eeda-41be-8f48-e13e6bda3fb4', 'a77ce78c-23ef-427b-8239-f10cac08c55f', '76d4e8ca-f65e-46ff-8e5a-b8e02579b221', 'd47b8deb-b7ac-4828-a42c-38efd5d5ccec', '1d8ac69d-f93e-409a-8b8d-6fafc1eb033b', '814f4ea4-20bc-4d4b-a17d-12482a72720a', 'c094a08a-c7e2-4d28-bee4-1a3157d7970f', '9b4aa392-8d5f-4e4e-9f0f-ee8f13affc8f']
+[2025-12-19 14:56:48,901][conftest.py 149][INFO]: 用例 test_card_holders.py::test_get_list_data 执行通过
+[2025-12-19 14:56:48,902][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2025-12-19 14:59:30,245][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2025-12-19 14:59:30,404][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2025-12-19 14:59:30,405][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2025-12-19 14:59:30,422][conftest.py 82][INFO]: ---前置处理器开始---
+[2025-12-19 14:59:30,422][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2025-12-19 14:59:30,438][excel_tools.py 406][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2025-12-19 14:59:30,438][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2025-12-19 14:59:30,438][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2025-12-19 14:59:31,897][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NjYxMjc1NzIwOTAsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2NjEyNzU3MiwiZXhwIjoxNzY2MTQ5MTcyfQ.X0i1vt0Vq-i9qN2sWj5jk5SqKPCc6tneGSDBDnPbZ1I
+[2025-12-19 14:59:31,898][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NjYxMjc1NzIwOTAsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2NjEyNzU3MiwiZXhwIjoxNzY2MTQ5MTcyfQ.X0i1vt0Vq-i9qN2sWj5jk5SqKPCc6tneGSDBDnPbZ1I'}
+[2025-12-19 14:59:31,900][excel_tools.py 406][INFO]: 更新测试用例结果: Card_page - 获取虚拟卡持有人列表 - {}
+[2025-12-19 14:59:31,901][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/get-holders?page=1&take=20
+[2025-12-19 14:59:32,906][cardHolder.py 124][ERROR]: [获取虚拟卡持有人列表] 获取钱包交易数据失败: 'Response' object has no attribute 'get'
+[2025-12-19 14:59:32,907][cardHolder.py 151][INFO]: 获取到持卡人ID列表为：['a9227dc4-4811-4ae1-ac6e-ecf3b961762d', '63bc81c8-9bbb-4eff-94ca-74ce6ea0b922', 'a61ad747-f887-40d0-ab9f-4a1447cb0f21', 'b502ab1d-dda2-49df-ac46-05d3a9dfa71b', 'ac0ffe99-952f-4231-a143-d29ae397e29e', 'bebc1416-692c-403f-a36a-593b81f5cb65', 'ab849939-0aa9-4fcc-833c-96ce847251bf', 'ad2c2602-f8c2-4776-8371-b42cb68d6143', '1e069d3b-954b-4c8f-b742-ce27c07469e3', '450df09f-1410-47f9-9e76-c0219e5b5b07', '195fec23-495e-4150-94cd-2b7965f23100', '31632684-7d1e-4bc9-833d-8027892b772a', '4fae3dd5-eeda-41be-8f48-e13e6bda3fb4', 'a77ce78c-23ef-427b-8239-f10cac08c55f', '76d4e8ca-f65e-46ff-8e5a-b8e02579b221', 'd47b8deb-b7ac-4828-a42c-38efd5d5ccec', '1d8ac69d-f93e-409a-8b8d-6fafc1eb033b', '814f4ea4-20bc-4d4b-a17d-12482a72720a', 'c094a08a-c7e2-4d28-bee4-1a3157d7970f', '9b4aa392-8d5f-4e4e-9f0f-ee8f13affc8f']
+[2025-12-19 14:59:32,908][conftest.py 149][INFO]: 用例 test_card_holders.py::test_get_list_data 执行通过
+[2025-12-19 14:59:32,909][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2025-12-19 15:00:41,408][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2025-12-19 15:00:41,560][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2025-12-19 15:00:41,560][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2025-12-19 15:00:41,576][conftest.py 82][INFO]: ---前置处理器开始---
+[2025-12-19 15:00:41,577][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2025-12-19 15:00:41,593][excel_tools.py 406][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2025-12-19 15:00:41,593][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2025-12-19 15:00:41,593][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2025-12-19 15:00:43,091][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NjYxMjc2NDMyODcsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2NjEyNzY0MywiZXhwIjoxNzY2MTQ5MjQzfQ.uPREM6mFJl6YGK5UWO_M9EvFV7DH_XtcOsyD6kWUJnA
+[2025-12-19 15:00:43,092][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NjYxMjc2NDMyODcsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2NjEyNzY0MywiZXhwIjoxNzY2MTQ5MjQzfQ.uPREM6mFJl6YGK5UWO_M9EvFV7DH_XtcOsyD6kWUJnA'}
+[2025-12-19 15:00:43,095][cardHolder.py 158][ERROR]: 获取持卡人列表数据时发生异常: 'HttpRequest' object has no attribute 'get_card_holder_info'
+[2025-12-19 15:00:43,126][conftest.py 147][ERROR]: 用例 test_card_holders.py::test_get_card_holder_detail[获取虚拟卡持有人详情] 执行失败！
+[2025-12-19 15:00:43,131][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2025-12-19 15:03:13,951][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2025-12-19 15:03:22,517][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2025-12-19 15:04:36,716][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2025-12-19 15:04:36,875][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2025-12-19 15:04:36,875][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2025-12-19 15:04:36,892][conftest.py 82][INFO]: ---前置处理器开始---
+[2025-12-19 15:04:36,892][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2025-12-19 15:04:36,908][excel_tools.py 406][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2025-12-19 15:04:36,908][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2025-12-19 15:04:36,908][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2025-12-19 15:04:38,682][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NjYxMjc4Nzg3ODEsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2NjEyNzg3OCwiZXhwIjoxNzY2MTQ5NDc4fQ.SsWrkoea0pwy07jj8QFY3_IKSEm9UXTGEqboo8Q3wW0
+[2025-12-19 15:04:38,683][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NjYxMjc4Nzg3ODEsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2NjEyNzg3OCwiZXhwIjoxNzY2MTQ5NDc4fQ.SsWrkoea0pwy07jj8QFY3_IKSEm9UXTGEqboo8Q3wW0'}
+[2025-12-19 15:04:38,686][excel_tools.py 406][INFO]: 更新测试用例结果: Card_page - 获取虚拟卡持有人列表 - {}
+[2025-12-19 15:04:38,686][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/get-holders?page=1&take=20
+[2025-12-19 15:04:39,433][cardHolder.py 127][ERROR]: [获取虚拟卡持有人列表] 获取钱包交易数据失败: 'Response' object has no attribute 'get'
+[2025-12-19 15:04:39,434][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2025-12-19 15:04:39,435][conftest.py 149][INFO]: 用例 test_card_holders.py::test_card_holder_list[获取虚拟卡持有人列表-body0] 执行通过
+[2025-12-19 15:04:39,440][excel_tools.py 406][INFO]: 更新测试用例结果: Card_page - 获取虚拟卡持有人列表 - {}
+[2025-12-19 15:04:39,440][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/get-holders?page=1&take=20&nickname=a
+[2025-12-19 15:04:39,662][cardHolder.py 127][ERROR]: [获取虚拟卡持有人列表] 获取钱包交易数据失败: 'Response' object has no attribute 'get'
+[2025-12-19 15:04:39,662][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2025-12-19 15:04:39,663][conftest.py 149][INFO]: 用例 test_card_holders.py::test_card_holder_list[获取虚拟卡持有人列表-body1] 执行通过
+[2025-12-19 15:04:39,667][excel_tools.py 406][INFO]: 更新测试用例结果: Card_page - 获取虚拟卡持有人列表 - {}
+[2025-12-19 15:04:39,667][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/get-holders?page=1&take=20&kyc_review_status=NA
+[2025-12-19 15:04:39,881][cardHolder.py 127][ERROR]: [获取虚拟卡持有人列表] 获取钱包交易数据失败: 'Response' object has no attribute 'get'
+[2025-12-19 15:04:39,881][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2025-12-19 15:04:39,881][conftest.py 149][INFO]: 用例 test_card_holders.py::test_card_holder_list[获取虚拟卡持有人列表-body2] 执行通过
+[2025-12-19 15:04:39,882][excel_tools.py 406][INFO]: 更新测试用例结果: Card_page - 获取虚拟卡持有人列表 - {}
+[2025-12-19 15:04:39,882][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/get-holders?page=1&take=20&kyc_review_status=COMPLETED
+[2025-12-19 15:04:40,101][cardHolder.py 127][ERROR]: [获取虚拟卡持有人列表] 获取钱包交易数据失败: 'Response' object has no attribute 'get'
+[2025-12-19 15:04:40,101][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2025-12-19 15:04:40,102][conftest.py 149][INFO]: 用例 test_card_holders.py::test_card_holder_list[获取虚拟卡持有人列表-body3] 执行通过
+[2025-12-19 15:04:40,104][excel_tools.py 406][INFO]: 更新测试用例结果: Card_page - 获取虚拟卡持有人列表 - {}
+[2025-12-19 15:04:40,104][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/get-holders?page=1&take=20&kyc_review_status=REJECTED
+[2025-12-19 15:04:40,306][cardHolder.py 127][ERROR]: [获取虚拟卡持有人列表] 获取钱包交易数据失败: 'Response' object has no attribute 'get'
+[2025-12-19 15:04:40,306][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2025-12-19 15:04:40,307][conftest.py 149][INFO]: 用例 test_card_holders.py::test_card_holder_list[获取虚拟卡持有人列表-body4] 执行通过
+[2025-12-19 15:04:40,309][excel_tools.py 406][INFO]: 更新测试用例结果: Card_page - 获取虚拟卡持有人列表 - {}
+[2025-12-19 15:04:40,309][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/get-holders?page=1&take=20&kyc_review_status=EXPIRED
+[2025-12-19 15:04:40,520][cardHolder.py 127][ERROR]: [获取虚拟卡持有人列表] 获取钱包交易数据失败: 'Response' object has no attribute 'get'
+[2025-12-19 15:04:40,520][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2025-12-19 15:04:40,521][conftest.py 149][INFO]: 用例 test_card_holders.py::test_card_holder_list[获取虚拟卡持有人列表-body5] 执行通过
+[2025-12-19 15:04:40,522][excel_tools.py 406][INFO]: 更新测试用例结果: Card_page - 获取虚拟卡持有人列表 - {}
+[2025-12-19 15:04:40,522][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/get-holders?page=1&take=20&kyc_review_status=RETRY
+[2025-12-19 15:04:40,732][cardHolder.py 127][ERROR]: [获取虚拟卡持有人列表] 获取钱包交易数据失败: 'Response' object has no attribute 'get'
+[2025-12-19 15:04:40,732][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2025-12-19 15:04:40,732][conftest.py 149][INFO]: 用例 test_card_holders.py::test_card_holder_list[获取虚拟卡持有人列表-body6] 执行通过
+[2025-12-19 15:04:40,734][excel_tools.py 406][INFO]: 更新测试用例结果: Card_page - 获取虚拟卡持有人列表 - {}
+[2025-12-19 15:04:40,734][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/get-holders?page=1&take=20&label=a
+[2025-12-19 15:04:40,948][cardHolder.py 127][ERROR]: [获取虚拟卡持有人列表] 获取钱包交易数据失败: 'Response' object has no attribute 'get'
+[2025-12-19 15:04:40,948][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2025-12-19 15:04:40,949][conftest.py 149][INFO]: 用例 test_card_holders.py::test_card_holder_list[获取虚拟卡持有人列表-body7] 执行通过
+[2025-12-19 15:04:40,952][excel_tools.py 406][INFO]: 更新测试用例结果: Card_page - 获取虚拟卡持有人列表 - {}
+[2025-12-19 15:04:40,952][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/get-holders?page=1&take=20&status=BAN
+[2025-12-19 15:04:41,158][cardHolder.py 127][ERROR]: [获取虚拟卡持有人列表] 获取钱包交易数据失败: 'Response' object has no attribute 'get'
+[2025-12-19 15:04:41,159][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2025-12-19 15:04:41,159][conftest.py 149][INFO]: 用例 test_card_holders.py::test_card_holder_list[获取虚拟卡持有人列表-body8] 执行通过
+[2025-12-19 15:04:41,162][excel_tools.py 406][INFO]: 更新测试用例结果: Card_page - 获取虚拟卡持有人列表 - {}
+[2025-12-19 15:04:41,162][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/get-holders?page=1&take=20&status=ACTIVE
+[2025-12-19 15:04:41,393][cardHolder.py 127][ERROR]: [获取虚拟卡持有人列表] 获取钱包交易数据失败: 'Response' object has no attribute 'get'
+[2025-12-19 15:04:41,393][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2025-12-19 15:04:41,394][conftest.py 149][INFO]: 用例 test_card_holders.py::test_card_holder_list[获取虚拟卡持有人列表-body9] 执行通过
+[2025-12-19 15:04:41,397][excel_tools.py 406][INFO]: 更新测试用例结果: Card_page - 管理-获取部门列表 - {}
+[2025-12-19 15:04:41,397][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/rbac/departments
+[2025-12-19 15:04:41,595][cardHolder.py 60][INFO]: 部门ID为：6b4ad0cf-9006-4490-9715-e8fbe398e16e
+[2025-12-19 15:04:41,595][excel_tools.py 406][INFO]: 更新测试用例结果: Card_page - 获取虚拟卡持有人列表 - {}
+[2025-12-19 15:04:41,595][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/get-holders?page=1&take=20&rbac_department_id=6b4ad0cf-9006-4490-9715-e8fbe398e16e
+[2025-12-19 15:04:41,802][cardHolder.py 127][ERROR]: [获取虚拟卡持有人列表] 获取钱包交易数据失败: 'Response' object has no attribute 'get'
+[2025-12-19 15:04:41,803][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2025-12-19 15:04:41,803][conftest.py 149][INFO]: 用例 test_card_holders.py::test_card_holder_list[获取虚拟卡持有人列表-<lambda>] 执行通过
+[2025-12-19 15:04:41,804][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2025-12-19 15:04:44,337][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2025-12-19 15:04:44,440][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2025-12-19 15:04:44,440][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2025-12-19 15:04:44,456][conftest.py 82][INFO]: ---前置处理器开始---
+[2025-12-19 15:04:44,456][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2025-12-19 15:04:44,473][excel_tools.py 406][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2025-12-19 15:04:44,473][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2025-12-19 15:04:44,473][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2025-12-19 15:04:45,955][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NjYxMjc4ODYwODksImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2NjEyNzg4NiwiZXhwIjoxNzY2MTQ5NDg2fQ.u8jXFF-5jyhOIIYHw7t1YSYZbixE910t7tH7VTglNTU
+[2025-12-19 15:04:45,956][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NjYxMjc4ODYwODksImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2NjEyNzg4NiwiZXhwIjoxNzY2MTQ5NDg2fQ.u8jXFF-5jyhOIIYHw7t1YSYZbixE910t7tH7VTglNTU'}
+[2025-12-19 15:04:45,959][excel_tools.py 406][INFO]: 更新测试用例结果: Card_page - 获取虚拟卡持有人列表 - {}
+[2025-12-19 15:04:45,959][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/get-holders?page=1&take=20
+[2025-12-19 15:04:46,939][cardHolder.py 127][ERROR]: [获取虚拟卡持有人列表] 获取钱包交易数据失败: 'Response' object has no attribute 'get'
+[2025-12-19 15:04:46,940][cardHolder.py 154][INFO]: 获取到持卡人ID列表为：['a9227dc4-4811-4ae1-ac6e-ecf3b961762d', '63bc81c8-9bbb-4eff-94ca-74ce6ea0b922', 'a61ad747-f887-40d0-ab9f-4a1447cb0f21', 'b502ab1d-dda2-49df-ac46-05d3a9dfa71b', 'ac0ffe99-952f-4231-a143-d29ae397e29e', 'bebc1416-692c-403f-a36a-593b81f5cb65', 'ab849939-0aa9-4fcc-833c-96ce847251bf', 'ad2c2602-f8c2-4776-8371-b42cb68d6143', '1e069d3b-954b-4c8f-b742-ce27c07469e3', '450df09f-1410-47f9-9e76-c0219e5b5b07', '195fec23-495e-4150-94cd-2b7965f23100', '31632684-7d1e-4bc9-833d-8027892b772a', '4fae3dd5-eeda-41be-8f48-e13e6bda3fb4', 'a77ce78c-23ef-427b-8239-f10cac08c55f', '76d4e8ca-f65e-46ff-8e5a-b8e02579b221', 'd47b8deb-b7ac-4828-a42c-38efd5d5ccec', '1d8ac69d-f93e-409a-8b8d-6fafc1eb033b', '814f4ea4-20bc-4d4b-a17d-12482a72720a', 'c094a08a-c7e2-4d28-bee4-1a3157d7970f', '9b4aa392-8d5f-4e4e-9f0f-ee8f13affc8f']
+[2025-12-19 15:04:46,941][conftest.py 149][INFO]: 用例 test_card_holders.py::test_get_list_data 执行通过
+[2025-12-19 15:04:46,942][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2025-12-19 15:05:27,651][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2025-12-19 15:05:27,810][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2025-12-19 15:05:27,810][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2025-12-19 15:05:27,827][conftest.py 82][INFO]: ---前置处理器开始---
+[2025-12-19 15:05:27,827][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2025-12-19 15:05:27,843][excel_tools.py 406][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2025-12-19 15:05:27,844][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2025-12-19 15:05:27,844][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2025-12-19 15:05:29,169][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NjYxMjc5MjkyODQsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2NjEyNzkyOSwiZXhwIjoxNzY2MTQ5NTI5fQ.jo7rK0f9ZxUHN0rVFGdTa5_nb28kvIfIMAxBsXkIBDE
+[2025-12-19 15:05:29,170][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NjYxMjc5MjkyODQsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2NjEyNzkyOSwiZXhwIjoxNzY2MTQ5NTI5fQ.jo7rK0f9ZxUHN0rVFGdTa5_nb28kvIfIMAxBsXkIBDE'}
+[2025-12-19 15:05:29,173][cardHolder.py 158][ERROR]: 获取持卡人列表数据时发生异常: 'HttpRequest' object has no attribute 'get_card_holder_info'
+[2025-12-19 15:05:29,206][conftest.py 147][ERROR]: 用例 test_card_holders.py::test_get_card_holder_detail[获取虚拟卡持有人详情] 执行失败！
+[2025-12-19 15:05:29,208][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2025-12-19 15:07:20,150][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2025-12-19 15:07:20,308][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2025-12-19 15:07:20,308][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2025-12-19 15:07:20,325][conftest.py 82][INFO]: ---前置处理器开始---
+[2025-12-19 15:07:20,325][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2025-12-19 15:07:20,341][excel_tools.py 406][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2025-12-19 15:07:20,341][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2025-12-19 15:07:20,341][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2025-12-19 15:07:21,810][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NjYxMjgwNDE5OTQsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2NjEyODA0MSwiZXhwIjoxNzY2MTQ5NjQxfQ.l7h8H0xoG0Phx2JFbCrZ_3oR-BKFG1fI_hE_96Z6GWA
+[2025-12-19 15:07:21,811][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NjYxMjgwNDE5OTQsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2NjEyODA0MSwiZXhwIjoxNzY2MTQ5NjQxfQ.l7h8H0xoG0Phx2JFbCrZ_3oR-BKFG1fI_hE_96Z6GWA'}
+[2025-12-19 15:07:21,814][cardHolder.py 158][ERROR]: 获取持卡人列表数据时发生异常: 'HttpRequest' object has no attribute 'get_card_holder_info'
+[2025-12-19 15:07:21,847][conftest.py 147][ERROR]: 用例 test_card_holders.py::test_get_card_holder_detail[获取虚拟卡持有人详情] 执行失败！
+[2025-12-19 15:07:21,850][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2025-12-19 16:33:39,028][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2025-12-19 16:33:39,200][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2025-12-19 16:33:39,200][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2025-12-19 16:33:39,217][conftest.py 82][INFO]: ---前置处理器开始---
+[2025-12-19 16:33:39,217][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2025-12-19 16:33:39,233][excel_tools.py 406][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2025-12-19 16:33:39,233][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2025-12-19 16:33:39,233][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2025-12-19 16:33:40,693][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NjYxMzMyMjA3OTgsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2NjEzMzIyMCwiZXhwIjoxNzY2MTU0ODIwfQ.fyZmT1Db5_SW0QM_wuTVj7XQgQ7wgEGeLuUx-D4W3es
+[2025-12-19 16:33:40,693][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NjYxMzMyMjA3OTgsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2NjEzMzIyMCwiZXhwIjoxNzY2MTU0ODIwfQ.fyZmT1Db5_SW0QM_wuTVj7XQgQ7wgEGeLuUx-D4W3es'}
+[2025-12-19 16:33:40,702][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2025-12-19 16:42:52,316][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2025-12-19 16:42:52,478][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2025-12-19 16:42:52,478][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2025-12-19 16:42:52,495][conftest.py 82][INFO]: ---前置处理器开始---
+[2025-12-19 16:42:52,495][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2025-12-19 16:42:52,512][excel_tools.py 406][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2025-12-19 16:42:52,512][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2025-12-19 16:42:52,512][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2025-12-19 16:42:54,165][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NjYxMzM3NzQyOTAsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2NjEzMzc3NCwiZXhwIjoxNzY2MTU1Mzc0fQ.SEvF6WYenERp_G19QGhaREmZxsSQhaRvM96aQDKx7IQ
+[2025-12-19 16:42:54,166][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NjYxMzM3NzQyOTAsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2NjEzMzc3NCwiZXhwIjoxNzY2MTU1Mzc0fQ.SEvF6WYenERp_G19QGhaREmZxsSQhaRvM96aQDKx7IQ'}
+[2025-12-19 16:42:54,170][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2025-12-19 16:43:10,561][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2025-12-19 16:47:14,090][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2025-12-19 16:50:57,887][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2025-12-19 16:50:58,050][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2025-12-19 16:50:58,050][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2025-12-19 16:50:58,066][conftest.py 82][INFO]: ---前置处理器开始---
+[2025-12-19 16:50:58,067][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2025-12-19 16:50:58,082][excel_tools.py 406][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2025-12-19 16:50:58,082][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2025-12-19 16:50:58,082][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2025-12-19 16:50:59,760][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NjYxMzQyNTk3ODcsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2NjEzNDI1OSwiZXhwIjoxNzY2MTU1ODU5fQ.J5fQmCy01oQgzBVde2Xs3-T6sh_x8cZeKK_0AiUZHRQ
+[2025-12-19 16:50:59,761][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NjYxMzQyNTk3ODcsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2NjEzNDI1OSwiZXhwIjoxNzY2MTU1ODU5fQ.J5fQmCy01oQgzBVde2Xs3-T6sh_x8cZeKK_0AiUZHRQ'}
+[2025-12-19 16:50:59,763][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2025-12-19 16:51:16,492][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2025-12-19 16:51:16,650][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2025-12-19 16:51:16,650][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2025-12-19 16:51:16,666][conftest.py 82][INFO]: ---前置处理器开始---
+[2025-12-19 16:51:16,666][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2025-12-19 16:51:16,682][excel_tools.py 406][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2025-12-19 16:51:16,682][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2025-12-19 16:51:16,682][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2025-12-19 16:51:18,269][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NjYxMzQyNzgzNzQsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2NjEzNDI3OCwiZXhwIjoxNzY2MTU1ODc4fQ.oGI2Lg11IZIJQJufCbyQu1BO5boIgdp28aXMA61i_h4
+[2025-12-19 16:51:18,270][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NjYxMzQyNzgzNzQsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2NjEzNDI3OCwiZXhwIjoxNzY2MTU1ODc4fQ.oGI2Lg11IZIJQJufCbyQu1BO5boIgdp28aXMA61i_h4'}
+[2025-12-19 16:51:18,272][cardHolder.py 161][ERROR]: 获取持卡人列表数据时发生异常: 'HttpRequest' object has no attribute 'get_card_holder_info'
+[2025-12-19 16:51:18,305][conftest.py 147][ERROR]: 用例 test_card_holders.py::test_get_card_holder_detail[获取虚拟卡持有人详情] 执行失败！
+[2025-12-19 16:51:18,307][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2025-12-19 16:51:52,015][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2025-12-19 16:59:34,087][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2025-12-19 17:00:27,792][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2025-12-19 17:09:33,473][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2025-12-19 17:09:33,648][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2025-12-19 17:09:33,648][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2025-12-19 17:09:33,665][conftest.py 82][INFO]: ---前置处理器开始---
+[2025-12-19 17:09:33,665][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2025-12-19 17:09:33,682][excel_tools.py 406][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2025-12-19 17:09:33,682][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2025-12-19 17:09:33,682][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2025-12-19 17:09:35,203][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NjYxMzUzNzUyOTcsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2NjEzNTM3NSwiZXhwIjoxNzY2MTU2OTc1fQ.EBQ4-ML0r_GDAm3mPt8Zmdzk4-skoCKpF_J47s5IisY
+[2025-12-19 17:09:35,204][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NjYxMzUzNzUyOTcsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2NjEzNTM3NSwiZXhwIjoxNzY2MTU2OTc1fQ.EBQ4-ML0r_GDAm3mPt8Zmdzk4-skoCKpF_J47s5IisY'}
+[2025-12-19 17:09:35,240][conftest.py 147][ERROR]: 用例 test_card_holders.py::test_get_card_holder_detail[获取虚拟卡持有人详情] 执行失败！
+[2025-12-19 17:09:35,243][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2025-12-19 17:09:51,911][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2025-12-19 17:09:52,059][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2025-12-19 17:09:52,059][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2025-12-19 17:09:52,075][conftest.py 82][INFO]: ---前置处理器开始---
+[2025-12-19 17:09:52,075][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2025-12-19 17:09:52,091][excel_tools.py 406][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2025-12-19 17:09:52,091][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2025-12-19 17:09:52,091][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2025-12-19 17:09:53,587][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NjYxMzUzOTM2ODYsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2NjEzNTM5MywiZXhwIjoxNzY2MTU2OTkzfQ.H2I3mAnjHCikSBjo14dartLR9YCg_W3VXxkpt4qoUJc
+[2025-12-19 17:09:53,588][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NjYxMzUzOTM2ODYsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2NjEzNTM5MywiZXhwIjoxNzY2MTU2OTkzfQ.H2I3mAnjHCikSBjo14dartLR9YCg_W3VXxkpt4qoUJc'}
+[2025-12-19 17:09:53,625][conftest.py 147][ERROR]: 用例 test_card_holders.py::test_get_card_holder_detail[获] 执行失败！
+[2025-12-19 17:09:53,632][conftest.py 147][ERROR]: 用例 test_card_holders.py::test_get_card_holder_detail[取] 执行失败！
+[2025-12-19 17:09:53,636][conftest.py 147][ERROR]: 用例 test_card_holders.py::test_get_card_holder_detail[虚] 执行失败！
+[2025-12-19 17:09:53,640][conftest.py 147][ERROR]: 用例 test_card_holders.py::test_get_card_holder_detail[拟] 执行失败！
+[2025-12-19 17:09:53,644][conftest.py 147][ERROR]: 用例 test_card_holders.py::test_get_card_holder_detail[卡] 执行失败！
+[2025-12-19 17:09:53,648][conftest.py 147][ERROR]: 用例 test_card_holders.py::test_get_card_holder_detail[持] 执行失败！
+[2025-12-19 17:09:53,652][conftest.py 147][ERROR]: 用例 test_card_holders.py::test_get_card_holder_detail[有] 执行失败！
+[2025-12-19 17:09:53,655][conftest.py 147][ERROR]: 用例 test_card_holders.py::test_get_card_holder_detail[人] 执行失败！
+[2025-12-19 17:09:53,659][conftest.py 147][ERROR]: 用例 test_card_holders.py::test_get_card_holder_detail[详] 执行失败！
+[2025-12-19 17:09:53,663][conftest.py 147][ERROR]: 用例 test_card_holders.py::test_get_card_holder_detail[情] 执行失败！
+[2025-12-19 17:09:53,663][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2025-12-19 17:13:52,054][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2025-12-19 17:13:52,213][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2025-12-19 17:13:52,213][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2025-12-19 17:13:52,230][conftest.py 82][INFO]: ---前置处理器开始---
+[2025-12-19 17:13:52,230][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2025-12-19 17:13:52,248][excel_tools.py 406][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2025-12-19 17:13:52,248][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2025-12-19 17:13:52,248][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2025-12-19 17:13:53,886][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NjYxMzU2MzM5ODcsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2NjEzNTYzMywiZXhwIjoxNzY2MTU3MjMzfQ.vNWbcradShi1uDbyJkiMA7lbANIOAw1ghCyoT30UV7k
+[2025-12-19 17:13:53,887][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NjYxMzU2MzM5ODcsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2NjEzNTYzMywiZXhwIjoxNzY2MTU3MjMzfQ.vNWbcradShi1uDbyJkiMA7lbANIOAw1ghCyoT30UV7k'}
+[2025-12-19 17:13:53,889][cardHolder.py 160][ERROR]: 获取持卡人列表数据时发生异常: 'HttpRequest' object has no attribute 'get_card_holder_info'
+[2025-12-19 17:13:53,922][conftest.py 147][ERROR]: 用例 test_card_holders.py::test_get_card_holder_detail[获] 执行失败！
+[2025-12-19 17:13:53,925][cardHolder.py 160][ERROR]: 获取持卡人列表数据时发生异常: 'HttpRequest' object has no attribute 'get_card_holder_info'
+[2025-12-19 17:13:53,929][conftest.py 147][ERROR]: 用例 test_card_holders.py::test_get_card_holder_detail[取] 执行失败！
+[2025-12-19 17:13:53,931][cardHolder.py 160][ERROR]: 获取持卡人列表数据时发生异常: 'HttpRequest' object has no attribute 'get_card_holder_info'
+[2025-12-19 17:13:53,934][conftest.py 147][ERROR]: 用例 test_card_holders.py::test_get_card_holder_detail[虚] 执行失败！
+[2025-12-19 17:13:53,936][cardHolder.py 160][ERROR]: 获取持卡人列表数据时发生异常: 'HttpRequest' object has no attribute 'get_card_holder_info'
+[2025-12-19 17:13:53,939][conftest.py 147][ERROR]: 用例 test_card_holders.py::test_get_card_holder_detail[拟] 执行失败！
+[2025-12-19 17:13:53,940][cardHolder.py 160][ERROR]: 获取持卡人列表数据时发生异常: 'HttpRequest' object has no attribute 'get_card_holder_info'
+[2025-12-19 17:13:53,943][conftest.py 147][ERROR]: 用例 test_card_holders.py::test_get_card_holder_detail[卡] 执行失败！
+[2025-12-19 17:13:53,944][cardHolder.py 160][ERROR]: 获取持卡人列表数据时发生异常: 'HttpRequest' object has no attribute 'get_card_holder_info'
+[2025-12-19 17:13:53,947][conftest.py 147][ERROR]: 用例 test_card_holders.py::test_get_card_holder_detail[持] 执行失败！
+[2025-12-19 17:13:53,948][cardHolder.py 160][ERROR]: 获取持卡人列表数据时发生异常: 'HttpRequest' object has no attribute 'get_card_holder_info'
+[2025-12-19 17:13:53,951][conftest.py 147][ERROR]: 用例 test_card_holders.py::test_get_card_holder_detail[有] 执行失败！
+[2025-12-19 17:13:53,952][cardHolder.py 160][ERROR]: 获取持卡人列表数据时发生异常: 'HttpRequest' object has no attribute 'get_card_holder_info'
+[2025-12-19 17:13:53,954][conftest.py 147][ERROR]: 用例 test_card_holders.py::test_get_card_holder_detail[人] 执行失败！
+[2025-12-19 17:13:53,955][cardHolder.py 160][ERROR]: 获取持卡人列表数据时发生异常: 'HttpRequest' object has no attribute 'get_card_holder_info'
+[2025-12-19 17:13:53,958][conftest.py 147][ERROR]: 用例 test_card_holders.py::test_get_card_holder_detail[详] 执行失败！
+[2025-12-19 17:13:53,959][cardHolder.py 160][ERROR]: 获取持卡人列表数据时发生异常: 'HttpRequest' object has no attribute 'get_card_holder_info'
+[2025-12-19 17:13:53,962][conftest.py 147][ERROR]: 用例 test_card_holders.py::test_get_card_holder_detail[情] 执行失败！
+[2025-12-19 17:13:53,963][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2025-12-19 17:33:35,108][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2025-12-19 17:33:35,298][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2025-12-19 17:33:35,298][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2025-12-19 17:33:35,316][conftest.py 82][INFO]: ---前置处理器开始---
+[2025-12-19 17:33:35,316][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2025-12-19 17:33:35,331][excel_tools.py 406][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2025-12-19 17:33:35,331][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2025-12-19 17:33:35,331][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2025-12-19 17:33:37,002][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NjYxMzY4MTcwODYsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2NjEzNjgxNywiZXhwIjoxNzY2MTU4NDE3fQ.qmZxY5rNiWmQ8baHX7EXU33Ya7iWf02gOL1wCE0DLak
+[2025-12-19 17:33:37,003][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NjYxMzY4MTcwODYsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2NjEzNjgxNywiZXhwIjoxNzY2MTU4NDE3fQ.qmZxY5rNiWmQ8baHX7EXU33Ya7iWf02gOL1wCE0DLak'}
+[2025-12-19 17:33:37,004][cardHolder.py 160][ERROR]: 获取持卡人列表数据时发生异常: 'HttpRequest' object has no attribute 'get_card_holder_info'
+[2025-12-19 17:33:37,039][conftest.py 147][ERROR]: 用例 test_card_holders.py::test_get_card_holder_detail[获] 执行失败！
+[2025-12-19 17:33:37,042][cardHolder.py 160][ERROR]: 获取持卡人列表数据时发生异常: 'HttpRequest' object has no attribute 'get_card_holder_info'
+[2025-12-19 17:33:37,046][conftest.py 147][ERROR]: 用例 test_card_holders.py::test_get_card_holder_detail[取] 执行失败！
+[2025-12-19 17:33:37,048][cardHolder.py 160][ERROR]: 获取持卡人列表数据时发生异常: 'HttpRequest' object has no attribute 'get_card_holder_info'
+[2025-12-19 17:33:37,051][conftest.py 147][ERROR]: 用例 test_card_holders.py::test_get_card_holder_detail[虚] 执行失败！
+[2025-12-19 17:33:37,052][cardHolder.py 160][ERROR]: 获取持卡人列表数据时发生异常: 'HttpRequest' object has no attribute 'get_card_holder_info'
+[2025-12-19 17:33:37,056][conftest.py 147][ERROR]: 用例 test_card_holders.py::test_get_card_holder_detail[拟] 执行失败！
+[2025-12-19 17:33:37,057][cardHolder.py 160][ERROR]: 获取持卡人列表数据时发生异常: 'HttpRequest' object has no attribute 'get_card_holder_info'
+[2025-12-19 17:33:37,060][conftest.py 147][ERROR]: 用例 test_card_holders.py::test_get_card_holder_detail[卡] 执行失败！
+[2025-12-19 17:33:37,061][cardHolder.py 160][ERROR]: 获取持卡人列表数据时发生异常: 'HttpRequest' object has no attribute 'get_card_holder_info'
+[2025-12-19 17:33:37,064][conftest.py 147][ERROR]: 用例 test_card_holders.py::test_get_card_holder_detail[持] 执行失败！
+[2025-12-19 17:33:37,066][cardHolder.py 160][ERROR]: 获取持卡人列表数据时发生异常: 'HttpRequest' object has no attribute 'get_card_holder_info'
+[2025-12-19 17:33:37,068][conftest.py 147][ERROR]: 用例 test_card_holders.py::test_get_card_holder_detail[有] 执行失败！
+[2025-12-19 17:33:37,069][cardHolder.py 160][ERROR]: 获取持卡人列表数据时发生异常: 'HttpRequest' object has no attribute 'get_card_holder_info'
+[2025-12-19 17:33:37,072][conftest.py 147][ERROR]: 用例 test_card_holders.py::test_get_card_holder_detail[人] 执行失败！
+[2025-12-19 17:33:37,073][cardHolder.py 160][ERROR]: 获取持卡人列表数据时发生异常: 'HttpRequest' object has no attribute 'get_card_holder_info'
+[2025-12-19 17:33:37,076][conftest.py 147][ERROR]: 用例 test_card_holders.py::test_get_card_holder_detail[详] 执行失败！
+[2025-12-19 17:33:37,077][cardHolder.py 160][ERROR]: 获取持卡人列表数据时发生异常: 'HttpRequest' object has no attribute 'get_card_holder_info'
+[2025-12-19 17:33:37,080][conftest.py 147][ERROR]: 用例 test_card_holders.py::test_get_card_holder_detail[情] 执行失败！
+[2025-12-19 17:33:37,080][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2025-12-19 17:33:48,618][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2025-12-19 17:33:48,723][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2025-12-19 17:33:48,723][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2025-12-19 17:33:48,739][conftest.py 82][INFO]: ---前置处理器开始---
+[2025-12-19 17:33:48,739][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2025-12-19 17:33:48,755][excel_tools.py 406][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2025-12-19 17:33:48,755][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2025-12-19 17:33:48,755][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2025-12-19 17:33:50,314][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NjYxMzY4MzAzOTcsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2NjEzNjgzMCwiZXhwIjoxNzY2MTU4NDMwfQ.hDTcEDoCfjcNxu7GH7xfICAtWYyLUAhHE7Nckm5jy10
+[2025-12-19 17:33:50,314][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NjYxMzY4MzAzOTcsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2NjEzNjgzMCwiZXhwIjoxNzY2MTU4NDMwfQ.hDTcEDoCfjcNxu7GH7xfICAtWYyLUAhHE7Nckm5jy10'}
+[2025-12-19 17:33:50,318][excel_tools.py 406][INFO]: 更新测试用例结果: Card_page - 获取虚拟卡持有人列表 - {}
+[2025-12-19 17:33:50,318][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/get-holders?page=1&take=20
+[2025-12-19 17:33:51,341][cardHolder.py 127][ERROR]: [获取虚拟卡持有人列表] 获取钱包交易数据失败: 'Response' object has no attribute 'get'
+[2025-12-19 17:33:51,341][cardHolder.py 156][INFO]: 获取到持卡人ID列表为：['a9227dc4-4811-4ae1-ac6e-ecf3b961762d', '63bc81c8-9bbb-4eff-94ca-74ce6ea0b922', 'a61ad747-f887-40d0-ab9f-4a1447cb0f21', 'b502ab1d-dda2-49df-ac46-05d3a9dfa71b', 'ac0ffe99-952f-4231-a143-d29ae397e29e', 'bebc1416-692c-403f-a36a-593b81f5cb65', 'ab849939-0aa9-4fcc-833c-96ce847251bf', 'ad2c2602-f8c2-4776-8371-b42cb68d6143', '1e069d3b-954b-4c8f-b742-ce27c07469e3', '450df09f-1410-47f9-9e76-c0219e5b5b07', '195fec23-495e-4150-94cd-2b7965f23100', '31632684-7d1e-4bc9-833d-8027892b772a', '4fae3dd5-eeda-41be-8f48-e13e6bda3fb4', 'a77ce78c-23ef-427b-8239-f10cac08c55f', '76d4e8ca-f65e-46ff-8e5a-b8e02579b221', 'd47b8deb-b7ac-4828-a42c-38efd5d5ccec', '1d8ac69d-f93e-409a-8b8d-6fafc1eb033b', '814f4ea4-20bc-4d4b-a17d-12482a72720a', 'c094a08a-c7e2-4d28-bee4-1a3157d7970f', '9b4aa392-8d5f-4e4e-9f0f-ee8f13affc8f']
+[2025-12-19 17:33:51,342][conftest.py 149][INFO]: 用例 test_card_holders.py::test_get_list_data 执行通过
+[2025-12-19 17:33:51,343][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2025-12-19 17:39:56,593][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2025-12-19 17:44:13,576][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2025-12-19 17:44:13,744][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2025-12-19 17:44:13,744][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2025-12-19 17:44:13,761][conftest.py 82][INFO]: ---前置处理器开始---
+[2025-12-19 17:44:13,761][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2025-12-19 17:44:13,777][excel_tools.py 406][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2025-12-19 17:44:13,777][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2025-12-19 17:44:13,777][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2025-12-19 17:44:15,575][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NjYxMzc0NTU1OTAsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2NjEzNzQ1NSwiZXhwIjoxNzY2MTU5MDU1fQ.ZYQKmsTSwkRYMbjKJflhqgG2Fp9hB0FqD6MbReL0U90
+[2025-12-19 17:44:15,576][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NjYxMzc0NTU1OTAsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2NjEzNzQ1NSwiZXhwIjoxNzY2MTU5MDU1fQ.ZYQKmsTSwkRYMbjKJflhqgG2Fp9hB0FqD6MbReL0U90'}
+[2025-12-19 17:44:15,578][cardHolder.py 160][ERROR]: 获取持卡人列表数据时发生异常: 'HttpRequest' object has no attribute 'get_card_holder_info'
+[2025-12-19 17:44:15,610][conftest.py 147][ERROR]: 用例 test_card_holders.py::test_get_card_holder_detail[获取虚拟卡持有人详情-body0] 执行失败！
+[2025-12-19 17:44:15,613][cardHolder.py 160][ERROR]: 获取持卡人列表数据时发生异常: 'HttpRequest' object has no attribute 'get_card_holder_info'
+[2025-12-19 17:44:15,617][conftest.py 147][ERROR]: 用例 test_card_holders.py::test_get_card_holder_detail[获取虚拟卡持有人详情-body1] 执行失败！
+[2025-12-19 17:44:15,619][cardHolder.py 160][ERROR]: 获取持卡人列表数据时发生异常: 'HttpRequest' object has no attribute 'get_card_holder_info'
+[2025-12-19 17:44:15,622][conftest.py 147][ERROR]: 用例 test_card_holders.py::test_get_card_holder_detail[获取虚拟卡持有人详情-body2] 执行失败！
+[2025-12-19 17:44:15,624][cardHolder.py 160][ERROR]: 获取持卡人列表数据时发生异常: 'HttpRequest' object has no attribute 'get_card_holder_info'
+[2025-12-19 17:44:15,627][conftest.py 147][ERROR]: 用例 test_card_holders.py::test_get_card_holder_detail[获取虚拟卡持有人详情-body3] 执行失败！
+[2025-12-19 17:44:15,628][cardHolder.py 160][ERROR]: 获取持卡人列表数据时发生异常: 'HttpRequest' object has no attribute 'get_card_holder_info'
+[2025-12-19 17:44:15,631][conftest.py 147][ERROR]: 用例 test_card_holders.py::test_get_card_holder_detail[获取虚拟卡持有人详情-body4] 执行失败！
+[2025-12-19 17:44:15,631][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2025-12-19 17:51:54,021][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2025-12-19 17:51:54,207][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2025-12-19 17:51:54,207][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2025-12-19 17:51:54,225][conftest.py 82][INFO]: ---前置处理器开始---
+[2025-12-19 17:51:54,225][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2025-12-19 17:51:54,241][excel_tools.py 406][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2025-12-19 17:51:54,241][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2025-12-19 17:51:54,242][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2025-12-19 17:51:55,786][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NjYxMzc5MTU4OTEsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2NjEzNzkxNSwiZXhwIjoxNzY2MTU5NTE1fQ.DNGD9GppkRZTgVXxGIp37-t8tzHBMnSK5cw2VhGsbsw
+[2025-12-19 17:51:55,786][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NjYxMzc5MTU4OTEsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2NjEzNzkxNSwiZXhwIjoxNzY2MTU5NTE1fQ.DNGD9GppkRZTgVXxGIp37-t8tzHBMnSK5cw2VhGsbsw'}
+[2025-12-19 17:51:55,789][cardHolder.py 162][ERROR]: 获取持卡人列表数据时发生异常: 'HttpRequest' object has no attribute 'get_card_holder_info'
+[2025-12-19 17:51:55,823][conftest.py 147][ERROR]: 用例 test_card_holders.py::test_get_card_holder_detail[获取虚拟卡持有人详情-body0] 执行失败！
+[2025-12-19 17:51:55,827][cardHolder.py 162][ERROR]: 获取持卡人列表数据时发生异常: 'HttpRequest' object has no attribute 'get_card_holder_info'
+[2025-12-19 17:51:55,831][conftest.py 147][ERROR]: 用例 test_card_holders.py::test_get_card_holder_detail[获取虚拟卡持有人详情-body1] 执行失败！
+[2025-12-19 17:51:55,832][cardHolder.py 162][ERROR]: 获取持卡人列表数据时发生异常: 'HttpRequest' object has no attribute 'get_card_holder_info'
+[2025-12-19 17:51:55,836][conftest.py 147][ERROR]: 用例 test_card_holders.py::test_get_card_holder_detail[获取虚拟卡持有人详情-body2] 执行失败！
+[2025-12-19 17:51:55,837][cardHolder.py 162][ERROR]: 获取持卡人列表数据时发生异常: 'HttpRequest' object has no attribute 'get_card_holder_info'
+[2025-12-19 17:51:55,841][conftest.py 147][ERROR]: 用例 test_card_holders.py::test_get_card_holder_detail[获取虚拟卡持有人详情-body3] 执行失败！
+[2025-12-19 17:51:55,843][cardHolder.py 162][ERROR]: 获取持卡人列表数据时发生异常: 'HttpRequest' object has no attribute 'get_card_holder_info'
+[2025-12-19 17:51:55,845][conftest.py 147][ERROR]: 用例 test_card_holders.py::test_get_card_holder_detail[获取虚拟卡持有人详情-body4] 执行失败！
+[2025-12-19 17:51:55,846][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2025-12-19 17:54:52,939][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2025-12-19 17:54:53,110][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2025-12-19 17:54:53,110][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2025-12-19 17:54:53,127][conftest.py 82][INFO]: ---前置处理器开始---
+[2025-12-19 17:54:53,127][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2025-12-19 17:54:53,143][excel_tools.py 406][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2025-12-19 17:54:53,143][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2025-12-19 17:54:53,143][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2025-12-19 17:54:54,589][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NjYxMzgwOTQ2ODksImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2NjEzODA5NCwiZXhwIjoxNzY2MTU5Njk0fQ.J5sLIhiuhnJY8uicfssg4geRQR4Xzl5ypy-sy4c7aWA
+[2025-12-19 17:54:54,590][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NjYxMzgwOTQ2ODksImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2NjEzODA5NCwiZXhwIjoxNzY2MTU5Njk0fQ.J5sLIhiuhnJY8uicfssg4geRQR4Xzl5ypy-sy4c7aWA'}
+[2025-12-19 17:54:54,592][excel_tools.py 406][INFO]: 更新测试用例结果: Card_page - 获取虚拟卡持有人列表 - {}
+[2025-12-19 17:54:54,593][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/get-holders?page=1&take=20
+[2025-12-19 17:54:55,572][cardHolder.py 127][ERROR]: [获取虚拟卡持有人列表] 获取钱包交易数据失败: 'Response' object has no attribute 'get'
+[2025-12-19 17:54:55,573][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2025-12-19 17:54:55,574][conftest.py 149][INFO]: 用例 test_card_holders.py::test_card_holder_list[获取虚拟卡持有人列表-body0] 执行通过
+[2025-12-19 17:54:55,578][excel_tools.py 406][INFO]: 更新测试用例结果: Card_page - 获取虚拟卡持有人列表 - {}
+[2025-12-19 17:54:55,578][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/get-holders?page=1&take=20&nickname=a
+[2025-12-19 17:54:55,788][cardHolder.py 127][ERROR]: [获取虚拟卡持有人列表] 获取钱包交易数据失败: 'Response' object has no attribute 'get'
+[2025-12-19 17:54:55,788][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2025-12-19 17:54:55,789][conftest.py 149][INFO]: 用例 test_card_holders.py::test_card_holder_list[获取虚拟卡持有人列表-body1] 执行通过
+[2025-12-19 17:54:55,793][excel_tools.py 406][INFO]: 更新测试用例结果: Card_page - 获取虚拟卡持有人列表 - {}
+[2025-12-19 17:54:55,794][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/get-holders?page=1&take=20&kyc_review_status=NA
+[2025-12-19 17:54:56,013][cardHolder.py 127][ERROR]: [获取虚拟卡持有人列表] 获取钱包交易数据失败: 'Response' object has no attribute 'get'
+[2025-12-19 17:54:56,013][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2025-12-19 17:54:56,014][conftest.py 149][INFO]: 用例 test_card_holders.py::test_card_holder_list[获取虚拟卡持有人列表-body2] 执行通过
+[2025-12-19 17:54:56,017][excel_tools.py 406][INFO]: 更新测试用例结果: Card_page - 获取虚拟卡持有人列表 - {}
+[2025-12-19 17:54:56,017][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/get-holders?page=1&take=20&kyc_review_status=COMPLETED
+[2025-12-19 17:54:56,225][cardHolder.py 127][ERROR]: [获取虚拟卡持有人列表] 获取钱包交易数据失败: 'Response' object has no attribute 'get'
+[2025-12-19 17:54:56,226][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2025-12-19 17:54:56,227][conftest.py 149][INFO]: 用例 test_card_holders.py::test_card_holder_list[获取虚拟卡持有人列表-body3] 执行通过
+[2025-12-19 17:54:56,230][excel_tools.py 406][INFO]: 更新测试用例结果: Card_page - 获取虚拟卡持有人列表 - {}
+[2025-12-19 17:54:56,230][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/get-holders?page=1&take=20&kyc_review_status=REJECTED
+[2025-12-19 17:54:56,430][cardHolder.py 127][ERROR]: [获取虚拟卡持有人列表] 获取钱包交易数据失败: 'Response' object has no attribute 'get'
+[2025-12-19 17:54:56,430][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2025-12-19 17:54:56,430][conftest.py 149][INFO]: 用例 test_card_holders.py::test_card_holder_list[获取虚拟卡持有人列表-body4] 执行通过
+[2025-12-19 17:54:56,433][excel_tools.py 406][INFO]: 更新测试用例结果: Card_page - 获取虚拟卡持有人列表 - {}
+[2025-12-19 17:54:56,433][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/get-holders?page=1&take=20&kyc_review_status=EXPIRED
+[2025-12-19 17:54:56,630][cardHolder.py 127][ERROR]: [获取虚拟卡持有人列表] 获取钱包交易数据失败: 'Response' object has no attribute 'get'
+[2025-12-19 17:54:56,630][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2025-12-19 17:54:56,631][conftest.py 149][INFO]: 用例 test_card_holders.py::test_card_holder_list[获取虚拟卡持有人列表-body5] 执行通过
+[2025-12-19 17:54:56,633][excel_tools.py 406][INFO]: 更新测试用例结果: Card_page - 获取虚拟卡持有人列表 - {}
+[2025-12-19 17:54:56,633][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/get-holders?page=1&take=20&kyc_review_status=RETRY
+[2025-12-19 17:54:56,833][cardHolder.py 127][ERROR]: [获取虚拟卡持有人列表] 获取钱包交易数据失败: 'Response' object has no attribute 'get'
+[2025-12-19 17:54:56,833][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2025-12-19 17:54:56,834][conftest.py 149][INFO]: 用例 test_card_holders.py::test_card_holder_list[获取虚拟卡持有人列表-body6] 执行通过
+[2025-12-19 17:54:56,836][excel_tools.py 406][INFO]: 更新测试用例结果: Card_page - 获取虚拟卡持有人列表 - {}
+[2025-12-19 17:54:56,836][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/get-holders?page=1&take=20&label=a
+[2025-12-19 17:54:57,036][cardHolder.py 127][ERROR]: [获取虚拟卡持有人列表] 获取钱包交易数据失败: 'Response' object has no attribute 'get'
+[2025-12-19 17:54:57,036][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2025-12-19 17:54:57,037][conftest.py 149][INFO]: 用例 test_card_holders.py::test_card_holder_list[获取虚拟卡持有人列表-body7] 执行通过
+[2025-12-19 17:54:57,040][excel_tools.py 406][INFO]: 更新测试用例结果: Card_page - 获取虚拟卡持有人列表 - {}
+[2025-12-19 17:54:57,040][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/get-holders?page=1&take=20&status=BAN
+[2025-12-19 17:54:57,238][cardHolder.py 127][ERROR]: [获取虚拟卡持有人列表] 获取钱包交易数据失败: 'Response' object has no attribute 'get'
+[2025-12-19 17:54:57,238][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2025-12-19 17:54:57,239][conftest.py 149][INFO]: 用例 test_card_holders.py::test_card_holder_list[获取虚拟卡持有人列表-body8] 执行通过
+[2025-12-19 17:54:57,242][excel_tools.py 406][INFO]: 更新测试用例结果: Card_page - 获取虚拟卡持有人列表 - {}
+[2025-12-19 17:54:57,242][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/get-holders?page=1&take=20&status=ACTIVE
+[2025-12-19 17:54:57,464][cardHolder.py 127][ERROR]: [获取虚拟卡持有人列表] 获取钱包交易数据失败: 'Response' object has no attribute 'get'
+[2025-12-19 17:54:57,464][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2025-12-19 17:54:57,465][conftest.py 149][INFO]: 用例 test_card_holders.py::test_card_holder_list[获取虚拟卡持有人列表-body9] 执行通过
+[2025-12-19 17:54:57,468][excel_tools.py 406][INFO]: 更新测试用例结果: Card_page - 管理-获取部门列表 - {}
+[2025-12-19 17:54:57,469][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/rbac/departments
+[2025-12-19 17:54:57,670][cardHolder.py 60][INFO]: 部门ID为：6b4ad0cf-9006-4490-9715-e8fbe398e16e
+[2025-12-19 17:54:57,671][excel_tools.py 406][INFO]: 更新测试用例结果: Card_page - 获取虚拟卡持有人列表 - {}
+[2025-12-19 17:54:57,671][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/get-holders?page=1&take=20&rbac_department_id=6b4ad0cf-9006-4490-9715-e8fbe398e16e
+[2025-12-19 17:54:57,880][cardHolder.py 127][ERROR]: [获取虚拟卡持有人列表] 获取钱包交易数据失败: 'Response' object has no attribute 'get'
+[2025-12-19 17:54:57,880][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2025-12-19 17:54:57,881][conftest.py 149][INFO]: 用例 test_card_holders.py::test_card_holder_list[获取虚拟卡持有人列表-<lambda>] 执行通过
+[2025-12-19 17:54:57,881][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2025-12-19 17:59:13,235][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2025-12-19 17:59:13,391][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2025-12-19 17:59:13,391][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2025-12-19 17:59:13,407][conftest.py 82][INFO]: ---前置处理器开始---
+[2025-12-19 17:59:13,407][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2025-12-19 17:59:13,423][excel_tools.py 406][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2025-12-19 17:59:13,423][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2025-12-19 17:59:13,423][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2025-12-19 17:59:15,158][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NjYxMzgzNTUxNzgsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2NjEzODM1NSwiZXhwIjoxNzY2MTU5OTU1fQ.n91AT3XgFmp_WgRa1VZTdBR0mFghcPY1-mHHYm0A_cc
+[2025-12-19 17:59:15,159][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NjYxMzgzNTUxNzgsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2NjEzODM1NSwiZXhwIjoxNzY2MTU5OTU1fQ.n91AT3XgFmp_WgRa1VZTdBR0mFghcPY1-mHHYm0A_cc'}
+[2025-12-19 17:59:15,163][excel_tools.py 406][INFO]: 更新测试用例结果: Card_page - 获取虚拟卡持有人列表 - {}
+[2025-12-19 17:59:15,163][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/virtual-card/get-holders?page=1&take=20
+[2025-12-19 17:59:16,173][cardHolder.py 127][ERROR]: [获取虚拟卡持有人列表] 获取钱包交易数据失败: 'Response' object has no attribute 'get'
+[2025-12-19 17:59:16,175][cardHolder.py 158][INFO]: 获取到持卡人ID列表为：['a9227dc4-4811-4ae1-ac6e-ecf3b961762d', '63bc81c8-9bbb-4eff-94ca-74ce6ea0b922', 'a61ad747-f887-40d0-ab9f-4a1447cb0f21', 'b502ab1d-dda2-49df-ac46-05d3a9dfa71b', 'ac0ffe99-952f-4231-a143-d29ae397e29e', 'bebc1416-692c-403f-a36a-593b81f5cb65', 'ab849939-0aa9-4fcc-833c-96ce847251bf', 'ad2c2602-f8c2-4776-8371-b42cb68d6143', '1e069d3b-954b-4c8f-b742-ce27c07469e3', '450df09f-1410-47f9-9e76-c0219e5b5b07', '195fec23-495e-4150-94cd-2b7965f23100', '31632684-7d1e-4bc9-833d-8027892b772a', '4fae3dd5-eeda-41be-8f48-e13e6bda3fb4', 'a77ce78c-23ef-427b-8239-f10cac08c55f', '76d4e8ca-f65e-46ff-8e5a-b8e02579b221', 'd47b8deb-b7ac-4828-a42c-38efd5d5ccec', '1d8ac69d-f93e-409a-8b8d-6fafc1eb033b', '814f4ea4-20bc-4d4b-a17d-12482a72720a', 'c094a08a-c7e2-4d28-bee4-1a3157d7970f', '9b4aa392-8d5f-4e4e-9f0f-ee8f13affc8f']
+[2025-12-19 17:59:16,176][conftest.py 149][INFO]: 用例 test_card_holders.py::test_get_list_data 执行通过
+[2025-12-19 17:59:16,184][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕

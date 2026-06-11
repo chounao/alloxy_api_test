@@ -1,0 +1,334 @@
+[2026-02-10 11:04:10,454][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-02-10 11:04:44,451][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-02-10 11:04:44,621][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-02-10 11:04:44,621][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2026-02-10 11:04:44,640][conftest.py 82][INFO]: ---前置处理器开始---
+[2026-02-10 11:04:44,640][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-02-10 11:04:44,657][excel_tools.py 406][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-02-10 11:04:44,657][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-02-10 11:04:44,657][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-02-10 11:04:46,278][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzA2OTI2ODYzMDcsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3MDY5MjY4NiwiZXhwIjoxNzcwNzE0Mjg2fQ.rTU73Pm0mJlXnIE7-alz90QFpbMy3HTd9jPgCRE62fY
+[2026-02-10 11:04:46,279][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzA2OTI2ODYzMDcsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3MDY5MjY4NiwiZXhwIjoxNzcwNzE0Mjg2fQ.rTU73Pm0mJlXnIE7-alz90QFpbMy3HTd9jPgCRE62fY'}
+[2026-02-10 11:04:46,283][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2026-02-10 11:05:49,276][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-02-10 11:05:49,452][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-02-10 11:05:49,452][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2026-02-10 11:05:49,470][conftest.py 82][INFO]: ---前置处理器开始---
+[2026-02-10 11:05:49,471][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-02-10 11:05:49,487][excel_tools.py 406][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-02-10 11:05:49,488][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-02-10 11:05:49,488][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-02-10 11:05:51,198][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzA2OTI3NTEyMDksImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3MDY5Mjc1MSwiZXhwIjoxNzcwNzE0MzUxfQ.P_ykos5shE5qNiL10cZxK4l5GCb0Ybu3uP_28CPML4c
+[2026-02-10 11:05:51,199][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzA2OTI3NTEyMDksImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3MDY5Mjc1MSwiZXhwIjoxNzcwNzE0MzUxfQ.P_ykos5shE5qNiL10cZxK4l5GCb0Ybu3uP_28CPML4c'}
+[2026-02-10 11:05:51,219][conftest.py 147][ERROR]: 用例 test_departments.py::test_get_department_data[管理-获取部门列表] 执行失败！
+[2026-02-10 11:05:51,221][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2026-02-10 11:09:44,420][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-02-10 11:09:56,593][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-02-10 11:09:56,734][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-02-10 11:09:56,734][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2026-02-10 11:09:56,751][conftest.py 82][INFO]: ---前置处理器开始---
+[2026-02-10 11:09:56,751][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-02-10 11:09:56,767][excel_tools.py 406][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-02-10 11:09:56,767][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-02-10 11:09:56,767][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-02-10 11:09:58,704][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzA2OTI5OTg1OTYsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3MDY5Mjk5OCwiZXhwIjoxNzcwNzE0NTk4fQ.IWlywyO9uxgi9-PnntHCarrcMbwbABElvTPUzpGsm1o
+[2026-02-10 11:09:58,706][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzA2OTI5OTg1OTYsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3MDY5Mjk5OCwiZXhwIjoxNzcwNzE0NTk4fQ.IWlywyO9uxgi9-PnntHCarrcMbwbABElvTPUzpGsm1o'}
+[2026-02-10 11:09:58,709][send_request.py 59][ERROR]: 请求失败，参数: (<Common.simple_request.HttpRequest object at 0x109d6da90>, '管理-获取部门列表'), 错误: 'str' object has no attribute '_send_request'
+[2026-02-10 11:09:58,709][send_request.py 59][ERROR]: 请求失败，参数: (<Common.simple_request.HttpRequest object at 0x109d6da90>, '管理-获取部门列表', None), 错误: 'str' object has no attribute '_send_request'
+[2026-02-10 11:09:58,709][send_request.py 59][ERROR]: 请求失败，参数: (<Common.simple_request.HttpRequest object at 0x109d6da90>, '管理-获取部门列表', '$.data[0].department_id'), 错误: 'str' object has no attribute '_send_request'
+[2026-02-10 11:09:58,710][send_request.py 59][ERROR]: 请求失败，参数: (<Common.simple_request.HttpRequest object at 0x109d6da90>, '管理-获取部门列表', None), 错误: 'str' object has no attribute '_send_request'
+[2026-02-10 11:09:58,710][send_request.py 59][ERROR]: 请求失败，参数: (<Common.simple_request.HttpRequest object at 0x109d6da90>, '管理-获取部门列表', None, None), 错误: 'str' object has no attribute '_send_request'
+[2026-02-10 11:09:58,710][send_request.py 59][ERROR]: 请求失败，参数: (<Common.simple_request.HttpRequest object at 0x109d6da90>, '管理-获取部门列表', None, '$.data[0].department_id'), 错误: 'str' object has no attribute '_send_request'
+[2026-02-10 11:09:58,710][send_request.py 59][ERROR]: 请求失败，参数: (<Common.simple_request.HttpRequest object at 0x109d6da90>, '管理-获取部门列表', None), 错误: 'str' object has no attribute '_send_request'
+[2026-02-10 11:09:58,710][send_request.py 59][ERROR]: 请求失败，参数: (<Common.simple_request.HttpRequest object at 0x109d6da90>, '管理-获取部门列表', None, None), 错误: 'str' object has no attribute '_send_request'
+[2026-02-10 11:09:58,710][send_request.py 59][ERROR]: 请求失败，参数: (<Common.simple_request.HttpRequest object at 0x109d6da90>, '管理-获取部门列表', None, '$.data[0].department_id'), 错误: 'str' object has no attribute '_send_request'
+[2026-02-10 11:09:58,710][send_request.py 59][ERROR]: 请求失败，参数: (<Common.simple_request.HttpRequest object at 0x109d6da90>, '管理-获取部门列表', None), 错误: 'str' object has no attribute '_send_request'
+[2026-02-10 11:09:58,710][send_request.py 59][ERROR]: 请求失败，参数: (<Common.simple_request.HttpRequest object at 0x109d6da90>, '管理-获取部门列表', None, None), 错误: 'str' object has no attribute '_send_request'
+[2026-02-10 11:09:58,710][send_request.py 59][ERROR]: 请求失败，参数: (<Common.simple_request.HttpRequest object at 0x109d6da90>, '管理-获取部门列表', None, '$.data[0].department_id'), 错误: 'str' object has no attribute '_send_request'
+[2026-02-10 11:09:58,710][send_request.py 59][ERROR]: 请求失败，参数: (<Common.simple_request.HttpRequest object at 0x109d6da90>, '管理-获取部门列表', None), 错误: 'str' object has no attribute '_send_request'
+[2026-02-10 11:09:58,710][send_request.py 59][ERROR]: 请求失败，参数: (<Common.simple_request.HttpRequest object at 0x109d6da90>, '管理-获取部门列表', None, None), 错误: 'str' object has no attribute '_send_request'
+[2026-02-10 11:09:58,710][send_request.py 59][ERROR]: 请求失败，参数: (<Common.simple_request.HttpRequest object at 0x109d6da90>, '管理-获取部门列表', None, '$.data[0].department_id'), 错误: 'str' object has no attribute '_send_request'
+[2026-02-10 11:09:58,710][send_request.py 59][ERROR]: 请求失败，参数: (<Common.simple_request.HttpRequest object at 0x109d6da90>, '管理-获取部门列表', None), 错误: 'str' object has no attribute '_send_request'
+[2026-02-10 11:09:58,710][send_request.py 59][ERROR]: 请求失败，参数: (<Common.simple_request.HttpRequest object at 0x109d6da90>, '管理-获取部门列表', None, None), 错误: 'str' object has no attribute '_send_request'
+[2026-02-10 11:09:58,710][send_request.py 59][ERROR]: 请求失败，参数: (<Common.simple_request.HttpRequest object at 0x109d6da90>, '管理-获取部门列表', None, '$.data[0].department_id'), 错误: 'str' object has no attribute '_send_request'
+[2026-02-10 11:09:58,711][send_request.py 63][ERROR]: 所有请求尝试均已失败
+[2026-02-10 11:09:58,742][conftest.py 147][ERROR]: 用例 test_departments.py::test_get_department_data[管理-获取部门列表] 执行失败！
+[2026-02-10 11:09:58,744][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2026-02-10 11:10:40,353][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-02-10 11:10:40,518][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-02-10 11:10:40,518][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2026-02-10 11:10:40,535][conftest.py 82][INFO]: ---前置处理器开始---
+[2026-02-10 11:10:40,535][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-02-10 11:10:40,551][excel_tools.py 406][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-02-10 11:10:40,551][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-02-10 11:10:40,551][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-02-10 11:10:42,020][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzA2OTMwNDIxMDksImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3MDY5MzA0MiwiZXhwIjoxNzcwNzE0NjQyfQ.-b32qdzr93pA88TxXhWkGtmpZJhwAZNnAz2k5Rl4HmA
+[2026-02-10 11:10:42,021][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzA2OTMwNDIxMDksImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3MDY5MzA0MiwiZXhwIjoxNzcwNzE0NjQyfQ.-b32qdzr93pA88TxXhWkGtmpZJhwAZNnAz2k5Rl4HmA'}
+[2026-02-10 11:10:42,057][conftest.py 147][ERROR]: 用例 test_departments.py::test_get_department_data[管理-获取部门列表] 执行失败！
+[2026-02-10 11:10:42,058][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2026-02-10 11:11:11,990][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-02-10 11:11:12,145][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-02-10 11:11:12,145][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2026-02-10 11:11:12,162][conftest.py 82][INFO]: ---前置处理器开始---
+[2026-02-10 11:11:12,162][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-02-10 11:11:12,179][excel_tools.py 406][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-02-10 11:11:12,179][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-02-10 11:11:12,179][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-02-10 11:11:13,455][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzA2OTMwNzM1MDAsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3MDY5MzA3MywiZXhwIjoxNzcwNzE0NjczfQ.bgmSNEfwEXMalcDqC-knjMMbGE6kYbBxrGg4w_oVwzg
+[2026-02-10 11:11:13,456][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzA2OTMwNzM1MDAsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3MDY5MzA3MywiZXhwIjoxNzcwNzE0NjczfQ.bgmSNEfwEXMalcDqC-knjMMbGE6kYbBxrGg4w_oVwzg'}
+[2026-02-10 11:11:13,458][send_request.py 59][ERROR]: 请求失败，参数: (<Common.simple_request.HttpRequest object at 0x109c82120>, '管理-获取部门列表'), 错误: 'str' object has no attribute '_send_request'
+[2026-02-10 11:11:13,459][send_request.py 59][ERROR]: 请求失败，参数: (<Common.simple_request.HttpRequest object at 0x109c82120>, '管理-获取部门列表', None), 错误: 'str' object has no attribute '_send_request'
+[2026-02-10 11:11:13,459][send_request.py 59][ERROR]: 请求失败，参数: (<Common.simple_request.HttpRequest object at 0x109c82120>, '管理-获取部门列表', '$.data[0].department_id'), 错误: 'str' object has no attribute '_send_request'
+[2026-02-10 11:11:13,459][send_request.py 59][ERROR]: 请求失败，参数: (<Common.simple_request.HttpRequest object at 0x109c82120>, '管理-获取部门列表', None), 错误: 'str' object has no attribute '_send_request'
+[2026-02-10 11:11:13,459][send_request.py 59][ERROR]: 请求失败，参数: (<Common.simple_request.HttpRequest object at 0x109c82120>, '管理-获取部门列表', None, None), 错误: 'str' object has no attribute '_send_request'
+[2026-02-10 11:11:13,459][send_request.py 59][ERROR]: 请求失败，参数: (<Common.simple_request.HttpRequest object at 0x109c82120>, '管理-获取部门列表', None, '$.data[0].department_id'), 错误: 'str' object has no attribute '_send_request'
+[2026-02-10 11:11:13,459][send_request.py 59][ERROR]: 请求失败，参数: (<Common.simple_request.HttpRequest object at 0x109c82120>, '管理-获取部门列表', None), 错误: 'str' object has no attribute '_send_request'
+[2026-02-10 11:11:13,459][send_request.py 59][ERROR]: 请求失败，参数: (<Common.simple_request.HttpRequest object at 0x109c82120>, '管理-获取部门列表', None, None), 错误: 'str' object has no attribute '_send_request'
+[2026-02-10 11:11:13,459][send_request.py 59][ERROR]: 请求失败，参数: (<Common.simple_request.HttpRequest object at 0x109c82120>, '管理-获取部门列表', None, '$.data[0].department_id'), 错误: 'str' object has no attribute '_send_request'
+[2026-02-10 11:11:13,459][send_request.py 59][ERROR]: 请求失败，参数: (<Common.simple_request.HttpRequest object at 0x109c82120>, '管理-获取部门列表', None), 错误: 'str' object has no attribute '_send_request'
+[2026-02-10 11:11:13,459][send_request.py 59][ERROR]: 请求失败，参数: (<Common.simple_request.HttpRequest object at 0x109c82120>, '管理-获取部门列表', None, None), 错误: 'str' object has no attribute '_send_request'
+[2026-02-10 11:11:13,459][send_request.py 59][ERROR]: 请求失败，参数: (<Common.simple_request.HttpRequest object at 0x109c82120>, '管理-获取部门列表', None, '$.data[0].department_id'), 错误: 'str' object has no attribute '_send_request'
+[2026-02-10 11:11:13,459][send_request.py 59][ERROR]: 请求失败，参数: (<Common.simple_request.HttpRequest object at 0x109c82120>, '管理-获取部门列表', None), 错误: 'str' object has no attribute '_send_request'
+[2026-02-10 11:11:13,459][send_request.py 59][ERROR]: 请求失败，参数: (<Common.simple_request.HttpRequest object at 0x109c82120>, '管理-获取部门列表', None, None), 错误: 'str' object has no attribute '_send_request'
+[2026-02-10 11:11:13,459][send_request.py 59][ERROR]: 请求失败，参数: (<Common.simple_request.HttpRequest object at 0x109c82120>, '管理-获取部门列表', None, '$.data[0].department_id'), 错误: 'str' object has no attribute '_send_request'
+[2026-02-10 11:11:13,459][send_request.py 59][ERROR]: 请求失败，参数: (<Common.simple_request.HttpRequest object at 0x109c82120>, '管理-获取部门列表', None), 错误: 'str' object has no attribute '_send_request'
+[2026-02-10 11:11:13,460][send_request.py 59][ERROR]: 请求失败，参数: (<Common.simple_request.HttpRequest object at 0x109c82120>, '管理-获取部门列表', None, None), 错误: 'str' object has no attribute '_send_request'
+[2026-02-10 11:11:13,460][send_request.py 59][ERROR]: 请求失败，参数: (<Common.simple_request.HttpRequest object at 0x109c82120>, '管理-获取部门列表', None, '$.data[0].department_id'), 错误: 'str' object has no attribute '_send_request'
+[2026-02-10 11:11:13,460][send_request.py 63][ERROR]: 所有请求尝试均已失败
+[2026-02-10 11:11:13,494][conftest.py 147][ERROR]: 用例 test_departments.py::test_get_department_data[管理-获取部门列表] 执行失败！
+[2026-02-10 11:11:13,496][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2026-02-10 11:17:25,430][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-02-10 11:17:25,590][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-02-10 11:17:25,591][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2026-02-10 11:17:25,607][conftest.py 82][INFO]: ---前置处理器开始---
+[2026-02-10 11:17:25,607][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-02-10 11:17:25,622][excel_tools.py 406][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-02-10 11:17:25,623][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-02-10 11:17:25,623][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-02-10 11:17:27,216][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzA2OTM0NDcyMDIsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3MDY5MzQ0NywiZXhwIjoxNzcwNzE1MDQ3fQ.qrMowQfTxIYu7yZ0ZbOtf7ZKy9nKWqRUb8qHG6pftzw
+[2026-02-10 11:17:27,218][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzA2OTM0NDcyMDIsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3MDY5MzQ0NywiZXhwIjoxNzcwNzE1MDQ3fQ.qrMowQfTxIYu7yZ0ZbOtf7ZKy9nKWqRUb8qHG6pftzw'}
+[2026-02-10 11:17:27,252][conftest.py 147][ERROR]: 用例 test_departments.py::test_get_department_data[管理-获取部门列表] 执行失败！
+[2026-02-10 11:17:27,254][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2026-02-10 11:18:10,100][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-02-10 11:18:10,266][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-02-10 11:18:10,266][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2026-02-10 11:18:10,282][conftest.py 82][INFO]: ---前置处理器开始---
+[2026-02-10 11:18:10,282][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-02-10 11:18:10,299][excel_tools.py 406][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-02-10 11:18:10,299][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-02-10 11:18:10,299][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-02-10 11:18:11,719][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzA2OTM0OTE5MDQsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3MDY5MzQ5MSwiZXhwIjoxNzcwNzE1MDkxfQ.D9YPWQp96szBqA_7qAx7C7xHHaS4-0CjeKTN-e3ukP0
+[2026-02-10 11:18:11,720][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzA2OTM0OTE5MDQsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3MDY5MzQ5MSwiZXhwIjoxNzcwNzE1MDkxfQ.D9YPWQp96szBqA_7qAx7C7xHHaS4-0CjeKTN-e3ukP0'}
+[2026-02-10 11:18:11,723][send_request.py 59][ERROR]: 请求失败，参数: (<Common.simple_request.HttpRequest object at 0x107bca120>, '管理-获取部门列表'), 错误: 'str' object has no attribute '_send_request'
+[2026-02-10 11:18:11,723][send_request.py 59][ERROR]: 请求失败，参数: (<Common.simple_request.HttpRequest object at 0x107bca120>, '管理-获取部门列表', None), 错误: 'str' object has no attribute '_send_request'
+[2026-02-10 11:18:11,723][send_request.py 59][ERROR]: 请求失败，参数: (<Common.simple_request.HttpRequest object at 0x107bca120>, '管理-获取部门列表', '$.data[0].department_id'), 错误: 'str' object has no attribute '_send_request'
+[2026-02-10 11:18:11,723][send_request.py 59][ERROR]: 请求失败，参数: (<Common.simple_request.HttpRequest object at 0x107bca120>, '管理-获取部门列表', None), 错误: 'str' object has no attribute '_send_request'
+[2026-02-10 11:18:11,723][send_request.py 59][ERROR]: 请求失败，参数: (<Common.simple_request.HttpRequest object at 0x107bca120>, '管理-获取部门列表', None, None), 错误: 'str' object has no attribute '_send_request'
+[2026-02-10 11:18:11,723][send_request.py 59][ERROR]: 请求失败，参数: (<Common.simple_request.HttpRequest object at 0x107bca120>, '管理-获取部门列表', None, '$.data[0].department_id'), 错误: 'str' object has no attribute '_send_request'
+[2026-02-10 11:18:11,723][send_request.py 59][ERROR]: 请求失败，参数: (<Common.simple_request.HttpRequest object at 0x107bca120>, '管理-获取部门列表', None), 错误: 'str' object has no attribute '_send_request'
+[2026-02-10 11:18:11,723][send_request.py 59][ERROR]: 请求失败，参数: (<Common.simple_request.HttpRequest object at 0x107bca120>, '管理-获取部门列表', None, None), 错误: 'str' object has no attribute '_send_request'
+[2026-02-10 11:18:11,724][send_request.py 59][ERROR]: 请求失败，参数: (<Common.simple_request.HttpRequest object at 0x107bca120>, '管理-获取部门列表', None, '$.data[0].department_id'), 错误: 'str' object has no attribute '_send_request'
+[2026-02-10 11:18:11,724][send_request.py 59][ERROR]: 请求失败，参数: (<Common.simple_request.HttpRequest object at 0x107bca120>, '管理-获取部门列表', None), 错误: 'str' object has no attribute '_send_request'
+[2026-02-10 11:18:11,724][send_request.py 59][ERROR]: 请求失败，参数: (<Common.simple_request.HttpRequest object at 0x107bca120>, '管理-获取部门列表', None, None), 错误: 'str' object has no attribute '_send_request'
+[2026-02-10 11:18:11,724][send_request.py 59][ERROR]: 请求失败，参数: (<Common.simple_request.HttpRequest object at 0x107bca120>, '管理-获取部门列表', None, '$.data[0].department_id'), 错误: 'str' object has no attribute '_send_request'
+[2026-02-10 11:18:11,724][send_request.py 59][ERROR]: 请求失败，参数: (<Common.simple_request.HttpRequest object at 0x107bca120>, '管理-获取部门列表', None), 错误: 'str' object has no attribute '_send_request'
+[2026-02-10 11:18:11,724][send_request.py 59][ERROR]: 请求失败，参数: (<Common.simple_request.HttpRequest object at 0x107bca120>, '管理-获取部门列表', None, None), 错误: 'str' object has no attribute '_send_request'
+[2026-02-10 11:18:11,724][send_request.py 59][ERROR]: 请求失败，参数: (<Common.simple_request.HttpRequest object at 0x107bca120>, '管理-获取部门列表', None, '$.data[0].department_id'), 错误: 'str' object has no attribute '_send_request'
+[2026-02-10 11:18:11,724][send_request.py 59][ERROR]: 请求失败，参数: (<Common.simple_request.HttpRequest object at 0x107bca120>, '管理-获取部门列表', None), 错误: 'str' object has no attribute '_send_request'
+[2026-02-10 11:18:11,724][send_request.py 59][ERROR]: 请求失败，参数: (<Common.simple_request.HttpRequest object at 0x107bca120>, '管理-获取部门列表', None, None), 错误: 'str' object has no attribute '_send_request'
+[2026-02-10 11:18:11,724][send_request.py 59][ERROR]: 请求失败，参数: (<Common.simple_request.HttpRequest object at 0x107bca120>, '管理-获取部门列表', None, '$.data[0].department_id'), 错误: 'str' object has no attribute '_send_request'
+[2026-02-10 11:18:11,724][send_request.py 63][ERROR]: 所有请求尝试均已失败
+[2026-02-10 11:18:11,757][conftest.py 147][ERROR]: 用例 test_departments.py::test_get_department_data[管理-获取部门列表] 执行失败！
+[2026-02-10 11:18:11,759][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2026-02-10 13:43:43,414][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-02-10 13:43:43,659][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-02-10 13:43:43,659][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2026-02-10 13:43:43,676][conftest.py 82][INFO]: ---前置处理器开始---
+[2026-02-10 13:43:43,676][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-02-10 13:43:43,693][excel_tools.py 406][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-02-10 13:43:43,693][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-02-10 13:43:43,693][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-02-10 13:43:45,231][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzA3MDIyMjUzMTIsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3MDcwMjIyNSwiZXhwIjoxNzcwNzIzODI1fQ.9hE9qiNBBQAyWVBRSEE-9pHi9b6_ekuEgSaqep9r_zs
+[2026-02-10 13:43:45,231][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzA3MDIyMjUzMTIsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3MDcwMjIyNSwiZXhwIjoxNzcwNzIzODI1fQ.9hE9qiNBBQAyWVBRSEE-9pHi9b6_ekuEgSaqep9r_zs'}
+[2026-02-10 13:43:45,234][send_request.py 94][ERROR]: 请求失败，参数: [<Common.simple_request.HttpRequest object at 0x10925a120>, '管理-获取部门列表'], 错误: 'str' object has no attribute '_send_request'
+[2026-02-10 13:43:45,234][send_request.py 98][ERROR]: 所有请求尝试均已失败
+[2026-02-10 13:43:45,267][conftest.py 147][ERROR]: 用例 test_departments.py::test_get_department_data[管理-获取部门列表] 执行失败！
+[2026-02-10 13:43:45,268][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2026-02-10 14:08:15,650][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-02-10 14:08:15,813][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-02-10 14:08:15,813][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2026-02-10 14:08:15,830][conftest.py 82][INFO]: ---前置处理器开始---
+[2026-02-10 14:08:15,831][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-02-10 14:08:15,847][excel_tools.py 406][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-02-10 14:08:15,847][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-02-10 14:08:15,847][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-02-10 14:08:17,427][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzA3MDM2OTc1MDEsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3MDcwMzY5NywiZXhwIjoxNzcwNzI1Mjk3fQ.SgwY1u_UrGqrukV43ub4xUxkfH8zbejwSXoHYvJ4czk
+[2026-02-10 14:08:17,429][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzA3MDM2OTc1MDEsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3MDcwMzY5NywiZXhwIjoxNzcwNzI1Mjk3fQ.SgwY1u_UrGqrukV43ub4xUxkfH8zbejwSXoHYvJ4czk'}
+[2026-02-10 14:08:17,431][send_request.py 94][ERROR]: 请求失败，参数: [<Common.simple_request.HttpRequest object at 0x109c9da90>, '管理-获取部门列表'], 错误: 'str' object has no attribute '_send_request'
+[2026-02-10 14:08:17,431][send_request.py 98][ERROR]: 所有请求尝试均已失败
+[2026-02-10 14:08:17,431][department.py 31][ERROR]: 转账失败: HttpRequest._send_request() got an unexpected keyword argument 'sonpath_expr'. Did you mean 'jsonpath_expr'?
+[2026-02-10 14:08:17,464][conftest.py 147][ERROR]: 用例 test_departments.py::test_get_department_data[管理-获取部门列表] 执行失败！
+[2026-02-10 14:08:17,466][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2026-02-10 14:09:01,017][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-02-10 14:09:01,179][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-02-10 14:09:01,179][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2026-02-10 14:09:01,195][conftest.py 82][INFO]: ---前置处理器开始---
+[2026-02-10 14:09:01,195][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-02-10 14:09:01,212][excel_tools.py 406][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-02-10 14:09:01,212][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-02-10 14:09:01,212][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-02-10 14:09:03,833][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzA3MDM3NDM4MDgsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3MDcwMzc0MywiZXhwIjoxNzcwNzI1MzQzfQ.r3wIq4bLVA-J8UqNT3-M2luytNtawBM3fdNZMwCviOw
+[2026-02-10 14:09:03,834][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzA3MDM3NDM4MDgsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3MDcwMzc0MywiZXhwIjoxNzcwNzI1MzQzfQ.r3wIq4bLVA-J8UqNT3-M2luytNtawBM3fdNZMwCviOw'}
+[2026-02-10 14:09:03,836][department.py 30][ERROR]: 转账失败: HttpRequest._send_request() got an unexpected keyword argument 'sonpath_expr'. Did you mean 'jsonpath_expr'?
+[2026-02-10 14:09:03,865][conftest.py 147][ERROR]: 用例 test_departments.py::test_get_department_data[管理-获取部门列表] 执行失败！
+[2026-02-10 14:09:03,867][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2026-02-10 14:15:53,558][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-02-10 14:15:53,734][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-02-10 14:15:53,734][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2026-02-10 14:15:53,750][conftest.py 82][INFO]: ---前置处理器开始---
+[2026-02-10 14:15:53,750][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-02-10 14:15:53,766][excel_tools.py 406][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-02-10 14:15:53,766][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-02-10 14:15:53,766][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-02-10 14:15:55,622][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzA3MDQxNTU2MDksImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3MDcwNDE1NSwiZXhwIjoxNzcwNzI1NzU1fQ.BtEct9bPISUX7AqW8lRlnwdXvpUwu70hsm4kEl_YuRA
+[2026-02-10 14:15:55,623][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzA3MDQxNTU2MDksImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3MDcwNDE1NSwiZXhwIjoxNzcwNzI1NzU1fQ.BtEct9bPISUX7AqW8lRlnwdXvpUwu70hsm4kEl_YuRA'}
+[2026-02-10 14:15:55,625][excel_tools.py 410][ERROR]: 更新测试用例结果失败: 未找到用例名称 '管理-获取部门列表'
+[2026-02-10 14:15:55,626][department.py 30][ERROR]: 转账失败: 未找到用例名称 '管理-获取部门列表'
+[2026-02-10 14:15:55,671][conftest.py 147][ERROR]: 用例 test_departments.py::test_get_department_data[管理-获取部门列表] 执行失败！
+[2026-02-10 14:15:55,672][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2026-02-10 14:19:20,084][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-02-10 14:19:20,251][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-02-10 14:19:20,251][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2026-02-10 14:19:20,268][conftest.py 82][INFO]: ---前置处理器开始---
+[2026-02-10 14:19:20,268][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-02-10 14:19:20,285][excel_tools.py 406][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-02-10 14:19:20,285][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-02-10 14:19:20,285][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-02-10 14:19:21,912][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzA3MDQzNjE5MDMsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3MDcwNDM2MSwiZXhwIjoxNzcwNzI1OTYxfQ.qAXYDyrqlU_Y8CT8h0v1PaN8aYln4SHTopHWCPkvMWg
+[2026-02-10 14:19:21,914][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzA3MDQzNjE5MDMsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3MDcwNDM2MSwiZXhwIjoxNzcwNzI1OTYxfQ.qAXYDyrqlU_Y8CT8h0v1PaN8aYln4SHTopHWCPkvMWg'}
+[2026-02-10 14:19:21,918][excel_tools.py 410][ERROR]: 更新测试用例结果失败: 未找到用例名称 '管理-获取部门列表'
+[2026-02-10 14:19:21,918][department.py 30][ERROR]: 失败: 未找到用例名称 '管理-获取部门列表'
+[2026-02-10 14:19:21,961][conftest.py 147][ERROR]: 用例 test_departments.py::test_get_department_data[管理-获取部门列表] 执行失败！
+[2026-02-10 14:19:21,962][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2026-02-10 14:24:18,126][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-02-10 14:24:18,290][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-02-10 14:24:18,290][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2026-02-10 14:24:18,310][conftest.py 82][INFO]: ---前置处理器开始---
+[2026-02-10 14:24:18,310][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-02-10 14:24:18,329][excel_tools.py 406][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-02-10 14:24:18,329][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-02-10 14:24:18,329][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-02-10 14:24:20,162][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzA3MDQ2NjAxMDYsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3MDcwNDY2MCwiZXhwIjoxNzcwNzI2MjYwfQ.40SvvigmJGGtxOtFJZqiwE_uN60fJ8L_ppsooSJaPVI
+[2026-02-10 14:24:20,163][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzA3MDQ2NjAxMDYsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3MDcwNDY2MCwiZXhwIjoxNzcwNzI2MjYwfQ.40SvvigmJGGtxOtFJZqiwE_uN60fJ8L_ppsooSJaPVI'}
+[2026-02-10 14:24:20,165][excel_tools.py 406][INFO]: 更新测试用例结果: management_page - 管理-获取部门列表 - {}
+[2026-02-10 14:24:20,165][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/rbac/departments
+[2026-02-10 14:24:20,966][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-02-10 14:24:20,967][conftest.py 149][INFO]: 用例 test_departments.py::test_get_department_data[管理-获取部门列表] 执行通过
+[2026-02-10 14:24:20,968][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2026-02-10 14:28:01,814][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-02-10 14:28:01,997][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-02-10 14:28:01,997][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2026-02-10 14:28:02,017][conftest.py 82][INFO]: ---前置处理器开始---
+[2026-02-10 14:28:02,017][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-02-10 14:28:02,035][excel_tools.py 406][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-02-10 14:28:02,035][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-02-10 14:28:02,035][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-02-10 14:28:03,966][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzA3MDQ4ODM4OTksImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3MDcwNDg4MywiZXhwIjoxNzcwNzI2NDgzfQ.C35o_VCS2acdi2677mvzkKFkWxKZVYFtJ-2PTbTEzU8
+[2026-02-10 14:28:03,966][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzA3MDQ4ODM4OTksImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3MDcwNDg4MywiZXhwIjoxNzcwNzI2NDgzfQ.C35o_VCS2acdi2677mvzkKFkWxKZVYFtJ-2PTbTEzU8'}
+[2026-02-10 14:28:03,970][excel_tools.py 406][INFO]: 更新测试用例结果: management_page - 管理-获取部门列表 - {}
+[2026-02-10 14:28:03,970][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/rbac/departments
+[2026-02-10 14:28:04,557][department.py 24][INFO]: id:6b4ad0cf-9006-4490-9715-e8fbe398e16e
+[2026-02-10 14:28:04,557][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-02-10 14:28:04,558][conftest.py 149][INFO]: 用例 test_departments.py::test_get_department_data[管理-获取部门列表] 执行通过
+[2026-02-10 14:28:04,559][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2026-02-10 14:41:15,578][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-02-10 14:41:15,747][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-02-10 14:41:15,747][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2026-02-10 14:41:15,768][conftest.py 82][INFO]: ---前置处理器开始---
+[2026-02-10 14:41:15,768][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-02-10 14:41:15,788][excel_tools.py 406][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-02-10 14:41:15,788][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-02-10 14:41:15,788][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-02-10 14:41:17,416][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzA3MDU2Nzc1MDMsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3MDcwNTY3NywiZXhwIjoxNzcwNzI3Mjc3fQ.x4bpmJzZWpZQBnMtnM11okBC3AmYgaQAGwHs_WjFris
+[2026-02-10 14:41:17,417][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzA3MDU2Nzc1MDMsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3MDcwNTY3NywiZXhwIjoxNzcwNzI3Mjc3fQ.x4bpmJzZWpZQBnMtnM11okBC3AmYgaQAGwHs_WjFris'}
+[2026-02-10 14:41:17,420][excel_tools.py 406][INFO]: 更新测试用例结果: management_page - 管理-获取部门列表 - {}
+[2026-02-10 14:41:17,420][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/rbac/departments
+[2026-02-10 14:41:18,287][department.py 24][INFO]: id:6b4ad0cf-9006-4490-9715-e8fbe398e16e
+[2026-02-10 14:41:18,289][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-02-10 14:41:18,289][conftest.py 149][INFO]: 用例 test_departments.py::test_get_department_data[管理-获取部门列表] 执行通过
+[2026-02-10 14:41:18,290][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕

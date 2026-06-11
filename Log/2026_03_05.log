@@ -1,0 +1,482 @@
+[2026-03-05 11:06:58,492][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-03-05 11:06:58,760][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-03-05 11:06:58,760][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2026-03-05 11:06:58,783][conftest.py 82][INFO]: ---前置处理器开始---
+[2026-03-05 11:06:58,783][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-03-05 11:06:58,802][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-03-05 11:06:58,802][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-03-05 11:06:58,802][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-03-05 11:06:59,603][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI2ODAwMTk1MzAsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3MjY4MDAxOSwiZXhwIjoxNzcyNzAxNjE5fQ.X4in0OrJqHIN1Dz0sck8G53ZUjt89kMrO6TVFpbrL4g
+[2026-03-05 11:06:59,603][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI2ODAwMTk1MzAsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3MjY4MDAxOSwiZXhwIjoxNzcyNzAxNjE5fQ.X4in0OrJqHIN1Dz0sck8G53ZUjt89kMrO6TVFpbrL4g'}
+[2026-03-05 11:06:59,606][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-获取审批设置列表 - {}
+[2026-03-05 11:06:59,606][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/trx/review-setting
+[2026-03-05 11:07:00,455][setting.py 19][INFO]: id:None
+[2026-03-05 11:07:00,455][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-03-05 11:07:00,456][conftest.py 149][INFO]: 用例 test_setting.py::test_get_trx_review_settings[管理-获取审批设置列表] 执行通过
+[2026-03-05 11:07:00,457][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2026-03-05 11:19:16,790][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-03-05 11:19:17,002][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-03-05 11:19:17,002][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2026-03-05 11:19:17,024][conftest.py 82][INFO]: ---前置处理器开始---
+[2026-03-05 11:19:17,024][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-03-05 11:19:17,043][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-03-05 11:19:17,043][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-03-05 11:19:17,043][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-03-05 11:19:17,864][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI2ODA3NTc3OTgsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3MjY4MDc1NywiZXhwIjoxNzcyNzAyMzU3fQ.MLwJNgGWCKxpUGnnGXYXqHNRoXU_6u0heGDZlJPLhsM
+[2026-03-05 11:19:17,866][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI2ODA3NTc3OTgsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3MjY4MDc1NywiZXhwIjoxNzcyNzAyMzU3fQ.MLwJNgGWCKxpUGnnGXYXqHNRoXU_6u0heGDZlJPLhsM'}
+[2026-03-05 11:19:17,869][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-获取审批设置列表 - {}
+[2026-03-05 11:19:17,869][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/trx/review-setting
+[2026-03-05 11:19:18,364][setting.py 40][INFO]: id:None
+[2026-03-05 11:19:18,364][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-03-05 11:19:18,365][conftest.py 149][INFO]: 用例 test_setting.py::test_create_trx_review_settings[管理-获取审批设置列表] 执行通过
+[2026-03-05 11:19:18,367][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2026-03-05 11:19:40,102][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-03-05 11:19:40,312][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-03-05 11:19:40,312][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2026-03-05 11:19:40,334][conftest.py 82][INFO]: ---前置处理器开始---
+[2026-03-05 11:19:40,334][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-03-05 11:19:40,353][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-03-05 11:19:40,353][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-03-05 11:19:40,353][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-03-05 11:19:40,833][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI2ODA3ODA3NTgsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3MjY4MDc4MCwiZXhwIjoxNzcyNzAyMzgwfQ.d22EAU2LV1sQOyhyEAGxOHujYQE_A156PAxbGBUHRZE
+[2026-03-05 11:19:40,835][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI2ODA3ODA3NTgsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3MjY4MDc4MCwiZXhwIjoxNzcyNzAyMzgwfQ.d22EAU2LV1sQOyhyEAGxOHujYQE_A156PAxbGBUHRZE'}
+[2026-03-05 11:19:40,839][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-获取审批设置列表 - {}
+[2026-03-05 11:19:40,839][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/trx/review-setting
+[2026-03-05 11:19:41,582][setting.py 40][INFO]: id:None
+[2026-03-05 11:19:41,583][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-03-05 11:19:41,584][conftest.py 149][INFO]: 用例 test_setting.py::test_create_trx_review_settings[管理-获取审批设置列表] 执行通过
+[2026-03-05 11:19:41,586][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2026-03-05 11:20:03,600][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-03-05 11:20:03,805][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-03-05 11:20:03,805][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2026-03-05 11:20:03,826][conftest.py 82][INFO]: ---前置处理器开始---
+[2026-03-05 11:20:03,826][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-03-05 11:20:03,845][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-03-05 11:20:03,845][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-03-05 11:20:03,845][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-03-05 11:20:04,744][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI2ODA4MDQ1NDMsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3MjY4MDgwNCwiZXhwIjoxNzcyNzAyNDA0fQ.XCjHBDAEBPRg2yMC2Re8QBv02Ar_ZMyuDvJ6ydTOgGg
+[2026-03-05 11:20:04,745][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI2ODA4MDQ1NDMsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3MjY4MDgwNCwiZXhwIjoxNzcyNzAyNDA0fQ.XCjHBDAEBPRg2yMC2Re8QBv02Ar_ZMyuDvJ6ydTOgGg'}
+[2026-03-05 11:20:04,747][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-创建审批设置 - {"name": "复核规则001", "limit_min": 1, "limit_max": null, "is_max_unlimited": true, "rules": [{"approver_id": "43c01432-c71a-4f4f-b50b-6476757dea73", "step": 1}, {"approver_id": "eecb72d8-a0db-4997-98f2-b9a524987092", "step": 2}]}
+[2026-03-05 11:20:04,748][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/trx/review-setting
+[2026-03-05 11:20:04,748][simple_request.py 386][INFO]: Request data: {
+  "name": "复核规则001",
+  "limit_min": 1,
+  "limit_max": null,
+  "is_max_unlimited": true,
+  "rules": [
+    {
+      "approver_id": "43c01432-c71a-4f4f-b50b-6476757dea73",
+      "step": 1
+    },
+    {
+      "approver_id": "eecb72d8-a0db-4997-98f2-b9a524987092",
+      "step": 2
+    }
+  ]
+}
+[2026-03-05 11:20:05,246][setting.py 40][INFO]: id:None
+[2026-03-05 11:20:05,247][assert_tools.py 25][INFO]: 状态码断言成功：预期 201，实际 201
+[2026-03-05 11:20:05,248][conftest.py 149][INFO]: 用例 test_setting.py::test_create_trx_review_settings[管理-创建审批设置] 执行通过
+[2026-03-05 11:20:05,250][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2026-03-05 11:23:21,481][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-03-05 11:23:21,693][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-03-05 11:23:21,694][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2026-03-05 11:23:21,714][conftest.py 82][INFO]: ---前置处理器开始---
+[2026-03-05 11:23:21,714][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-03-05 11:23:21,732][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-03-05 11:23:21,732][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-03-05 11:23:21,732][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-03-05 11:23:32,520][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI2ODEwMTI0NDAsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3MjY4MTAxMiwiZXhwIjoxNzcyNzAyNjEyfQ.CK5bExJZeg1GPABuIeKz27IvOMerd3XpFknrClrOlVQ
+[2026-03-05 11:23:32,522][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI2ODEwMTI0NDAsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3MjY4MTAxMiwiZXhwIjoxNzcyNzAyNjEyfQ.CK5bExJZeg1GPABuIeKz27IvOMerd3XpFknrClrOlVQ'}
+[2026-03-05 11:23:32,525][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-创建审批设置 - {"name": "复核规则001", "limit_min": 1, "limit_max": null, "is_max_unlimited": true, "rules": [{"approver_id": "43c01432-c71a-4f4f-b50b-6476757dea73", "step": 1}, {"approver_id": "eecb72d8-a0db-4997-98f2-b9a524987092", "step": 2}]}
+[2026-03-05 11:23:32,526][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/trx/review-setting
+[2026-03-05 11:23:32,526][simple_request.py 386][INFO]: Request data: {
+  "name": "复核规则001",
+  "limit_min": 1,
+  "limit_max": null,
+  "is_max_unlimited": true,
+  "rules": [
+    {
+      "approver_id": "43c01432-c71a-4f4f-b50b-6476757dea73",
+      "step": 1
+    },
+    {
+      "approver_id": "eecb72d8-a0db-4997-98f2-b9a524987092",
+      "step": 2
+    }
+  ]
+}
+[2026-03-05 11:23:33,025][setting.py 40][INFO]: id:None
+[2026-03-05 11:23:33,025][assert_tools.py 25][INFO]: 状态码断言成功：预期 201，实际 201
+[2026-03-05 11:23:33,026][conftest.py 149][INFO]: 用例 test_setting.py::test_create_trx_review_settings[管理-创建审批设置] 执行通过
+[2026-03-05 11:23:33,028][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2026-03-05 15:08:47,845][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-03-05 15:08:48,064][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-03-05 15:08:48,064][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2026-03-05 15:08:48,085][conftest.py 82][INFO]: ---前置处理器开始---
+[2026-03-05 15:08:48,085][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-03-05 15:08:48,104][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-03-05 15:08:48,104][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-03-05 15:08:48,104][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-03-05 15:08:48,964][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI2OTQ1Mjg4NzEsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3MjY5NDUyOCwiZXhwIjoxNzcyNzE2MTI4fQ.K02zjEChgersGdwJRZQ0y4d5i4RemeDu6h-1kYNtyco
+[2026-03-05 15:08:48,965][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI2OTQ1Mjg4NzEsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3MjY5NDUyOCwiZXhwIjoxNzcyNzE2MTI4fQ.K02zjEChgersGdwJRZQ0y4d5i4RemeDu6h-1kYNtyco'}
+[2026-03-05 15:08:48,967][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-获取审批设置列表 - {}
+[2026-03-05 15:08:48,967][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/trx/review-setting
+[2026-03-05 15:08:49,792][simple_request.py 117][ERROR]: JSONPath extraction error: Error on line 1, col 24: Unexpected character: 复 
+[2026-03-05 15:08:49,792][setting.py 56][INFO]: id:None
+[2026-03-05 15:08:49,792][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-03-05 15:08:49,794][conftest.py 149][INFO]: 用例 test_setting.py::test_get_trx_review_settings[管理-获取审批设置列表] 执行通过
+[2026-03-05 15:08:49,797][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2026-03-05 15:09:04,382][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-03-05 15:09:04,578][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-03-05 15:09:04,578][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2026-03-05 15:09:04,599][conftest.py 82][INFO]: ---前置处理器开始---
+[2026-03-05 15:09:04,599][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-03-05 15:09:04,618][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-03-05 15:09:04,618][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-03-05 15:09:04,618][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-03-05 15:09:05,159][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI2OTQ1NDUwNzAsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3MjY5NDU0NSwiZXhwIjoxNzcyNzE2MTQ1fQ.VfdTGdwGXiCpL5JVL1EZyQ-SD0LqV4p8UFWwm4rtFac
+[2026-03-05 15:09:05,159][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI2OTQ1NDUwNzAsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3MjY5NDU0NSwiZXhwIjoxNzcyNzE2MTQ1fQ.VfdTGdwGXiCpL5JVL1EZyQ-SD0LqV4p8UFWwm4rtFac'}
+[2026-03-05 15:09:05,160][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-获取审批设置列表 - {}
+[2026-03-05 15:09:05,160][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/trx/review-setting
+[2026-03-05 15:09:05,675][simple_request.py 117][ERROR]: JSONPath extraction error: Error on line 1, col 24: Unexpected character: 复 
+[2026-03-05 15:09:05,675][setting.py 57][INFO]: id:None
+[2026-03-05 15:09:05,675][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-03-05 15:09:05,676][conftest.py 149][INFO]: 用例 test_setting.py::test_get_trx_review_settings[管理-获取审批设置列表] 执行通过
+[2026-03-05 15:09:05,677][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2026-03-05 15:12:50,738][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-03-05 15:12:50,951][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-03-05 15:12:50,951][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2026-03-05 15:12:50,972][conftest.py 82][INFO]: ---前置处理器开始---
+[2026-03-05 15:12:50,973][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-03-05 15:12:50,991][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-03-05 15:12:50,991][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-03-05 15:12:50,991][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-03-05 15:12:51,798][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI2OTQ3NzE3MTksImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3MjY5NDc3MSwiZXhwIjoxNzcyNzE2MzcxfQ.sHUEBR7QOKhVpb7CaXQuPCUYuD-QxUTaBbsCfxYS5DI
+[2026-03-05 15:12:51,799][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI2OTQ3NzE3MTksImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3MjY5NDc3MSwiZXhwIjoxNzcyNzE2MzcxfQ.sHUEBR7QOKhVpb7CaXQuPCUYuD-QxUTaBbsCfxYS5DI'}
+[2026-03-05 15:12:51,803][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-获取审批设置列表 - {}
+[2026-03-05 15:12:51,803][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/trx/review-setting
+[2026-03-05 15:12:52,605][setting.py 57][INFO]: id:004e83b9-0ce7-4b13-80df-95b2bab0b1a5
+[2026-03-05 15:12:52,605][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-03-05 15:12:52,606][conftest.py 149][INFO]: 用例 test_setting.py::test_get_trx_review_settings[管理-获取审批设置列表] 执行通过
+[2026-03-05 15:12:52,607][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2026-03-05 15:13:58,824][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-03-05 15:13:59,038][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-03-05 15:13:59,039][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2026-03-05 15:13:59,060][conftest.py 82][INFO]: ---前置处理器开始---
+[2026-03-05 15:13:59,060][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-03-05 15:13:59,079][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-03-05 15:13:59,079][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-03-05 15:13:59,079][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-03-05 15:13:59,952][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI2OTQ4Mzk4NjQsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3MjY5NDgzOSwiZXhwIjoxNzcyNzE2NDM5fQ.mfTmxQdjDE71Y68tV677TVzTZPuPQsbpK84gsTbK6TA
+[2026-03-05 15:13:59,952][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI2OTQ4Mzk4NjQsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3MjY5NDgzOSwiZXhwIjoxNzcyNzE2NDM5fQ.mfTmxQdjDE71Y68tV677TVzTZPuPQsbpK84gsTbK6TA'}
+[2026-03-05 15:13:59,955][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-获取审批设置列表 - {}
+[2026-03-05 15:13:59,955][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/trx/review-setting
+[2026-03-05 15:14:02,287][simple_request.py 117][ERROR]: JSONPath extraction error: Error on line 1, col 24: Unexpected character: 复 
+[2026-03-05 15:14:02,287][setting.py 57][INFO]: id:None
+[2026-03-05 15:14:02,287][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-03-05 15:14:02,287][conftest.py 149][INFO]: 用例 test_setting.py::test_get_trx_review_settings[管理-获取审批设置列表] 执行通过
+[2026-03-05 15:14:02,288][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2026-03-05 15:14:58,160][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-03-05 15:14:58,386][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-03-05 15:14:58,386][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2026-03-05 15:14:58,410][conftest.py 82][INFO]: ---前置处理器开始---
+[2026-03-05 15:14:58,410][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-03-05 15:14:58,430][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-03-05 15:14:58,430][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-03-05 15:14:58,430][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-03-05 15:14:58,993][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI2OTQ4OTg5MTAsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3MjY5NDg5OCwiZXhwIjoxNzcyNzE2NDk4fQ.PdQyyeWlfzHq_fePV61M5yfUem4FCcZ_kdKXV-P4lbk
+[2026-03-05 15:14:58,994][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI2OTQ4OTg5MTAsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3MjY5NDg5OCwiZXhwIjoxNzcyNzE2NDk4fQ.PdQyyeWlfzHq_fePV61M5yfUem4FCcZ_kdKXV-P4lbk'}
+[2026-03-05 15:14:58,997][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-获取审批设置列表 - {}
+[2026-03-05 15:14:58,997][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/trx/review-setting
+[2026-03-05 15:15:00,470][setting.py 57][INFO]: id:004e83b9-0ce7-4b13-80df-95b2bab0b1a5
+[2026-03-05 15:15:00,470][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-03-05 15:15:00,471][conftest.py 149][INFO]: 用例 test_setting.py::test_get_trx_review_settings[管理-获取审批设置列表] 执行通过
+[2026-03-05 15:15:00,472][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2026-03-05 15:21:35,216][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-03-05 15:22:18,808][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-03-05 15:22:48,185][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-03-05 15:22:48,382][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-03-05 15:22:48,382][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2026-03-05 15:22:48,403][conftest.py 82][INFO]: ---前置处理器开始---
+[2026-03-05 15:22:48,403][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-03-05 15:22:48,422][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-03-05 15:22:48,422][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-03-05 15:22:48,422][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-03-05 15:22:49,506][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI2OTUzNjk0MzAsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3MjY5NTM2OSwiZXhwIjoxNzcyNzE2OTY5fQ.n2M-_ISSLBwUwRmRq0J93MSQKYo8HEkGBiRVyl7trnU
+[2026-03-05 15:22:49,507][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI2OTUzNjk0MzAsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3MjY5NTM2OSwiZXhwIjoxNzcyNzE2OTY5fQ.n2M-_ISSLBwUwRmRq0J93MSQKYo8HEkGBiRVyl7trnU'}
+[2026-03-05 15:22:49,510][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-获取审批设置列表 - {}
+[2026-03-05 15:22:49,510][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/trx/review-setting
+[2026-03-05 15:22:50,454][setting.py 58][INFO]: id:004e83b9-0ce7-4b13-80df-95b2bab0b1a5
+[2026-03-05 15:22:50,455][excel_tools.py 409][ERROR]: 更新测试用例结果失败: Object of type Response is not JSON serializable
+[2026-03-05 15:22:50,455][setting.py 84][ERROR]: 失败: Object of type Response is not JSON serializable
+[2026-03-05 15:22:50,496][conftest.py 147][ERROR]: 用例 test_setting.py::test_update_trx_review_settings[管理-修改审批设置] 执行失败！
+[2026-03-05 15:22:50,498][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2026-03-05 15:50:44,483][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-03-05 15:50:44,703][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-03-05 15:50:44,703][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2026-03-05 15:50:44,725][conftest.py 82][INFO]: ---前置处理器开始---
+[2026-03-05 15:50:44,725][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-03-05 15:50:44,743][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-03-05 15:50:44,743][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-03-05 15:50:44,743][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-03-05 15:50:45,257][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI2OTcwNDUxODMsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3MjY5NzA0NSwiZXhwIjoxNzcyNzE4NjQ1fQ.WqDL8Fmx6HiLRByxG2of9-F5DEbrDhvrqZpYYPHj_QA
+[2026-03-05 15:50:45,257][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI2OTcwNDUxODMsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3MjY5NzA0NSwiZXhwIjoxNzcyNzE4NjQ1fQ.WqDL8Fmx6HiLRByxG2of9-F5DEbrDhvrqZpYYPHj_QA'}
+[2026-03-05 15:50:45,261][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-获取审批设置列表 - {}
+[2026-03-05 15:50:45,261][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/trx/review-setting
+[2026-03-05 15:50:46,049][setting.py 58][INFO]: id:004e83b9-0ce7-4b13-80df-95b2bab0b1a5
+[2026-03-05 15:50:46,049][excel_tools.py 409][ERROR]: 更新测试用例结果失败: Object of type Response is not JSON serializable
+[2026-03-05 15:50:46,049][setting.py 84][ERROR]: 失败: Object of type Response is not JSON serializable
+[2026-03-05 15:50:46,092][conftest.py 147][ERROR]: 用例 test_setting.py::test_update_trx_review_settings[管理-修改审批设置] 执行失败！
+[2026-03-05 15:50:46,093][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2026-03-05 15:54:26,825][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-03-05 15:54:27,031][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-03-05 15:54:27,031][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2026-03-05 15:54:27,052][conftest.py 82][INFO]: ---前置处理器开始---
+[2026-03-05 15:54:27,052][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-03-05 15:54:27,071][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-03-05 15:54:27,071][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-03-05 15:54:27,071][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-03-05 15:54:27,756][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI2OTcyNjc2ODcsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3MjY5NzI2NywiZXhwIjoxNzcyNzE4ODY3fQ.hyfAd-cNz8KVhfWORTCYCFP02tSwGrR-JPXRHuNkKXk
+[2026-03-05 15:54:27,757][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI2OTcyNjc2ODcsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3MjY5NzI2NywiZXhwIjoxNzcyNzE4ODY3fQ.hyfAd-cNz8KVhfWORTCYCFP02tSwGrR-JPXRHuNkKXk'}
+[2026-03-05 15:54:27,760][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-获取审批设置列表 - {}
+[2026-03-05 15:54:27,760][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/trx/review-setting
+[2026-03-05 15:54:28,458][setting.py 58][INFO]: id:004e83b9-0ce7-4b13-80df-95b2bab0b1a5
+[2026-03-05 15:54:28,458][excel_tools.py 409][ERROR]: 更新测试用例结果失败: Object of type Response is not JSON serializable
+[2026-03-05 15:54:28,458][setting.py 85][ERROR]: 失败: Object of type Response is not JSON serializable
+[2026-03-05 15:54:28,500][conftest.py 147][ERROR]: 用例 test_setting.py::test_update_trx_review_settings[管理-修改审批设置] 执行失败！
+[2026-03-05 15:54:28,501][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2026-03-05 16:13:54,478][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-03-05 16:13:54,692][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-03-05 16:13:54,692][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2026-03-05 16:13:54,715][conftest.py 82][INFO]: ---前置处理器开始---
+[2026-03-05 16:13:54,715][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-03-05 16:13:54,733][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-03-05 16:13:54,733][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-03-05 16:13:54,733][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-03-05 16:13:55,535][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI2OTg0MzU0NjEsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3MjY5ODQzNSwiZXhwIjoxNzcyNzIwMDM1fQ.P_x75bxVrNTnFQ0yqhGGt2aaV6CgUCM7JHaTn1fZkK0
+[2026-03-05 16:13:55,537][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI2OTg0MzU0NjEsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3MjY5ODQzNSwiZXhwIjoxNzcyNzIwMDM1fQ.P_x75bxVrNTnFQ0yqhGGt2aaV6CgUCM7JHaTn1fZkK0'}
+[2026-03-05 16:13:55,538][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-获取审批设置列表 - {}
+[2026-03-05 16:13:55,538][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/trx/review-setting
+[2026-03-05 16:13:56,001][setting.py 58][INFO]: id:004e83b9-0ce7-4b13-80df-95b2bab0b1a5
+[2026-03-05 16:13:56,002][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-修改审批设置 - {"name": "复核规则002", "limit_min": 1, "limit_max": null, "is_max_unlimited": true, "rules": [{"approver_id": "43c01432-c71a-4f4f-b50b-6476757dea73", "step": 1}, {"approver_id": "eecb72d8-a0db-4997-98f2-b9a524987092", "step": 2}], "id": "004e83b9-0ce7-4b13-80df-95b2bab0b1a5"}
+[2026-03-05 16:13:56,002][simple_request.py 384][INFO]: Making PUT request to https://ax-api.pertest.tech/web/trx/review-setting
+[2026-03-05 16:13:56,002][simple_request.py 386][INFO]: Request data: {
+  "name": "复核规则002",
+  "limit_min": 1,
+  "limit_max": null,
+  "is_max_unlimited": true,
+  "rules": [
+    {
+      "approver_id": "43c01432-c71a-4f4f-b50b-6476757dea73",
+      "step": 1
+    },
+    {
+      "approver_id": "eecb72d8-a0db-4997-98f2-b9a524987092",
+      "step": 2
+    }
+  ],
+  "id": "004e83b9-0ce7-4b13-80df-95b2bab0b1a5"
+}
+[2026-03-05 16:13:56,242][setting.py 80][INFO]: id:None
+[2026-03-05 16:13:56,243][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-03-05 16:13:56,243][conftest.py 149][INFO]: 用例 test_setting.py::test_update_trx_review_settings[管理-修改审批设置] 执行通过
+[2026-03-05 16:13:56,245][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2026-03-05 16:34:08,107][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-03-05 16:34:08,323][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-03-05 16:34:08,324][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2026-03-05 16:34:08,346][conftest.py 82][INFO]: ---前置处理器开始---
+[2026-03-05 16:34:08,347][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-03-05 16:34:08,365][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-03-05 16:34:08,365][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-03-05 16:34:08,365][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-03-05 16:34:09,139][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI2OTk2NDkwNjUsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3MjY5OTY0OSwiZXhwIjoxNzcyNzIxMjQ5fQ.33fiP7epyit-lRzR3cXljyUHs71wBqcPTjP5yCI9XFA
+[2026-03-05 16:34:09,140][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI2OTk2NDkwNjUsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3MjY5OTY0OSwiZXhwIjoxNzcyNzIxMjQ5fQ.33fiP7epyit-lRzR3cXljyUHs71wBqcPTjP5yCI9XFA'}
+[2026-03-05 16:34:09,143][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-获取审批设置列表 - {}
+[2026-03-05 16:34:09,143][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/trx/review-setting
+[2026-03-05 16:34:09,918][setting.py 58][INFO]: id:None
+[2026-03-05 16:34:09,934][conftest.py 147][ERROR]: 用例 test_setting.py::test_delect_trx_review_settings[管理-删除审批设置] 执行失败！
+[2026-03-05 16:34:09,936][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2026-03-05 17:20:55,698][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-03-05 17:20:55,930][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-03-05 17:20:55,930][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2026-03-05 17:20:55,951][conftest.py 82][INFO]: ---前置处理器开始---
+[2026-03-05 17:20:55,951][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-03-05 17:20:55,972][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-03-05 17:20:55,973][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-03-05 17:20:55,973][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-03-05 17:20:56,951][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3MDI0NTY4NzEsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3MjcwMjQ1NiwiZXhwIjoxNzcyNzI0MDU2fQ.ukronrgY0yDlhPTQwAZI8JAaRQmCYftiwBWasIoH_VU
+[2026-03-05 17:20:56,953][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3MDI0NTY4NzEsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3MjcwMjQ1NiwiZXhwIjoxNzcyNzI0MDU2fQ.ukronrgY0yDlhPTQwAZI8JAaRQmCYftiwBWasIoH_VU'}
+[2026-03-05 17:20:56,956][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-获取审批设置列表 - {}
+[2026-03-05 17:20:56,956][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/trx/review-setting
+[2026-03-05 17:20:57,707][setting.py 58][INFO]: id:004e83b9-0ce7-4b13-80df-95b2bab0b1a5
+[2026-03-05 17:20:57,707][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-删除审批设置 - {"id": "004e83b9-0ce7-4b13-80df-95b2bab0b1a5"}
+[2026-03-05 17:20:57,708][simple_request.py 384][INFO]: Making DELETE request to https://ax-api.pertest.tech/web/trx/review-setting
+[2026-03-05 17:20:57,708][simple_request.py 386][INFO]: Request data: {
+  "id": "004e83b9-0ce7-4b13-80df-95b2bab0b1a5"
+}
+[2026-03-05 17:20:57,913][setting.py 103][INFO]: id:None
+[2026-03-05 17:20:57,914][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-03-05 17:20:57,915][conftest.py 149][INFO]: 用例 test_setting.py::test_delect_trx_review_settings[管理-删除审批设置] 执行通过
+[2026-03-05 17:20:57,917][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2026-03-05 18:04:17,613][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-03-05 18:04:17,837][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-03-05 18:04:17,837][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2026-03-05 18:04:17,860][conftest.py 82][INFO]: ---前置处理器开始---
+[2026-03-05 18:04:17,860][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-03-05 18:04:17,879][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-03-05 18:04:17,879][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-03-05 18:04:17,879][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-03-05 18:04:18,640][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3MDUwNTg1NzAsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3MjcwNTA1OCwiZXhwIjoxNzcyNzI2NjU4fQ.glzl-hu-7cCnLx-hhF72is3Gr1_SYDEo2LfxXVKg6Ag
+[2026-03-05 18:04:18,642][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3MDUwNTg1NzAsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3MjcwNTA1OCwiZXhwIjoxNzcyNzI2NjU4fQ.glzl-hu-7cCnLx-hhF72is3Gr1_SYDEo2LfxXVKg6Ag'}
+[2026-03-05 18:04:18,645][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-查询风控设置 - {}
+[2026-03-05 18:04:18,645][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/trx/risk-policy
+[2026-03-05 18:04:19,410][setting.py 128][INFO]: id:None
+[2026-03-05 18:04:19,410][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-03-05 18:04:19,412][conftest.py 149][INFO]: 用例 test_setting.py::test_get_risk_policy_settings[管理-查询风控设置] 执行通过
+[2026-03-05 18:04:19,414][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2026-03-05 18:06:11,902][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-03-05 18:06:12,124][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-03-05 18:06:12,124][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2026-03-05 18:06:12,145][conftest.py 82][INFO]: ---前置处理器开始---
+[2026-03-05 18:06:12,145][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-03-05 18:06:12,164][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-03-05 18:06:12,164][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-03-05 18:06:12,164][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-03-05 18:06:12,930][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3MDUxNzI4MzMsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3MjcwNTE3MiwiZXhwIjoxNzcyNzI2NzcyfQ.BcW-PeSo-iIdLkFl0uyihXYCLvEKgAwbNjV7Pp2gPXc
+[2026-03-05 18:06:12,932][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3MDUxNzI4MzMsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3MjcwNTE3MiwiZXhwIjoxNzcyNzI2NzcyfQ.BcW-PeSo-iIdLkFl0uyihXYCLvEKgAwbNjV7Pp2gPXc'}
+[2026-03-05 18:06:12,935][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-查询风控设置 - {}
+[2026-03-05 18:06:12,935][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/trx/risk-policy
+[2026-03-05 18:06:13,636][setting.py 146][INFO]: id:9e144a82-91e7-401b-b7c1-a09825930b95
+[2026-03-05 18:06:13,636][conftest.py 149][INFO]: 用例 test_setting.py::test_find_create_risk_policy_settings_data 执行通过
+[2026-03-05 18:06:13,636][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2026-03-05 18:06:45,154][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-03-05 18:06:45,375][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-03-05 18:06:45,375][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2026-03-05 18:06:45,396][conftest.py 82][INFO]: ---前置处理器开始---
+[2026-03-05 18:06:45,396][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-03-05 18:06:45,415][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-03-05 18:06:45,415][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-03-05 18:06:45,415][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-03-05 18:06:46,149][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3MDUyMDYwODEsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3MjcwNTIwNiwiZXhwIjoxNzcyNzI2ODA2fQ.t-VCZa0JAiLl--1S7dHyayCwEHxNdbyXf5qiloYkoic
+[2026-03-05 18:06:46,151][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3MDUyMDYwODEsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3MjcwNTIwNiwiZXhwIjoxNzcyNzI2ODA2fQ.t-VCZa0JAiLl--1S7dHyayCwEHxNdbyXf5qiloYkoic'}
+[2026-03-05 18:06:46,153][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-查询风控设置 - {}
+[2026-03-05 18:06:46,154][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/trx/risk-policy
+[2026-03-05 18:06:46,600][setting.py 146][INFO]: id:['269feb3a-fb18-44f1-82f8-a8d93863f7ad', '9e144a82-91e7-401b-b7c1-a09825930b95']
+[2026-03-05 18:06:46,601][conftest.py 149][INFO]: 用例 test_setting.py::test_find_create_risk_policy_settings_data 执行通过
+[2026-03-05 18:06:46,601][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2026-03-05 18:07:06,717][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-03-05 18:07:06,916][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-03-05 18:07:06,916][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2026-03-05 18:07:06,936][conftest.py 82][INFO]: ---前置处理器开始---
+[2026-03-05 18:07:06,936][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-03-05 18:07:06,955][excel_tools.py 405][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-03-05 18:07:06,955][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-03-05 18:07:06,955][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-03-05 18:07:07,716][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3MDUyMjc2MjEsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3MjcwNTIyNywiZXhwIjoxNzcyNzI2ODI3fQ.maVv0G3GJJJqw5Riu1AxUdeHeFFpDbEUZ0yfBN7dbDs
+[2026-03-05 18:07:07,717][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3NzI3MDUyMjc2MjEsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc3MjcwNTIyNywiZXhwIjoxNzcyNzI2ODI3fQ.maVv0G3GJJJqw5Riu1AxUdeHeFFpDbEUZ0yfBN7dbDs'}
+[2026-03-05 18:07:07,719][excel_tools.py 405][INFO]: 更新测试用例结果: management_page - 管理-查询风控设置 - {}
+[2026-03-05 18:07:07,720][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/trx/risk-policy
+[2026-03-05 18:07:08,469][setting.py 146][INFO]: id:['269feb3a-fb18-44f1-82f8-a8d93863f7ad', '9e144a82-91e7-401b-b7c1-a09825930b95']
+[2026-03-05 18:07:08,470][conftest.py 149][INFO]: 用例 test_setting.py::test_find_create_risk_policy_settings_data 执行通过
+[2026-03-05 18:07:08,471][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕

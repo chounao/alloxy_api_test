@@ -1,0 +1,126 @@
+[2026-01-21 17:21:04,266][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-01-21 17:21:04,511][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-01-21 17:21:04,511][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2026-01-21 17:21:04,529][conftest.py 82][INFO]: ---前置处理器开始---
+[2026-01-21 17:21:04,529][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-01-21 17:21:04,546][excel_tools.py 406][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-01-21 17:21:04,546][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-01-21 17:21:04,546][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-01-21 17:21:05,970][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3Njg5ODcyNjYwMDcsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2ODk4NzI2NiwiZXhwIjoxNzY5MDA4ODY2fQ.Cj0zCuqRkYL0lODs5YWtmLsMCF83eWnyHKjt4tE_mWQ
+[2026-01-21 17:21:05,971][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3Njg5ODcyNjYwMDcsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2ODk4NzI2NiwiZXhwIjoxNzY5MDA4ODY2fQ.Cj0zCuqRkYL0lODs5YWtmLsMCF83eWnyHKjt4tE_mWQ'}
+[2026-01-21 17:21:05,980][excel_tools.py 410][ERROR]: 更新测试用例结果失败: 未找到用例名称 '获取后台设置的转出手续费'
+[2026-01-21 17:21:05,980][transfer_out.py 187][ERROR]: 获取提币手续费失败: 未找到用例名称 '获取后台设置的转出手续费'
+[2026-01-21 17:21:06,025][conftest.py 147][ERROR]: 用例 test_transfer_out.py::test_get_transfer_out_handling_fee[获取后台设置的转出手续费-arbitrum] 执行失败！
+[2026-01-21 17:21:06,028][excel_tools.py 410][ERROR]: 更新测试用例结果失败: 未找到用例名称 '获取后台设置的转出手续费'
+[2026-01-21 17:21:06,029][transfer_out.py 187][ERROR]: 获取提币手续费失败: 未找到用例名称 '获取后台设置的转出手续费'
+[2026-01-21 17:21:06,043][conftest.py 147][ERROR]: 用例 test_transfer_out.py::test_get_transfer_out_handling_fee[获取后台设置的转出手续费-polygon] 执行失败！
+[2026-01-21 17:21:06,045][excel_tools.py 410][ERROR]: 更新测试用例结果失败: 未找到用例名称 '获取后台设置的转出手续费'
+[2026-01-21 17:21:06,045][transfer_out.py 187][ERROR]: 获取提币手续费失败: 未找到用例名称 '获取后台设置的转出手续费'
+[2026-01-21 17:21:06,060][conftest.py 147][ERROR]: 用例 test_transfer_out.py::test_get_transfer_out_handling_fee[获取后台设置的转出手续费-avalanche] 执行失败！
+[2026-01-21 17:21:06,065][excel_tools.py 410][ERROR]: 更新测试用例结果失败: 未找到用例名称 '获取后台设置的转出手续费'
+[2026-01-21 17:21:06,065][transfer_out.py 187][ERROR]: 获取提币手续费失败: 未找到用例名称 '获取后台设置的转出手续费'
+[2026-01-21 17:21:06,078][conftest.py 147][ERROR]: 用例 test_transfer_out.py::test_get_transfer_out_handling_fee[获取后台设置的转出手续费-ethereum] 执行失败！
+[2026-01-21 17:21:06,080][excel_tools.py 410][ERROR]: 更新测试用例结果失败: 未找到用例名称 '获取后台设置的转出手续费'
+[2026-01-21 17:21:06,080][transfer_out.py 187][ERROR]: 获取提币手续费失败: 未找到用例名称 '获取后台设置的转出手续费'
+[2026-01-21 17:21:06,095][conftest.py 147][ERROR]: 用例 test_transfer_out.py::test_get_transfer_out_handling_fee[获取后台设置的转出手续费-bsc] 执行失败！
+[2026-01-21 17:21:06,098][excel_tools.py 410][ERROR]: 更新测试用例结果失败: 未找到用例名称 '获取后台设置的转出手续费'
+[2026-01-21 17:21:06,098][transfer_out.py 187][ERROR]: 获取提币手续费失败: 未找到用例名称 '获取后台设置的转出手续费'
+[2026-01-21 17:21:06,110][conftest.py 147][ERROR]: 用例 test_transfer_out.py::test_get_transfer_out_handling_fee[获取后台设置的转出手续费-tron] 执行失败！
+[2026-01-21 17:21:06,111][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2026-01-21 17:23:41,811][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-01-21 17:23:42,006][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-01-21 17:23:42,006][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2026-01-21 17:23:42,023][conftest.py 82][INFO]: ---前置处理器开始---
+[2026-01-21 17:23:42,023][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-01-21 17:23:42,040][excel_tools.py 406][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-01-21 17:23:42,040][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-01-21 17:23:42,040][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-01-21 17:23:43,537][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3Njg5ODc0MjM1OTMsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2ODk4NzQyMywiZXhwIjoxNzY5MDA5MDIzfQ.DnXh9K1mzZZeqe6DDVCv8suzMbxKOjnrasmjOjdkYGs
+[2026-01-21 17:23:43,538][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3Njg5ODc0MjM1OTMsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2ODk4NzQyMywiZXhwIjoxNzY5MDA5MDIzfQ.DnXh9K1mzZZeqe6DDVCv8suzMbxKOjnrasmjOjdkYGs'}
+[2026-01-21 17:23:43,541][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 获取后台设置的转出手续费 - {}
+[2026-01-21 17:23:43,542][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/account/chain-fee
+[2026-01-21 17:23:43,940][simple_request.py 435][ERROR]: Request failed with status code: 404
+[2026-01-21 17:23:43,940][transfer_out.py 184][ERROR]: 获取提币手续费请求失败，无响应返回
+[2026-01-21 17:23:43,941][conftest.py 149][INFO]: 用例 test_transfer_out.py::test_get_transfer_out_handling_fee[获取后台设置的转出手续费-arbitrum] 执行通过
+[2026-01-21 17:23:43,945][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 获取后台设置的转出手续费 - {}
+[2026-01-21 17:23:43,945][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/account/chain-fee
+[2026-01-21 17:23:44,134][simple_request.py 435][ERROR]: Request failed with status code: 404
+[2026-01-21 17:23:44,134][transfer_out.py 184][ERROR]: 获取提币手续费请求失败，无响应返回
+[2026-01-21 17:23:44,135][conftest.py 149][INFO]: 用例 test_transfer_out.py::test_get_transfer_out_handling_fee[获取后台设置的转出手续费-polygon] 执行通过
+[2026-01-21 17:23:44,138][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 获取后台设置的转出手续费 - {}
+[2026-01-21 17:23:44,138][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/account/chain-fee
+[2026-01-21 17:23:44,328][simple_request.py 435][ERROR]: Request failed with status code: 404
+[2026-01-21 17:23:44,328][transfer_out.py 184][ERROR]: 获取提币手续费请求失败，无响应返回
+[2026-01-21 17:23:44,330][conftest.py 149][INFO]: 用例 test_transfer_out.py::test_get_transfer_out_handling_fee[获取后台设置的转出手续费-avalanche] 执行通过
+[2026-01-21 17:23:44,333][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 获取后台设置的转出手续费 - {}
+[2026-01-21 17:23:44,333][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/account/chain-fee
+[2026-01-21 17:23:44,523][simple_request.py 435][ERROR]: Request failed with status code: 404
+[2026-01-21 17:23:44,523][transfer_out.py 184][ERROR]: 获取提币手续费请求失败，无响应返回
+[2026-01-21 17:23:44,524][conftest.py 149][INFO]: 用例 test_transfer_out.py::test_get_transfer_out_handling_fee[获取后台设置的转出手续费-ethereum] 执行通过
+[2026-01-21 17:23:44,527][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 获取后台设置的转出手续费 - {}
+[2026-01-21 17:23:44,527][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/account/chain-fee
+[2026-01-21 17:23:44,721][simple_request.py 435][ERROR]: Request failed with status code: 404
+[2026-01-21 17:23:44,721][transfer_out.py 184][ERROR]: 获取提币手续费请求失败，无响应返回
+[2026-01-21 17:23:44,722][conftest.py 149][INFO]: 用例 test_transfer_out.py::test_get_transfer_out_handling_fee[获取后台设置的转出手续费-bsc] 执行通过
+[2026-01-21 17:23:44,725][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 获取后台设置的转出手续费 - {}
+[2026-01-21 17:23:44,725][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/account/chain-fee
+[2026-01-21 17:23:45,431][simple_request.py 435][ERROR]: Request failed with status code: 404
+[2026-01-21 17:23:45,431][transfer_out.py 184][ERROR]: 获取提币手续费请求失败，无响应返回
+[2026-01-21 17:23:45,432][conftest.py 149][INFO]: 用例 test_transfer_out.py::test_get_transfer_out_handling_fee[获取后台设置的转出手续费-tron] 执行通过
+[2026-01-21 17:23:45,433][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕
+[2026-01-21 17:28:13,522][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-01-21 17:28:13,695][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-01-21 17:28:13,695][conftest.py 47][INFO]: ---测试开始---执行的是 test 环境
+[2026-01-21 17:28:13,711][conftest.py 82][INFO]: ---前置处理器开始---
+[2026-01-21 17:28:13,711][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-01-21 17:28:13,727][excel_tools.py 406][INFO]: 更新测试用例结果: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-01-21 17:28:13,727][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-01-21 17:28:13,727][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-01-21 17:28:15,513][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3Njg5ODc2OTU1MDIsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2ODk4NzY5NSwiZXhwIjoxNzY5MDA5Mjk1fQ.dzq9yyPrHb1NxRTT2blkco2luIfgcV3LIKzFabVsiik
+[2026-01-21 17:28:15,514][conftest.py 101][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3Njg5ODc2OTU1MDIsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc2ODk4NzY5NSwiZXhwIjoxNzY5MDA5Mjk1fQ.dzq9yyPrHb1NxRTT2blkco2luIfgcV3LIKzFabVsiik'}
+[2026-01-21 17:28:15,516][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 获取后台设置的转出手续费 - {}
+[2026-01-21 17:28:15,517][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/account/chain-fee
+[2026-01-21 17:28:16,208][simple_request.py 435][ERROR]: Request failed with status code: 404
+[2026-01-21 17:28:16,208][transfer_out.py 184][ERROR]: 获取提币手续费请求失败，无响应返回
+[2026-01-21 17:28:16,210][conftest.py 149][INFO]: 用例 test_transfer_out.py::test_get_transfer_out_handling_fee[获取后台设置的转出手续费-arbitrum] 执行通过
+[2026-01-21 17:28:16,214][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 获取后台设置的转出手续费 - {}
+[2026-01-21 17:28:16,215][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/account/chain-fee
+[2026-01-21 17:28:16,407][simple_request.py 435][ERROR]: Request failed with status code: 404
+[2026-01-21 17:28:16,407][transfer_out.py 184][ERROR]: 获取提币手续费请求失败，无响应返回
+[2026-01-21 17:28:16,408][conftest.py 149][INFO]: 用例 test_transfer_out.py::test_get_transfer_out_handling_fee[获取后台设置的转出手续费-polygon] 执行通过
+[2026-01-21 17:28:16,411][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 获取后台设置的转出手续费 - {}
+[2026-01-21 17:28:16,412][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/account/chain-fee
+[2026-01-21 17:28:16,601][simple_request.py 435][ERROR]: Request failed with status code: 404
+[2026-01-21 17:28:16,601][transfer_out.py 184][ERROR]: 获取提币手续费请求失败，无响应返回
+[2026-01-21 17:28:16,602][conftest.py 149][INFO]: 用例 test_transfer_out.py::test_get_transfer_out_handling_fee[获取后台设置的转出手续费-avalanche] 执行通过
+[2026-01-21 17:28:16,606][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 获取后台设置的转出手续费 - {}
+[2026-01-21 17:28:16,607][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/account/chain-fee
+[2026-01-21 17:28:16,795][simple_request.py 435][ERROR]: Request failed with status code: 404
+[2026-01-21 17:28:16,795][transfer_out.py 184][ERROR]: 获取提币手续费请求失败，无响应返回
+[2026-01-21 17:28:16,796][conftest.py 149][INFO]: 用例 test_transfer_out.py::test_get_transfer_out_handling_fee[获取后台设置的转出手续费-ethereum] 执行通过
+[2026-01-21 17:28:16,798][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 获取后台设置的转出手续费 - {}
+[2026-01-21 17:28:16,798][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/account/chain-fee
+[2026-01-21 17:28:16,989][simple_request.py 435][ERROR]: Request failed with status code: 404
+[2026-01-21 17:28:16,989][transfer_out.py 184][ERROR]: 获取提币手续费请求失败，无响应返回
+[2026-01-21 17:28:16,990][conftest.py 149][INFO]: 用例 test_transfer_out.py::test_get_transfer_out_handling_fee[获取后台设置的转出手续费-bsc] 执行通过
+[2026-01-21 17:28:16,994][excel_tools.py 406][INFO]: 更新测试用例结果: Wallte_page - 获取后台设置的转出手续费 - {}
+[2026-01-21 17:28:16,994][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/account/chain-fee
+[2026-01-21 17:28:17,192][simple_request.py 435][ERROR]: Request failed with status code: 404
+[2026-01-21 17:28:17,193][transfer_out.py 184][ERROR]: 获取提币手续费请求失败，无响应返回
+[2026-01-21 17:28:17,193][conftest.py 149][INFO]: 用例 test_transfer_out.py::test_get_transfer_out_handling_fee[获取后台设置的转出手续费-tron] 执行通过
+[2026-01-21 17:28:17,194][conftest.py 50][INFO]: ---测试结束---test 环境执行完毕

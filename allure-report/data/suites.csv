@@ -1,0 +1,8 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"
+测试登录功能（数据驱动，支持批量执行）
+:param sheet_name: 用例表格名
+:param test_case_name: 测试用例名称
+:param variables: 登录参数（email/password）
+:param expected_msg: 预期结果（用于断言）
+","2","test_login","TestCase","2025-11-13","passed","2025-11-13","","test_login","",""
