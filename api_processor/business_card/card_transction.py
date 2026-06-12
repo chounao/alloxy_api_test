@@ -31,8 +31,7 @@ class CardTransaction:
         return http_request.execute_case(
             sheet_name=cls.sheet_name,
             test_case_name=test_case_name,
-            ping_data=params_data,
-            error_msg="获取卡片交易列表失败"
+            ping_data=params_data
         )
 
 

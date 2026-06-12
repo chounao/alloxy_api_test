@@ -29,8 +29,7 @@ class PayIn:
             sheet_name=cls.sheet_name,
             test_case_name=test_case_name,
             dict_data=data,
-            nested_keys=['data'],
-            error_msg="获取国家信息失败")
+            nested_keys=['data'])
 
 
     @classmethod
@@ -43,8 +42,7 @@ class PayIn:
         """
         return http_request.execute_case(
             sheet_name=cls.sheet_name,
-            test_case_name=test_case_name,
-            error_msg="获取法币到 crypto 的手续费失败")
+            test_case_name=test_case_name)
 
 
 
@@ -65,8 +63,7 @@ class PayIn:
             sheet_name=cls.sheet_name,
             test_case_name=test_case_name,
             dict_data=data,
-            nested_keys=['data'],
-            error_msg="获取pay_in手续费失败")
+            nested_keys=['data'])
 
 
     @classmethod
@@ -129,5 +126,4 @@ class PayIn:
         return http_request.execute_case(
             sheet_name=cls.sheet_name,
             test_case_name=test_case_name,
-            variables = variables,
-            error_msg="提交pay_in失败")
+            variables = variables)

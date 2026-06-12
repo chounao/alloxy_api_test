@@ -46,8 +46,7 @@ class Payee:
                                                                         sheet_name=cls.sheet_name,
                                                                         test_case_name=test_case_name,
                                                                                         dict_data=data,
-                                                                                    nested_keys=['data'],
-                                                                            error_msg="获取币种收款方数据失败")
+                                                                                    nested_keys=['data'])
 
                 # 检查是否有数据返回
                 if not extracted_parameters:
@@ -119,8 +118,7 @@ class Payee:
         return http_request.execute_case(
             sheet_name=cls.sheet_name,
             test_case_name=test_case_name,
-            variables= variables,
-            error_msg="添加收款方失败")
+            variables= variables)
     @classmethod
     def create_payee(cls,http_request,payee_name,currency,chain_name):
         result = cls.add_payee('钱包-创建加密收款地址', http_request, payee_name, currency, chain_name)
@@ -154,8 +152,7 @@ class Payee:
         return http_request.execute_case(
             sheet_name=cls.sheet_name,
             test_case_name=test_case_name,
-            replace_data=id,
-            error_msg="删除收款方失败")
+            replace_data=id)
     #收款银行账户查询接口
     @classmethod
     def get_payee_bank_account(cls, test_case_name, http_request,payee_name):
@@ -178,8 +175,7 @@ class Payee:
             sheet_name=cls.sheet_name,
             test_case_name=test_case_name,
             dict_data=data,
-            nested_keys=['data'],
-            error_msg="收款银行账户列表查询失败")
+            nested_keys=['data'])
     @classmethod
     def get_all_country_data(cls, http_request, test_case_name):
         """
@@ -192,8 +188,7 @@ class Payee:
         response, extracted_parameters, assert_code, case_id =http_request.execute_case(
                                                                                         sheet_name=cls.sheet_name,
                                                                                         test_case_name=test_case_name,
-                                                                                        nested_keys=['data'],
-                                                                                        error_msg="获取所有支持的国家失败")
+                                                                                        nested_keys=['data'])
         for i in extracted_parameters:
             data = i['iso2']
             country_list.append(data)
@@ -223,8 +218,7 @@ class Payee:
             sheet_name=cls.sheet_name,
             test_case_name=test_case_name,
             variables=body,
-            nested_keys=['data'],
-            error_msg="获取币种支持的国家失败")
+            nested_keys=['data'])
     @classmethod
     def get_random_country_code(cls, http_request, currency, country_code):
         """
@@ -468,8 +462,7 @@ class Payee:
         return http_request.execute_case(
             sheet_name=cls.sheet_name,
             test_case_name=test_case_name,
-            variables=body,
-            error_msg="创建收款方银行账户失败")
+            variables=body)
 
 
 
@@ -493,8 +486,7 @@ class Payee:
                                                                                             sheet_name=cls.sheet_name,
                                                                                             test_case_name=test_case_name,
                                                                                             dict_data=data,
-                                                                                            nested_keys=['data', 'list', 0],
-                                                                                            error_msg="获取收款方银行账户详情失败")
+                                                                                            nested_keys=['data', 'list', 0])
 
         keys_to_remove = ['created_at','update_at','remarks','account_id','bank_code','branch_name',
                           'branch_code','routing_type1','routing_number1','routing_type2','routing_number2'
@@ -528,8 +520,10 @@ class Payee:
             sheet_name=cls.sheet_name,
             test_case_name=test_case_name,
             variables=body,
-            nested_keys=['data'],
-            error_msg="编辑收款方银行账户失败")
+            nested_keys=['data'])
+
+
+
 
     #删除银行账户
     @classmethod
@@ -548,12 +542,7 @@ class Payee:
             sheet_name=cls.sheet_name,
             test_case_name=test_case_name,
             replace_data=data,
-            error_msg="删除收款方银行账户失败")
-
-
-
-
-
+            nested_keys=['data'])
 
 
 

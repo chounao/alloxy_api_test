@@ -11,15 +11,13 @@ class HomePage:
     def get_user_data(cls, http_request, test_case_name):
         """获取登录数据"""
         return http_request.execute_case(sheet_name=cls.sheet_name,
-            test_case_name=test_case_name,
-            error_msg="获取登录数据失败")
+            test_case_name=test_case_name)
 
     @classmethod
     def get_user_menus(cls, http_request, test_case_name):
         """获取用户菜单权限"""
         return http_request.execute_case(sheet_name=cls.sheet_name,
-            test_case_name=test_case_name,
-            error_msg="获取用户菜单权限失败")
+            test_case_name=test_case_name)
 
     @classmethod
     def get_user_account_overview(cls, http_request, test_case_name, data_type=None, filter_key=None, filter_value=None):
@@ -35,8 +33,7 @@ class HomePage:
         """
         response, extracted_parameters, assert_code, case_id = http_request.execute_case(
             sheet_name=cls.sheet_name,
-            test_case_name=test_case_name,
-            error_msg="获取用户账户概览失败"
+            test_case_name=test_case_name
         )
 
         if data_type is None:
@@ -69,24 +66,20 @@ class HomePage:
         """获取待办数据"""
         return http_request.execute_case(sheet_name=cls.sheet_name,
             test_case_name=test_case_name,
-            nested_keys=['data'],
-            error_msg="获取待办数据失败")
+            nested_keys=['data'])
 
     @classmethod
     def get_notices(cls, http_request, test_case_name):
         """获取用户通知"""
         return http_request.execute_case(sheet_name=cls.sheet_name,
             test_case_name=test_case_name,
-            nested_keys=['data'],
-            error_msg="获取用户通知失败")
-
+            nested_keys=['data'])
     @classmethod
     def get_transacton_detail(cls, http_request, test_case_name, transaction_id):
         """获取用户交易详情"""
         return http_request.execute_case(sheet_name=cls.sheet_name,
             test_case_name=test_case_name,
-            replace_data=transaction_id,
-            error_msg="获取用户交易详情失败")
+            replace_data=transaction_id)
 
     @classmethod
     def _get_transaction_id(cls, http_request):

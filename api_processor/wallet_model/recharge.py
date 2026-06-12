@@ -32,6 +32,5 @@ class Recharge:
             sheet_name=cls.sheet_name,
             test_case_name=test_case_name,
             dict_data=data,
-            nested_keys=['data', 'adress'],
-            error_msg="充值失败")
+            nested_keys=['data', 'adress'])
 

@@ -19,8 +19,7 @@ class WalletListPage:
         return http_request.execute_case(
             sheet_name=cls.sheet_name,
             test_case_name=test_case_name,
-            nested_keys =['data','list'],
-            error_msg="获取钱包列表失败")
+            nested_keys =['data','list'])
     @classmethod
     def get_currency_data(cls,http_request,from_currency):
         """
@@ -83,8 +82,7 @@ class WalletListPage:
         response, extracted_parameters, assert_code, case_id = http_request.execute_case(
                                                                 sheet_name=cls.sheet_name,
                                                                 test_case_name=test_case_name,
-                                                                nested_keys=['data', 'data'],
-                                                                error_msg="获取链列表失败")
+                                                                nested_keys=['data', 'data'])
         for i in extracted_parameters:
             chain_name_list.append(i['chain_name'])
         cls.config.save_value('CHAIN_NAME', 'chain_name', chain_name_list)
@@ -138,8 +136,7 @@ class WalletListPage:
             sheet_name=cls.sheet_name,
             test_case_name=test_case_name,
             dict_data=data,
-            nested_keys=['data'],
-            error_msg="获取交易类型数据失败")
+            nested_keys=['data'])
     @classmethod
     def save_all_currency_data(cls,result,currency_type):
         """
@@ -220,8 +217,7 @@ class WalletListPage:
                                                                             sheet_name=cls.sheet_name,
                                                                             test_case_name=test_case_name,
                                                                             dict_data=data,
-                                                                            nested_keys=['data'],
-                                                                            error_msg="获取加密货币数据失败")
+                                                                            nested_keys=['data'])
         # print(extracted_parameters)
         #存起来方便后续使用
         for i in extracted_parameters:
@@ -253,5 +249,4 @@ class WalletListPage:
             sheet_name=cls.sheet_name,
             test_case_name=test_case_name,
             dict_data=data,
-            nested_keys=['data'],
-            error_msg="获取交易类型数据失败")
+            nested_keys=['data'])

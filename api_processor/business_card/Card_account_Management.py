@@ -18,8 +18,7 @@ class CardAccountManagement:
         return http_request.execute_case(
             sheet_name=cls.sheet_name,
             test_case_name=test_case_name,
-            jsonpath_expr=f"$..{balance_type}",
-            error_msg="获取持账户余额失败"
+            jsonpath_expr=f"$..{balance_type}"
         )
 
 
@@ -31,8 +30,7 @@ class CardAccountManagement:
         return http_request.execute_case(
             sheet_name=cls.sheet_name,
             test_case_name=test_case_name,
-            jsonpath_expr="$.data",
-            error_msg="获取手续费率失败"
+            jsonpath_expr="$.data"
         )
     #传参
     @classmethod

@@ -26,8 +26,7 @@ class CardHolderManagement:
         return http_request.execute_case(
             sheet_name=cls.sheet_name,
             test_case_name=test_case_name,
-            nested_keys=['data'],
-            error_msg="获取部门列表失败"
+            nested_keys=['data']
              )
     @classmethod
     def get_department_id_data(cls, http_request):
@@ -77,9 +76,7 @@ class CardHolderManagement:
                     sheet_name=cls.sheet_name,
                     test_case_name=test_case_name,
                     dict_data=data,
-                    nested_keys=['data', 'list'],
-                    error_msg="获取持卡人列表失败"
-                )
+                    nested_keys=['data', 'list']                )
 
                 # 保存最后一次的响应信息
                 last_response = response
@@ -182,8 +179,7 @@ class CardHolderManagement:
         return http_request.execute_case(
             sheet_name=cls.sheet_name,
             test_case_name=test_case_name,
-            replace_data={'id': card_holder_id},
-            error_msg="操作持卡人失败"
+            replace_data={'id': card_holder_id}
         )
 
     #冻结
@@ -208,9 +204,8 @@ class CardHolderManagement:
                 sheet_name=cls.sheet_name,
                 test_case_name=test_case_name,
                 dict_data={'id': card_holder_id},
-                variables=data,
-                error_msg="冻结持卡人失败"
-            )
+                variables=data
+        )
     #根据部门id获取对应的的人员
     @classmethod
     def get_card_holder_by_department_id(cls, http_request, test_case_name):
@@ -228,8 +223,7 @@ class CardHolderManagement:
             return http_request.execute_case(
                     sheet_name=cls.sheet_name,
                     test_case_name=test_case_name,
-                    ping_data=department_id,
-                    error_msg="根据部门ID获取持卡人失败"
+                    ping_data=department_id
             )
 
 
@@ -299,8 +293,7 @@ class CardHolderManagement:
             sheet_name=cls.sheet_name,
             test_case_name=test_case_name,
             variables=body,
-            jsonpath_expr="$.data.virtualCardHolderKyc.kyc_er_id",
-            error_msg="创建制卡人失败"
+            jsonpath_expr="$.data.virtualCardHolderKyc.kyc_er_id"
         )
 
 

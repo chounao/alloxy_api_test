@@ -19,8 +19,7 @@ class Departments:
         return http_request.execute_case(
             sheet_name=cls.sheet_name,
             test_case_name=test_case_name,
-            jsonpath_expr='$.data[0].department_id',
-            error_msg = "获取部门列表失败"
+            jsonpath_expr='$.data[0].department_id'
         )
 
     @classmethod
@@ -36,8 +35,7 @@ class Departments:
         return http_request.execute_case(
             sheet_name=cls.sheet_name,
             test_case_name=test_case_name,
-            jsonpath_expr=f'$..children[?(@.name == "{department_name}")].department_id',
-            error_msg="获取部门ID失败"
+            jsonpath_expr=f'$..children[?(@.name == "{department_name}")].department_id'
         )
     def get_department_root_id(self,http_request):
         """
@@ -79,8 +77,7 @@ class Departments:
         return http_request.execute_case(
             sheet_name=cls.sheet_name,
             test_case_name=test_case_name,
-            variables= data,
-            error_msg="创建部门失败"
+            variables= data
         )
 
 
@@ -102,8 +99,7 @@ class Departments:
         return http_request.execute_case(
             sheet_name=cls.sheet_name,
             test_case_name=test_case_name,
-            variables= data,
-            error_msg="修改部门失败"
+            variables= data
         )
 
     @classmethod
@@ -118,8 +114,7 @@ class Departments:
         return http_request.execute_case(
             sheet_name=cls.sheet_name,
             test_case_name=test_case_name,
-            replace_data= body,
-            error_msg="删除部门失败"
+            replace_data= body
         )
 
 

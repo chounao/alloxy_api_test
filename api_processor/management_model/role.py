@@ -47,8 +47,8 @@ class RoleManagement:
         return http_request.execute_case(
             sheet_name=cls.sheet_name,
             test_case_name=test_case_name,
-            variables = payload,
-            error_msg="创建角色失败")
+            variables = payload)
+
 
 
     @classmethod
@@ -63,8 +63,9 @@ class RoleManagement:
         return http_request.execute_case(
             sheet_name=cls.sheet_name,
             test_case_name=test_case_name,
-            jsonpath_expr=f'$.data[?(@.name=="{cls.create_name}")].id',
-            error_msg="获取角色数据失败")
+            jsonpath_expr=f'$.data[?(@.name=="{cls.create_name}")].id')
+
+
 
     def get_role_id(self,http_request):
         result = self.get_role_data(http_request, '管理-获取角色列表')
@@ -102,8 +103,7 @@ class RoleManagement:
         return http_request.execute_case(
             sheet_name=cls.sheet_name,
             test_case_name=test_case_name,
-            variables= payload,
-            error_msg="更新角色失败")
+            variables= payload)
 
 
 
@@ -123,8 +123,7 @@ class RoleManagement:
         return http_request.execute_case(
             sheet_name=cls.sheet_name,
             test_case_name=test_case_name,
-            data= payload,
-            error_msg="")
+            data= payload)
 
 
 

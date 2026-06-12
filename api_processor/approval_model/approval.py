@@ -18,7 +18,7 @@ class Approval:
             sheet_name=cls.sheet_name,
             test_case_name=test_case_name,
             jsonpath_expr="$.data.list[0].id",
-            error_msg="获取审批数据失败")
+        )
 
 
 
@@ -35,7 +35,7 @@ class Approval:
             sheet_name=cls.sheet_name,
             test_case_name=test_case_name,
             jsonpath_expr="$.data",
-            error_msg="获取审批数据失败"
+
         )
 
     @classmethod
@@ -67,6 +67,5 @@ class Approval:
         return http_request.execute_case(
             sheet_name=cls.sheet_name,
             test_case_name=test_case_name,
-            variables=prams,
-            error_msg="操作审核失败")
+            variables=prams)
 

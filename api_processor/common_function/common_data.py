@@ -17,8 +17,8 @@ class GetCommonData:
         """
         return  http_request.execute_case(
                                             sheet_name=cls.sheet_name,
-                                            test_case_name=test_case_name,
-                                            error_msg="获取国家信息失败")
+                                            test_case_name=test_case_name
+        )
 
 
     @classmethod
@@ -34,8 +34,8 @@ class GetCommonData:
                                         cls.sheet_name,
                                         test_case_name,
                                         jsonpath_expr=f"$.data[?(@.country_name='{country}')]",
-                                        ping_data=pin_data,
-                                        error_msg="获取国家详情列表失败")
+                                        ping_data=pin_data
+        )
 
 
     @classmethod
@@ -49,8 +49,7 @@ class GetCommonData:
         return http_request.execute_case(
                                         cls.sheet_name,
                                         test_case_name,
-                                        jsonpath_expr=f'$..children[?(@.name == "{department_name}")]',
-                                        error_msg="获取国家详情列表失败")
+                                        jsonpath_expr=f'$..children[?(@.name == "{department_name}")]'        )
 
     @classmethod
     def get_user_id(cls, http_request, test_case_name,user_name):
@@ -58,8 +57,8 @@ class GetCommonData:
                                     cls.sheet_name,
                                     test_case_name,
                                     ping_data='page=1&take=10&name=',
-                                    jsonpath_expr=f'$.data.data[?(@.first_name == \'{user_name}\')]',
-                                    error_msg="获取用户ID失败")
+                                    jsonpath_expr=f'$.data.data[?(@.first_name == \'{user_name}\')]'
+        )
 
 
 

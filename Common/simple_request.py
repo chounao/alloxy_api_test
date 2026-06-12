@@ -522,7 +522,7 @@ class HttpRequest:
                      data: dict = None,
                      nested_keys: Optional[list] = None,
                      jsonpath_expr: Optional[str] = None,
-                     error_msg: str = "请求失败"):
+                     ):
         """
         封装的测试用例执行方法，简化业务层调用
         :param sheet_name: 工作表名称
@@ -553,7 +553,7 @@ class HttpRequest:
             response, extracted_parameters, assert_code, case_id = result
 
             if response is None:
-                self.logger.error(f"{error_msg}: 无响应返回")
+                self.logger.error(f"{test_case_name}: 无响应返回")
 
             return response, extracted_parameters, assert_code, case_id
         except Exception as e:

@@ -28,8 +28,10 @@ class PayOut:
             sheet_name=cls.sheet_name,
             test_case_name=test_case_name,
             ping_data=data,
-            nested_keys=['data'],
-            error_msg="获取加密货币到法币手续费失败")
+            nested_keys=['data'])
+
+
+
 
     @classmethod
     def get_country_rate_data(cls, http_request,from_currency,id):
@@ -84,8 +86,7 @@ class PayOut:
             sheet_name=cls.sheet_name,
             test_case_name=test_case_name,
             dict_data=data,
-            nested_keys=['data'],
-            error_msg="获取法币汇率失败")
+            nested_keys=['data'])
     @classmethod
     def get_rate_data(cls, http_request, from_currency,to_currency):
         result = cls.get_fiat_rate_info(http_request, '获取pay_out汇率',from_currency,to_currency)
@@ -117,8 +118,7 @@ class PayOut:
             sheet_name=cls.sheet_name,
             test_case_name=test_case_name,
             dict_data=data,
-            nested_keys=['data', 'list', 0, 'id'],
-            error_msg="获取法币收款地址失败")
+            nested_keys=['data', 'list', 0, 'id'])
 
     @classmethod
     def get_payee_address(cls, http_request,to_currency):
@@ -210,8 +210,9 @@ class PayOut:
         return http_request.execute_case(
             sheet_name=cls.sheet_name,
             test_case_name=test_case_name,
-            variables=variables,
-            error_msg="创建提现失败")
+            variables=variables)
+
+
 
     @classmethod
     def pay_out_fee(cls,http_request,from_currency,to_currency, amount):

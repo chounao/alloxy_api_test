@@ -25,15 +25,13 @@ class UserManagement:
         response, extracted_parameters, assert_code, case_id = http_request.execute_case(
             sheet_name=self.sheet_name,
             test_case_name='管理-获取部门列表',
-            jsonpath_expr="$.data[0].children[?(@.name == 'test_001_name')].department_id",
-            error_msg="获取部门列表失败"
+            jsonpath_expr="$.data[0].children[?(@.name == 'test_001_name')].department_id"
         )
         department_id = extracted_parameters
         response, extracted_parameters, assert_code, case_id = http_request._send_request(
             self.sheet_name,
             test_case_name = '管理-获取角色列表',
-            jsonpath_expr="$.data[?(@.name == 'test_001_name')].id",
-            error_msg="获取角色列表失败"
+            jsonpath_expr="$.data[?(@.name == 'test_001_name')].id"
         )
 
 
@@ -74,8 +72,9 @@ class UserManagement:
         return http_request.execute_case(
             sheet_name=cls.sheet_name,
             test_case_name=test_case_name,
-            variables= payload,
-            error_msg="创建用户失败")
+            variables= payload)
+
+
 
     @classmethod
     def get_user_id(cls,http_request,test_case_name):
@@ -90,8 +89,7 @@ class UserManagement:
             sheet_name=cls.sheet_name,
             test_case_name=test_case_name,
             ping_data='page=1&take=10&name=',
-            jsonpath_expr=f'$.data.data[?(@.first_name == \'{cls.create_first_name}\')].id',
-            error_msg="获取用户id失败")
+            jsonpath_expr=f'$.data.data[?(@.first_name == \'{cls.create_first_name}\')].id')
     @classmethod
     def update_user_info(cls, http_request,test_case_name):
         """
@@ -109,8 +107,7 @@ class UserManagement:
         return http_request.execute_case(
             sheet_name=cls.sheet_name,
             test_case_name=test_case_name,
-            variables=payload,
-            error_msg="更新用户信息失败")
+            variables=payload)
     @classmethod
     def reset_password (cls, http_request, test_case_name):
         """
@@ -131,8 +128,7 @@ class UserManagement:
         return http_request.execute_case(
             sheet_name=cls.sheet_name,
             test_case_name=test_case_name,
-            variables=payload,
-            error_msg="重置密码失败")
+            variables=payload)
 
 
     @classmethod
@@ -155,5 +151,4 @@ class UserManagement:
         return http_request.execute_case(
             sheet_name=cls.sheet_name,
             test_case_name=test_case_name,
-            variables=payload,
-            error_msg="删除用户失败")
+            variables=payload)

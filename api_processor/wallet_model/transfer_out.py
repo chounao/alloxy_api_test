@@ -41,8 +41,8 @@ class TransferOut:
             sheet_name=cls.sheet_name,
             test_case_name=test_case_name,
             dict_data=data,
-            nested_keys=['data', 'list'],
-            error_msg="获取币种收款方数据失败")
+            nested_keys=['data', 'list'])
+
 
 
 
@@ -96,8 +96,7 @@ class TransferOut:
             sheet_name=cls.sheet_name,
             test_case_name=test_case_name,
             dict_data=data,
-            nested_keys=['data', 'number'],
-            error_msg="获取提现手续费失败")
+            nested_keys=['data', 'number'])
 
 
 
@@ -141,8 +140,7 @@ class TransferOut:
         return http_request.execute_case(
             sheet_name=cls.sheet_name,
             test_case_name=test_case_name,
-            jsonpath_expr= f"$.data.list[*].chain_fee[?(@.chain_name=='{chain_name}')].fee",
-            error_msg="获取提币手续费失败")
+            jsonpath_expr= f"$.data.list[*].chain_fee[?(@.chain_name=='{chain_name}')].fee")
 
 
 
@@ -213,8 +211,7 @@ class TransferOut:
         return http_request.execute_case(
             sheet_name=cls.sheet_name,
             test_case_name=test_case_name,
-            variables=variables,
-            error_msg="转账失败")
+            variables=variables)
     @classmethod
     def _transfer_out_fail(cls, variables, test_case_name, http_request):
         """
@@ -231,8 +228,7 @@ class TransferOut:
         return http_request.execute_case(
             sheet_name=cls.sheet_name,
             test_case_name=test_case_name,
-            variables=variables,
-            error_msg="转账失败")
+            variables=variables)
 if __name__ == '__main__':
     http_request = HttpRequest ()
     TransferOut.transfer_out_data('测试用例名称', http_request, 'USDT', 'arbitrum', '0.01')

@@ -40,8 +40,7 @@ class WalletTransaction:
                                                                                 sheet_name=cls.sheet_name,
                                                                                 test_case_name=test_case_name,
                                                                                 dict_data=data,
-                                                                                nested_keys=['data', 'list'],
-                                                                                error_msg="操作审核失败")
+                                                                                nested_keys=['data', 'list'])
 
 
             # 检查是否有数据返回
@@ -122,8 +121,7 @@ class WalletTransaction:
         return http_request.execute_case(
             sheet_name=cls.sheet_name,
             test_case_name=test_case_name,
-            replace_data={'id': transaction_id},
-            error_msg="获取钱包交易详情失败")
+            replace_data={'id': transaction_id})
 
     #取消
     @classmethod
@@ -139,5 +137,4 @@ class WalletTransaction:
         return http_request.execute_case(
             sheet_name=cls.sheet_name,
             test_case_name=test_case_name,
-            variables=data,
-            error_msg="取消钱包交易失败")
+            variables=data)

@@ -21,8 +21,7 @@ class Settings:
         """
         return http_request.execute_case(
             sheet_name=cls.sheet_name,
-            test_case_name=test_case_name,
-            error_msg="获取审批设置失败")
+            test_case_name=test_case_name)
 
 
     @classmethod
@@ -53,8 +52,9 @@ class Settings:
         return http_request.execute_case(
             sheet_name=cls.sheet_name,
             test_case_name=test_case_name,
-            variables=payload,
-            error_msg="创建审批设置失败")
+            variables=payload)
+
+
 
     @classmethod
     def find_create_trx_review_settings_data(cls,http_request,name):
@@ -68,8 +68,9 @@ class Settings:
         return http_request.execute_case(
             sheet_name=cls.sheet_name,
             test_case_name='管理-获取审批设置列表',
-            jsonpath_expr=f'$.data.list[?(@.name == "{name}")].id',
-            error_msg="查找创建审批设置数据失败")
+            jsonpath_expr=f'$.data.list[?(@.name == "{name}")].id')
+
+
 
     @classmethod
     def update_trx_review_settings(cls,http_request,test_case_name):
@@ -87,8 +88,8 @@ class Settings:
         return http_request.execute_case(
             sheet_name=cls.sheet_name,
             test_case_name=test_case_name,
-            variables=payload,
-            error_msg="更新审批设置失败")
+            variables=payload)
+
 
 
     @classmethod
