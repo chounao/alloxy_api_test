@@ -13,86 +13,60 @@ class PayIn:
 
     @classmethod
     def get_country_info(cls,http_request,test_case_name):
+        """
+        获取国家信息
+        :param http_request: HttpRequest实例
+        :param test_case_name: 测试用例名称
+        :return: 国家信息
+        """
 
         data = {
             'business_type': 'yellowcard_payin',
         }
-        try:
-            result = http_request._send_request(
-                cls.sheet_name,
-                test_case_name,
-                dict_data=data,
-                nested_keys=['data']
-            )
-            if result is None or len(result) != 4:
-                logger.error("返回结果格式不正确")
-                return None, None, None, None
-            response, extracted_parameters, assert_code, case_id = result
-            if response is not None:
-                return response, extracted_parameters, assert_code, case_id
-            else:
-                logger.error("请求失败，无响应返回")
-                return response, None, assert_code, case_id
-        except Exception as e:
-            logger.error(f"获取收款方失败: {e}")
-            raise e
 
 
+        return http_request.execute_case(
+            sheet_name=cls.sheet_name,
+            test_case_name=test_case_name,
+            dict_data=data,
+            nested_keys=['data'],
+            error_msg="获取国家信息失败")
 
 
     @classmethod
     def get_fiat_in_fee(cls,http_request,test_case_name):
-
-        try:
-            result = http_request._send_request(
-                cls.sheet_name,
-                test_case_name,
-            )
-            if result is None or len(result) != 4:
-                logger.error("返回结果格式不正确")
-                return None, None, None, None
-            response, extracted_parameters, assert_code, case_id = result
-            if response is not None:
-                return response, extracted_parameters, assert_code, case_id
-            else:
-                logger.error("请求失败，无响应返回")
-                return response, None, assert_code, case_id
-        except Exception as e:
-            logger.error(f"获取收款方失败: {e}")
-            raise e
-
-
+        """
+        获取法币到 crypto 的手续费
+        :param http_request:
+        :param test_case_name:
+        :return:
+        """
+        return http_request.execute_case(
+            sheet_name=cls.sheet_name,
+            test_case_name=test_case_name,
+            error_msg="获取法币到 crypto 的手续费失败")
 
 
 
     @classmethod
     def get_pay_in_fee(cls,http_request,test_case_name,from_currency, to_currency):
+        """
+        获pay_in的手续费
+        :param http_request:
+        :param test_case_name:
+        :return:
+        """
         data = {
             'from_currency': from_currency,
             'to_currency': to_currency,
         }
-        try:
-            result = http_request._send_request(
-                cls.sheet_name,
-                test_case_name,
-                dict_data=data,
-                nested_keys=['data']
-            )
-            if result is None or len(result) != 4:
-                logger.error("返回结果格式不正确")
-                return None, None, None, None
-            response, extracted_parameters, assert_code, case_id = result
-            logger.info(extracted_parameters)
-            if response is not None:
-                return response, extracted_parameters, assert_code, case_id
-            else:
-                logger.error("请求失败，无响应返回")
-                return response, None, assert_code, case_id
-        except Exception as e:
-            logger.error(f"获取收款方失败: {e}")
-            raise e
 
-
+        return http_request.execute_case(
+            sheet_name=cls.sheet_name,
+            test_case_name=test_case_name,
+            dict_data=data,
+            nested_keys=['data'],
+            error_msg="获取pay_in手续费失败")
 
 
     @classmethod
@@ -149,26 +123,11 @@ class PayIn:
             return None
 
     @classmethod
-    def pay_in_submit(cls,variables,test_case_name,http_request, from_currency, to_currency,amount):
+    def pay_in_submit(cls,test_case_name,http_request, from_currency, to_currency,amount):
+        variables = cls.pay_in_parameter(http_request,from_currency, to_currency, amount)
 
-
-
-        try:
-
-            result = http_request._send_request(
-                cls.sheet_name,
-                test_case_name,
-                variables = variables
-            )
-            if result is None or len(result) != 4:
-                logger.error("返回结果格式不正确")
-                return None, None, None, None
-            response, extracted_parameters, assert_code, case_id = result
-            if response is not None:
-                return response, extracted_parameters, assert_code, case_id
-            else:
-                logger.error("请求失败，无响应返回")
-                return response, None, assert_code, case_id
-        except Exception as e:
-            logger.error(f"获取收款方失败: {e}")
-            raise e
+        return http_request.execute_case(
+            sheet_name=cls.sheet_name,
+            test_case_name=test_case_name,
+            variables = variables,
+            error_msg="提交pay_in失败")

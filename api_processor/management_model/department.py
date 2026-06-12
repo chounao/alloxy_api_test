@@ -9,52 +9,36 @@ class Departments:
 
     @classmethod
     def get_department_data(cls,http_request,test_case_name):
-        try:
-            result = http_request._send_request(
-                cls.sheet_name,
-                test_case_name,
-                jsonpath_expr='$.data[0].department_id')
+        """
+        获取部门列表
+        :param http_request: HttpRequest实例
+        :param test_case_name: 测试用例名称
+        :return:
+        """
 
-            if result is None or len(result) != 4:
-                logger.error("转账请求返回结果格式不正确")
-                return None, None, None, None
+        return http_request.execute_case(
+            sheet_name=cls.sheet_name,
+            test_case_name=test_case_name,
+            jsonpath_expr='$.data[0].department_id',
+            error_msg = "获取部门列表失败"
+        )
 
-            response, extracted_parameters, assert_code, case_id = result
-            if response is not None:
-                logger.info(f'id:{extracted_parameters}')
-                return response, extracted_parameters, assert_code, case_id
-
-            else:
-                logger.error("转账请求失败，无响应返回")
-                return None, None, None, None
-
-        except Exception as e:
-            logger.error(f"失败: {e}")
-            raise e
     @classmethod
     def get_department_id_for_name(cls,http_request,test_case_name,department_name):
-        try:
-            result = http_request._send_request(
-                cls.sheet_name,
-                test_case_name,
-                jsonpath_expr=f'$..children[?(@.name == "{department_name}")].department_id')
+        """
+        获取部门id
+        :param http_request: HttpRequest实例
+        :param test_case_name: 测试用例名称
+        :param department_name: 部门名称
+        :return: 部门id
+        """
 
-            if result is None or len(result) != 4:
-                logger.error("转账请求返回结果格式不正确")
-                return None, None, None, None
-
-            response, extracted_parameters, assert_code, case_id = result
-            if response is not None:
-                logger.info(f'id:{extracted_parameters}')
-                return response, extracted_parameters, assert_code, case_id
-
-            else:
-                logger.error("转账请求失败，无响应返回")
-                return None, None, None, None
-
-        except Exception as e:
-            logger.error(f"失败: {e}")
-            raise e
+        return http_request.execute_case(
+            sheet_name=cls.sheet_name,
+            test_case_name=test_case_name,
+            jsonpath_expr=f'$..children[?(@.name == "{department_name}")].department_id',
+            error_msg="获取部门ID失败"
+        )
     def get_department_root_id(self,http_request):
         """
 
@@ -65,6 +49,8 @@ class Departments:
         result = self.get_department_data(http_request, '管理-获取部门列表')
         response, extracted_parameters, assert_code, case_id = result
         return extracted_parameters
+
+
 
     def get_department_id(self,http_request,department_name):
         """
@@ -79,85 +65,62 @@ class Departments:
 
     @classmethod
     def create_department(cls,http_request,test_case_name):
+        """
+        创建部门
+        :param http_request: HttpRequest实例
+        :param test_case_name: 测试用例名称
+        :return: 部门id
+        """
         data = {
             "name": cls.create_name,
             "parent_department_id": cls.get_department_root_id(cls,http_request)
         }
-        try:
-            result = http_request._send_request(
-                cls.sheet_name, test_case_name,variables= data)
 
-            if result is None or len(result) != 4:
-                logger.error("转账请求返回结果格式不正确")
-                return None, None, None, None
-
-            response, extracted_parameters, assert_code, case_id = result
-            if response is not None:
-                logger.info(f'id:{extracted_parameters}')
-                return response, extracted_parameters, assert_code, case_id
-
-            else:
-                logger.error("转账请求失败，无响应返回")
-                return None, None, None, None
-
-        except Exception as e:
-            logger.error(f"失败: {e}")
-            raise e
-
+        return http_request.execute_case(
+            sheet_name=cls.sheet_name,
+            test_case_name=test_case_name,
+            variables= data,
+            error_msg="创建部门失败"
+        )
 
 
 
     @classmethod
     def put_department(cls,http_request,test_case_name):
+        """
+        修改部门
+        :param http_request: HttpRequest实例
+        :param test_case_name: 测试用例名称
+        :return: 部门id
+        """
         data = {
             "name": cls.put_name,
             "parent_department_id": cls.get_department_root_id(cls,http_request),
             "department_id": cls.get_department_id( cls,http_request,cls.create_name)
         }
-        try:
-            result = http_request._send_request(cls.sheet_name, test_case_name,variables= data)
-            if result is None or len(result) != 4:
-                logger.error("转账请求返回结果格式不正确")
-                return None, None, None, None
 
-            response, extracted_parameters, assert_code, case_id = result
-            if response is not None:
-                logger.info(f'id:{extracted_parameters}')
-                return response, extracted_parameters, assert_code, case_id
-
-            else:
-                logger.error("转账请求失败，无响应返回")
-                return None, None, None, None
-
-        except Exception as e:
-            logger.error(f"失败: {e}")
-            raise e
-
-
+        return http_request.execute_case(
+            sheet_name=cls.sheet_name,
+            test_case_name=test_case_name,
+            variables= data,
+            error_msg="修改部门失败"
+        )
 
     @classmethod
     def delete_department(cls,http_request,test_case_name):
+        """
+        删除部门
+        :param http_request: HttpRequest实例
+        :param test_case_name: 测试用例名称
+        :return: 部门id
+        """
         body = {'id':cls.get_department_id( cls,http_request,cls.put_name)}
-        try:
-            result = http_request._send_request(cls.sheet_name, test_case_name,replace_data= body)
-
-            if result is None or len(result) != 4:
-                logger.error("转账请求返回结果格式不正确")
-                return None, None, None, None
-
-            response, extracted_parameters, assert_code, case_id = result
-            if response is not None:
-                logger.info(f'id:{extracted_parameters}')
-                return response, extracted_parameters, assert_code, case_id
-
-            else:
-                logger.error("转账请求失败，无响应返回")
-                return None, None, None, None
-
-        except Exception as e:
-            logger.error(f"失败: {e}")
-            raise e
-
+        return http_request.execute_case(
+            sheet_name=cls.sheet_name,
+            test_case_name=test_case_name,
+            replace_data= body,
+            error_msg="删除部门失败"
+        )
 
 
 

@@ -533,26 +533,30 @@ class HttpRequest:
         :param error_msg: 错误提示信息
         :return: response, extracted_parameters, assert_code, case_id
         """
-        result = self._send_request(
-            sheet_name=sheet_name,
-            test_case_name=test_case_name,
-            variables=variables,
-            ping_data=ping_data,
-            replace_data=replace_data,
-            dict_data=dict_data,
-            data=data,
-            nested_keys=nested_keys,
-            jsonpath_expr=jsonpath_expr
-        )
+        try:
+            result = self._send_request(
+                sheet_name=sheet_name,
+                test_case_name=test_case_name,
+                variables=variables,
+                ping_data=ping_data,
+                replace_data=replace_data,
+                dict_data=dict_data,
+                data=data,
+                nested_keys=nested_keys,
+                jsonpath_expr=jsonpath_expr
+            )
 
-        if result is None or len(result) != 4:
-            self.logger.error(f"{error_msg}: 返回结果格式不正确")
-            return None, None, None, None
+            if result is None or not isinstance(result, (list, tuple)) or len(result) != 4:
+                logger.error(f"[{test_case_name}] 返回结果格式不正确: {result}")
+                return None
 
-        response, extracted_parameters, assert_code, case_id = result
+            response, extracted_parameters, assert_code, case_id = result
 
-        if response is None:
-            self.logger.error(f"{error_msg}: 无响应返回")
+            if response is None:
+                self.logger.error(f"{error_msg}: 无响应返回")
 
-        return response, extracted_parameters, assert_code, case_id
+            return response, extracted_parameters, assert_code, case_id
+        except Exception as e:
+            logger.error(f"[{test_case_name}] 发生未知异常: {e}")
+            return None
 

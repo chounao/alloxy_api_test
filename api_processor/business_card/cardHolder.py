@@ -22,24 +22,13 @@ class CardHolderManagement:
         :return: 部门ID
         """
 
-        try :
-            result = http_request._send_request(
-                cls.sheet_name,
-                test_case_name,
-                nested_keys=['data']
-            )
-            if result is None or len(result) != 4:
-                logger.error("返回结果格式不正确")
-                return None, None, None, None
-            response, extracted_parameters, assert_code, case_id = result
-            if response is not None:
-                return response, extracted_parameters, assert_code, case_id
-            else:
-                logger.error("请求失败，无响应返回")
-                return response, None, assert_code, case_id
-        except Exception as e:
-            logger.error(f"获取钱包交易详情失败: {e}")
 
+        return http_request.execute_case(
+            sheet_name=cls.sheet_name,
+            test_case_name=test_case_name,
+            nested_keys=['data'],
+            error_msg="获取部门列表失败"
+             )
     @classmethod
     def get_department_id_data(cls, http_request):
         """
@@ -47,88 +36,94 @@ class CardHolderManagement:
         :param http_request: HttpRequest实例
         :return: 部门ID
         """
-        result = cls.get_department_id(http_request, '管理-获取部门列表')
-        if result is None:
+        response, extracted_parameters, assert_code, case_id = cls.get_department_id(http_request, '管理-获取部门列表')
+
+        if response is None:
+            logger.error("请求失败，无响应返回")
             return None
         else:
-            response, extracted_parameters, assert_code, case_id = result
-            if response is None:
-                logger.error("请求失败，无响应返回")
-                return None
-            else:
-                department_id = extracted_parameters[0].get('department_id', None)
-                logger.info(f"部门ID为：{department_id}")
-                return department_id
+            department_id = extracted_parameters[0].get('department_id', None)
+            logger.info(f"部门ID为：{department_id}")
+            return department_id
     #持卡人查询接口
     @classmethod
-    def get_card_holder_info(cls, http_request, test_case_name, body=None, page=1, take=20, max_pages=None):
+    def get_card_holder_info(cls, http_request, test_case_name, extra_params=None, page=1, take=100, max_pages=None):
         """
-        获取持卡人信息
+        获取持卡人信息（支持分页查询并合并所有数据）
         :param http_request: HttpRequest实例
         :param test_case_name: 测试用例名称
-        :param body: 请求体参数（可选）
+        :param extra_params: 额外请求参数（可选）
         :param page: 起始页码，默认为1
         :param take: 每页数据条数，默认为100
         :param max_pages: 最大查询页数，None表示查询所有页面
-        :return: 合并后的所有页面数据
+        :return: tuple(response, all_data, assert_code, case_id)
         """
-        all_extracted_parameters = []
+        all_data = []
         current_page = page
+        last_response = None
+        last_assert_code = None
+        last_case_id = None
+
+        logger.info(f"[{test_case_name}] 开始分页查询，起始页:{page}, 每页:{take}, 最大页数:{max_pages}")
 
         while True:
-            data = {
-                'page': current_page,
-                'take': take,
-            }
-
-            # 明确判断 body 是否有效再合并
-            if isinstance(body, dict):
-                data.update(body)
+            # 构建请求参数
+            data = {'page': current_page, 'take': take}
+            if isinstance(extra_params, dict):
+                data.update(extra_params)
 
             try:
-                result = http_request._send_request(
-                    cls.sheet_name,
-                    test_case_name,
+                response, extracted_data, assert_code, case_id = http_request.execute_case(
+                    sheet_name=cls.sheet_name,
+                    test_case_name=test_case_name,
                     dict_data=data,
-                    nested_keys=['data', 'list']
+                    nested_keys=['data', 'list'],
+                    error_msg="获取持卡人列表失败"
                 )
 
-                # 统一返回格式，始终返回四元素元组
-                if result is None or not isinstance(result, (list, tuple)) or len(result) != 4:
-                    logger.error(f"[{test_case_name}] 返回结果格式不正确: {result}")
-                    break
-
-                response, extracted_parameters, assert_code, case_id = result
+                # 保存最后一次的响应信息
+                last_response = response
+                last_assert_code = assert_code
+                last_case_id = case_id
 
                 if response is None:
-                    logger.error(f"[{test_case_name}] 请求失败，无响应返回")
+                    logger.error(f"[{test_case_name}] 第{current_page}页请求失败，无响应返回")
                     break
 
                 # 检查是否有数据返回
-                if not extracted_parameters:
+                if not extracted_data:
                     logger.info(f"[{test_case_name}] 第{current_page}页无数据，停止查询")
                     break
 
                 # 合并当前页数据
-                all_extracted_parameters.extend(extracted_parameters)
+                all_data.extend(extracted_data)
+                logger.debug(
+                    f"[{test_case_name}] 第{current_page}页获取到{len(extracted_data)}条数据，累计{len(all_data)}条")
 
                 # 检查是否还有下一页
                 total_count = response.get('data', {}).get('count', 0)
                 current_total = current_page * take
 
-                # 如果已经达到最大页数限制或没有更多数据，则停止
-                if (max_pages and current_page >= max_pages) or current_total >= total_count:
-                    logger.info(f"[{test_case_name}] 已达到最大页数限制或无更多数据")
+                # 判断是否停止查询
+                should_stop = False
+                if max_pages and current_page >= max_pages:
+                    logger.info(f"[{test_case_name}] 已达到最大页数限制({max_pages}页)，停止查询")
+                    should_stop = True
+                elif current_total >= total_count:
+                    logger.info(f"[{test_case_name}] 已获取全部数据({total_count}条)，停止查询")
+                    should_stop = True
+
+                if should_stop:
                     break
 
                 current_page += 1
 
             except Exception as e:
-                logger.error(f"[{test_case_name}] 获取钱包交易数据失败: {e}")
+                logger.error(f"[{test_case_name}] 第{current_page}页查询失败: {e}")
                 break
 
-        # 返回合并后的所有数据
-        return response, extracted_parameters, assert_code, case_id
+        logger.info(f"[{test_case_name}] 分页查询完成，共获取{len(all_data)}条数据")
+        return last_response, all_data, last_assert_code, last_case_id
 
     def get_card_holder_info_data(cls, http_request, body=None):
         """
@@ -183,31 +178,13 @@ class CardHolderManagement:
         # 从持卡人数据中随机选择一个持卡人ID
         card_holder_id = random.choice(card_holder_data)
 
-        try:
-            if len(card_holder_id) == 0:
-                logger.error(f"[{test_case_name}] 未找到符合条件的持卡人ID")
-                return None
-            else:
-                result = http_request._send_request(
-                    cls.sheet_name,
-                    test_case_name,
-                    replace_data={'id': card_holder_id},
-                )
 
-                if result is None or not isinstance(result, (list, tuple)) or len(result) != 4:
-                    logger.error(f"[{test_case_name}] 返回结果格式不正确: {result}")
-                    return None
-
-                response, extracted_parameters, assert_code, case_id = result
-
-                if response is None:
-                    logger.error(f"[{test_case_name}] 请求失败，无响应返回")
-                    return None
-
-                return response
-
-        except Exception as e:
-            logger.error(f"[{test_case_name}] 获取持卡人详情失败: {e}")
+        return http_request.execute_case(
+            sheet_name=cls.sheet_name,
+            test_case_name=test_case_name,
+            replace_data={'id': card_holder_id},
+            error_msg="操作持卡人失败"
+        )
 
     #冻结
     @classmethod
@@ -227,28 +204,13 @@ class CardHolderManagement:
         if not card_holder_data:
             raise ValueError("持卡人信息数据为空")
         card_holder_id = card_holder_data[0]
-        try:
-            result = http_request._send_request(
-                cls.sheet_name,
-                test_case_name,
+        return http_request.execute_case(
+                sheet_name=cls.sheet_name,
+                test_case_name=test_case_name,
                 dict_data={'id': card_holder_id},
-                variables=data
+                variables=data,
+                error_msg="冻结持卡人失败"
             )
-
-            if result is None or not isinstance(result, (list, tuple)) or len(result) != 4:
-                logger.error(f"[{test_case_name}] 返回结果格式不正确: {result}")
-                return None
-
-            response, extracted_parameters, assert_code, case_id = result
-
-            if response is None:
-                logger.error(f"[{test_case_name}] 请求失败，无响应返回")
-                return None
-
-            return response
-
-        except Exception as e:
-            logger.error(f"[{test_case_name}] 冻结持卡人失败: {e}")
     #根据部门id获取对应的的人员
     @classmethod
     def get_card_holder_by_department_id(cls, http_request, test_case_name):
@@ -263,22 +225,13 @@ class CardHolderManagement:
             raise ValueError("部门ID数据为空")
         else:
             department_id = f'department_id = {id}'
-            result = http_request._send_request(
-                cls.sheet_name,
-                test_case_name,
-                ping_data=department_id
+            return http_request.execute_case(
+                    sheet_name=cls.sheet_name,
+                    test_case_name=test_case_name,
+                    ping_data=department_id,
+                    error_msg="根据部门ID获取持卡人失败"
             )
-            if result is None or not isinstance(result, (list, tuple)) or len(result) != 4:
-                logger.error(f"[{test_case_name}] 返回结果格式不正确: {result}")
-                return None
 
-            response, extracted_parameters, assert_code, case_id = result
-
-            if response is None:
-                logger.error(f"[{test_case_name}] 请求失败，无响应返回")
-                return None
-
-            return response
 
 
 
@@ -342,27 +295,12 @@ class CardHolderManagement:
         """
         body = cls.create_card_holder_params(department, user,country)
 
-        try:
-            result = http_request._send_request(
-                cls.sheet_name,
-                test_case_name,
-                variables= body,
-                jsonpath_expr="$.data.virtualCardHolderKyc.kyc_er_id"
-            )
-            if result is None or not isinstance(result, (list, tuple)) or len(result) != 4:
-                logger.error(f"[{test_case_name}] 返回结果格式不正确: {result}")
-                return None
-
-            response, extracted_parameters, assert_code, case_id = result
-
-            if response is None:
-                logger.error(f"[{test_case_name}] 请求失败，无响应返回")
-                return None
-            if response is not None:
-                logger.info(f'id:{extracted_parameters}')
-            return response
-
-        except Exception as e:
-            logger.error(f"[{test_case_name}] 创建卡人失败: {e}")
+        return http_request.execute_case(
+            sheet_name=cls.sheet_name,
+            test_case_name=test_case_name,
+            variables=body,
+            jsonpath_expr="$.data.virtualCardHolderKyc.kyc_er_id",
+            error_msg="创建制卡人失败"
+        )
 
 

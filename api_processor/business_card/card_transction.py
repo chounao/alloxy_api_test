@@ -28,19 +28,11 @@ class CardTransaction:
 
         params_data = f'page=1&take=20&transaction_type={transaction_type}&status={status}&transaction_sub_type={transaction_sub_type}'
 
-
-        try:
-            result = http_request._send_request(cls.sheet_name, test_case_name,ping_data=params_data)
-            if result is None or len(result) != 4:
-                return None, None, None, None
-
-            response, extracted_parameters, assert_code, case_id = result
-            if response is not None:
-                return response, extracted_parameters, assert_code, case_id
-            else:
-                logger.error("获取数据，无响应返回")
-        except Exception as e:
-            logger.error(f"失败: {e}")
-            raise e
+        return http_request.execute_case(
+            sheet_name=cls.sheet_name,
+            test_case_name=test_case_name,
+            ping_data=params_data,
+            error_msg="获取卡片交易列表失败"
+        )
 
 

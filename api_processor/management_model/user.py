@@ -21,23 +21,34 @@ class UserManagement:
 
 
     def get_id_for_name(self,http_request):
-        result1= http_request._send_request(self.sheet_name,'管理-获取部门列表',
-                                                  jsonpath_expr="$.data[0].children[?(@.name == 'test_001_name')].department_id")
-        response, extracted_parameters, assert_code, case_id = result1
+
+        response, extracted_parameters, assert_code, case_id = http_request.execute_case(
+            sheet_name=self.sheet_name,
+            test_case_name='管理-获取部门列表',
+            jsonpath_expr="$.data[0].children[?(@.name == 'test_001_name')].department_id",
+            error_msg="获取部门列表失败"
+        )
         department_id = extracted_parameters
-        result2 = http_request._send_request(self.sheet_name,'管理-获取角色列表',
-                                            jsonpath_expr="$.data[?(@.name == 'test_001_name')].id")
-        response, extracted_parameters, assert_code, case_id = result2
+        response, extracted_parameters, assert_code, case_id = http_request._send_request(
+            self.sheet_name,
+            test_case_name = '管理-获取角色列表',
+            jsonpath_expr="$.data[?(@.name == 'test_001_name')].id",
+            error_msg="获取角色列表失败"
+        )
+
+
         role_id = extracted_parameters
-        # print(department_id, role_id)
+
         return department_id, role_id
     @classmethod
     def get_create_user_data(cls,http_request):
+        """
+        获取创建用户数据
+        :param http_request: HttpRequest实例
+        :return: 创建用户数据
+        """
         department_id, role_id = cls.get_id_for_name(cls,http_request)
-
         fake = Faker('en_US')
-        # cls.last_name = fake.last_name()
-        # cls.first_name = fake.first_name()
         cls.email = fake.email()
         cls.phone = f"1{random.choice('3456789')}{''.join([str(random.randint(0, 9)) for _ in range(9)])}"
 
@@ -52,76 +63,62 @@ class UserManagement:
         return  payload
     @classmethod
     def create_user(cls,http_request,test_case_name):
+        """
+        创建用户
+        :param http_request: HttpRequest实例
+        :param test_case_name: 测试用例名称
+        :return: 创建用户结果
+        """
         payload  = cls.get_create_user_data(http_request)
-        try:
-            result = http_request._send_request(cls.sheet_name, test_case_name, variables= payload)
-            if result is None or len(result) != 4:
-                logger.error("转账请求返回结果格式不正确")
-                return None, None, None, None
 
-            response, extracted_parameters, assert_code, case_id = result
-            if response is not None:
-                logger.info(f'id:{extracted_parameters}')
-                return response, extracted_parameters, assert_code, case_id
-
-            else:
-                logger.error("转账请求失败，无响应返回")
-                return None, None, None, None
-
-        except Exception as e:
-            logger.error(f"失败: {e}")
-            raise e
+        return http_request.execute_case(
+            sheet_name=cls.sheet_name,
+            test_case_name=test_case_name,
+            variables= payload,
+            error_msg="创建用户失败")
 
     @classmethod
     def get_user_id(cls,http_request,test_case_name):
-        try:
-            result = http_request._send_request(cls.sheet_name, test_case_name,ping_data='page=1&take=10&name=',
-                jsonpath_expr=f'$.data.data[?(@.first_name == \'{cls.create_first_name}\')].id')
-            if result is None or len(result) != 4:
-                logger.error("转账请求返回结果格式不正确")
-                return None, None, None, None
+        """
+        获取用户id
+        :param http_request: HttpRequest实例
+        :param test_case_name: 测试用例名称
+        :return: 用户id
+        """
 
-            response, extracted_parameters, assert_code, case_id = result
-            print(extracted_parameters)
-            if response is not None:
-                logger.info(f'id:{extracted_parameters}')
-                return response, extracted_parameters, assert_code, case_id
-
-            else:
-                logger.error("转账请求失败，无响应返回")
-                return None, None, None, None
-
-        except Exception as e:
-            logger.error(f"失败: {e}")
-            raise e
-
+        return http_request.execute_case(
+            sheet_name=cls.sheet_name,
+            test_case_name=test_case_name,
+            ping_data='page=1&take=10&name=',
+            jsonpath_expr=f'$.data.data[?(@.first_name == \'{cls.create_first_name}\')].id',
+            error_msg="获取用户id失败")
     @classmethod
     def update_user_info(cls, http_request,test_case_name):
+        """
+        更新用户信息
+        :param http_request:
+        :param test_case_name:
+        :return:
+        """
         payload  = cls.get_create_user_data(http_request)
         response, extracted_parameters, assert_code, case_id = cls.get_user_id(http_request, '管理-获取成员列表')
         payload['member_id'] = extracted_parameters
         payload['last_name'] = cls.PUT_last_name
         print( payload)
-        try:
-            result = http_request._send_request(cls.sheet_name, test_case_name, variables= payload)
-            if result is None or len(result) != 4:
-                logger.error("转账请求返回结果格式不正确")
-                return None, None, None, None
 
-            response, extracted_parameters, assert_code, case_id = result
-            if response is not None:
-                logger.info(f'id:{extracted_parameters}')
-                return response, extracted_parameters, assert_code, case_id
-
-            else:
-                logger.error("转账请求失败，无响应返回")
-                return None, None, None, None
-
-        except Exception as e:
-            logger.error(f"失败: {e}")
-            raise e
+        return http_request.execute_case(
+            sheet_name=cls.sheet_name,
+            test_case_name=test_case_name,
+            variables=payload,
+            error_msg="更新用户信息失败")
     @classmethod
     def reset_password (cls, http_request, test_case_name):
+        """
+        重置密码
+        :param http_request:
+        :param test_case_name:
+        :return:
+        """
         md5 = hashlib.md5()
         md5.update(cls.pass_word.encode('utf-8'))
         response, extracted_parameters, assert_code, case_id = cls.get_user_id(http_request, '管理-获取成员列表')
@@ -130,25 +127,12 @@ class UserManagement:
             "password": md5.hexdigest()
         }
         print(payload)
-        try:
-            result = http_request._send_request(cls.sheet_name, test_case_name, variables=payload)
-            if result is None or len(result) != 4:
-                logger.error("转账请求返回结果格式不正确")
-                return None, None, None, None
 
-            response, extracted_parameters, assert_code, case_id = result
-            if response is not None:
-                logger.info(f'id:{extracted_parameters}')
-                return response, extracted_parameters, assert_code, case_id
-
-            else:
-                logger.error("转账请求失败，无响应返回")
-                return None, None, None, None
-
-        except Exception as e:
-            logger.error(f"失败: {e}")
-            raise e
-
+        return http_request.execute_case(
+            sheet_name=cls.sheet_name,
+            test_case_name=test_case_name,
+            variables=payload,
+            error_msg="重置密码失败")
 
 
     @classmethod
@@ -167,21 +151,9 @@ class UserManagement:
         print(
             payload
         )
-        try:
-            result = http_request._send_request(cls.sheet_name, test_case_name, variables=payload)
-            if result is None or len(result) != 4:
-                logger.error("转账请求返回结果格式不正确")
-                return None, None, None, None
 
-            response, extracted_parameters, assert_code, case_id = result
-            if response is not None:
-                logger.info(f'id:{extracted_parameters}')
-                return response, extracted_parameters, assert_code, case_id
-
-            else:
-                logger.error("转账请求失败，无响应返回")
-                return None, None, None, None
-
-        except Exception as e:
-            logger.error(f"失败: {e}")
-            raise e
+        return http_request.execute_case(
+            sheet_name=cls.sheet_name,
+            test_case_name=test_case_name,
+            variables=payload,
+            error_msg="删除用户失败")

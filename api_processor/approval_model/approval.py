@@ -13,27 +13,12 @@ class Approval:
         :param test_case_name: 测试用例名称
         :return: 审批数据
         """
-        try:
-            result = http_request._send_request(
-                cls.sheet_name,
-                test_case_name,
-                jsonpath_expr="$.data.list[0].id",
-            )
-            if result is None or len(result) != 4:
-                logger.error("返回结果格式不正确")
-                return None, None, None, None
-            response, extracted_parameters, assert_code, case_id = result
-            if response is not None:
-                logger.info(f'获取的审批数据为:{extracted_parameters}')
-                return response, extracted_parameters, assert_code, case_id
-            else:
-                logger.error("请求失败，无响应返回")
-                return response, None, assert_code, case_id
-        except Exception as e:
-            logger.error(f"详情失败: {e}")
 
-
-
+        return http_request.execute_case(
+            sheet_name=cls.sheet_name,
+            test_case_name=test_case_name,
+            jsonpath_expr="$.data.list[0].id",
+            error_msg="获取审批数据失败")
 
 
 
@@ -45,24 +30,13 @@ class Approval:
         :param test_case_name: 测试用例名称
         :return: 审批数据
         """
-        try:
-            result = http_request._send_request(
-                cls.sheet_name,
-                test_case_name,
-                jsonpath_expr="$.data",
-            )
-            if result is None or len(result) != 4:
-                logger.error("返回结果格式不正确")
-                return None, None, None, None
-            response, extracted_parameters, assert_code, case_id = result
-            if response is not None:
-                logger.info(f'获取的审批数据为:{extracted_parameters}')
-                return response, extracted_parameters, assert_code, case_id
-            else:
-                logger.error("请求失败，无响应返回")
-                return response, None, assert_code, case_id
-        except Exception as e:
-            logger.error(f"详情失败: {e}")
+
+        return http_request.execute_case(
+            sheet_name=cls.sheet_name,
+            test_case_name=test_case_name,
+            jsonpath_expr="$.data",
+            error_msg="获取审批数据失败"
+        )
 
     @classmethod
     def get_approval_detail(cls,http_request,approval_status):
@@ -70,11 +44,11 @@ class Approval:
         :param http_request:
         :return:
         """
-        result = cls.get_approval_data_for_pending(http_request,test_case_name = '获取审批列表')
-        response, extracted_parameters, assert_code, case_id = result
+        response, extracted_parameters, assert_code, case_id = http_request.execute_case(http_request,test_case_name = '获取审批列表')
+
         prams = {
-            "approval_log_id":extracted_parameters,
-            "status":approval_status
+            "approval_log_id": extracted_parameters,
+            "status": approval_status
         }
         return prams
 
@@ -90,22 +64,9 @@ class Approval:
         :return: 审批结果
         """
         prams = cls.get_approval_detail(http_request,approval_status)
-        try:
-            result = http_request._send_request(
-                cls.sheet_name,
-                test_case_name,
-                variables=prams
+        return http_request.execute_case(
+            sheet_name=cls.sheet_name,
+            test_case_name=test_case_name,
+            variables=prams,
+            error_msg="操作审核失败")
 
-            )
-            if result is None or len(result) != 4:
-                logger.error("返回结果格式不正确")
-                return None, None, None, None
-            response, extracted_parameters, assert_code, case_id = result
-            if response is not None:
-                logger.info(f'操作审核结果为:{extracted_parameters}')
-                return response, extracted_parameters, assert_code, case_id
-            else:
-                logger.error("请求失败，无响应返回")
-                return response, None, assert_code, case_id
-        except Exception as e:
-            logger.error(f"详情失败: {e}")
