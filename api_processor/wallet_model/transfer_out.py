@@ -28,35 +28,21 @@ class TransferOut:
             raise ValueError(f"未找到链名称 '{chain_name}' 对应的链数据")
         chain_id = chain_data['chain_id']
         # print(f"获取的链ID为：{chain_id}")
-        try:
-            data = {
-                'page': 1,
-                'take': 100,
-                'currency': from_currency,
-                'chain_id': chain_id,
 
-            }
-            result = http_request._send_request(
-                cls.sheet_name,
-                test_case_name,
-                dict_data=data,
-                nested_keys=['data', 'list']
-            )
-            if result is None or len(result) != 4:
-                logger.error("获取用获取收款方请求返回结果格式不正确")
-                return None, None, None, None
+        data = {
+            'page': 1,
+            'take': 100,
+            'currency': from_currency,
+            'chain_id': chain_id,
 
-            response, extracted_parameters, assert_code, case_id = result
-            # print(extracted_parameters)
-            if response is not None:
-                return response, extracted_parameters, assert_code, case_id
-            else:
-                logger.error("获取收款方请求失败，无响应返回")
-                return response, None, assert_code, case_id
-        except Exception as e:
-            logger.error(f"获取收款方失败: {e}")
-            raise e
+        }
 
+        return http_request.execute_case(
+            sheet_name=cls.sheet_name,
+            test_case_name=test_case_name,
+            dict_data=data,
+            nested_keys=['data', 'list'],
+            error_msg="获取币种收款方数据失败")
 
 
 
@@ -71,25 +57,21 @@ class TransferOut:
         :return: 收款方ID或None
         """
         payee_list = []
-        data = cls.get_crypto_payee_data('钱包-获取加密收款地址列表', http_request, from_currency, chain_name)
-        if data is None:
-            logger.error(f"未找到币种 '{from_currency}' 在链 '{chain_name}' 对应的收款方数据")
-            return None
-        else:
-            response, extracted_parameters, assert_code,case_id = data
-            if extracted_parameters is not None:
-                for i in extracted_parameters:
-                    if i['status'] == 'active':
-                        payee_list.append(i['id'])
-                if len(payee_list) > 0:
-                    logger.info(f"获取的收款方ID列表为：{payee_list}")
-                    return payee_list
-                else:
-                    logger.error(f"未找到币种 '{from_currency}' 在链 '{chain_name}' 对应的收款方ID")
-                    return None
+        response, extracted_parameters, assert_code,case_id = cls.get_crypto_payee_data('钱包-获取加密收款地址列表', http_request, from_currency, chain_name)
+
+        if extracted_parameters is not None:
+            for i in extracted_parameters:
+                if i['status'] == 'active':
+                    payee_list.append(i['id'])
+            if len(payee_list) > 0:
+                logger.info(f"获取的收款方ID列表为：{payee_list}")
+                return payee_list
             else:
-                logger.error("获取收款方请求失败，无响应返回")
+                logger.error(f"未找到币种 '{from_currency}' 在链 '{chain_name}' 对应的收款方ID")
                 return None
+        else:
+            logger.error("获取收款方请求失败，无响应返回")
+            return None
 
 
 
@@ -104,33 +86,20 @@ class TransferOut:
         :return:
         """
 
-        try:
-            data = {
-                'feeType': 'crypto_withdraw_fee',
-                'condition': from_currency,
 
-            }
+        data = {
+            'feeType': 'crypto_withdraw_fee',
+            'condition': from_currency,
 
-            result = http_request._send_request(
-                cls.sheet_name,
-                test_case_name,
-                dict_data=data,
-                nested_keys=['data', 'number']
-            )
-            if result is None or len(result) != 4:
-                logger.error("获取用获取提现手续费请求返回结果格式不正确")
-                return None, None, None, None, None
+        }
+        return http_request.execute_case(
+            sheet_name=cls.sheet_name,
+            test_case_name=test_case_name,
+            dict_data=data,
+            nested_keys=['data', 'number'],
+            error_msg="获取提现手续费失败")
 
-            response, extracted_parameters, assert_code, case_id = result
-            # after_amount = cls.wallet_list_page.get_from_currency_data(http_request,from_currency)
-            if extracted_parameters is not None:
-                return response, extracted_parameters, assert_code, case_id
-            else:
-                logger.error("获取提现手续费请求失败，无响应返回")
-                return response, None, assert_code, case_id
-        except Exception as e:
-            logger.error(f"获取提现手续费失败: {e}")
-            raise e
+
 
     @classmethod
     def get_transfer_out_fee(cls,  http_request, from_currency):
@@ -168,26 +137,14 @@ class TransferOut:
         :return:
         """
 
-        try:
-            result = http_request._send_request(
-                cls.sheet_name,
-                test_case_name,
-                jsonpath_expr= f"$.data.list[*].chain_fee[?(@.chain_name=='{chain_name}')].fee"
-            )
-            if result is None or len(result) != 4:
-                logger.error("获取提币手续费请求返回结果格式不正确")
-                return None, None, None, None, None
 
-            response, extracted_parameters, assert_code, case_id = result
+        return http_request.execute_case(
+            sheet_name=cls.sheet_name,
+            test_case_name=test_case_name,
+            jsonpath_expr= f"$.data.list[*].chain_fee[?(@.chain_name=='{chain_name}')].fee",
+            error_msg="获取提币手续费失败")
 
-            if extracted_parameters is not None:
-                return response, extracted_parameters, assert_code, case_id
-            else:
-                logger.error("获取提币手续费请求失败，无响应返回")
-                return response, None, assert_code, case_id
-        except Exception as e:
-            logger.error(f"获取提币手续费失败: {e}")
-            raise e
+
 
     @classmethod
     def transfer_out_handling_fee(cls,http_request,chain_name,price):
@@ -253,29 +210,11 @@ class TransferOut:
         """
         # 添加日志查看传入的参数
 
-
-        try:
-            result = http_request._send_request(
-                cls.sheet_name,
-                test_case_name,
-                variables
-            )
-
-
-            if result is None or len(result) != 4:
-                logger.error("转账请求返回结果格式不正确")
-                return None, None, None, None
-
-            response, extracted_parameters, assert_code, case_id = result
-            if response is not None:
-                return response, None, assert_code, case_id
-            else:
-                logger.error("转账请求失败，无响应返回")
-                return None, None, None, None
-        except Exception as e:
-            logger.error(f"转账失败: {e}")
-            raise e
-
+        return http_request.execute_case(
+            sheet_name=cls.sheet_name,
+            test_case_name=test_case_name,
+            variables=variables,
+            error_msg="转账失败")
     @classmethod
     def _transfer_out_fail(cls, variables, test_case_name, http_request):
         """
@@ -287,28 +226,13 @@ class TransferOut:
         """
         # 添加日志查看传入的参数
 
-        try:
-            result = http_request._send_request(
-                cls.sheet_name,
-                test_case_name,
-                dict_data=variables
-            )
-            print(result)
-            if result is None or len(result) != 4:
-                logger.error("转账请求返回结果格式不正确")
-                return None, None, None, None
-
-            response, extracted_parameters, assert_code, case_id = result
-            if response is not None:
-                return response, None, assert_code, case_id
-            else:
-                logger.error("转账请求失败，无响应返回")
-                return None, None, None, None
-        except Exception as e:
-            logger.error(f"转账失败: {e}")
-            raise e
 
 
+        return http_request.execute_case(
+            sheet_name=cls.sheet_name,
+            test_case_name=test_case_name,
+            variables=variables,
+            error_msg="转账失败")
 if __name__ == '__main__':
     http_request = HttpRequest ()
     TransferOut.transfer_out_data('测试用例名称', http_request, 'USDT', 'arbitrum', '0.01')

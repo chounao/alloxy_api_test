@@ -22,28 +22,14 @@ class PayOut:
         :return:
         """
 
-        try:
-            if id:
-                data = f'id={id}'
-            result = http_request._send_request(
-                cls.sheet_name,
-                test_case_name,
-                ping_data=data,
-                nested_keys=['data']
-            )
-            if result is None or len(result) != 4:
-                logger.error("返回结果格式不正确")
-                return None, None, None, None
-            response, extracted_parameters, assert_code, case_id = result
-            logger.info(f"获取提现手续费结果: {extracted_parameters}")
-            if extracted_parameters is not None:
-                return response, extracted_parameters, assert_code, case_id
-            else:
-                logger.error("请求失败，无响应返回")
-                return None, None, None, None  # 明确返回None值
-        except Exception as e:
-            logger.error(f"获取提现手续费失败: {e}")
-            raise e
+        data = f'id={id}'
+
+        return http_request.execute_case(
+            sheet_name=cls.sheet_name,
+            test_case_name=test_case_name,
+            ping_data=data,
+            nested_keys=['data'],
+            error_msg="获取加密货币到法币手续费失败")
 
     @classmethod
     def get_country_rate_data(cls, http_request,from_currency,id):
@@ -82,30 +68,24 @@ class PayOut:
 
     @classmethod
     def get_fiat_rate_info(cls, http_request, test_case_name,from_currency,to_currency):
+        """
+        获取法币汇率
+        :param http_request:
+        :param test_case_name:
+        :param from_currency:
+        :param to_currency:
+        :return:
+        """
         data = {
                 'from_currency':from_currency,
                 'to_currency': to_currency}
-        try:
-            result = http_request._send_request(
-                cls.sheet_name,
-                test_case_name,
-                dict_data=data,
-                nested_keys=['data']
-            )
 
-            if result is None or len(result) != 4:
-                logger.error("返回结果格式不正确")
-                return None, None, None, None
-            response, extracted_parameters, assert_code, case_id = result
-            logger.info(f"获取汇率结果: {extracted_parameters}")
-            if extracted_parameters is not None:
-                return response, extracted_parameters, assert_code, case_id
-            else:
-                logger.error("请求失败，无响应返回")
-        except Exception as e:
-            logger.error(f"获取法币汇率失败: {e}")
-            raise e
-
+        return http_request.execute_case(
+            sheet_name=cls.sheet_name,
+            test_case_name=test_case_name,
+            dict_data=data,
+            nested_keys=['data'],
+            error_msg="获取法币汇率失败")
     @classmethod
     def get_rate_data(cls, http_request, from_currency,to_currency):
         result = cls.get_fiat_rate_info(http_request, '获取pay_out汇率',from_currency,to_currency)
@@ -118,6 +98,13 @@ class PayOut:
 
     @classmethod
     def get_payee_info(cls, http_request, test_case_name,to_currency):
+        """
+        获取法币收款地址
+        :param http_request:
+        :param test_case_name:
+        :param to_currency:
+        :return:
+        """
         data = {
             'currency': to_currency,
             'payee_name' : '',
@@ -126,25 +113,12 @@ class PayOut:
             'status' : 'active'
 
         }
-        try:
-            result = http_request._send_request(
-                cls.sheet_name,
-                test_case_name,
-                dict_data=data,
-                nested_keys=['data','list',0,'id']
-            )
-            if result is None or len(result) != 4:
-                logger.error("返回结果格式不正确")
-                return None, None, None, None
-            response, extracted_parameters, assert_code, case_id = result
-            logger.info(f"获取法币收款地址结果: {extracted_parameters}")
-            if extracted_parameters is not None:
-                return response, extracted_parameters, assert_code, case_id
-            else:
-                logger.error("请求失败，无响应返回")
-        except Exception as e:
-            logger.error(f"获取法币收款地址列表失败: {e}")
-            raise e
+        return http_request.execute_case(
+            sheet_name=cls.sheet_name,
+            test_case_name=test_case_name,
+            dict_data=data,
+            nested_keys=['data', 'list', 0, 'id'],
+            error_msg="获取法币收款地址失败")
 
     @classmethod
     def get_payee_address(cls, http_request,to_currency):
@@ -220,27 +194,24 @@ class PayOut:
 
     @classmethod
     def create_pay_out(cls,variables, http_request,test_case_name,from_currency,to_currency, amount,memo):
+        """
+        创建提现
+        :param http_request:
+        :param test_case_name:
+        :param from_currency:
+        :param to_currency:
+        :param amount:
+        :param memo:
+        :return:
+        """
         data = cls.pay_out_parameter(http_request,from_currency,to_currency, amount,memo)
         if data is None:
             return None
-        try:
-            result = http_request._send_request(
-                cls.sheet_name,
-                test_case_name,
-                variables=variables,
-            )
-            if result is None or len(result) != 4:
-                logger.error("返回结果格式不正确")
-                return None, None, None, None
-            response, extracted_parameters, assert_code, case_id = result
-            if response is not None:
-                return response, extracted_parameters, assert_code, case_id
-            else:
-                logger.error("请求失败，无响应返回")
-        except Exception as e:
-            logger.error(f"创建提现失败: {e}")
-            raise e
-
+        return http_request.execute_case(
+            sheet_name=cls.sheet_name,
+            test_case_name=test_case_name,
+            variables=variables,
+            error_msg="创建提现失败")
 
     @classmethod
     def pay_out_fee(cls,http_request,from_currency,to_currency, amount):

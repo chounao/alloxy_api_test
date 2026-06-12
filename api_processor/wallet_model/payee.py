@@ -41,24 +41,13 @@ class Payee:
             if isinstance(body, dict):
                 data.update(body)
 
-            try:
-                result = http_request._send_request(
-                    cls.sheet_name,
-                    test_case_name,
-                    dict_data=data,
-                    nested_keys=['data']
-                )
 
-                # 统一返回格式，始终返回四元素元组
-                if result is None or not isinstance(result, (list, tuple)) or len(result) != 4:
-                    logger.error(f"[{test_case_name}] 返回结果格式不正确: {result}")
-                    break
-
-                response, extracted_parameters, assert_code, case_id = result
-
-                if response is None:
-                    logger.error(f"[{test_case_name}] 请求失败，无响应返回")
-                    break
+                response, extracted_parameters, assert_code, case_id = http_request.execute_case(
+                                                                        sheet_name=cls.sheet_name,
+                                                                        test_case_name=test_case_name,
+                                                                                        dict_data=data,
+                                                                                    nested_keys=['data'],
+                                                                            error_msg="获取币种收款方数据失败")
 
                 # 检查是否有数据返回
                 if not extracted_parameters:
@@ -79,19 +68,12 @@ class Payee:
 
                 current_page += 1
 
-            except Exception as e:
-                logger.error(f"[{test_case_name}] 获取钱包交易数据失败: {e}")
-                break
-
         # 返回合并后的所有数据
         return response, all_extracted_parameters, assert_code, case_id
     @classmethod
     def get_payee_data(cls, http_request, payee_name):
-        result = cls.get_crypto_payee_data('钱包-获取加密收款地址列表', http_request, body={'payee_name': payee_name})
-        response, extracted_parameters, assert_code, case_id = result
-        if response.status_code != 200:
-            pytest.fail(f"获取收款方失败: {response.status_code}")
-            return None, None
+        response, extracted_parameters, assert_code, case_id  = cls.get_crypto_payee_data('钱包-获取加密收款地址列表', http_request, body={'payee_name': payee_name})
+
         total = extracted_parameters['total']
 
         # 使用get方法和默认值处理
@@ -124,33 +106,21 @@ class Payee:
         chain_id = chain_data['chain_id']
         #随机生成钱包地址（字母+数字8位）
         wallet_address = ''.join(random.choices(string.ascii_letters + string.digits, k=8))
-        try:
-            variables = {
-             "payee_name":payee_name,
-             "currency":currency,
-             "chain_id":chain_id,
-             "wallet_address": wallet_address
 
-            }
-            logger.info(f'添加收款方请求参数：{variables}')
-            result = http_request._send_request(
-                cls.sheet_name,
-                test_case_name,
-                variables= variables,
-            )
-            logger.info(f'添加收款方返回结果：{result}')
-            if result is None or len(result) != 4:
-                logger.error("添加收款方请求返回结果格式不正确")
-                return None, None, None, None
-            response, extracted_parameters, assert_code, case_id = result
-            if response is not None:
-                return response, extracted_parameters, assert_code, case_id
-            else:
-                logger.error("添加收款方请求失败，无响应返回")
-                return response, None, assert_code, case_id
-        except Exception as e:
-            logger.error(f"添加收款方失败: {e}")
-            raise e
+        variables = {
+         "payee_name":payee_name,
+         "currency":currency,
+         "chain_id":chain_id,
+         "wallet_address": wallet_address
+
+        }
+        logger.info(f'添加收款方请求参数：{variables}')
+
+        return http_request.execute_case(
+            sheet_name=cls.sheet_name,
+            test_case_name=test_case_name,
+            variables= variables,
+            error_msg="添加收款方失败")
     @classmethod
     def create_payee(cls,http_request,payee_name,currency,chain_name):
         result = cls.add_payee('钱包-创建加密收款地址', http_request, payee_name, currency, chain_name)
@@ -180,24 +150,12 @@ class Payee:
         if id is None:
             logger.error(f'收款方：{payee_name}不存在')
             return None, None, None, None
-        try:
-            result = http_request._send_request(
-                cls.sheet_name,
-                test_case_name,
-                replace_data=id
-            )
-            if result is None or len(result) != 4:
-                logger.error("删除收款方请求返回结果格式不正确")
-                return None, None, None, None
-            response, extracted_parameters, assert_code, case_id = result
-            if response is not None:
-                return response, extracted_parameters, assert_code, case_id
-            else:
-                logger.error("删除收款方请求失败，无响应返回")
-                return response, None, assert_code, case_id
-        except Exception as e:
-            logger.error(f"删除收款方失败: {e}")
-            raise e
+
+        return http_request.execute_case(
+            sheet_name=cls.sheet_name,
+            test_case_name=test_case_name,
+            replace_data=id,
+            error_msg="删除收款方失败")
     #收款银行账户查询接口
     @classmethod
     def get_payee_bank_account(cls, test_case_name, http_request,payee_name):
@@ -208,35 +166,20 @@ class Payee:
         :param payee_name:
         :return:
         """
-        logger.info(f'收款银行账户列表')
-        try:
-            data = {
-                'page': 1,
-                'take': 200,
-                'payee_name': payee_name
-            }
+        data = {
+            'page': 1,
+            'take': 200,
+            'payee_name': payee_name
+        }
 
-            logger.info(f'收款银行账户列表查询参数：{data}')
-            result = http_request._send_request(
-                cls.sheet_name,
-                test_case_name,
-                dict_data=data,
-                nested_keys=['data']
-            )
-            if result is None or len(result) != 4:
-                logger.error("收款银行账户列表查询返回结果格式不正确")
-                return None, None, None, None
+        logger.info(f'收款银行账户列表查询参数：{data}')
 
-            response, extracted_parameters, assert_code, case_id = result
-            if response is not None:
-                return response, extracted_parameters, assert_code, case_id
-            else:
-                logger.error("收款银行账户列表查询失败，无响应返回")
-                return response, None, assert_code, case_id
-        except Exception as e:
-            logger.error(f"收款银行账户列表查询失败: {e}")
-            raise e
-
+        return http_request.execute_case(
+            sheet_name=cls.sheet_name,
+            test_case_name=test_case_name,
+            dict_data=data,
+            nested_keys=['data'],
+            error_msg="收款银行账户列表查询失败")
     @classmethod
     def get_all_country_data(cls, http_request, test_case_name):
         """
@@ -246,34 +189,24 @@ class Payee:
         :return:
         """
         country_list = []
-        try:
-            result = http_request._send_request(
-                cls.sheet_name,
-                test_case_name,
-                nested_keys=['data']
-            )
-            if result is None or len(result) != 4:
-                logger.error("获取所有支持的国家返回结果格式不正确")
-                return None, None, None, None
-            response, extracted_parameters, assert_code, case_id = result
-            # logger.info(f"获取所有支持的国家成功: {extracted_parameters}")
-            for i in extracted_parameters:
-                data = i['iso2']
-                country_list.append(data)
-            if response is not None:
-                return response, country_list, assert_code, case_id
-            else:
-                logger.error("获取所有支持的国家失败，无响应返回")
-                return response, None, assert_code, case_id
-        except Exception as e:
-            logger.error(f"获取所有支持的国家失败: {e}")
-            raise e
-
+        response, extracted_parameters, assert_code, case_id =http_request.execute_case(
+                                                                                        sheet_name=cls.sheet_name,
+                                                                                        test_case_name=test_case_name,
+                                                                                        nested_keys=['data'],
+                                                                                        error_msg="获取所有支持的国家失败")
+        for i in extracted_parameters:
+            data = i['iso2']
+            country_list.append(data)
+        if response is not None:
+            return response, country_list, assert_code, case_id
+        else:
+            logger.error("获取所有支持的国家失败，无响应返回")
+            return response, None, assert_code, case_id
     # 获取币种支持的国家
     @classmethod
     def get_foreign_currency_supported_countries(cls, http_request, test_case_name, currency, country_code):
         """
-
+        获取币种支持的国家
         :param test_case_name:
         :param http_request:
         :param currency:
@@ -285,26 +218,13 @@ class Payee:
             'currency': currency,
             'country_code': country_code
         }
-        try:
-            result = http_request._send_request(
-                cls.sheet_name,
-                test_case_name,
-                dict_data=body,
-                nested_keys=['data']
 
-            )
-            if result is None or len(result) != 4:
-                logger.error("获取币种支持的国家返回结果格式不正确")
-                return None, None, None, None
-            response, extracted_parameters, assert_code, case_id = result
-            if response is not None:
-                return response, extracted_parameters, assert_code, case_id
-            else:
-                logger.error("获取币种支持的国家失败，无响应返回")
-                return response, None, assert_code, case_id
-        except Exception as e:
-            logger.error(f"获取币种支持的国家失败: {e}")
-            raise e
+        return http_request.execute_case(
+            sheet_name=cls.sheet_name,
+            test_case_name=test_case_name,
+            variables=body,
+            nested_keys=['data'],
+            error_msg="获取币种支持的国家失败")
     @classmethod
     def get_random_country_code(cls, http_request, currency, country_code):
         """
@@ -531,7 +451,7 @@ class Payee:
     @classmethod
     def create_payee_bank_account(cls, http_request,test_case_name,body):
         """
-
+        创建收款方银行账户
         :param test_case_name:
         :param body : 收款方银行账户信息international，
                        local:{ currency :SGD,HKD,BWP,KES,MWK,NGN,RWF,ZAR,TZS,UGX,ZMW,
@@ -545,25 +465,13 @@ class Payee:
         :return:
         """
 
+        return http_request.execute_case(
+            sheet_name=cls.sheet_name,
+            test_case_name=test_case_name,
+            variables=body,
+            error_msg="创建收款方银行账户失败")
 
-        try:
-            result = http_request._send_request(
-                cls.sheet_name,
-                test_case_name,
-                variables=body,
-            )
-            if result is None or len(result) != 4:
-                logger.error("创建收款方银行账户返回结果格式不正确")
-                return None, None, None, None
-            response, extracted_parameters, assert_code, case_id = result
-            if response is not None:
-                return response, extracted_parameters, assert_code, case_id
-            else:
-                logger.error("创建收款方银行账户失败，无响应返回")
-                return response, None, assert_code, case_id
-        except Exception as e:
-            logger.error(f"创建收款方银行账户失败: {e}")
-            raise e
+
 
     #查看详情
     @classmethod
@@ -580,72 +488,49 @@ class Payee:
         data = {
             'id': payee_id
         }
-        try:
-            result = http_request._send_request(
-                cls.sheet_name,
-                test_case_name,
-                dict_data=data,
-                nested_keys=['data','list',0]
-            )
-            if result is None or len(result) != 4:
-                logger.error("获取收款方银行账户详情返回结果格式不正确")
-                return None, None, None, None
-            response, extracted_parameters, assert_code, case_id = result
-            print(
-                "获取收款方银行账户详情参数: %s",
-                type(extracted_parameters)
-            )
-            keys_to_remove = ['created_at','update_at','remarks','account_id','bank_code','branch_name',
-                              'branch_code','routing_type1','routing_number1','routing_type2','routing_number2'
-                              ,'status','label','routing_number2','payees_name']
-            for key in keys_to_remove:
-                extracted_parameters.pop(key, None)
-            extracted_parameters['type'] = 'bank'
-            print(
-                "获取收款方银行账户详情参数: %s",
-                json.dumps(extracted_parameters)
-            )
-            if response is not None:
-                return response, extracted_parameters, assert_code, case_id
-            else:
-                logger.error("获取收款方银行账户详情失败，无响应返回")
-                return response, None, assert_code, case_id
-        except Exception as e:
-            logger.error(f"获取收款方银行账户详情失败: {e}")
-            raise e
+
+        response, extracted_parameters, assert_code, case_id = http_request.execute_case(
+                                                                                            sheet_name=cls.sheet_name,
+                                                                                            test_case_name=test_case_name,
+                                                                                            dict_data=data,
+                                                                                            nested_keys=['data', 'list', 0],
+                                                                                            error_msg="获取收款方银行账户详情失败")
+
+        keys_to_remove = ['created_at','update_at','remarks','account_id','bank_code','branch_name',
+                          'branch_code','routing_type1','routing_number1','routing_type2','routing_number2'
+                          ,'status','label','routing_number2','payees_name']
+        for key in keys_to_remove:
+            extracted_parameters.pop(key, None)
+        extracted_parameters['type'] = 'bank'
+        print(
+            "获取收款方银行账户详情参数: %s",
+            json.dumps(extracted_parameters)
+        )
+        if response is not None:
+            return response, extracted_parameters, assert_code, case_id
+        else:
+            logger.error("获取收款方银行账户详情失败，无响应返回")
+            return response, None, assert_code, case_id
 
 
     #编辑操作
     @classmethod
     def update_payee_bank_account(cls, test_case_name, http_request, body):
         """
-
+        编辑收款方银行账户
         :param test_case_name:
         :param http_request:
         :param payee_id:
         :param body:
         :return:
         """
+        return http_request.execute_case(
+            sheet_name=cls.sheet_name,
+            test_case_name=test_case_name,
+            variables=body,
+            nested_keys=['data'],
+            error_msg="编辑收款方银行账户失败")
 
-        try:
-            result = http_request._send_request(
-                cls.sheet_name,
-                test_case_name,
-                variables=body,
-                nested_keys=['data']
-            )
-            if result is None or len(result) != 4:
-                logger.error("编辑收款方银行账户返回结果格式不正确")
-                return None, None, None, None
-            response, extracted_parameters, assert_code, case_id = result
-            if response is not None:
-                return response, extracted_parameters, assert_code, case_id
-            else:
-                logger.error("编辑收款方银行账户失败，无响应返回")
-                return response, None, assert_code, case_id
-        except Exception as e:
-            logger.error(f"编辑收款方银行账户失败: {e}")
-            raise e
     #删除银行账户
     @classmethod
     def delete_payee_bank_account(cls, test_case_name, http_request, payee_id):
@@ -659,30 +544,11 @@ class Payee:
         data = {
             'id': payee_id
         }
-        try:
-            result = http_request._send_request(
-                cls.sheet_name,
-                test_case_name,
-                replace_data=data
-            )
-            if result is None or len(result) != 4:
-                logger.error("删除收款方银行账户返回结果格式不正确")
-                return None, None, None, None
-            response, extracted_parameters, assert_code, case_id = result
-            if response is not None:
-                return response, extracted_parameters, assert_code, case_id
-            else:
-                logger.error("删除收款方银行账户失败，无响应返回")
-                return response, None, assert_code, case_id
-        except Exception as e:
-            logger.error(f"删除收款方银行账户失败: {e}")
-            raise e
-
-
-
-
-
-
+        return http_request.execute_case(
+            sheet_name=cls.sheet_name,
+            test_case_name=test_case_name,
+            replace_data=data,
+            error_msg="删除收款方银行账户失败")
 
 
 

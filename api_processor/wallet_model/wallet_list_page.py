@@ -11,28 +11,16 @@ class WalletListPage:
     def get_wallet_list(cls,test_case_name,http_request):
         """
         获取钱包列表
+        :param test_case_name: 测试用例名称
+        :param http_request: HttpRequest实例
+        :return: 钱包列表
         """
-        try:
 
-            result =http_request._send_request(
-                cls.sheet_name,
-                test_case_name,
-                nested_keys =['data','list']
-            )
-            # print( result)
-            if result is None or len(result) != 4:
-                logger.error("获取钱包列表请求返回结果格式不正确")
-                return None, None, None, None
-
-            response, extracted_parameters, assert_code, case_id = result
-            if response is not None:
-                return response, extracted_parameters, assert_code, case_id
-            else:
-                logger.error("获取钱包列表请求失败，无响应返回")
-                return None, None, None, None
-        except Exception as e:
-            logger.error(f"获取钱包列表失败: {e}")
-            raise e
+        return http_request.execute_case(
+            sheet_name=cls.sheet_name,
+            test_case_name=test_case_name,
+            nested_keys =['data','list'],
+            error_msg="获取钱包列表失败")
     @classmethod
     def get_currency_data(cls,http_request,from_currency):
         """
@@ -57,6 +45,7 @@ class WalletListPage:
             # 循环结束后仍未找到匹配项
             logger.error(f"未找到币种为{from_currency}的数据")
             return None
+
 
     @classmethod
     def _get_currency_data(cls, http_request, to_currency):
@@ -91,30 +80,21 @@ class WalletListPage:
         :return: 链数据:chain_id,chain_name,symbol
         """
         chain_name_list =[]
-        try:
+        response, extracted_parameters, assert_code, case_id = http_request.execute_case(
+                                                                sheet_name=cls.sheet_name,
+                                                                test_case_name=test_case_name,
+                                                                nested_keys=['data', 'data'],
+                                                                error_msg="获取链列表失败")
+        for i in extracted_parameters:
+            chain_name_list.append(i['chain_name'])
+        cls.config.save_value('CHAIN_NAME', 'chain_name', chain_name_list)
+        # print("获取链列表", extracted_parameters)
+        if extracted_parameters is not None:
+            return response, extracted_parameters, assert_code, case_id
+        else:
+            logger.error("获取链列表请求失败，无响应返回")
+            return response, None, assert_code, case_id
 
-            result = http_request._send_request(
-                cls.sheet_name,
-                test_case_name,
-                nested_keys=['data', 'data']
-            )
-            if result is None or len(result) != 4:
-                logger.error("获取链列表请求返回结果格式不正确")
-                return None, None, None, None
-
-            response, extracted_parameters, assert_code, case_id = result
-            for i in extracted_parameters:
-                chain_name_list.append(i['chain_name'])
-            cls.config.save_value('CHAIN_NAME', 'chain_name', chain_name_list)
-            # print("获取链列表", extracted_parameters)
-            if extracted_parameters is not None:
-                return response, extracted_parameters, assert_code, case_id
-            else:
-                logger.error("获取链列表请求失败，无响应返回")
-                return response, None, assert_code, case_id
-        except Exception as e:
-            logger.error(f"获取链列表失败: {e}")
-            raise e
 
     @classmethod
     def get_chain_data(cls, http_request, chain_name):
@@ -141,17 +121,6 @@ class WalletListPage:
         return None
 
 
-
-
-
-
-
-
-
-
-
-
-
     # dropdown_transaction_type
     @classmethod
     def get_dropdown_for_currency_type(cls, test_case_name,http_request,currency_type):
@@ -164,29 +133,13 @@ class WalletListPage:
 
         data = {'currency_type':currency_type}
 
-        try :
-            result = http_request._send_request(
-                cls.sheet_name,
-                test_case_name,
-                dict_data=data,
-                nested_keys=['data']
 
-            )
-            if result is None or len(result) != 4:
-                logger.error("获取加密货币列表请求返回结果格式不正确")
-                return None, None, None, None
-            response, extracted_parameters, assert_code, case_id = result
-            cls.save_all_currency_data(result, currency_type)
-
-            # print(extracted_parameters)
-            if extracted_parameters is not None:
-                return response, extracted_parameters, assert_code, case_id
-            else:
-                logger.error("获取链列表请求失败，无响应返回")
-                return response, None, assert_code, case_id
-        except Exception as e:
-            logger.error(f"获取加密货币列表失败: {e}")
-            raise e
+        return http_request.execute_case(
+            sheet_name=cls.sheet_name,
+            test_case_name=test_case_name,
+            dict_data=data,
+            nested_keys=['data'],
+            error_msg="获取交易类型数据失败")
     @classmethod
     def save_all_currency_data(cls,result,currency_type):
         """
@@ -262,30 +215,24 @@ class WalletListPage:
         data = {
             'transaction_type': transaction_type
         }
-        try:
-            result = http_request._send_request(
-                cls.sheet_name,
-                test_case_name,
-                dict_data=data,
-                nested_keys=['data']
-            )
-            if result is None or len(result) != 4:
-                logger.error("获取payout列表请求返回结果格式不正确")
-                return None, None, None, None
-            response, extracted_parameters, assert_code, case_id = result
-            # print(extracted_parameters)
-            #存起来方便后续使用
-            for i in extracted_parameters:
-                send_dict[i['remarks']] = {'country':i['country'],'currency':i['currency'],'min_limit':float(i['min_limit']),'max_limit':float(i['max_limit'])}
-            cls.config.save_value(section=f'{transaction_type}_data',key=f'{transaction_type}_dict',value=send_dict)
-            if extracted_parameters is not None:
-                return response, extracted_parameters, assert_code, case_id
-            else:
-                logger.error("获取payout列表请求失败，无响应返回")
-                return response, None, assert_code, case_id
-        except Exception as e:
-            logger.error(f"获取payout列表失败: {e}")
-            raise e
+
+        response, extracted_parameters, assert_code, case_id = http_request.execute_case(
+                                                                            sheet_name=cls.sheet_name,
+                                                                            test_case_name=test_case_name,
+                                                                            dict_data=data,
+                                                                            nested_keys=['data'],
+                                                                            error_msg="获取加密货币数据失败")
+        # print(extracted_parameters)
+        #存起来方便后续使用
+        for i in extracted_parameters:
+            send_dict[i['remarks']] = {'country':i['country'],'currency':i['currency'],'min_limit':float(i['min_limit']),'max_limit':float(i['max_limit'])}
+        cls.config.save_value(section=f'{transaction_type}_data',key=f'{transaction_type}_dict',value=send_dict)
+        if extracted_parameters is not None:
+            return response, extracted_parameters, assert_code, case_id
+        else:
+            logger.error("获取payout列表请求失败，无响应返回")
+            return response, None, assert_code, case_id
+
 
 
 
@@ -301,23 +248,10 @@ class WalletListPage:
             'transaction_type': transaction_type,
             'country': country
         }
-        try:
-            result = http_request._send_request(
-                cls.sheet_name,
-                test_case_name,
-                dict_data=data,
-                nested_keys=['data']
-            )
-            if result is None or len(result) != 4:
-                logger.error("获取payin列表请求返回结果格式不正确")
-                return None, None, None, None
-            response, extracted_parameters, assert_code, case_id = result
-            print(extracted_parameters)
-            if extracted_parameters is not None:
-                return response, extracted_parameters, assert_code, case_id
-            else:
-                logger.error("获取payin列表请求失败，无响应返回")
-                return response, None, assert_code, case_id
-        except Exception as e:
-            logger.error(f"获取payin列表失败: {e}")
-            raise e
+
+        return http_request.execute_case(
+            sheet_name=cls.sheet_name,
+            test_case_name=test_case_name,
+            dict_data=data,
+            nested_keys=['data'],
+            error_msg="获取交易类型数据失败")
