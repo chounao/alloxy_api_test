@@ -1,40 +1,40 @@
 import logging
-import time
 import os
+import time
+from pathlib import Path
 
-BASE_PATH = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
 
-# 日志配置
-LOG_PATH = os.path.join(BASE_PATH, 'log')
-if not os.path.exists(LOG_PATH):
-    os.makedirs(LOG_PATH, exist_ok=True)
+BASE_PATH = Path(__file__).resolve().parents[1]
+LOG_PATH = Path(os.getenv("ALLOXY_LOG_DIR", BASE_PATH / "Log"))
 
-class Logger(object):
-    def __init__(self):
-        self.logname = os.path.join(LOG_PATH, "{}.log".format(time.strftime("%Y_%m_%d")))
-        self.logger = logging.getLogger('log')
+
+class Logger:
+    """项目日志工具：统一控制台和文件日志，并避免重复添加 handler。"""
+
+    def __init__(self) -> None:
+        LOG_PATH.mkdir(parents=True, exist_ok=True)
+        self.logname = LOG_PATH / f"{time.strftime('%Y_%m_%d')}.log"
+        self.logger = logging.getLogger("log")
         self.logger.setLevel(logging.DEBUG)
+        self.logger.propagate = False
 
-        # 避免重复添加 handler
-        if not self.logger.handlers:
-            self.formater = logging.Formatter(
-                '[%(asctime)s][%(filename)s %(lineno)d][%(levelname)s]: %(message)s')
+        # 中文备注：pytest 多次导入模块时不能重复添加 handler，否则日志会重复打印。
+        if self.logger.handlers:
+            return
 
-            self.filelogger = logging.FileHandler(self.logname, mode='a', encoding="UTF-8")
-            self.console = logging.StreamHandler()
+        formatter = logging.Formatter(
+            "[%(asctime)s][%(filename)s %(lineno)d][%(levelname)s]: %(message)s"
+        )
 
-            self.filelogger.setLevel(logging.DEBUG)
-            self.console.setLevel(logging.DEBUG)
+        file_handler = logging.FileHandler(self.logname, mode="a", encoding="utf-8")
+        console_handler = logging.StreamHandler()
+        file_handler.setLevel(logging.DEBUG)
+        console_handler.setLevel(logging.INFO)
+        file_handler.setFormatter(formatter)
+        console_handler.setFormatter(formatter)
 
-            self.filelogger.setFormatter(self.formater)
-            self.console.setFormatter(self.formater)
-
-            self.logger.addHandler(self.filelogger)
-            self.logger.addHandler(self.console)
+        self.logger.addHandler(file_handler)
+        self.logger.addHandler(console_handler)
 
 
 logger = Logger().logger
-
-if __name__ == '__main__':
-    logger.info("---测试开始---")
-    logger.debug("---测试结束---")

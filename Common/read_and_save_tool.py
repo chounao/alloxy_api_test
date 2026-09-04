@@ -1,386 +1,188 @@
-import os
 import ast
 import configparser
-import ast
+import os
 import re
-from Common.execute import get_config_section, get_env  # 导入环境工具函数
+from pathlib import Path
+from typing import Any, Dict, Iterable, Optional
+from urllib.parse import urlencode
+
 from Common import logger
+from Common.execute import get_config_section, get_env
+
+
 logger = logger.logger
+
+
 class ConfigTools:
+    """INI 配置读取工具。
+
+    中文备注：运行时动态读取 Common.execute 中的当前环境，避免 import 阶段单例缓存
+    导致 pytest --env=test/uat/prod 切换不生效。
     """
-    配置文件读取类
 
-    用于读取和解析INI格式的配置文件，支持指定文件路径或使用默认路径
+    def __init__(self, filepath: Optional[str] = None):
+        self.configpath = Path(filepath or Path(__file__).resolve().parent / "config.ini")
+        if not self.configpath.exists():
+            raise FileNotFoundError(f"配置文件不存在: {self.configpath}")
+        self.config = configparser.RawConfigParser()
+        self.reload()
+        self.api_section = "API_DATA"
 
-    Args:
-        filepath (str, optional): 配置文件路径，如果未指定则使用默认路径
-    """
-    _instance = None
-    _initialized = False
+    @property
+    def config_section(self) -> str:
+        return get_config_section()
 
-    def __new__(cls, filepath=None):
-        if cls._instance is None:
-            cls._instance = super().__new__(cls)
-        return cls._instance
+    @property
+    def current_env(self) -> str:
+        return get_env()
 
+    def reload(self) -> None:
+        read_files = self.config.read(self.configpath, encoding="utf-8")
+        if not read_files:
+            raise RuntimeError(f"配置文件读取失败: {self.configpath}")
 
-    def __init__(self, filepath=None):
+    def get_value(self, section: str, key: str, default=None):
+        if not self.config.has_section(section):
+            logger.warning("配置节不存在: %s", section)
+            return default
+        if not self.config.has_option(section, key):
+            logger.warning("配置项不存在: [%s] %s", section, key)
+            return default
+        return self.config.get(section, key)
 
-        # 1. 确定配置文件路径
-        if not self._initialized:
-            # 原有的初始化逻辑
-            if filepath:
-                self.configpath = filepath
+    def save_value(self, section: str, key: str, value: Any) -> None:
+        if not self.config.has_section(section):
+            self.config.add_section(section)
+        self.config.set(section, str(key), str(value))
+        with self.configpath.open("w", encoding="utf-8") as configfile:
+            self.config.write(configfile)
+        logger.info("配置已保存: [%s] %s", section, key)
+
+    def get_section_data(self, section: str) -> Optional[dict]:
+        if not self.config.has_section(section):
+            return None
+        return dict(self.config.items(section))
+
+    def _literal(self, value: str, name: str):
+        try:
+            return ast.literal_eval(value)
+        except (ValueError, SyntaxError) as exc:
+            raise ValueError(f"配置{name}不是合法Python字面量: {value}") from exc
+
+    def process_url_placeholder(self, url_template: str, replace_values: Optional[dict]) -> str:
+        replace_values = replace_values or {}
+        placeholders = re.findall(r"\{(.*?)}", url_template)
+        missing = [item for item in placeholders if item not in replace_values]
+        if missing:
+            raise ValueError(f"URL占位符缺少替换值: {missing}")
+        url = url_template
+        for key, value in replace_values.items():
+            url = url.replace(f"{{{key}}}", str(value))
+        return url
+
+    def _encode_query(self, dict_data: Optional[dict]) -> str:
+        # 中文备注：使用 urlencode 统一处理中文、空格、特殊字符和列表参数。
+        if not dict_data:
+            return ""
+        pairs = []
+        for key, value in dict_data.items():
+            if value is None:
+                continue
+            if isinstance(value, (list, tuple, set)):
+                pairs.extend((f"{key}[]", item) for item in value if item is not None)
             else:
-                self.configpath = os.path.join(os.path.dirname(__file__), 'config.ini')
-            # 2. 检查配置文件是否存在
-            if not os.path.exists(self.configpath):
-                logger.error(f'配置文件不存在: {self.configpath}')
-                raise FileNotFoundError(f'配置文件不存在: {self.configpath}')
+                pairs.append((key, value))
+        return urlencode(pairs, doseq=True)
 
-            # 3. 读取配置文件
-            self.config = configparser.RawConfigParser()
-            try:
-                self.config.read(self.configpath, encoding='utf-8')
-            except Exception as e:
-                logger.error(f'配置文件读取失败: {self.configpath}, 错误: {str(e)}')
-                raise RuntimeError(f'配置文件读取失败: {self.configpath}, 错误: {str(e)}')
-            # 4. 关键：获取当前环境对应的配置节（关联环境变量）
+    def get_url_method(self, api_name: str = None, ping_data: str = None,
+                       replace_data: dict = None, dict_data: dict = None):
+        # 中文备注：根据 API_DATA 中的接口名称组装 method 和完整 URL。
+        if not api_name:
+            raise ValueError("api_name不能为空")
 
-            self.config_section = get_config_section()
-            self.current_env = get_env()
-            logger.info(f"ConfigTools 初始化完成，当前环境：{self.current_env}，配置节：{self.config_section}")
+        authority = (self.get_value(self.config_section, "URL") or "").rstrip("/")
+        raw = self.get_value(self.api_section, api_name)
+        if raw is None:
+            raise KeyError(f"API_DATA未配置接口: {api_name}")
 
-            self._initialized = True
+        parsed = self._literal(raw, api_name)
+        if not isinstance(parsed, (list, tuple)) or len(parsed) < 2:
+            raise ValueError(f"API配置格式错误，应为['method', '/path']: {api_name}={raw}")
 
+        method = str(parsed[0]).lower()
+        path = str(parsed[1])
+        path = path if path.startswith("/") else f"/{path}"
+        url = f"{authority}{path}"
 
-        self._cached_data = None
-        self._config_data = None
+        if replace_data:
+            url = self.process_url_placeholder(url, replace_data)
+        if ping_data:
+            url = f"{url}?{ping_data.lstrip('?')}"
+        else:
+            query = self._encode_query(dict_data)
+            if query:
+                url = f"{url}?{query}"
 
-        self.api_section = 'API_DATA'
+        logger.info("URL已处理: %s %s", method.upper(), url)
+        return method, url
 
+    def get_data_from_name(self, api_name: str = None, ping_data: str = None,
+                           replace_data: dict = None, dict_data: dict = None):
+        return self.get_url_method(api_name=api_name, ping_data=ping_data,
+                                   replace_data=replace_data, dict_data=dict_data)
 
-    def get_value(self, section, key):
-        """
-        通过节名和键名获取配置值
-
-        Args:
-            section (str): 配置节名
-            key (str): 配置键名
-
-        Returns:
-            str: 配置值，如果不存在则返回None
-        """
-        try:
-            # 直接通过section和key获取值
-            if self.config.has_section(section) and self.config.has_option(section, key):
-                return self.config.get(section, key)
-            else:
-                return None
-        except Exception as e:
-            logger.error(f"获取配置值失败: {e}")
-            return None
-
-    def save_value(self, section, key, value):
-        """
-        保存单个配置值到配置文件
-
-        Args:
-            section (str): 配置节名
-            key (str): 配置键名
-            value (str): 配置值
-        """
-        try:
-            # 确保section存在
-            if not self.config.has_section(section):
-                self.config.add_section(section)
-            if not isinstance(key, str):
-                key = str(key)
-            if not isinstance(value, str):
-                value = str(value)
-            # 设置值
-            self.config.set(section, key, str(value))
-
-            # 保存到文件
-            with open(self.configpath, 'w', encoding='utf-8') as configfile:
-                self.config.write(configfile)
-                logger.info(f"配置已保存到文件: {self.configpath}")
-
-        except Exception as e:
-            logger.error(f"保存配置值失败: {e}")
-            raise
-
-    def get_section_data(self, section):
-        """
-        获取整个节的配置数据
-
-        Args:
-            section (str): 配置节名
-
-        Returns:
-            dict: 节内所有键值对，如果节不存在则返回None
-        """
-        try:
-            if self.config.has_section(section):
-                return dict(self.config.items(section))
-            else:
-                return None
-        except Exception as e:
-            logger.error(f"获取节数据失败: {e}")
-            return None
-
-
-    def process_url_placeholder(self,url_template, replace_values):
-        """
-        处理URL模板中的占位符：先提取占位符，再替换为指定值
-
-        参数：
-            url_template: 包含占位符的URL模板（如 "https://example.com/{id}"）
-            replace_values: 替换值字典（如 {"id": "123"}）
-
-        返回：
-            替换后的完整URL字符串
-        """
-        # 步骤1：提取所有占位符（{...}中的内容）
-        pattern = r"\{(.*?)\}"
-        placeholders = re.findall(pattern, url_template)
-
-        # 检查替换值是否覆盖所有占位符
-        for placeholder in placeholders:
-            if placeholder not in replace_values:
-                logger.error(f"缺少替换值：URL中的占位符 '{placeholder}' 未在replace_values中找到")
-                raise ValueError(f"缺少替换值：URL中的占位符 '{placeholder}' 未在replace_values中找到")
-
-        # 步骤2：替换所有占位符
-        processed_url = url_template
-        for placeholder, value in replace_values.items():
-            # 确保占位符带{}（如将"id"转为"{id}"）
-            placeholder_with_braces = f"{{{placeholder}}}"
-            processed_url = processed_url.replace(placeholder_with_braces, str(value))
-        logger.info(f"URL已处理: {processed_url}")
-
-        return processed_url
-
-    def get_url_method(self,api_name:str =  None,
-                       ping_data:str = None,
-                       replace_data:str = None,
-                       dict_data:dict =None):
-        """
-        获取请求体URL方法
-
-        Args:
-            api_name (str): 配置键名
-            ping_data (str): 查询参数
-            replace_data (str): 替换参数
-            dict_data (dict): 字典参数
-
-            Returns:
-                str: URL方法
-            """
-
-        authority = self.get_value(section = self.config_section, key = 'URL')
-        try:
-            url_method = self.get_value(section = self.api_section, key = api_name)
-            if url_method:
-                # 解析配置值
-                parsed_value = ast.literal_eval(url_method)
-
-                method = parsed_value[0]
-                url_path = parsed_value[1]
-
-                # replace_data，则格式化URL路径
-                if replace_data :
-                    #主要是为了解决拿到api内参数的问题https://example.com/{id}替换id这种
-                    url_01 = authority + url_path
-                    url = self.process_url_placeholder(url_01, replace_data)
-                    logger.info(f"URL已处理: {url}")
-                elif ping_data:
-                    #主要是pin下完整的链接比如 https://example.com?page=1&take=20 查询列表数据操作
-                    url = authority + url_path +f'?{ping_data}'
-                    logger.info(f"URL已处理: {url}")
-                elif dict_data and isinstance(dict_data, dict):
-                    # 处理字典形式的查询参数
-                    query_params = []
-                    for key, value in dict_data.items():
-                        if value is None:
-                            continue
-                            # 处理数组类型的参数，如 create_at[]
-                        elif isinstance(value, list):
-                            for item in value:
-                                # 过滤掉列表中的None值
-                                if item is not None:
-                                    query_params.append(f"{key}[]={item}")
-
-                        else:
-                            query_params.append(f"{key}={value}")
-
-                    url = authority + url_path + "?" + "&".join(query_params)
-                    logger.info(f"URL已处理: {url}")
-
-                else:
-                    url = authority + url_path
-
-                    logger.info(f"URL已处理: {url}")
-
-                return method, url
-            return None
-        except Exception as e:
-            logger.error(f"获取URL方法失败: {e}")
-            return None
-
-    def get_data_from_name(self,api_name:str =  None,
-                       ping_data:str = None,
-                       replace_data:str = None,
-                       dict_data:dict =None):
-        """
-        获取请求体数据方法
-
-        Args:
-            api_name (str): 配置键名
-            ping_data (str): 获取参数
-            replace_data (str): 替换参数
-            dict_data (dict): 字典参数
-
-            Returns:
-                str: 数据方法
-            """
-
-        return self.get_url_method(api_name=api_name,
-                                   ping_data=ping_data,
-                                   replace_data=replace_data,
-                                   dict_data=dict_data)
     def get_menu_ids(self):
-        data = self.get_value(section = 'MENU_ID',key = 'menu_ids')
-        data = ast.literal_eval(data)
-        logger.info(data)
-        return data
-    def get_login_data(self,key):
-        """
-        获取登录数据
+        return self._literal(self.get_value("MENU_ID", "menu_ids", "[]"), "menu_ids")
 
-        Returns:
-            tuple: 登录数据元组，包含用户名和密码
-        """
-        data = self.get_value(section = self.config_section,key = key)
+    def get_login_data(self, key: str):
+        return self.get_value(self.config_section, key)
 
-        return data
     def get_url_data(self):
-        """
-        获取URL数据
+        return self.get_value(self.config_section, "URL")
 
-        Returns:
-            tuple: URL数据元组，包含URL和请求方法
-        """
-        return self.get_value(section = self.config_section,key = 'URL')
     def get_access_token(self):
-        """
-        获取access_token
-
-        Returns:
-            str: access_token
-        """
-        return self.get_value(section = self.config_section,key = 'access_token')
-
+        return self.get_value(self.config_section, "access_token")
 
     def get_pay_in_county(self):
-        """
-        获取支付国家
-
-        Returns:
-            str: 支付国家
-        """
-        data = self.get_value(section = 'PAY_IN_COUNTY',key = 'pay_in_county')
-        print(type(data))
-        return data
+        return self._literal(self.get_value("PAY_IN_COUNTY", "pay_in_county", "{}"), "pay_in_county")
 
     def get_pay_out_county(self):
-        """
-        获取支付国家
+        return self._literal(self.get_value("PAY_OUT_COUNTY", "pay_out_county", "{}"), "pay_out_county")
 
-        Returns:
-            str: 支付国家
-        """
-        data = self.get_value(section = 'PAY_OUT_COUNTY',key = 'pay_out_county')
-
-    def get_common_value(self, section,key,currency, key_name:list[str] = None):
-        value_list = []
-
+    def get_common_value(self, section: str, key: str, currency: str, key_name: Iterable[str] = None):
         value_data = self.get_value(section=section, key=key)
-        if value_data is not None and isinstance(value_data, str):
-            try:
-                data = ast.literal_eval(value_data)
-                if isinstance(data, dict):
-                    for target_key in key_name:
-                        value_list.append(data.get(target_key))
-                return value_list
-            except (ValueError, SyntaxError) as e:
-                logger.error(f"获取{currency}数据失败: {e}")
-                return None
-        return None
-    #获取法币
-    def _get_fiat_value(self,currency, key_name:list[str] = None):
-        return self.get_common_value('fiat_data',key=f'fiat_{currency}_dict',currency=currency, key_name=key_name)
-    #获取虚拟币
-    def _get_crypto_value(self,currency, key_name:list[str] = None):
-        return self.get_common_value('crypto_data',key = f'crypto_{currency}_dict', currency=currency, key_name=key_name)
+        if not value_data:
+            return None
+        data = self._literal(value_data, f"{section}.{key}")
+        if not isinstance(data, dict):
+            return None
+        if not key_name:
+            return data
+        return [data.get(target_key) for target_key in key_name]
 
-    #获取pay_in/pay_out
+    def _get_fiat_value(self, currency, key_name: list[str] = None):
+        return self.get_common_value("fiat_data", f"fiat_{currency}_dict", currency, key_name)
+
+    def _get_crypto_value(self, currency, key_name: list[str] = None):
+        return self.get_common_value("crypto_data", f"crypto_{currency}_dict", currency, key_name)
+
     def get_yellow_card_data(self, yellow_card_type, get_key_name: list[str] = None):
-        """
-        获取黄牌数据
-
-        Args:
-            yellow_card_type (str): 黄牌类型
-            get_key_name (list[str]): 需要获取的键名列表
-
-        Returns:
-            list: 按组返回的数据列表，格式为 [[value1_1, value1_2], [value2_1, value2_2], ...]
-        """
         if not yellow_card_type or not get_key_name:
             return None
-
-        yellow_card_data = self.get_value(
-            section=f'crypto_{yellow_card_type}_data',
-            key=f'crypto_{yellow_card_type}_dict'
+        raw = self.get_value(
+            section=f"crypto_{yellow_card_type}_data",
+            key=f"crypto_{yellow_card_type}_dict",
         )
+        if not raw:
+            return None
+        data = self._literal(raw, yellow_card_type)
+        if not isinstance(data, dict):
+            return None
 
-        if yellow_card_data is not None and isinstance(yellow_card_data, str):
-            try:
-                data = ast.literal_eval(yellow_card_data)
-                if isinstance(data, dict):
-                    result_list = []
-
-                    # 遍历数据字典
-                    for key, value in data.items():
-                        # 如果value是字典，提取指定键的值
-                        if isinstance(value, dict):
-                            row_data = []
-                            for target_key in get_key_name:
-                                row_data.append(value.get(target_key, None))
-                            result_list.append(row_data)
-                        # 如果value是列表，遍历列表元素
-                        elif isinstance(value, list):
-                            for item in value:
-                                if isinstance(item, dict):
-                                    row_data = []
-                                    for target_key in get_key_name:
-                                        row_data.append(item.get(target_key, None))
-                                    result_list.append(row_data)
-                    return result_list
-                return None
-            except (ValueError, SyntaxError) as e:
-                logger.error(f"获取{yellow_card_type}数据失败: {e}")
-                return None
-        return None
-
-
-# 创建全局实例供其他模块使用
-configtools = ConfigTools()
-
-if __name__ == '__main__':
-    read_config = ConfigTools()
-    # value =read_config._get_crypto_value('usdt',['currency','decimal_calculate_places'])
-    # data  = read_config._get_fiat_value('TZS',['decimal_places','decimal_calculate_places'])
-    # print(value)
-    # print(data)
-    read_config.get_menu_ids()
+        result_list = []
+        for value in data.values():
+            records = value if isinstance(value, list) else [value]
+            for item in records:
+                if isinstance(item, dict):
+                    result_list.append([item.get(target_key) for target_key in get_key_name])
+        return result_list

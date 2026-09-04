@@ -1,0 +1,20 @@
+[2026-06-12 17:11:29,555][read_and_save_tool.py 52][INFO]: ConfigTools 初始化完成，当前环境：test，配置节：TEST_CONFIG
+[2026-06-12 17:11:29,894][execute.py 33][INFO]: 环境已切换至：test（配置节：TEST_CONFIG）
+[2026-06-12 17:11:29,894][conftest.py 49][INFO]: ---测试开始---执行的是 test 环境
+[2026-06-12 17:11:29,925][conftest.py 84][INFO]: ---前置处理器开始---
+[2026-06-12 17:11:29,926][login.py 57][INFO]: 开始执行登录测试: Login_page-登陆成功
+[2026-06-12 17:11:29,954][excel_tools.py 405][INFO]: 准备请求数据: Login_page - 登陆成功 - {"loginMethod": "email", "password": "53bfef360f0c4e9d70cc1e6b262e24f1", "email": "rayn.zhou@alloyx.com", "laissezPasser": false}
+[2026-06-12 17:11:29,954][simple_request.py 384][INFO]: Making POST request to https://ax-api.pertest.tech/web/user/login
+[2026-06-12 17:11:29,954][simple_request.py 386][INFO]: Request data: {
+  "loginMethod": "email",
+  "password": "53bfef360f0c4e9d70cc1e6b262e24f1",
+  "email": "rayn.zhou@alloyx.com",
+  "laissezPasser": false
+}
+[2026-06-12 17:11:32,705][login.py 81][INFO]: 登录成功，获取到的accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3ODEyNTU0OTQ3NzUsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc4MTI1NTQ5NCwiZXhwIjoxNzgxMjc3MDk0fQ.w2X7_PThAv_fiiaGpj9vS4jG142Ts06W-GJfzmESNUQ
+[2026-06-12 17:11:32,706][conftest.py 103][DEBUG]: 更新后的请求头: {'Content-Type': 'application/json', 'accept-language': 'zh-cn', 'accept': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjM2U3M2E5Ny0wMjgzLTQzZmQtODZmMC1hMGJkOWQ5NGZmNWYiLCJhY2NvdW50SWQiOiI5MjlmZjE3NS1lMjZiLTQzYWQtYmEwMi00Njc3NTZiZmY4NjciLCJsb2dpblRpbWUiOjE3ODEyNTU0OTQ3NzUsImxvZ2luVHlwZSI6IndlYiIsImlhdCI6MTc4MTI1NTQ5NCwiZXhwIjoxNzgxMjc3MDk0fQ.w2X7_PThAv_fiiaGpj9vS4jG142Ts06W-GJfzmESNUQ'}
+[2026-06-12 17:11:32,708][excel_tools.py 405][INFO]: 准备请求数据: Common - 获取用户信息 - {}
+[2026-06-12 17:11:32,708][simple_request.py 384][INFO]: Making GET request to https://ax-api.pertest.tech/web/rbac/members?page=1&take=10&name=
+[2026-06-12 17:11:34,897][assert_tools.py 25][INFO]: 状态码断言成功：预期 200，实际 200
+[2026-06-12 17:11:34,898][conftest.py 151][INFO]: 用例 test_commom.py::test_get_user_id[获取用户信息-ryan] 执行通过
+[2026-06-12 17:11:34,899][conftest.py 52][INFO]: ---测试结束---test 环境执行完毕
